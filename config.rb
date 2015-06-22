@@ -85,3 +85,17 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+activate :i18n
+activate :webp do |webp|
+  webp.append_extension = true
+end
+activate :blog do |blog|
+  # set options on blog
+  #blog.calendar_template
+  blog.layout = "blog"
+  blog.prefix = "blog"
+  blog.permalink = "blog/{year}/{month}/{lang}/{title}/.html"
+  blog.paginate = true
+  blog.page_link = "p{num}"
+  blog.per_page = 10
+end
