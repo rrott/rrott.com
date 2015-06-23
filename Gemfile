@@ -7,3 +7,8 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "middleman-blog"
 gem 'middleman-webp'
+gem 'middleman-meta-tags'
+gem 'middleman-imageoptim'
+gem "middleman-disqus"
+gem "middleman-syntax"
+#gem 'capistrano-middleman', require: false

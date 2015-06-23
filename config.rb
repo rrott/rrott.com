@@ -85,10 +85,16 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
-activate :i18n
+
+activate :imageoptim
 activate :webp do |webp|
   webp.append_extension = true
 end
+
+activate :i18n
+activate :meta_tags
+activate :syntax, :line_numbers => true
+
 activate :blog do |blog|
   # set options on blog
   #blog.calendar_template
@@ -98,4 +104,20 @@ activate :blog do |blog|
   blog.paginate = true
   blog.page_link = "p{num}"
   blog.per_page = 10
+end
+
+configure :development do
+  activate :disqus do |d|
+    # using a special shortname
+    d.shortname = "development-shortname"
+    # or setting to `nil` will stop Disqus loading
+    d.shortname = nil
+  end
+end
+
+configure :build do
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "production-shortname"
+  end
 end
