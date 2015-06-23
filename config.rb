@@ -86,7 +86,7 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-activate :imageoptim
+#activate :imageoptim
 activate :webp do |webp|
   webp.append_extension = true
 end
