@@ -38,7 +38,7 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -64,7 +64,10 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
-
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "production-shortname"
+  end
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -112,12 +115,5 @@ configure :development do
     d.shortname = "development-shortname"
     # or setting to `nil` will stop Disqus loading
     d.shortname = nil
-  end
-end
-
-configure :build do
-  activate :disqus do |d|
-    # using a different shortname for production builds
-    d.shortname = "production-shortname"
   end
 end
