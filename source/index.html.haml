@@ -1,9 +1,80 @@
----
-title: Middleman is Watching
-body_class: index
----
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+%section#portfolio.two
+  .container
+    %header
+      %h2 Portfolio
+    %p
+      Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+      egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+      Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+      fusce hendrerit lacus ridiculus.
+    .row
+      .4u{:class => "12u$(mobile)"}
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic02.jpg"}/
+          %header
+            %h3 Ipsum Feugiat
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic03.jpg"}/
+          %header
+            %h3 Rhoncus Semper
+      .4u{:class => "12u$(mobile)"}
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic04.jpg"}/
+          %header
+            %h3 Magna Nullam
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic05.jpg"}/
+          %header
+            %h3 Natoque Vitae
+      %div{:class => "4u$ 12u$(mobile)"}
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic06.jpg"}/
+          %header
+            %h3 Dolor Penatibus
+        %article.item
+          %a.image.fit{:href => "#"}
+            %img{:alt => "", :src => "images/pic07.jpg"}/
+          %header
+            %h3 Orci Convallis
+/ About Me
+%section#about.three
+  .container
+    %header
+      %h2 About Me
+    %a.image.featured{:href => "#"}
+      %img{:alt => "", :src => "images/pic08.jpg"}/
+    %p
+      Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+      ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+      laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+      parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+      dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+      ornare iaculis.
+/ Contact
+%section#contact.four
+  .container
+    %header
+      %h2 Contact
+    %p
+      Elementum sem parturient nulla quam placerat viverra
+      mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+      donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+      orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.
+    %form{:action => "#", :method => "post"}
+      .row
+        .6u{:class => "12u$(mobile)"}
+          %input{:name => "name", :placeholder => "Name", :type => "text"}/
+        %div{:class => "6u$ 12u$(mobile)"}
+          %input{:name => "email", :placeholder => "Email", :type => "text"}/
+        %div{:class => "12u$"}
+          %textarea{:name => "message", :placeholder => "Message"}
+        %div{:class => "12u$"}
+          %input{:type => "submit", :value => "Send Message"}/
+
+
