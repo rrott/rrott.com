@@ -1,24 +1,21 @@
 %body
-  .header
-    .home-menu.pure-menu.pure-menu-horizontal.pure-menu-fixed
-      %a.pure-menu-heading{:href => ""} Your Site
-      %ul.pure-menu-list
-        %li.pure-menu-item.pure-menu-selected
-          %a.pure-menu-link{:href => "#"} Home
-        %li.pure-menu-item
-          %a.pure-menu-link{:href => "#"} Tour
-        %li.pure-menu-item
-          %a.pure-menu-link{:href => "#"} Sign Up
   .splash-container
     .splash
-      %h1.splash-head Big Bold Text
-      %p.splash-subhead
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      %p
-        %a.pure-button.pure-button-primary{:href => "http://purecss.io"} Get Started
+      %h1.splash-head Roman Rott
   .content-wrapper
-    .content
-      %h2.content-head.is-center Excepteur sint occaecat cupidatat.
+    .content.content-head.is-center
+      %a{href: 'ua.linkedin.com/in/rrott', target: '_blank'}
+        %i.fa.fa-3x.fa-linkedin
+      %a{href: 'https://github.com/rrott', target: '_blank'}
+        %i.fa.fa-3x.fa-github
+      %a{href: 'https://bitbucket.org/rrott', target: '_blank'}
+        %i.fa.fa-3x.fa-bitbucket
+      -# %i.fa.fa-3x.fa-stack-overflow
+      %a{href: "skype:roman.rott?chat"}
+        %i.fa.fa-3x.fa-skype.skype
+      -# %i.fa.fa-3x.fa-slack
+      %a{href: "mailto:roman.rott@gmail.com"}
+        %i.fa.fa-3x.fa-envelope
       .pure-g
         .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
           %h3.content-subhead
