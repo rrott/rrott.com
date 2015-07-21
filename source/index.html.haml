@@ -3,44 +3,61 @@
     .splash
       %h1.splash-head Roman Rott
   .content-wrapper
-    .content.content-head.is-center
-      %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
-        %i.fa.fa-3x.fa-linkedin
-      %a{href: 'https://github.com/rrott', target: '_blank'}
-        %i.fa.fa-3x.fa-github
-      %a{href: 'https://bitbucket.org/rrott', target: '_blank'}
-        %i.fa.fa-3x.fa-bitbucket
-      -# %i.fa.fa-3x.fa-stack-overflow
-      %a{href: "skype:roman.rott?chat"}
-        %i.fa.fa-3x.fa-skype.skype
-      -# %i.fa.fa-3x.fa-slack
-      %a{href: "mailto:roman.rott@gmail.com"}
-        %i.fa.fa-3x.fa-envelope
+    .content.content-head
+      .links.is-center
+        %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
+          %i.fa.fa-3x.fa-linkedin
+        %a{href: 'https://github.com/rrott', target: '_blank'}
+          %i.fa.fa-3x.fa-github
+        %a{href: 'https://bitbucket.org/rrott', target: '_blank'}
+          %i.fa.fa-3x.fa-bitbucket
+        -# %i.fa.fa-3x.fa-stack-overflow
+        %a{href: "skype:roman.rott?chat"}
+          %i.fa.fa-3x.fa-skype.skype
+        -# %i.fa.fa-3x.fa-slack
+        %a{href: "mailto:roman.rott@gmail.com"}
+          %i.fa.fa-3x.fa-envelope
       .pure-g
         .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead
+          %h3.content-subhead.is-center
             %i.fa.fa-rocket
-            Resume
-          %p
-            Info
-        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead
-            %i.fa.fa-mobile
-            Examples
-          %p
-            info about examples
-        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead
-            %i.fa.fa-th-large
             About myself
           %p
-            info aboutmyself
+            Hello. I am a Front-end/Back-end developer with 12+ years of IT experience and 3 years experience dedicated to web-development and security auditing(legal penetration testing) of web applications. I tend to use Ruby and CoffeeScript to follow TDD and OOP best practices(namely SOLID proncipes)
+    .ribbon.l-box-lrg.pure-g
+      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
+        %img.pure-img-responsive{:alt => "File Icons", :src => "img/common/file-icons.png", :width => "300"}/
+      .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
+        %h3.content-subhead.is-center
+          %i.fa.fa-mobile
+          Web-developer
+        %p
+          These are only a  few of the technologies that I use on a daily basis while there are a lot of interesting libraries in the Ruby and JS worlds that I used for self-development:
+          Ruby, JavaScript/CoffeeScript - as main languages.
+          Rails, Sinatra/Padrino    - as Ruby frameworks.
+          Backbone/Marionette   - as JS frameworks for creating Single Page Applications.
+          Rspec/Capybara, Jasmine   - as test frameworks.
+
+    .content
+      %h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
+      .pure-g
         .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead
-            %i.fa.fa-check-square-o
-            Interests
+          %h3.content-subhead.is-center
+            %i.fa.fa-th-large
+            Web Application Security Researcher
           %p
-            info
+            Web Application Security Researcher:
+            Created vulnerable applications for 2 CTF security challenges held by Non Government Organization "Ukrainian Information Security Group".
+            Audited and provided feedbacks for more than 20 websites and web-services.
+
+        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+          %h3.content-subhead.is-center
+            %i.fa.fa-check-square-o
+            Community development
+          %p
+            Contributed to open source projects, e.g.: dnesteryuk/site_prism.vcr
+            Maintain my own open source project: rrott/grunt_coffee_chain
+            Partnered with 4 other developers to plan and execute 3 frontend Meetups and the very first Hackathon in Zaporizhzhya city.
     .ribbon.l-box-lrg.pure-g
       .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
         %img.pure-img-responsive{:alt => "File Icons", :src => "img/common/file-icons.png", :width => "300"}/
