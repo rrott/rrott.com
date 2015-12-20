@@ -5,90 +5,141 @@
   .content-wrapper
     .content.content-head
       .links.is-center
-        %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
-          %i.fa.fa-3x.fa-linkedin
-        %a{href: 'https://github.com/rrott', target: '_blank'}
-          %i.fa.fa-3x.fa-github
-        %a{href: 'https://bitbucket.org/rrott', target: '_blank'}
-          %i.fa.fa-3x.fa-bitbucket
-        -# %i.fa.fa-3x.fa-stack-overflow
-        %a{href: "skype:roman.rott?chat"}
-          %i.fa.fa-3x.fa-skype.skype
-        -# %i.fa.fa-3x.fa-slack
-        %a{href: "mailto:roman.rott@gmail.com"}
-          %i.fa.fa-3x.fa-envelope
+        = partial 'links'
+        %br
+        Available for hire. Contact me, if you're interested =)
       .pure-g
-        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead.is-center
-            %i.fa.fa-rocket
-            About myself
-          %p
-            Hello. I am a Front-end/Back-end developer with 12+ years of IT experience and 3 years experience dedicated to web-development and security auditing(legal penetration testing) of web applications. I tend to use Ruby and CoffeeScript to follow TDD and OOP best practices(namely SOLID proncipes)
+        .l-box.pure-u-1
+          %h2.content-subhead.is-center
+            Full Stack Web Developer, Security Researcher.
+          .about.pure-u-1
+            %ul
+              Hello! My name is Roman Rott, and I'm an Ukrainian Front-end/Back-end developer with 12 years of IT experience and 3+ years experience dedicated to web-development and security auditing (legal penetration testing). I tend to use
+              %b Ruby and CoffeeScript
+              to follow TDD and OOP best practices(namely SOLID proncipes)
+            %ul
+              I enjoy building everything from small business sites to rich interactive web apps. If I'm not working on my own pet-projects or taking part of a bug-bounty program, I'm working remotely on web projects for clients all over the world.
+            %ul
+              If you are a business seeking a web presence or an employer looking to hire a
+              %b remote
+              specialist, you can get in touch with me here.
+            .pure-g
+              .pure-u-1.pure-u-md-1-2
+                %h3.is-center Recent posts from my blog:
+                - blog.articles[0...5].each do |article|
+                  %article
+                    %h3
+                      %a{href: "#{article.url}", title: "#{article.title}" }
+                      %time="#{article.date.strftime('%b %e %Y')}"
+                    "#{article.summary}"
+                    %a{href: "#{article.url}"} Read more
+              .pure-u-1.pure-u-md-1-2
+                %h3.is-center Pined posts from my blog:
+                - blog.articles[0...5].each do |article|
+                  %article
+                    %h3
+                      %a{href: "#{article.url}", title: "#{article.title}" }
+                      %time="#{article.date.strftime('%b %e %Y')}"
+                    "#{article.summary}"
+                    %a{href: "#{article.url}"} Read more
+
     .ribbon.l-box-lrg.pure-g
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
-        %img.pure-img-responsive{:alt => "File Icons", :src => "img/common/file-icons.png", :width => "300"}/
-      .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
-        %h3.content-subhead.is-center
-          %i.fa.fa-mobile
-          Web-developer
-        %p
-          These are only a  few of the technologies that I use on a daily basis while there are a lot of interesting libraries in the Ruby and JS worlds that I used for self-development:
-          Ruby, JavaScript/CoffeeScript - as main languages.
-          Rails, Sinatra/Padrino    - as Ruby frameworks.
-          Backbone/Marionette   - as JS frameworks for creating Single Page Applications.
-          Rspec/Capybara, Jasmine   - as test frameworks.
-
+      .l-box-lrg.pure-u-1
+        %h2.content-subhead.is-center
+          Web Developer
+        .pure-g
+          .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2
+            %img.pure-img-responsive{alt: "rrott's Ukrainian ruby logo", src: "images/ruby_rrott.png", width: "300", heigh: '177'}/
+          .pure-u-1.pure-u-md-1-2
+            %ul
+              For the last 3 years I've developed, supported and maintained projects and apps for an US company which services the world-wide shared and cloud hosting.
+              This is a sample of the projects that I've worked on in the last years. Most of these sites were developed in Ruby, CoffeeScript, Javascript using Backbone.js, Marionette, Sinatra, Ruby on Rails, Rspec/Capybara, Jasmine and experience a large amount of traffic on a daily basis.
+            %ul
+              I enjoy working on Agile-driven projects, and specialise in developing secure and SEO, performance optimized websites.
+            %ul
+              The key to designing a great and protected products is empathy. I place myself in the users' and hackers' shoes to consider what the user wants from the product and how to protect them.
     .content
-      %h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
       .pure-g
-        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead.is-center
-            %i.fa.fa-th-large
-            Web Application Security Researcher
-          %p
-            Web Application Security Researcher:
-            Created vulnerable applications for 2 CTF security challenges held by Non Government Organization "Ukrainian Information Security Group".
-            Audited and provided feedbacks for more than 20 websites and web-services.
+        %h2.content-subhead.is-center.pure-u-1
+          Web Application Security Researcher
+        .pure-g
+          .pure-u-1.pure-u-md-1-2
+            %ul
+              Web Application Security Researcher:
+              Created vulnerable applications for 2 CTF security challenges held by Non Government Organization "Ukrainian Information Security Group".
+              Audited and provided feedbacks for more than 20 websites and web-services.
+          .pure-u-1.pure-u-md-1-2
+            image
 
-        .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
-          %h3.content-subhead.is-center
-            %i.fa.fa-check-square-o
-            Community development
-          %p
+    .ribbon.l-box-lrg.pure-g
+      %h2.content-subhead.is-center.pure-u-1 Community development
+      .pure-g
+        .pure-u-1.pure-u-md-1-2
+          %img.is-center.pure-img-responsive{:alt => "File Icons", :src => "img/common/file-icons.png", :width => "300"}/
+        .pure-u-1.pure-u-md-1-2
+          %ul
             Contributed to open source projects, e.g.: dnesteryuk/site_prism.vcr
             Maintain my own open source project: rrott/grunt_coffee_chain
             Partnered with 4 other developers to plan and execute 3 frontend Meetups and the very first Hackathon in Zaporizhzhya city.
-    .ribbon.l-box-lrg.pure-g
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
-        %img.pure-img-responsive{:alt => "File Icons", :src => "img/common/file-icons.png", :width => "300"}/
-      .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
-        %h2.content-head.content-head-ribbon github
-        %p
+
 
     .content
-      %h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
       .pure-g
-        .l-box-lrg.pure-u-1.pure-u-md-2-5
+        %h2.content-subhead.is-center.pure-u-1
+          Contact information
+      .pure-g.l-box-lrg
+        .pure-u-1.pure-u-md-1-3
+          %h4 Contact Me:
+          .pure-g
+            %b.pure-u-1-2 LinkedIn:
+            .pure-u-1-2
+              %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
+                Roman Rott
+          .pure-g
+            %b.pure-u-1-2 Skype:
+            .pure-u-1-2
+              %a{href: "skype:roman.rott?chat"}
+                roman.rott
+          .pure-g
+            %b.pure-u-1-2 Mail:
+            .pure-u-1-2
+              %a{href: "mailto:roman.rott@gmail.com"}
+                roman.rott@gmail.com
+        .pure-u-1.pure-u-md-1-3
+          %h4 View My Resume:
+          .pure-g
+            %b.pure-u-1-2 Pdf:
+            .pure-u-1-2
+              %a{href: "//download/cv/roman.rott.2016.pdf", target: '_blank'}
+                open/download
+          .pure-g
+            %b.pure-u-1-2 Odt:
+            .pure-u-1-2
+              %a{href: "//download/cv/roman.rott.2016.odt", target: '_blank'}
+                download
+          .pure-g
+            %b.pure-u-1-2 Docx:
+            .pure-u-1-2
+              %a{href: "//download/cv/roman.rott.2016.docx", target: '_blank'}
+                download
+        .pure-u-1.pure-u-md-1-3
+          %h4 See My Social Connections:
+          .pure-g
+            %b.pure-u-1-2 Blog:
+            .pure-u-1-2
+              %a{href: '//blog', target: '_blank'}
+                rott.org.ua/blog
+          .pure-g
+            %b.pure-u-1-2  GitHub:
+            .pure-u-1-2
+              %a{href: 'https://github.com/rrott', target: '_blank'}
+                rrott
+          .pure-g
+            %b.pure-u-1-2  Twitter:
+            .pure-u-1-2
+              %a{href: 'https://twitter.com/roman_rott', target: '_blank'}
+                roman_rott
+      %h3.is-center.pure-u-1 Lets build something great!
 
-        .l-box-lrg.pure-u-1.pure-u-md-3-5
-          %h4 Contact Us
-          %p
-            links again
-          %h4 More Information
-          %p
-            blog links
     .footer.l-box.is-center
-      %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
-        %i.fa.fa-2x.fa-linkedin
-      %a{href: 'https://github.com/rrott', target: '_blank'}
-        %i.fa.fa-2x.fa-github
-      %a{href: 'https://bitbucket.org/rrott', target: '_blank'}
-        %i.fa.fa-2x.fa-bitbucket
-      -# %i.fa.fa-2x.fa-stack-overflow
-      %a{href: "skype:roman.rott?chat"}
-        %i.fa.fa-2x.fa-skype.skype
-      -# %i.fa.fa-2x.fa-slack
-      %a{href: "mailto:roman.rott@gmail.com"}
-        %i.fa.fa-2x.fa-envelope
-      %br
-      Skype: roman.rott
+      = partial 'links'
