@@ -89,8 +89,6 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
-    middleman-breadcrumbs (0.3.3)
-      middleman (>= 3.3.5)
     middleman-build-info (0.0.3)
       middleman-core (~> 3.3)
     middleman-core (3.4.1)
@@ -173,9 +171,12 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    redcarpet (3.3.3)
     ref (2.0.0)
     rouge (1.10.1)
     sass (3.4.20)
+    sitemap_generator (5.1.0)
+      builder
     slop (3.6.0)
     smusher (0.4.9)
       httpclient (>= 2.2)
@@ -214,7 +215,6 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-blog
-  middleman-breadcrumbs
   middleman-build-info
   middleman-disqus
   middleman-imageoptim
@@ -230,6 +230,8 @@ DEPENDENCIES
   middleman-webp
   pry
   rake
+  redcarpet
+  sitemap_generator
 
 BUNDLED WITH
    1.10.6

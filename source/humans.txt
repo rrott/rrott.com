@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Roman Rott
+Site: https://rott.org.ua
+Twitter: @roman_rott
+Location: Ukraine
+
+/* THANKS */
+Middleman: http://middlemanapp.com
+
+/* SITE */
+Standards: HTML5, CSS3
