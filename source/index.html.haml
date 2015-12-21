@@ -99,9 +99,56 @@
           %img.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "images/open-source-logo.png", heigh: '177'}
         .pure-u-1.pure-u-md-3-4
           %ul
-            Contributed to open source projects, e.g.: dnesteryuk/site_prism.vcr
-            Maintain my own open source project: rrott/grunt_coffee_chain
-            Partnered with 4 other developers to plan and execute 3 frontend Meetups and the very first Hackathon in Zaporizhzhya city.
+            Contributed to open source projects:
+            %ul
+              %li
+                %a{href: "https://github.com/floere/phony/pull/180", target: '_blank'}
+                  floere/phony -
+                E164 international phone number normalizing, splitting, formatting
+              %li
+                %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank'}
+                  dnesteryuk/site_prism.vcr -
+                Gem that allows to integrate VCR into site prism
+          %ul
+            I do maintain my own open source project:
+            %ul
+              %li
+                «Grunt Coffee Chain» - grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.
+                %ul
+                  %li
+                    npm:
+                    %a{href: "https://www.npmjs.com/package/grunt-coffee-chain", target: '_blank'}
+                      package/grunt-coffee-chain
+                  %li
+                    GitHub:
+                    %a{href: "https://github.com/rrott/grunt_coffee_chain", target: '_blank'}
+                      rrott/grunt_coffee_chain
+                  %li
+                    WebSite:
+                    %a{href: "http://coffee.rott.org.ua/", target: '_blank'}
+                      http://coffee.rott.org.ua/
+              %br
+              %li
+                «Asana God Contact» - A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
+                %ul
+                  %li
+                    RubyGems:
+                    %a{href: "https://rubygems.org/gems/asana-god-contact", target: '_blank'}
+                      gems/asana-god-contact
+                  %li
+                    GitHub:
+                    %a{href: "https://github.com/rrott/asana-god-contact", target: '_blank'}
+                      rrott/asana-god-contact
+                  %li
+                    WebSite:
+                    %a{href: "http://asana.rott.org.ua/", target: '_blank'}
+                      http://coffee.rott.org.ua/
+
+          %ul
+            Partnered with 4 other developers to plan and execute 3 frontend Meetups and the very first Hackathon in Zaporizhzhya city -
+            %a{href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank'}
+              «24Hack» (in Russian)
+
 
 
     #contacts.content
@@ -110,59 +157,10 @@
           Contact information
         .pure-u-1.is-center
           If you are a business seeking a web presence or an employer looking to hire a remote specialist, you can get in touch with me here.
-      .pure-g.l-box-lrg
-        .pure-u-1.pure-u-md-1-3
-          %h4 Contact Me:
-          .pure-g
-            %b.pure-u-1-3 LinkedIn:
-            .pure-u-1-3
-              %a{href: 'https://www.linkedin.com/in/rrott', target: '_blank'}
-                Roman Rott
-          .pure-g
-            %b.pure-u-1-3 Skype:
-            .pure-u-1-3
-              %a{href: "skype:roman.rott?chat"}
-                roman.rott
-          .pure-g
-            %b.pure-u-1-3 Mail:
-            .pure-u-1-3
-              %a{href: "mailto:roman.rott@gmail.com"}
-                roman.rott@gmail.com
-        .pure-u-1.pure-u-md-1-3
-          %h4 View My Resume:
-          .pure-g
-            %b.pure-u-1-3 Pdf:
-            .pure-u-1-3
-              %a{href: "//download/cv/roman.rott.2016.pdf", target: '_blank'}
-                open/download
-          .pure-g
-            %b.pure-u-1-3 Odt:
-            .pure-u-1-3
-              %a{href: "//download/cv/roman.rott.2016.odt", target: '_blank'}
-                download
-          .pure-g
-            %b.pure-u-1-3 Docx:
-            .pure-u-1-3
-              %a{href: "//download/cv/roman.rott.2016.docx", target: '_blank'}
-                download
-        .pure-u-1.pure-u-md-1-3
-          %h4 See My Social Connections:
-          .pure-g
-            %b.pure-u-1-3 Blog:
-            .pure-u-1-3
-              %a{href: '//blog', target: '_blank'}
-                rott.org.ua/blog
-          .pure-g
-            %b.pure-u-1-3  GitHub:
-            .pure-u-1-3
-              %a{href: 'https://github.com/rrott', target: '_blank'}
-                rrott
-          .pure-g
-            %b.pure-u-1-3  Twitter:
-            .pure-u-1-3
-              %a{href: 'https://twitter.com/roman_rott', target: '_blank'}
-                roman_rott
+      = partial 'contacts'
       %h3.is-center.pure-u-1 Lets build something great!
 
     .footer.l-box.is-center
       = partial 'links'
+    -# = code('ruby') do
+    -#   puts "hello"

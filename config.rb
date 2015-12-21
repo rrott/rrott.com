@@ -1,19 +1,4 @@
-###
-# Compass
-###
-
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
+require "middleman-smusher"
 
 # Per-page layout changes:
 #
@@ -28,15 +13,6 @@
 #   page "/admin/*"
 # end
 
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -48,14 +24,19 @@ activate :automatic_image_sizes
 # end
 
 # Use LiveReload
-activate :livereload
 
 # Compass configuration
+set :url_root, 'https://rott.org.ua'
+
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
+
+page 'sitemap.xml', layout: false
+page 'feed.xml', layout: false
+
+activate :autoprefixer
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
@@ -65,28 +46,18 @@ configure :build do
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
   activate :disqus do |d|
-    # using a different shortname for production builds
     d.shortname = "production-shortname"
   end
-  # For example, change the Compass output style for deployment
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
-
-  # Enable cache buster
-  # activate :cache_buster
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
+  activate :cache_buster
+  activate :relative_assets
+  activate :smusher
+  activate :asset_hash
+  activate :robots, rules: [
+    { user_agent: '*', allow: ['/'] }
+  ],
+  sitemap: "#{data.site.url}/sitemap.xml"
 end
 
 #activate :imageoptim
@@ -94,22 +65,45 @@ activate :webp do |webp|
   webp.append_extension = true
 end
 
+activate :search_engine_sitemap
+
 activate :i18n
 activate :meta_tags
 activate :syntax, :line_numbers => true
+activate :build_info
+activate :spellcheck
+
+activate :imageoptim do |options|
+  # Use a build manifest to prevent re-compressing images between builds
+  options.manifest = true
+  options.image_extensions = %w(.png .jpg .gif .svg)
+end
 
 activate :blog do |blog|
   # set options on blog
   #blog.calendar_template
   blog.layout = "blog_layout"
   blog.prefix = "blog"
-  blog.permalink = "{year}/{month}/{lang}/{title}.html"
+  blog.permalink = "{lang}/{title}.html"
   blog.paginate = true
   blog.page_link = "p{num}"
   blog.per_page = 10
 end
 
+activate :search do |search|
+  search.resources = ['blog/', 'index.html', 'portfolio/']
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    content: {boost: 50},
+    url:     {index: false, store: true},
+    author:  {boost: 30}
+  }
+end
+
 configure :development do
+  set :debug_assets, true
+  activate :livereload
+
   activate :disqus do |d|
     # using a special shortname
     d.shortname = "development-shortname"

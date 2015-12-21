@@ -8,6 +8,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -15,6 +16,7 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     chunky_png (1.3.5)
+    coderay (1.1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -46,6 +48,7 @@ GEM
     hooks (0.4.1)
       uber (~> 0.0.14)
     http_parser.rb (0.6.0)
+    httpclient (2.7.0.1)
     i18n (0.7.0)
     image_optim (0.20.2)
       exifr (~> 1.1, >= 1.1.3)
@@ -60,9 +63,11 @@ GEM
     in_threads (1.3.1)
     json (1.8.3)
     kramdown (1.9.0)
+    libv8 (3.16.14.13)
     listen (3.0.5)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    method_source (0.8.2)
     middleman (3.4.1)
       coffee-script (~> 2.2)
       compass (>= 1.0.0, < 2.0.0)
@@ -78,6 +83,10 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
+    middleman-breadcrumbs (0.3.3)
+      middleman (>= 3.3.5)
+    middleman-build-info (0.0.3)
+      middleman-core (~> 3.3)
     middleman-core (3.4.1)
       activesupport (~> 4.1)
       bundler (~> 1.1)
@@ -102,6 +111,22 @@ GEM
       rack-livereload (~> 0.3.15)
     middleman-meta-tags (0.1.3)
       middleman-core (>= 3.0.0)
+    middleman-pry (0.0.4)
+      middleman-core (~> 3.2)
+      pry (~> 0.9)
+    middleman-search (0.4.0)
+      middleman-core (~> 3.2)
+      nokogiri (~> 1.5)
+      therubyracer (~> 0.12)
+    middleman-search_engine_sitemap (1.3.0)
+      builder
+      middleman-core (~> 3.2)
+    middleman-smusher (3.0.0)
+      middleman (>= 3.0.0)
+      smusher (~> 0.4.9)
+    middleman-spellcheck (0.9.0)
+      middleman-core (~> 3.2)
+      nokogiri
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -127,16 +152,27 @@ GEM
     padrino-support (0.12.5)
       activesupport (>= 3.1)
     progress (3.1.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    ref (2.0.0)
     rouge (1.10.1)
     sass (3.4.20)
+    slop (3.6.0)
+    smusher (0.4.9)
+      httpclient (>= 2.2)
+      json
+      rake
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -147,6 +183,9 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -165,10 +204,17 @@ PLATFORMS
 DEPENDENCIES
   middleman
   middleman-blog
+  middleman-breadcrumbs
+  middleman-build-info
   middleman-disqus
   middleman-imageoptim
   middleman-livereload
   middleman-meta-tags
+  middleman-pry
+  middleman-search
+  middleman-search_engine_sitemap
+  middleman-smusher
+  middleman-spellcheck
   middleman-syntax
   middleman-webp
 
