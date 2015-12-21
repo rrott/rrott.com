@@ -15,6 +15,8 @@ gem 'middleman-spellcheck'
 gem 'middleman-pry'
 gem 'middleman-build-info'
 gem 'pry'
+gem "redcarpet"
+gem "sitemap_generator"
 
 gem "middleman-disqus"
 gem "middleman-syntax"

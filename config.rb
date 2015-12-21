@@ -1,4 +1,5 @@
 require "middleman-smusher"
+require 'kramdown'
 
 # Per-page layout changes:
 #
@@ -31,9 +32,13 @@ set :url_root, 'https://rott.org.ua'
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :ga_tracking_id, "UA-111111111-11"
 
 page 'sitemap.xml', layout: false
 page 'feed.xml', layout: false
+page "/blog/feed.xml", :layout => false
+page "robots.txt", :layout => false
+page "humans.txt", :layout => false
 
 activate :autoprefixer
 activate :directory_indexes
@@ -69,9 +74,13 @@ activate :search_engine_sitemap
 
 activate :i18n
 activate :meta_tags
-activate :syntax, :line_numbers => true
 activate :build_info
 activate :spellcheck
+
+# Enable syntax highlighting
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+activate :syntax, :line_numbers => true
 
 activate :imageoptim do |options|
   # Use a build manifest to prevent re-compressing images between builds
@@ -82,12 +91,14 @@ end
 activate :blog do |blog|
   # set options on blog
   #blog.calendar_template
-  blog.layout = "blog_layout"
+  blog.layout = "blog"
   blog.prefix = "blog"
   blog.permalink = "{lang}/{title}.html"
   blog.paginate = true
   blog.page_link = "p{num}"
   blog.per_page = 10
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
 end
 
 activate :search do |search|
