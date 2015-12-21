@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (4.2.5)
       i18n (~> 0.7)
@@ -8,6 +8,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (6.1.2)
+      execjs
+      json
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -79,6 +82,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-autoprefixer (2.6.2)
+      autoprefixer-rails (~> 6.1.2)
+      middleman-core (>= 3.3.3)
     middleman-blog (3.5.3)
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
@@ -114,6 +120,8 @@ GEM
     middleman-pry (0.0.4)
       middleman-core (~> 3.2)
       pry (~> 0.9)
+    middleman-robots (1.1.0)
+      middleman (>= 3.3)
     middleman-search (0.4.0)
       middleman-core (~> 3.2)
       nokogiri (~> 1.5)
@@ -202,7 +210,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   middleman
+  middleman-autoprefixer
   middleman-blog
   middleman-breadcrumbs
   middleman-build-info
@@ -211,12 +221,15 @@ DEPENDENCIES
   middleman-livereload
   middleman-meta-tags
   middleman-pry
+  middleman-robots
   middleman-search
   middleman-search_engine_sitemap
   middleman-smusher
   middleman-spellcheck
   middleman-syntax
   middleman-webp
+  pry
+  rake
 
 BUNDLED WITH
    1.10.6

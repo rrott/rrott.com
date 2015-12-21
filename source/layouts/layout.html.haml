@@ -7,8 +7,12 @@
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
     %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
+    %meta(name='robots' content='index,follow')
     %meta(name='apple-mobile-web-app-capable' content='yes')
     %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+    = favicon_tag 'images/favicon.ico'
+    = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
+
     = stylesheet_link_tag 'application'
     :css
       html, button, input, select, textarea,
