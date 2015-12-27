@@ -7,24 +7,17 @@
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
     %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
-    %meta(name='robots' content='index,follow')
     %meta(name='apple-mobile-web-app-capable' content='yes')
     %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
-    %link(type="text/plain" rel="author" href="/humans.txt")
-    = favicon_tag 'images/favicon.ico'
-    = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
-    = stylesheet_link_tag  'grids-min'
-    = stylesheet_link_tag  'grids-responsive-min'
-    = stylesheet_link_tag  'application'
-    :css
-      html, button, input, select, textarea,
-        .pure-g [class *= "pure-u"] {
-          font-family: Sans-serif;
-        }
+    = stylesheet_link_tag 'blog'
+    %link(rel="stylesheet" href="/stylesheets/grids-min.css")
+    %link(rel="stylesheet" href="/stylesheets/grids-responsive-min.css")
     = yield
 
     -# Javascripts
     = javascript_include_tag 'application', async: true
+    -# = javascript_include_tag 'lib/photoswipe.min', async: true
+    -# = javascript_include_tag 'lib/photoswipe-ui-default.min', async: true
     -# = javascript_include_tag "http://www.skypeassets.com/i/scom/js/skype-uri.js", async: true
 
     - if build?
@@ -34,3 +27,4 @@
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
+

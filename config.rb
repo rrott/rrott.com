@@ -39,8 +39,9 @@ page 'feed.xml', layout: false
 page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
+page "/portfolios.html", :layout => :portfolio
 
-activate :autoprefixer
+#activate :autoprefixer
 activate :directory_indexes
 
 # Build-specific configuration
@@ -73,7 +74,6 @@ end
 activate :search_engine_sitemap
 
 activate :i18n
-activate :meta_tags
 activate :build_info
 activate :spellcheck
 
@@ -112,7 +112,7 @@ activate :search do |search|
 end
 
 configure :development do
-  set :debug_assets, true
+  # set :debug_assets, true
   activate :livereload
 
   activate :disqus do |d|

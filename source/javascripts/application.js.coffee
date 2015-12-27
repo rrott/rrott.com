@@ -1,1 +1,1 @@
-#= require_tree ./lib
+#= require ./lib/webfont
