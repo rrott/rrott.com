@@ -14,16 +14,14 @@
     %link(rel="stylesheet" href="/stylesheets/grids-responsive-min.css")
     = yield
 
-    -# Javascripts
+    = stylesheet_link_tag  'grids-min'
+    = stylesheet_link_tag  'grids-responsive-min'
     = javascript_include_tag 'application', async: true
-    -# = javascript_include_tag 'lib/photoswipe.min', async: true
-    -# = javascript_include_tag 'lib/photoswipe-ui-default.min', async: true
-    -# = javascript_include_tag "http://www.skypeassets.com/i/scom/js/skype-uri.js", async: true
 
     - if build?
       -# Google Analytics
       :javascript
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        var _gaq=[['_setAccount','UA-41765849-1'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
