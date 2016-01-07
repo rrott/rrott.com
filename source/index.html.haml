@@ -21,25 +21,25 @@
             %ul
               I enjoy building everything from small business sites to rich interactive web apps. I'm working remotely on web projects for clients all over the world and at odd times I am taking part of bug-bounty programs.
 
-          .pure-g
-            %ul.pure-u-1.pure-u-md-1-2
-              %h3.is-center Recent posts from my blog:
-              - blog.articles[0...5].each do |article|
-                %article
-                  %h3
-                    %a{href: "#{article.url}", title: "#{article.title}" }
-                    %time="#{article.date.strftime('%b %e %Y')}"
-                  "#{article.summary}"
-                  %a{href: "#{article.url}"} Read more
-            %ul.pure-u-1.pure-u-md-1-2
-              %h3.is-center Pined posts from my blog:
-              - blog.articles[0...5].each do |article|
-                %article
-                  %h3
-                    %a{href: "#{article.url}", title: "#{article.title}" }
-                    %time="#{article.date.strftime('%b %e %Y')}"
-                  "#{article.summary}"
-                  %a{href: "#{article.url}"} Read more
+          -# .pure-g
+          -#   %ul.pure-u-1.pure-u-md-1-2
+          -#     %h3.is-center Recent posts from my blog:
+          -#     - blog.articles[0...5].each do |article|
+          -#       %article
+          -#         %h3
+          -#           %a{href: "#{article.url}", title: "#{article.title}" }
+          -#           %time="#{article.date.strftime('%b %e %Y')}"
+          -#         "#{article.summary}"
+          -#         %a{href: "#{article.url}"} Read more
+            -# %ul.pure-u-1.pure-u-md-1-2
+            -#   %h3.is-center Pined posts from my blog:
+            -#   - blog.articles[0...5].each do |article|
+            -#     %article
+            -#       %h3
+            -#         %a{href: "#{article.url}", title: "#{article.title}" }
+            -#         %time="#{article.date.strftime('%b %e %Y')}"
+            -#       "#{article.summary}"
+            -#       %a{href: "#{article.url}"} Read more
 
     .ribbon.l-box-lrg.pure-g
       .l-box-lrg.pure-u-1
