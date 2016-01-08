@@ -2,35 +2,28 @@
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
       .header
-        %h1.brand-title A Sample Blog
-        %h2.brand-tagline Creating a blog layout using Pure
+        %h1.brand-title Portfolio page
+        %h2.brand-tagline Projects that I've been worked on during last year.
         %nav.nav
           %ul.nav-list
             %li.nav-item
-              %a.pure-button{:href => "http://purecss.io"} Pure
+              %a.pure-button{:href => "https://rott.org.ua"} Home
             %li.nav-item
-              %a.pure-button{:href => "http://yuilibrary.com"} YUI Library
+              %a.pure-button{:href => "https://rott.org.ua/blog"} Blog
     .content.pure-u-1.pure-u-md-3-4
       %div
         / A wrapper for all the blog posts
         .posts
           %h1.content-subhead Full-stack projects
-        .posts
-          %h1.content-subhead Front-end projects
-        .posts
-          %h1.content-subhead Back-end projects
-        .posts
-          %h1.content-subhead Web projects
           %section.post
             %header.post-header
-              %h2.post-title rott.org.ua - current website
+              %h2.post-title rott.org.ua
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %a{:href => "http://www.flickr.com/photos/uberlife/8915936174/"}
-                    %img.pure-img-responsive{:alt => "Photo of someone working poolside at a resort", :src => "http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg"}/
-                  .post-image-meta
-                    %h3 rott.org.ua - current website
+                  %a{:href => "https://rott.org.ua", :target => 'blank'}
+                    %img.pure-img-responsive{:alt => "Photo of someone working poolside at a resort", :src => "/images/portfolio/website/rott-org-ua.png"}/
+
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     My own website with blog and portfolio
@@ -44,6 +37,13 @@
                     Frameworks/Libs: Middleman
                   %br
                     Other technologies: SASS
+        .posts
+          %h1.content-subhead Front-end projects
+        .posts
+          %h1.content-subhead Back-end projects
+        .posts
+          %h1.content-subhead Web projects
+
           %section.post
             %header.post-header
               %h2.post-title Cloud hosting control panel for CloudByIX.com and IXWebhosting.com
