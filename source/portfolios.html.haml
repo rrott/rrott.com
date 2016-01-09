@@ -1,15 +1,21 @@
 %body
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
-      .header
+      .header.portfolio-left-part
         %h1.brand-title Portfolio page
-        %h2.brand-tagline Projects that I've been worked on during last year.
+        %h2.brand-tagline Projects that I've been worked on during last years.
         %nav.nav
           %ul.nav-list
             %li.nav-item
               %a.pure-button{:href => "https://rott.org.ua"} Home
             %li.nav-item
               %a.pure-button{:href => "https://rott.org.ua/blog"} Blog
+        .portfolio-contacts
+          %br
+          Available for hire
+          %br
+          = partial 'links'
+
     .content.pure-u-1.pure-u-md-3-4
       %div
         / A wrapper for all the blog posts
