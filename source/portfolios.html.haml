@@ -2,9 +2,9 @@
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
       .header.portfolio-left-part
-        %img.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "/images/rrott-ruby-logo.png",onmouseover: "this.src='/images/rrott-ruby-logo-ukraine.png'", onmouseout: "this.src='/images/rrott-ruby-logo.png'"}
-        %br
-        %br
+        -# %img.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "/images/rrott-ruby-logo.png",onmouseover: "this.src='/images/rrott-ruby-logo-ukraine.png'", onmouseout: "this.src='/images/rrott-ruby-logo.png'"}
+        -# %br
+        -# %br
         %h1.brand-title Portfolio page
         %h2.brand-tagline Projects that I've been worked on during last years
         %nav.nav
@@ -71,6 +71,30 @@
                     Other technologies: SASS
           %section.post
             %header.post-header
+              %h2.post-title Cloud and Shared hosting control panels for IXWebhosting.com
+            .post-description
+              .post-images.pure-g
+                .pure-u-1.pure-u-md-1-2
+                  %a{:href => "/"}
+                    %img.pure-img-responsive{:alt => "Cloud hosting control panel IXWebhosting.com", :src => "/images/portfolio/cloudui/1.png"}/
+                .pure-u-1.pure-u-md-1-2.post-description
+                  %p
+                    Cloud by IX is a Cloud Hosting service created for system and database administrators, developers, resellers, hosting professionals, web architects, designers, and business infrastructure. An entire business can literally be operated within a single Cloud by IX product.
+                  %br
+                    Role: Full-stack developer
+                  %br
+                    Responsebilityes: Integration and adaptation current Cloud Control Panel to a new brand with new design end environment.
+                  %br
+                    Languages:  Ruby, CoffeeScript, JavaScript
+                  %br
+                    Frameworks/Libs: Ruby on Rails, Sinatra, Backbone.js, Marionette.js, jQuery
+                  %br
+                    Testing Frameworks: Rspec, Capybara, Jasmine
+                  %br
+                    Other technologies: Capistrano, SASS, faye, god, warden, cells
+
+          %section.post
+            %header.post-header
               %h2.post-title shlyapa-pay.info and new.shlyapa-pay.info - paymant system for CTF games
             .post-description
               .post-images.pure-g
@@ -92,32 +116,30 @@
                     Testing Frameworks: Rspec, Capybara, Jasmine
                   %br
                     Other technologies: SASS
-
-        .posts
-          %h1.content-subhead Front-end projects
           %section.post
             %header.post-header
-              %h2.post-title Cloud hosting control panel for IXWebhosting.com
+              %h2.post-title mybestdate.xyz - dating service for CTF game
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %a{:href => "/"}
-                    %img.pure-img-responsive{:alt => "Cloud hosting control panel IXWebhosting.com", :src => "/images/portfolio/cloudui/1.png"}/
+                  %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mybestdate/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    Cloud by IX is a Cloud Hosting service created for system and database administrators, developers, resellers, hosting professionals, web architects, designers, and business infrastructure. An entire business can literally be operated within a single Cloud by IX product.
+                    Dating service that allws clients to find each other and to chat paying for the messages. This service had vulnerabilityes to allow visitors to use social engeniryng to fing flags
                   %br
-                    Role: Full-stack developer
+                    Role: Full-stack developer.
                   %br
-                    Responsebilityes: Integration and adaptation current Cloud Control Panel to a new brand with new design end environment.
+                    Responsebilityes:
                   %br
-                    Languages:  Ruby, CoffeeScript, JavaScript
+                    Languages: Ruby, Javascript
                   %br
-                    Frameworks/Libs: Ruby on Rails, Sinatra, Backbone.js, Marionette.js, jQuery
+                    Frameworks/Libs: Padrino, Jquery, Redis
                   %br
                     Testing Frameworks: Rspec, Capybara, Jasmine
                   %br
-                    Other technologies: Capistrano, SASS, faye, god, warden, cells
+                    Other technologies: SASS
+        .posts
+          %h1.content-subhead Front-end projects
           %section.post
             %header.post-header
               %h2.post-title Cloud hosting control panel for CloudByIX.com
@@ -189,32 +211,9 @@
                     Testing Frameworks: Rspec, Capybara, Jasmine
                   %br
                     Other technologies: SASS
-          %h1.content-subhead Web projects
-          %section.post
-            %header.post-header
-              %h2.post-title mybestdate.xyz - dating service for CTF game
-            .post-description
-              .post-images.pure-g
-                .pure-u-1.pure-u-md-1-2
-                  %a{:href => "http://www.flickr.com/photos/uberlife/8915936174/"}
-                    %img.pure-img-responsive{:alt => "Photo of someone working poolside at a resort", :src => "http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg"}/
-                  .post-image-meta
-                    %h3 static file server and api for findmegetme.xyz
-                .pure-u-1.pure-u-md-1-2.post-description
-                  %p
-                    Dating service that allws clients to find each other and to chat paying for the messages. This service had vulnerabilityes to allow visitors to use social engeniryng to fing flags
-                  %br
-                    Role: Full-stack developer.
-                  %br
-                    Responsebilityes:
-                  %br
-                    Languages: Ruby, Javascript
-                  %br
-                    Frameworks/Libs: Padrino, Jquery, Redis
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: SASS
+
+          %h1.content-subhead Mobile applications
+
           %section.post
             %header.post-header
               %h2.post-title Mobile applications
