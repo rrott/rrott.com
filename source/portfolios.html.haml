@@ -40,7 +40,7 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "https://irarott.com"}
-                    %img.pure-img-responsive{:alt => "IraRott.com - online store of knit and crochet patterns", :src => "/images/portfolio/ira-rott-com/1.png"}/
+                    %img.pure-img-responsive{:alt => "IraRott.com - online store of knit and crochet patterns", :src => "/images/portfolio/ira-rott-com/irarott-com.png"}/
 
                 .pure-u-1.pure-u-md-1-2.post-description
                   .pure-u-1
@@ -416,27 +416,45 @@
 
           %section.post
             %header.post-header
-              %h2.post-title FindMeGetMe.xyz iOS application
+              %h2.post-title «FindMeGetMe» mobile application
+              %p.post-meta
+                By
+                %a.post-author{:href => "/"} Roman Rott
+                using
+                %a.post-category{:href => "#"} JavaScript
+                %a.post-category{:href => "#"} React
+                %a.post-category{:href => "#"} React Native
+
+                %a.post-category{:href => "#"} iOS
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %a{:href => "http://www.flickr.com/photos/uberlife/8915936174/"}
-                    %img.pure-img-responsive{:alt => "Photo of someone working poolside at a resort", :src => "http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg"}/
-                  .post-image-meta
-                    %h3 react native applicaton for IOS
+                  %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/findmegetme/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    Application allowed to use api of findmegetme.xyz service to find a girl. This application had hidden flag obfuscated in js bundle that each reac native applicatons have.
+                    «FindMeGetMe» is a fake Dating website with an api for mobile application created for a CTF(Capture The Flag security game) organised for
+                    %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank'}
+                      UISGCon 11(2015) -
+                    Ukrainian InfoSec conference held by Non Government Organization
+                    %b «Ukrainian Information Security Group»
+                    .pure-u-1
+                      This is a mobile iOS and Android multiplatform application that connects to FindMeGetMe.xyz to get information about fake accounts from the api. Application had several functions to hide the server it was connected to obfurscating its JS code.
+                    .pure-u-1
+                      «FindMeGetMe» is not in the Market or App Store due to the nature of applications created for CTF games. It as delivered to gamers using vulnerabilityes in 3rd party applications.
                   %br
-                    Role: Full-Stack developer.
+                  .pure-u-1
+                    %b Role:
+                    Full-Stack developer, second Game-Master
                   %br
-                    Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
-                  %br
-                    Languages: Javascript
-                  %br
-                    Frameworks/Libs: React Native
-                  %br
-                    Other technologies: SASS
+                    %b Responsebilityes:
+                    Creating and releasing app, adding API required for the app.
+                  .pure-u-1
+                    %b Languages:
+                    JavaScript
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    React Native
+
         .posts
           %h2.content-subhead Open Source plugins and libs
           %section.post
