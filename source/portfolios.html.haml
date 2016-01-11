@@ -153,10 +153,18 @@
                     MiddleMan - static site generator.
                   .pure-u-1
                     %b Other technologies:
-                    SASS, Haml, Nginx
+                    SASS, Haml, Nginx, Pure
           %section.post
             %header.post-header
-              %h2.post-title shlyapa-pay.info - paymant system for CTF games
+              %h2.post-title Shlyapa-Pay.info - paymant system for CTF games
+              %p.post-meta
+                By
+                %a.post-author{:href => "/"} Roman Rott
+                using
+                %a.post-category{:href => "#"} Ruby
+                %a.post-category{:href => "#"} Padrino
+                %a.post-category{:href => "#"} JavaScript
+                %a.post-category{:href => "#"} DigitalOcean
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
@@ -164,46 +172,92 @@
                     %img.pure-img-responsive{:alt => "shlyapa-pay.info", :src => "/images/portfolio/shlyapa-pay-info/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    It's a payment system created for a CTF game. It has its own shopping cart and kind of social network created with several pre-defined vulnerabilityes.
+                    «Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag security game) held by
+                    %a{href: "https://berezhasecurity.com/", target: '_blank'}
+                      «Berezha Security».
+                    .pure-u-1
+                      This payment system has its own website, blog, integration with ActiveMerchant as a fake payment processing. It behaves almost the same way as common payment systems like PayPal or WebMoney allowing users to send and receive costs to each others. The project has its own shopping cart and kind of social network created with several pre-defined vulnerabilityes in mind.
+                    .pure-u-1
+                      «Shlyapa-Pay» is offline now due to the nature of applications created for CTF games. It was used in game held during International forum
+                      %a{href: "http://cybersecurity.pp.ua/en/Home", target: '_blank'}
+                        «Cybersecurity: Ukraine and the world»
+                      and then(after fixing all the vulnerabiliryes and adding new ones) was a part of game on the Cybersecurity Olympiad
+                      %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank'}
+                        «HackIT-2015»
                   %br
-                    Role: Full-stack developer.
+                  .pure-u-1
+                    %b Role:
+                    Full-stack developer, Game-Master's assistant during 2 CTF games.
                   %br
-                    Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
-                  %br
-                    Languages:  Ruby, CoffeeScript
-                  %br
-                    Frameworks/Libs: Padrino, Jquery
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: SASS
+                    %b Responsebilityes:
+                    Creating back-end, front-end, integrating free design, admin page, protecting application from all possible security issues except pre-defined ones. Creating ActiveMerchant payment processor that can be integrated into a Shopping Cart.
+                    Was configuring and optimysing web, sql servers, monitoring services and applications during the games.
+                  .pure-u-1
+                    %b Languages:
+                    Ruby, Javascript
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    Padrino, Jquery, Bootstrap
+                  .pure-u-1
+                    %b Other technologies:
+                    SASS, Haml, ActiveRecord, ActiveMerchant, Devise, Upmin, Faker
           %section.post
             %header.post-header
-              %h2.post-title MyBestDate.xyz - dating service for CTF game
+              %h2.post-title MyBestDate.xyz - dating website for a CTF game
+              %p.post-meta
+                By
+                %a.post-author{:href => "/"} Roman Rott
+                using
+                %a.post-category{:href => "#"} Ruby
+                %a.post-category{:href => "#"} Rails
+                %a.post-category{:href => "#"} CoffeeScript
+                %a.post-category{:href => "#"} DigitalOcean
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mybestdate/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    Dating service that allws clients to find each other and to chat paying for the messages. This service had vulnerabilityes to allow visitors to use social engeniryng to fing flags
+                    «MyBestDate» is a fake Dating website created for a CTF(Capture The Flag security game) organised for
+                    %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank'}
+                      UISGCon 11(2015) -
+                    Ukrainian InfoSec conference held by Non Government Organization
+                    %b «Ukrainian Information Security Group»
+                    .pure-u-1
+                      This Dating website had no real users or profiles and was created with several pre-defined vulnerabilityes that allowed players to get flags and proceed with the next part of the game. It has integrated chat and rating systems to allows gamers to use their skills on a system close to real ones.
+                    .pure-u-1
+                      «MyBestDate» is offline now due to the nature of applications created for CTF games.
                   %br
-                    Role: Full-stack developer.
+                  .pure-u-1
+                    %b Role:
+                    Full-stack developer, second Game-Master
                   %br
-                    Responsebilityes:
-                  %br
-                    Languages: Ruby, Javascript
-                  %br
-                    Frameworks/Libs: Padrino, Jquery, Redis
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: SASS
+                    %b Responsebilityes:
+                    Creating back-end, front-end, integrating free design, admin page, protecting application from all possible security issues except pre-defined ones, configuring and optimysing web, sql servers, monitoring services and applications during the games.
+                  .pure-u-1
+                    %b Languages:
+                    Ruby, Javascript
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    Ruby on Rails, Jquery, Bootstrap
+                  .pure-u-1
+                    %b Other technologies:
+                    SASS, Haml, PostgreSQL, Faker, CarrierWave, Devise, Administrate
         .posts
           %h2.content-subhead Front-end projects
           %section.post
             %header.post-header
               %h2.post-title Ordering wizard for Cloud product on CloudByIx.com and IxWebhosting.com
+              %p.post-meta
+                By
+                %a.post-author{:href => "http://ecommerce.com"} Ecommerce.com
+                using
+                %a.post-category{:href => "#"} Ruby
+                %a.post-category{:href => "#"} Sinatra
+                %a.post-category{:href => "#"} JQuery
+                %a.post-category{:href => "#"} Backbone.js
+                %a.post-category{:href => "#"} Marionette.js
+                %a.post-category{:href => "#"} CoffeeScript
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
@@ -211,19 +265,26 @@
                     %img.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/ow/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    IXwebhosting.com, HostExcellence.com and CloudByIX.com are sheraed hosting services. This control panel was created to allow ustomers to manage their hosting, domains, ssl certs and other hosting related products.
+                    IXwebhosting.com and CloudByIX.com are hosting services that provides cloud hosting product to their customers. This project is integrated Single Page Application that allows to pre-configure and bye cloud product without using external payment services.
                   %br
-                    Role: Front-end developer, supperted existent control panel and added new features to it
-                  %br
-                    Responsebilityes: Supporting current  Control Panel to a new brand with new design end environment.
-                  %br
-                    Languages:  Ruby, CoffeeScript, JavaScript
-                  %br
-                    Frameworks/Libs: Ruby on Rails, Backbone.js, jQuery
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: Capistrano, SASS, faye, god, warden, cells
+                  .pure-u-1
+                    %b Role:
+                    Full-stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology.
+                  .pure-u-1
+                    %b Responsebilityes as a part of the team:
+                    Creating UI that integrates SOAP api interface with contol panel and CloudStack that uses JSON. Supporting released features, updating functionaliry as it was required by MVP and Agile methodologyes.
+                  .pure-u-1
+                    %b Languages:
+                    Ruby, CoffeeScript
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    Sinatra, Backbone.js, jQuery, Ruby on Rails
+                  .pure-u-1
+                    %b Testing Frameworks:
+                    Rspec, Capybara, Jasmine, VCR, site_prism.vcr
+                  .pure-u-1
+                    %b Other technologies:
+                    Capistrano, SASS, ROM
 
           %section.post
             %header.post-header
