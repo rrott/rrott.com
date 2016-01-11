@@ -22,7 +22,7 @@
       %div
         / A wrapper for all the blog posts
         .posts
-          %h2.content-subhead Full-stack projects
+          %h2.content-subhead Full-Stack projects
 
           %section.post
             %header.post-header
@@ -55,7 +55,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer.
+                    Full-Stack developer.
                   %br
                     %b Responsebilityes:
                     Creating back-end, front-end, design, admin page, SEO-optimisation, configuring and optimysing web, sql servers, site migration, support current featrures and monitoring website's state.
@@ -102,7 +102,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology.
+                    Full-Stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology.
                   .pure-u-1
                     %b Responsebilityes as a part of the team:
                     Creating UI that integrates current control panel with CloudStack. Design of UI components. Adapting SOAP api interface to JSON and vise versa. Supporting released features, updating functionaliry as it was required by MVP and Agile methodologyes.
@@ -141,7 +141,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer.
+                    Full-Stack developer.
                   %br
                     %b Responsebilityes:
                     Creating back-end, front-end, design, SEO-optimisation, configuring and optimysing web server. Writting Blog articles, promotion.
@@ -187,7 +187,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer, Game-Master's assistant during 2 CTF games.
+                    Full-Stack developer, Game-Master's assistant during 2 CTF games.
                   %br
                     %b Responsebilityes:
                     Creating back-end, front-end, integrating free design, admin page, protecting application from all possible security issues except pre-defined ones. Creating ActiveMerchant payment processor that can be integrated into a Shopping Cart.
@@ -230,7 +230,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer, second Game-Master
+                    Full-Stack developer, second Game-Master
                   %br
                     %b Responsebilityes:
                     Creating back-end, front-end, integrating free design, admin page, protecting application from all possible security issues except pre-defined ones, configuring and optimysing web, sql servers, monitoring services and applications during the games.
@@ -268,7 +268,7 @@
                   %br
                   .pure-u-1
                     %b Role:
-                    Full-stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology.
+                    Full-Stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology.
                   .pure-u-1
                     %b Responsebilityes as a part of the team:
                     Creating UI that integrates SOAP api interface with contol panel and CloudStack that uses JSON. Supporting released features, updating functionaliry as it was required by MVP and Agile methodologyes.
@@ -287,7 +287,7 @@
 
           %section.post
             %header.post-header
-              %h2.post-title Landing pages for IxWebhosting.com and HostExcellence.com brands
+              %h2.post-title Landing pages for IxWebhosting.com and HostExcellence.com
               %p.post-meta
                 By
                 %a.post-author{:href => "http://ecommerce.com"} Ecommerce.com
@@ -300,6 +300,7 @@
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "/"}
                     %img.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/landing/1.png"}/
+
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     IXwebhosting.com and HostExcellence.com are hosting brands that have a lot of products including shared, cloud and VPN hostings, domain and SSL registrations, Site Builers and Design services, etc.
@@ -328,7 +329,14 @@
           %h2.content-subhead Back-end projects
           %section.post
             %header.post-header
-              %h2.post-title SmartVPN.xyz - VPN website and admin system for CTF games.
+              %h2.post-title SmartVPN.xyz - VPN Service for a CTF games.
+              %p.post-meta
+                By
+                %a.post-author{:href => "/"} Roman Rott
+                using
+                %a.post-category{:href => "#"} Ruby
+                %a.post-category{:href => "#"} Rails
+                %a.post-category{:href => "#"} DigitalOcean
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
@@ -336,19 +344,29 @@
                     %img.pure-img-responsive{:alt => "smartvpn.xyz", :src => "/images/portfolio/vpn/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    VPN service with deep integration of shlyapapay.xyz payment service. It was created for anothe CTF game with a new bounch of pre-defined vulnerabilityes. Application had 1 billing system integrated with shlyapap.pay, 3 PN servers located in ... .... ... and one payment service.
-                  %br
-                    Role: Full-stack developer.
-                  %br
-                    Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
-                  %br
-                    Languages: Ruby, CoffeeScript
-                  %br
-                    Frameworks/Libs: Padrino, Jquery
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: SASS
+                    «SmartVPNVPN» is a service created for the Cybersecurity Olympiad
+                    %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank'}
+                      «HackIT-2015»
+                    with deep integration of «ShlyapaPay» payment service that allowed users to get paid VPN server and connect to any other servers in the network.
+                    Service was based on an open-source project with hooks for OpenVPN that I had to rewrite for game's needs. The whole infrastructure had 3 VPN servers located in Amsterdam, Toronto and Singapore, billing system located in New-York and payment system in Frankfurt. Everything was taken as is(with fixing current vulnerabilityes) and back-end was rewritten to add flags and integrations with 3rd party payment systems.
+                  .pure-u-1
+                    %b Role:
+                    Full-Stack developer, Game-Master's assistant.
+                  .pure-u-1
+                    %b Responsebilityes:
+                    Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
+                  .pure-u-1
+                    %b Languages:
+                    Ruby
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    Ruby on Rails
+                  .pure-u-1
+                    %b Testing Frameworks:
+                    Rspec, Capybara
+                  .pure-u-1
+                    %b Other technologies:
+                    Chef
           %section.post
             %header.post-header
               %h2.post-title FindMeGetMe.xyz
@@ -360,7 +378,7 @@
                   %p
                     Dating service that allws clients to find each other and to chat paying for the messages. This service had vulnerabilityes to allow visitors to use social engeniryng to fing flags
                   %br
-                    Role: Full-stack developer.
+                    Role: Full-Stack developer.
                   %br
                     Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
                   %br
@@ -388,7 +406,7 @@
                   %p
                     Application allowed to use api of findmegetme.xyz service to find a girl. This application had hidden flag obfuscated in js bundle that each reac native applicatons have.
                   %br
-                    Role: Full-stack developer.
+                    Role: Full-Stack developer.
                   %br
                     Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
                   %br
