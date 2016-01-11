@@ -371,26 +371,46 @@
                     Chef
           %section.post
             %header.post-header
-              %h2.post-title FindMeGetMe.xyz
+              %h2.post-title FindMeGetMe.xyz - fake dating service.
+              %p.post-meta
+                By
+                %a.post-author{:href => "/"} Roman Rott
+                using
+                %a.post-category{:href => "#"} Ruby
+                %a.post-category{:href => "#"} Sinatra
+                %a.post-category{:href => "#"} DigitalOcean
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/findmegetme/1.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
-                    Dating service that allws clients to find each other and to chat paying for the messages. This service had vulnerabilityes to allow visitors to use social engeniryng to fing flags
+                    «FindMeGetMe» is a fake Dating website with an api for mobile application created for a CTF(Capture The Flag security game) organised for
+                    %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank'}
+                      UISGCon 11(2015) -
+                    Ukrainian InfoSec conference held by Non Government Organization
+                    %b «Ukrainian Information Security Group»
+                    .pure-u-1
+                      This Dating website had no real users or profiles and was created with a pre-defined vulnerabilityes related to Redis. I used a Free design and added vulnerable Rack application that gets photos from Redis service using Sockets technology.
+                    .pure-u-1
+                      «FindMeGetMe» is offline now due to the nature of applications created for CTF games.
                   %br
-                    Role: Full-Stack developer.
+                  .pure-u-1
+                    %b Role:
+                    Full-Stack developer, second Game-Master
                   %br
-                    Responsebilityes: Shopping cart creatted from scratch allows to create new shopping cart. It has integration with ... . I've created the whole project starting from configuring web-server, designing architecture, SEO-optimisation, etc.
-                  %br
-                    Languages: Ruby, Rails, Javascript
-                  %br
-                    Frameworks/Libs: Padrino, Jquery
-                  %br
-                    Testing Frameworks: Rspec, Capybara, Jasmine
-                  %br
-                    Other technologies: SASS
+                    %b Responsebilityes:
+                    Creating back-end, integrating free design, configuring and optimysing web, redis servers, monitoring services and the application during the games. Creating api for an mobile app.
+                  .pure-u-1
+                    %b Languages:
+                    Ruby
+                  .pure-u-1
+                    %b Frameworks/Libs:
+                    Sinatra
+                  .pure-u-1
+                    %b Other technologies:
+                    Redis
+
         .posts
           %h2.content-subhead Mobile applications
 
