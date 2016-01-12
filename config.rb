@@ -39,7 +39,7 @@ page 'feed.xml', layout: false
 page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
-page "/portfolios.html", :layout => :portfolio
+page "/portfolio.html", :layout => :portfolio
 
 #activate :autoprefixer
 activate :directory_indexes
