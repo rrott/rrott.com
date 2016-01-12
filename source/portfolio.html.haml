@@ -2,7 +2,7 @@
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
       .header.portfolio-left-part
-        -# %img.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "/images/rrott-ruby-logo.png",onmouseover: "this.src='/images/rrott-ruby-logo-ukraine.png'", onmouseout: "this.src='/images/rrott-ruby-logo.png'"}
+        -# %img.largeImg.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "/images/rrott-ruby-logo.png",onmouseover: "this.src='/images/rrott-ruby-logo-ukraine.png'", onmouseout: "this.src='/images/rrott-ruby-logo.png'"}
         -# %br
         -# %br
         %h1.brand-title Portfolio page
@@ -39,9 +39,24 @@
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %a{:href => "https://irarott.com"}
-                    %img.pure-img-responsive{:alt => "IraRott.com - online store of knit and crochet patterns", :src => "/images/portfolio/ira-rott-com/irarott-com.png"}/
-
+                  %img.largeImg.pure-img-responsive{:alt => "IraRott.com - online store of knit and crochet patterns", :src => "/images/portfolio/ira-rott-com/irarott-com.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "/images/portfolio/ira-rott-com/irarott-com-thumb.png"}/
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com-pattern.png", :title => "Image 3"}
+                          %img{:src => "/images/portfolio/ira-rott-com/irarott-com-pattern-thumb.png"}/
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com-pattern-admin.png", :title => "Image 4"}
+                          %img{:src => "/images/portfolio/ira-rott-com/irarott-com-pattern-admin-thumb.png"}/
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com-pattern-admin-category.png", :title => "Image 4"}
+                          %img{:src => "/images/portfolio/ira-rott-com/irarott-com-pattern-admin-category-thumb.png"}/
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com-admin-newrelic.png", :title => "Image 5"}
+                          %img{:src => "/images/portfolio/ira-rott-com/irarott-com-admin-newrelic-thumb.png"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   .pure-u-1
                     %b About:
@@ -61,13 +76,13 @@
                     Creating back-end, front-end, design, admin page, SEO-optimisation, configuring and optimysing web, sql servers, site migration, support current featrures and monitoring website's state.
                   .pure-u-1
                     %b Languages:
-                    Ruby, Javascript, CoffeeScript
+                    Ruby 2.1, JavaScript, CoffeeScript
                   .pure-u-1
                     %b Frameworks/Libs:
                     Padrino, Jquery
                   .pure-u-1
                     %b Testing Frameworks:
-                    Rspec, Capybara, Jasmine
+                    Rspec 3.4, Capybara, Jasmine
                   .pure-u-1
                     %b Other technologies:
                     SASS, Haml, ActiveRecord, Carrierwave, Poltergeist, Selenium, JSON, Newrelic, Sprockets, Nginx, PostgreSQL, Capistranio
@@ -90,9 +105,21 @@
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %a{:href => "/"}
-                    %img.pure-img-responsive{:alt => "Cloud hosting control panel IXWebhosting.com", :src => "/images/portfolio/cloudui/cloud-ui.png"}/
-
+                  %img.largeImg.pure-img-responsive{:alt => "Cloud hosting control panel IXWebhosting.com", :src => "/images/portfolio/cloudui/cloud-ui.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   .pure-u-1
                     %b About:
@@ -108,13 +135,13 @@
                     Creating UI that integrates current control panel with CloudStack. Design of UI components. Adapting SOAP api interface to JSON and vise versa. Supporting released features, updating functionaliry as it was required by MVP and Agile methodologyes.
                   .pure-u-1
                     %b Languages:
-                    Ruby, CoffeeScript
+                    Ruby 1.9.7 and 2.1.3, CoffeeScript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Sinatra, Backbone.js, Marionette.js, jQuery, Ruby on Rails
+                    Ruby on Rails 4.0, Sinatra, Backbone.js 1.1, Marionette.js, jQuery
                   .pure-u-1
                     %b Testing Frameworks:
-                    Rspec, Capybara, Jasmine, VCR, site_prism.vcr
+                    Rspec 3.2, Capybara, Jasmine, VCR, site_prism.vcr
                   .pure-u-1
                     %b Other technologies:
                     Capistrano, SASS, ROM, Guard, Node, faye
@@ -133,9 +160,22 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "https://rott.org.ua", :target => 'blank'}
-                    %img.pure-img-responsive{:alt => "rott.org.ua website of Roman Rott, rrott", :src => "/images/portfolio/website/rott-org-ua.png"}/
-
-                .pure-u-1.pure-u-md-1-2.post-description
+                    %img.largeImg.pure-img-responsive{:alt => "rott.org.ua website of Roman Rott, rrott", :src => "/images/portfolio/website/rott-org-ua.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
+                  .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     My own website with blog and portfolio. Wibsite includes basic information about myself, my projects, my contact information and blog post related to web-development and security researches.
                   %br
@@ -147,7 +187,7 @@
                     Creating back-end, front-end, design, SEO-optimisation, configuring and optimysing web server. Writting Blog articles, promotion.
                   .pure-u-1
                     %b Languages:
-                    Ruby, CoffeeScript
+                    Ruby 2.2, CoffeeScript
                   .pure-u-1
                     %b Frameworks/Libs:
                     MiddleMan - static site generator.
@@ -169,7 +209,21 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "/#"}
-                    %img.pure-img-responsive{:alt => "shlyapa-pay.info", :src => "/images/portfolio/shlyapa-pay-info/1.png"}/
+                    %img.largeImg.pure-img-responsive{:alt => "shlyapa-pay.info", :src => "/images/portfolio/shlyapa-pay-info/1.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     «Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag security game) held by
@@ -194,7 +248,7 @@
                     Was configuring and optimysing web, sql servers, monitoring services and applications during the games.
                   .pure-u-1
                     %b Languages:
-                    Ruby, Javascript
+                    Ruby 2.2, Javascript
                   .pure-u-1
                     %b Frameworks/Libs:
                     Padrino, Jquery, Bootstrap
@@ -215,7 +269,21 @@
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mybestdate/my-best-dates-ctf.png"}/
+                  %img.largeImg.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mybestdate/my-best-dates-ctf.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     «MyBestDate» is a fake Dating website created for a CTF(Capture The Flag security game) organised for
@@ -236,10 +304,10 @@
                     Creating back-end, front-end, integrating free design, admin page, protecting application from all possible security issues except pre-defined ones, configuring and optimysing web, sql servers, monitoring services and applications during the games.
                   .pure-u-1
                     %b Languages:
-                    Ruby, Javascript
+                    Ruby 2.2, Javascript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Ruby on Rails, Jquery, Bootstrap
+                    Ruby on Rails 4.2, Jquery, Bootstrap
                   .pure-u-1
                     %b Other technologies:
                     SASS, Haml, PostgreSQL, Faker, CarrierWave, Devise, Administrate
@@ -261,7 +329,21 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "/"}
-                    %img.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/ow/ordering-wizard.png"}/
+                    %img.largeImg.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/ow/ordering-wizard.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     IXwebhosting.com and CloudByIX.com are hosting services that provides cloud hosting product to their customers. This project is integrated Single Page Application that allows to pre-configure and bye cloud product without using external payment services.
@@ -274,13 +356,13 @@
                     Creating UI that integrates SOAP api interface with contol panel and CloudStack that uses JSON. Supporting released features, updating functionaliry as it was required by MVP and Agile methodologyes.
                   .pure-u-1
                     %b Languages:
-                    Ruby, CoffeeScript
+                    Ruby 2.1.3, CoffeeScript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Sinatra, Backbone.js, jQuery, Ruby on Rails
+                    Sinatra, Backbone.js, jQuery, Ruby on Rails 4.0
                   .pure-u-1
                     %b Testing Frameworks:
-                    Rspec, Capybara, Jasmine, VCR, site_prism.vcr
+                    Rspec 3.2, Capybara, Jasmine, VCR, site_prism.vcr
                   .pure-u-1
                     %b Other technologies:
                     Capistrano, SASS, ROM
@@ -299,8 +381,21 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "/"}
-                    %img.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/landing/hacker-shield.png"}/
-
+                    %img.largeImg.pure-img-responsive{:alt => "Cloud hosting control panel for CloudByIX.com", :src => "/images/portfolio/landing/hacker-shield.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     IXwebhosting.com and HostExcellence.com are hosting brands that have a lot of products including shared, cloud and VPN hostings, domain and SSL registrations, Site Builers and Design services, etc.
@@ -313,17 +408,16 @@
                     Integrating design with current API and Hosting Control panel, adding code needed for One-Click purchase tool.
                   .pure-u-1
                     %b Languages:
-                    Ruby, CoffeeScript
+                    Ruby 2.1.3, CoffeeScript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Ruby on Rails, jQuery
+                    Ruby on Rails 4.0, jQuery
                   .pure-u-1
                     %b Testing Frameworks:
-                    Rspec, Capybara, Jasmine
+                    Rspec 3.2, Capybara, Jasmine
                   .pure-u-1
                     %b Other technologies:
                     SASS, faye, JSON
-
 
         .posts
           %h2.content-subhead Back-end projects
@@ -341,7 +435,21 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "/#"}
-                    %img.pure-img-responsive{:alt => "smartvpn.xyz", :src => "/images/portfolio/vpn/1.png"}/
+                    %img.largeImg.pure-img-responsive{:alt => "smartvpn.xyz", :src => "/images/portfolio/vpn/1.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     «SmartVPN» is a service created for the Cybersecurity Olympiad
@@ -359,10 +467,10 @@
                     Adding and configuring VPN, SQL and web servers using Chef. Integrating fake payment system with the services, adding vulnerabilityes and fixing existent ones.
                   .pure-u-1
                     %b Languages:
-                    Ruby
+                    Ruby 2.1
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Ruby on Rails
+                    Ruby on Rails 4.2
                   .pure-u-1
                     %b Testing Frameworks:
                     Rspec, Capybara
@@ -382,7 +490,21 @@
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/findmegetme/find-me-get-me-ctf.png"}/
+                  %img.largeImg.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/findmegetme/find-me-get-me-ctf.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     «FindMeGetMe» is a fake Dating website with an api for mobile application created for a CTF(Capture The Flag security game) organised for
@@ -403,7 +525,7 @@
                     Creating back-end, integrating free design, configuring and optimysing web, redis servers, monitoring services and the application during the games. Creating api for an mobile app.
                   .pure-u-1
                     %b Languages:
-                    Ruby
+                    Ruby 2.2
                   .pure-u-1
                     %b Frameworks/Libs:
                     Sinatra
@@ -428,7 +550,21 @@
             .post-description
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
-                  %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mobile/iOS-app.png"}/
+                  %img.largeImg.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/uisg11/mobile/iOS-app.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                 .pure-u-1.pure-u-md-1-2.post-description
                   %p
                     «FindMeGetMe» is a fake Dating website with an api for mobile application created for a CTF(Capture The Flag security game) organised for
@@ -452,7 +588,7 @@
                     JavaScript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    React Native
+                    React Native 0.15
 
         .posts
           %h2.content-subhead Open Source plugins and libs
@@ -471,7 +607,21 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "http://coffee.rott.org.ua/"}
-                    %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-node.png"}/
+                    %img.largeImg.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-node.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
                   .post-image-meta
                     %br
                     * Project's homepage was generated by GitHub Pages
@@ -486,10 +636,10 @@
                     CoffeeScript, JavaScript
                   .pure-u-1
                     %b Frameworks/Libs:
-                    Node.js
+                    Node.js 0.10.15
                   .pure-u-1
                     %b Other technologies:
-                    Grunt, Sprockets, Snockets
+                    Grunt 0.4, Sprockets, Snockets
           %section.post
             %header.post-header
               #asana-god-contact
@@ -504,7 +654,22 @@
               .post-images.pure-g
                 .pure-u-1.pure-u-md-1-2
                   %a{:href => "http://asana.rott.org.ua/"}
-                    %img.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/asana-god-contact/asana-god-contact-gem.png"}/
+                    %img.largeImg.pure-img-responsive{:alt => "findmegetme", :src => "/images/portfolio/asana-god-contact/asana-god-contact-gem.png"}/
+                  #thumbs
+                    %ul
+                      %li
+                        %a{:href => "/images/portfolio/ira-rott-com/irarott-com.png", :title => "Image 2"}
+                          %img{:src => "https://js.cx/gallery/img2-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img3-lg.jpg", :title => "Image 3"}
+                          %img{:src => "https://js.cx/gallery/img3-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img4-lg.jpg", :title => "Image 4"}
+                          %img{:src => "https://js.cx/gallery/img4-thumb.jpg"}/
+                      %li
+                        %a{:href => "https://js.cx/gallery/img5-lg.jpg", :title => "Image 5"}
+                          %img{:src => "https://js.cx/gallery/img5-thumb.jpg"}/
+
                   .post-image-meta
                     %br
                     * Project's homepage was generated by GitHub Pages
@@ -520,7 +685,7 @@
                     This OSS ruby gem allows to send notification to asana in case godrb raises an issue with your ruby app.
                   .pure-u-1
                     %b Languages:
-                    Ruby
+                    Ruby 2.1
                   .pure-u-1
                     %b Testing Frameworks:
                     Mocha, Minitest
