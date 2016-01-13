@@ -14,7 +14,32 @@ a
 h3
   font-weight: 100
 
+.tag-cloud
+  ul
+    overflow: hidden
+
+  li
+    display: inline-block
+  li::after
+    content: " | "
+
+
 /* LAYOUT CSS
+
+#preview
+  background: rgba(0, 0, 0, 0.8)
+  width: 100%
+  height: 100%
+  z-index: 10
+  cursor: se-resize
+  display: none
+  overflow: hidden
+  position: absolute
+  text-align: center
+  img
+    max-height: 95%
+    width: auto
+    z-index: 11
 
 #thumbs a
   padding: 3px
@@ -83,9 +108,9 @@ h3
 .content-subhead
   text-transform: uppercase
   color: #aaa
-  border-bottom: 1px solid #eee
+  border-bottom: 1px solid #1f8dd6
   padding: 0.4em 0
-  font-size: 80%
+  font-size: 110%
   font-weight: 500
   letter-spacing: 0.1em
 
