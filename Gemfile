@@ -20,7 +20,6 @@ gem "sitemap_generator"
 
 gem "middleman-disqus"
 gem "middleman-syntax"
-# gem 'middleman-breadcrumbs'
 gem 'middleman-search'
 
 gem 'middleman-meta-tags'

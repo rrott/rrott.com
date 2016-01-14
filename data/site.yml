@@ -2,6 +2,10 @@ language: 'en-us'
 url: 'https://rott.org.ua'
 human_url: 'rott.org.ua'
 name: 'rrott'
+twitter_handle: '@Roman_Rott'
+title: "Roman Rott - Full-stack Ruby developer"
+description: "Roman Rott - Full-stack Ruby and JavaScript developer"
 
-logo_image_name: 'logo-big.png'
-logo_image_path: 'https://rott.org.ua/logo-large.png'
+logo_image_name: 'rrott-ruby-logo.png'
+logo_image_path: 'https://rott.org.ua/rrott-ruby-logo.png'
+image: 'https://rott.org.ua/rrott-ruby-logo.png'

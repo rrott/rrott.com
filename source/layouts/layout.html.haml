@@ -2,15 +2,51 @@
 
 %html{lang: 'en'}
   %head
-    %title #{data.page.title || "Roman Rott - full stack ruby developer"}
+    %title=data.site.title
     %meta(http-equiv="content-type" content="text/html" charset="utf-8")
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
-    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
-    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
+    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" media="(device-height: 568px)")
     %meta(name='robots' content='index,follow')
     %meta(name='apple-mobile-web-app-capable' content='yes')
     %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+    %meta(content='True' name='HandheldFriendly')
+    %meta(content='320' name='MobileOptimized')
+
+    %meta(content='Roman Rott' name='author')
     %link(type="text/plain" rel="author" href="/humans.txt")
+
+    %link{:href => "/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "/favicon-194x194.png", :rel => "icon", :sizes => "194x194", :type => "image/png"}/
+    %link{:href => "/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+    %link{:href => "/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %link{:href => "/manifest.json", :rel => "manifest"}/
+    %link{:color => "#5bbad5", :href => "/safari-pinned-tab.svg", :rel => "mask-icon"}/
+    %meta{:content => "#da532c", :name => "msapplication-TileColor"}/
+    %meta{:content => "/mstile-144x144.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "#E0115F", :name => "theme-color"}/
+
+    // Twitter
+    %meta{name: 'twitter:card',         content: 'summary'}
+    %meta{name: "twitter:site",         content: data.site.twitter_handle}
+    %meta{name: 'twitter:title',        content: data.site.title}
+    %meta{name: 'twitter:description',  content: data.site.description}
+    %meta{name: 'twitter:creator',      content: data.site.twitter_handle}
+    %meta{name: 'twitter:image:src',    content: data.site.image}
+    // Open Graph General (Facebook & Pinterest)
+    %meta{property: 'og:url',           content: current_page_url}
+    %meta{property: 'og:title',         content: data.site.title}
+    %meta{property: 'og:description',   content: data.site.description}
+    %meta{property: 'og:site_name',     content: data.site.title}
+    %meta{property: 'og:image',         content: data.site.image}
+    %meta{property: 'og:app_id',        content: '952268334783316'}
+    %meta{property: 'og:type',          content: 'website'}
+    %meta{property: "fb:admins",        content: "1440136372"}
+    // Google Plus
+    %meta{itemprop: 'name',             content: data.site.title}
+    %meta{itemprop: 'description',      content: data.site.description}
+    %meta{itemprop: 'image',            content: data.site.image}
+    %link(href='https://plus.google.com/u/0/+RomanRott' rel='publisher')
+
     = favicon_tag 'images/favicon.ico'
     = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
     = stylesheet_link_tag  'grids-min'

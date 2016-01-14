@@ -1,8 +1,9 @@
 /* TEAM */
 Developer: Roman Rott
 Site: https://rott.org.ua
-Twitter: @roman_rott
+Twitter: @Roman_Rott
 Location: Ukraine
+Blog: https://rott.org.ua/blog
 
 /* THANKS */
 Middleman: http://middlemanapp.com
