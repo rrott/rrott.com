@@ -3,9 +3,15 @@ url: 'https://rott.org.ua'
 human_url: 'rott.org.ua'
 name: 'rrott'
 twitter_handle: '@Roman_Rott'
-title: "Roman Rott - Full-stack Ruby developer"
-description: "Roman Rott - Full-stack Ruby and JavaScript developer"
+title: "Roman Rott - Full-stack Ruby developer, security researcher"
+description: "Roman Rott - Full-stack Ruby and JavaScript developer, security researcher"
 
 logo_image_name: 'rrott-ruby-logo.png'
 logo_image_path: 'https://rott.org.ua/rrott-ruby-logo.png'
 image: 'https://rott.org.ua/rrott-ruby-logo.png'
+
+keywords: 'rrott, roman rott, rott, javascript developer, web developer, full stack developer, front-end, back-end, ruby developer, security researcher, ruby rails, working remotely, front end developer, rails security, web application security, white hat hacker, web application, web applications, ethical hacking'
+
+keywords_portfolio: 'web developer portfolio, hacking games, hacking game,rrott, roman rott, rott, javascript developer, web developer, full stack developer, front-end, back-end, ruby developer, security researcher, ruby rails, working remotely, front end developer, rails security, web application security, white hat hacker, web application, web applications, ethical hacking'
+
+keywords_blog: 'security essentials, bug bounty, research, rails security, how to hack, hacking games, hacking game, rrott, roman rott, rott, javascript developer, web developer, full stack developer, front-end, back-end, ruby developer, security researcher, ruby rails, working remotely, front end developer, rails security, web application security, white hat hacker, web application, web applications, ethical hacking'
