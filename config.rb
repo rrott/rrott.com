@@ -59,7 +59,7 @@ configure :build do
   activate :cache_buster
   activate :relative_assets
   activate :smusher
-  activate :asset_hash
+  #activate :asset_hash
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
   ],
@@ -75,18 +75,18 @@ activate :search_engine_sitemap
 
 activate :i18n
 activate :build_info
-activate :spellcheck
+#activate :spellcheck
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax, :line_numbers => true
 
-activate :imageoptim do |options|
-  # Use a build manifest to prevent re-compressing images between builds
-  options.manifest = true
-  options.image_extensions = %w(.png .jpg .gif .svg)
-end
+# activate :imageoptim do |options|
+#   # Use a build manifest to prevent re-compressing images between builds
+#   options.manifest = true
+#   options.image_extensions = %w(.png .jpg .gif .svg)
+# end
 
 activate :blog do |blog|
   # set options on blog
