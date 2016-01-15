@@ -88,18 +88,18 @@ activate :syntax, :line_numbers => true
 #   options.image_extensions = %w(.png .jpg .gif .svg)
 # end
 
-activate :blog do |blog|
-  # set options on blog
-  #blog.calendar_template
-  blog.layout = "blog"
-  blog.prefix = "blog"
-  blog.permalink = "{lang}/{title}.html"
-  blog.paginate = true
-  blog.page_link = "p{num}"
-  blog.per_page = 10
-  blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
-end
+# activate :blog do |blog|
+#   # set options on blog
+#   #blog.calendar_template
+#   blog.layout = "blog"
+#   blog.prefix = "blog"
+#   blog.permalink = "{lang}/{title}.html"
+#   blog.paginate = true
+#   blog.page_link = "p{num}"
+#   blog.per_page = 10
+#   blog.summary_separator = /(READMORE)/
+#   blog.summary_length = 250
+# end
 
 activate :search do |search|
   search.resources = ['blog/', 'index.html', 'portfolio/']
