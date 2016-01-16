@@ -3,9 +3,7 @@
 %html{lang: 'en'}
   %head
     %title=data.site.title
-    = stylesheet_link_tag  'blog'
-    = stylesheet_link_tag  'grids-min'
-    = stylesheet_link_tag  'grids-responsive-min'
+    = stylesheet_link_tag  'portfolio-blog'
 
     = partial 'meta'
     %link(rel="prerender" href="https://irarott.com")
@@ -14,6 +12,9 @@
 
 
     = javascript_include_tag 'image-preview', async: true
+    = stylesheet_link_tag  'grids-min'
+    = stylesheet_link_tag  'grids-responsive-min'
+
     - if build?
       -# Google Analytics
       :javascript

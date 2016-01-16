@@ -33,6 +33,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :ga_tracking_id, "UA-111111111-11"
+set :relative_links, true
 
 page 'sitemap.xml', layout: false
 page 'feed.xml', layout: false
