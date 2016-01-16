@@ -50,6 +50,7 @@ GEM
     hike (1.2.3)
     hooks (0.4.1)
       uber (~> 0.0.14)
+    htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     httpclient (2.7.1)
     i18n (0.7.0)
@@ -115,6 +116,9 @@ GEM
       rack-livereload (~> 0.3.15)
     middleman-meta-tags (0.1.3)
       middleman-core (>= 3.0.0)
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     middleman-pry (0.0.4)
       middleman-core (~> 3.2)
       pry (~> 0.9)
@@ -217,6 +221,7 @@ DEPENDENCIES
   middleman-imageoptim
   middleman-livereload
   middleman-meta-tags
+  middleman-minify-html
   middleman-pry
   middleman-robots
   middleman-search
