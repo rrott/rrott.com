@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rrott-webfont';
-  src: url('../fonts/rrott-webfont.eot?46215945');
-  src: url('../fonts/rrott-webfont.eot?46215945#iefix') format('embedded-opentype'),
-       url('../fonts/rrott-webfont.woff?46215945') format('woff'),
-       url('../fonts/rrott-webfont.ttf?46215945') format('truetype'),
-       url('../fonts/rrott-webfont.svg?46215945#rrott-webfont') format('svg');
+  src: url('../fonts/rrott-webfont.eot');
+  src: url('../fonts/rrott-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/rrott-webfont.woff') format('woff'),
+       url('../fonts/rrott-webfont.ttf') format('truetype'),
+       url('../fonts/rrott-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rrott-webfont';
-    src: url('../fonts/rrott-webfont.svg?46215945#rrott-webfont') format('svg');
+    src: url('../fonts/rrott-webfont.svg') format('svg');
   }
 }
 
