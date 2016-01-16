@@ -5,7 +5,6 @@
     %title=data.site.title
     = partial 'meta'
     %link(rel="prerender" href="https://rott.org.ua/portfolio")
-    -# %script{:src => "http://edgeportal.blob.core.windows.net/demos/inspector.js"}
 
     = yield
 
@@ -14,10 +13,30 @@
     = stylesheet_link_tag  'application'
     = stylesheet_link_tag  'grids-min'
     = stylesheet_link_tag  'grids-responsive-min'
+    %script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
     - if build?
       -# Google Analytics
       :javascript
-        var _gaq=[['_setAccount','UA-41765849-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-41765849-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      %script{:type => "application/ld+json"}
+        :cdata
+          {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "email": "mailto:roman.rott@gmail.com",
+            "image": "https://rott.org.ua/images/rrott-ruby-logo.png",
+            "jobTitle": "Full-Stack ruby developer",
+            "name": "Roman Rott",
+            "familyName": "Rott",
+            "givenName": "Roman",
+            "brand": "rrott",
+            "url": "https://rott.org.ua",
+            "nationality": "Ukraine"
+          }

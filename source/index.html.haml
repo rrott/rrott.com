@@ -2,9 +2,9 @@
   .main{style: 'background: #1f8dd6;'}
     .splash-container
       .splash
-        %h1.splash-head Roman Rott
+        .splash-head{itemprop: "name"} Roman Rott
 
-  .content-wrapper
+  .content-wrapper{itemscope: true, itemtype: "http://schema.org/Person"}
     .content.content-head
       .links.is-center
         = partial 'links'
@@ -13,14 +13,16 @@
       .pure-g
         .l-box.pure-u-1
           .about.pure-u-1
-            %h2.is-center.content-subhead
-              Hello, my name is Roman Rott!
+            %h1.is-center.content-subhead
+              Hello, my name is
+              %span{itemprop: "name"}Roman Rott
+              !
             .pure-g
               %p.pure-u-1
                 I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security auditing of web applications.
                 I specialise in developing secure and optimised websites as well as in testing websites for security vulnerabilities.
               %p.pure-u-1
-                %b CoffeeScript and Ruby
+                %strong CoffeeScript and Ruby
                 are among my favorites when it comes to following TDD and OOP best practices.
                 I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps.
               %p.pure-u-1
@@ -47,7 +49,7 @@
             -#       %a{href: "#{article.url}"} Read more
 
     .ribbon.l-box-lrg
-      %h3.content-subhead.is-center
+      %h2.content-subhead.is-center
         Web Developer
       .pure-g
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
@@ -60,11 +62,11 @@
           %p All of these sites were developed using Ruby, CoffeeScript, Javascript languages and Backbone, Sinatra, Padrino, Ruby on Rails frameworks. Some of them experience a large amount of traffic on daily basis.
           %p My web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.
 
-          %h4
+          %h3
             %a{href: "/portfolio/"}
               Check out my portfolio
     .content.infosec
-      %h3.content-subhead.is-center.pure-u-1
+      %h2.content-subhead.is-center.pure-u-1
         Security Researcher
       .pure-g
         .pure-u-1.pure-u-md-3-5.infosec-text
@@ -79,7 +81,7 @@
               %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank'}
                 UISGCon 11(2015) -
               Ukrainian InfoSec conference held by Non Government Organisation
-              %b «Ukrainian Information Security Group»
+              %strong «Ukrainian Information Security Group»
             %li
               The Cybersecurity Olympiad
               %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank'}
@@ -96,7 +98,7 @@
           %img.pure-img-responsive.logo{alt: "white hat hacker", src: "images/roman-rott-in-white-hat.png", width: "418", heigh: '480',onmouseover: "this.src='images/roman-rott-in-black-hat.png'", onmouseout: "this.src='images/roman-rott-in-white-hat.png'"}
 
     .ribbon.l-box-lrg.pure-g
-      %h3.content-subhead.is-center.pure-u-1 Community development
+      %h2.content-subhead.is-center.pure-u-1 Community development
       .pure-g
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
           %img.pure-img-responsive.logo{alt: "rrott's Ukrainian ruby logo", src: "images/open-source-logo.png", heigh: '177', width: '183'}
@@ -115,16 +117,16 @@
           %h5.content-subhead Contributed to open source projects:
           %ul
             %li
-              %a{href: "//github.com/rack/rack/pull/992", target: '_blank'}
+              %a{href: "https://github.com/rack/rack/pull/992", target: '_blank'}
                 rack/rack
               ,
-              %a{href: "//github.com/jashkenas/backbone/pull/3909", target: '_blank'}
+              %a{href: "https://github.com/jashkenas/backbone/pull/3909", target: '_blank'}
                 jashkenas/backbone
               ,
-              %a{href: "//github.com/floere/phony/pull/180", target: '_blank'}
+              %a{href: "https://github.com/floere/phony/pull/180", target: '_blank'}
                 floere/phony
               ,
-              %a{href: "//github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank'}
+              %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank'}
                 dnesteryuk/site_prism.vcr
           %h5.content-subhead Developed local community:
           %ul

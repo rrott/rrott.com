@@ -6,6 +6,7 @@ xml.urlset 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
       xml.lastmod Date.today.to_time.iso8601
       xml.changefreq page.data.changefreq || 'weekly'
       xml.priority page.data.priority || '0.5'
+      xml.img page_url(page)
     end
   end
 end
