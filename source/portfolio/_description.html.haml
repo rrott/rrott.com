@@ -1,0 +1,35 @@
+.pure-u-1
+  - project.about.each do |about|
+    .pure-u-1
+      #{about}
+%br
+%br
+.pure-u-1
+  %strong Role:
+  #{project.role}
+%br
+  %strong Responsibilities:
+  #{project.responsibilities}
+.pure-u-1
+  %strong Languages:
+  #{project.languages}
+.pure-u-1
+  %strong Frameworks/Libs:
+  #{project.libs}
+- if project.testing
+  .pure-u-1
+    %strong Testing Frameworks:
+    #{project.testing}
+- if project.other
+  .pure-u-1
+    %strong Other technologies:
+    #{project.other}
+.pure-u-1
+  %strong Status:
+  #{project.status.message}
+.pure-u-1
+  - if project.status.urls
+    - project.status.urls.each do |url|
+      #{url.pre}
+      %a{href: url.link, targer: '_blank', nofollow: url.nofollow, title: url.description} #{url.short}
+      %br

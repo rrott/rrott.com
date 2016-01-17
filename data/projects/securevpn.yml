@@ -1,0 +1,37 @@
+title: "SecureVPN.xyz - VPN Service for a CTF games."
+by:
+  name: "Roman Rott"
+  url: "https://rott.org.ua/portfolio/roman-rott"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "DigitalOcean"
+images:
+  -
+    url: "../images/portfolio/hackit/secure-vpn-admin-payment"
+    title: "SecureVpn - Payments for VPN"
+  -
+    url: "../images/portfolio/hackit/secure-vpn-admin-transactions"
+    title: "SecureVpn, VPN admin page"
+  -
+    url: "../images/portfolio/hackit/secure-vpn-admin-traffic"
+    title: "SecureVpn - VPN traffic on admin page"
+  -
+    url: "../images/portfolio/hackit/secure-vpn-servers"
+    title: "SecureVpn - List of VPN servers"
+  -
+    url: "../images/portfolio/hackit/secure-vpn-shlyapa"
+    title: "SecureVpn - Payment system for VPN"
+  -
+    url: "../images/portfolio/hackit/secure-vpn-admin-payment"
+    title: "SecureVpn - Payments on PN admin page"
+about:
+  - "«SecureVPN» is a service created for the Cybersecurity Olympiad <a href='http://www.hackit-ukraine.com/#content' target='_blank'> «HackIT-2015» </a> with deep integration of «ShlyapaPay» payment service that allowed users to get paid VPN server and connect to any other servers in the network."
+  - "Service was based on an open-source project with hooks for OpenVPN that I had to rewrite for game's needs. The whole infrastructure had 3 VPN servers located in Amsterdam and Singapore, billing system located in Toronto and payment system in Singapore. Back-end was rewritten to add flags and integrate the product with 3rd party payment systems."
+role: "Full-Stack developer, Game-Master's assistant."
+responsibilities: "Adding and configuring VPN, SQL and web servers using Chef. Integrating fake payment system with the services, adding vulnerabilities and fixing existent ones."
+languages: "Ruby 2.1"
+libs: "Ruby on Rails 4.2"
+other: "Chef"
+status:
+  message: "«SecureVPN» is offline now due to the nature of applications created for CTF games."

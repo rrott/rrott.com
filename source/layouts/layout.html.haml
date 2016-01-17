@@ -3,18 +3,18 @@
 %html{lang: 'en'}
   %head
     %title=data.site.title
-    = stylesheet_link_tag  'grids-min'
-    = stylesheet_link_tag  'grids-responsive-min'
+    = stylesheet_link_tag  'application'
     = partial 'meta'
     %link(rel="prerender" href="https://rott.org.ua/portfolio")
 
     = yield
 
     -# Javascripts
-    = javascript_include_tag 'application', async: true
-    = stylesheet_link_tag  'application'
+    -#= javascript_include_tag 'application', async: true
+    = stylesheet_link_tag  'grids-min'
+    = stylesheet_link_tag  'grids-responsive-min'
 
-    %script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
+    #%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
     - if build?
       -# Google Analytics
       :javascript

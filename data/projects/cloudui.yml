@@ -1,0 +1,64 @@
+title: "Cloud Hosting control panel"
+by:
+  name: "Ecommerce.com"
+  url: "http://ecommerce.com"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "Sinatra"
+  - "Jquery"
+  - "CoffeeScript"
+  - "Backbone"
+  - "Marionette"
+images:
+  -
+    url: "../images/portfolio/cloudui/cloudui-usage"
+    title: "Cloud hosting control panel. Usage"
+  -
+    url: "../images/portfolio/cloudui/cloudui-dashboard"
+    title: "Cloud hosting control panel. Dashboard"
+  -
+    url: "../images/portfolio/cloudui/cloudui-server"
+    title: "Cloud hosting control panel. Add servers"
+  -
+    url: "../images/portfolio/cloudui/cloudui-servers"
+    title: "Cloud hosting control panel. Server list"
+  -
+    url: "../images/portfolio/cloudui/cloudui-billing"
+    title: "Cloud hosting control panel. Billing page"
+  -
+    url: "../images/portfolio/cloudui/cloudui-isos"
+    title: "Cloud hosting control panel. List of Isos"
+  -
+    url: "../images/portfolio/cloudui/cloudui-events"
+    title: "Cloud hosting control panel. Events list"
+  -
+    url: "../images/portfolio/cloudui/cloudui-ips"
+    title: "List of ips"
+  -
+    url: "../images/portfolio/cloudui/cloudui-server-launch"
+    title: "Launch server pop-up"
+
+
+about:
+  - "Cloud by IX is a Cloud Hosting service created for system and database administrators, developers, resellers, hosting professionals and business infrastructure. An entire business can literally be operated within a single Cloud by IX product. Service is integrated into IXWebhosting.com and CloudByIX.com hosting brands."
+  - "Current project is a Single Page Application that integrates CloudStacks into current manage panel of Ecommerce.com's brands."
+role: "Full-Stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology."
+responsibilities: "As a part of the team: Creating UI that integrates current control panel with CloudStack. Design of some UI components. Adapting SOAP API interface to JSON and vise verse. Supporting released features, updating functionality as it was required by MVP and Agile methodologies."
+languages: "Ruby 1.9.7 and 2.1.3, CoffeeScript"
+libs: "Ruby on Rails 4.0, Sinatra, Backbone.js 1.1, Marionette.js, jQuery"
+testing: "Rspec 3.2, Capybara, Jasmine, VCR, site_prism.vcr"
+other: "Capistrano, SASS, ROM, Guard, Node, Faye"
+status:
+  message: "online and available inside of control panels of 2 Cloud Hosting products: CloudByIX and IXwebhosting."
+  urls:
+    -
+      link:  "https://my.cloudbyix.com/login"
+      short: "https://my.cloudbyix.com"
+      description: "cloudbyix"
+      nofollow: false
+    -
+      link:  "https://my.ixwebhosting.com/login"
+      short: "https://my.ixwebhosting.com"
+      description: "ixwebhosting"
+      nofollow: false

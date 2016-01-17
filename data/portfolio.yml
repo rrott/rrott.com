@@ -1,0 +1,139 @@
+current:
+  -
+    title: "Full-Stack projects"
+    id_name: "full-stack"
+    url: "/portfolio/full-stack"
+    projects:
+      -
+        name: "irarott"
+        seo: true
+      -
+        name: 'cloudui'
+        seo: true
+      -
+        name: "rott_org_ua"
+        seo: true
+      -
+        name: "shlyapa"
+        seo: false
+      -
+        name: "my_best_dates"
+        seo: false
+  -
+    title: "Front-End projects"
+    id_name: "front-end"
+    url: "/portfolio/front-end"
+    projects:
+      -
+        name: "ow"
+        seo: false
+      -
+        name: "landing_ix"
+        seo: true
+  -
+    title: "Back-End projects"
+    id_name: "back-end"
+    url: "/portfolio/back-end"
+    projects:
+      -
+        name: "securevpn"
+        seo: true
+      -
+        name: 'findmegetme'
+        seo: true
+  -
+    title: "Mobile Applications"
+    id_name: "mobile"
+    url: "/portfolio/mobile"
+    projects:
+      -
+        name: "mobile_findmegetme"
+        seo: 'false'
+  -
+    title: "OPEN SOURCE PLUGINS AND LIBS"
+    id: "oss"
+    url: "/portfolio/open-source"
+    projects:
+      -
+        name: "grunt_coffee_chain"
+        seo: false
+      -
+        name: "asana_god_contact"
+        seo: false
+# ruby:
+#   - "irarott"
+#   - "cloudui"
+#   - "rott_org_ua"
+#   - "shlyapa"
+#   - "my_best_dates"
+#   - "ow"
+#   - "landing_ix"
+#   - "securevpn"
+#   - "findmegetme"
+#   - "asana_god_contact"
+# padrino:
+#   - "irarott"
+#   - "shlyapa"
+
+# jquery:
+#   - "irarott"
+#   - "cloudui"
+#   - "ow"
+#   - "landing_ix"
+# coffeescript:
+#   - "irarott"
+#   - "cloudui"
+#   - "rott_org_ua"
+#   - "my_best_dates"
+#   - "ow"
+#   - "landing_ix"
+#   - "grunt_coffee_chain"
+# digital_ocean:
+#   - "irarott"
+#   - "rott_org_ua"
+#   - "shlyapa"
+#   - "my_best_dates"
+#   - "securevpn"
+#   - "findmegetme"
+# ror:
+#   - "cloudui"
+#   - "my_best_dates"
+#   - "ow"
+#   - "landing_ix"
+#   - "securevpn"
+# backbone:
+#   - "cloudui"
+#   - "ow"
+# marionette:
+#   - "cloudui"
+#   - "ow"
+# middleman:
+#   - "rott_org_ua"
+# javascript:
+#   - "shlyapa"
+#   - "mobile_findmegetme"
+#   - "grunt_coffee_chain"
+# oss:
+#   - "rott_org_ua"
+#   - "grunt_coffee_chain"
+#   - "asana_god_contact"
+# sinatra:
+#   - "irarott"
+#   - "cloudui"
+#   - "shlyapa"
+#   - "my_best_dates"
+#   - "ow"
+#   - "findmegetme"
+# node:
+#   - "mobile_findmegetme"
+#   - "grunt_coffee_chain"
+# react:
+#   - "mobile_findmegetme"
+# ios:
+#   - "mobile_findmegetme"
+# grunt:
+#   - "grunt_coffee_chain"
+# rebu_gem:
+#   - "asana_god_contact"
+# npm:
+#   - "grunt_coffee_chain"

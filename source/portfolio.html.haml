@@ -1,6 +1,6 @@
 %body
   #preview
-    %img#preview-image.pure-img-responsive{:alt => "Image Preview", :src => "../images/portfolio/ira-rott-com/irarott-com.png"}/
+    %img#preview-image.pure-img-responsive{alt: "Image Preview", src: ""}/
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
       .header.portfolio-left-part
@@ -9,9 +9,9 @@
         %nav.nav
           %ul.nav-list
             %li.nav-item
-              %a.pure-button{:href => "https://rott.org.ua"} Home
+              %a.pure-button{href: "https://rott.org.ua", title: 'Home page of rott.org.ua'} Home
             %li.nav-item
-              %a.pure-button{:href => "https://rott.org.ua/blog/"} Blog
+              %a.pure-button{href: "https://rott.org.ua/blog/", title: "Roman Rott's blog"} Blog
         .portfolio-contacts
           %br
           = partial 'links'
@@ -21,44 +21,44 @@
         .portfolio-categories
           %nav.nav.tag-cloud
             %ul.nav-list
-              %li
-                %a{:href => "#full-stack"} Full-Stack
-              %li
-                %a{:href => "#front-end"} Front-end
-              %li
-                %a{:href => "#back-end"} Back-end
-              %li
-                %a{:href => "#mobile"} Mobile
-              %li
-                %a{:href => "#oss"} Open Source
+              - data.links.portfolio_sections.each do |section|
+                %li
+                  %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
+
     .content.pure-u-1.pure-u-md-3-4
       %div
-        .posts#full-stack
-          %h2.content-subhead Full-Stack projects
+        - data.portfolio.current.each do |projects|
+          = partial 'portfolio/section', locals: { projects: projects}
 
-          = partial 'portfolio/irarott'
-          = partial 'portfolio/cloudui'
-          = partial 'portfolio/rott_org_ua'
-          = partial 'portfolio/shlyapa'
-          = partial 'portfolio/my_best_dates'
-        .posts#front-end
-          %h2.content-subhead Front-end projects
-          = partial 'portfolio/ow'
-          = partial 'portfolio/landing_ix'
 
-        .posts#back-end
-          %h2.content-subhead Back-end projects
-          = partial 'portfolio/securevpn'
-          = partial 'portfolio/findmegetme'
 
-        .posts#mobile
-          %h2.content-subhead Mobile applications
-          = partial 'portfolio/mobile_findmegetme'
 
-        .posts#oss
-          %h2.content-subhead Open Source plugins and libs
-          = partial 'portfolio/grunt_coffee_chain'
-          = partial 'portfolio/asana_god_contact'
+
+
+
+        -#   = partial 'portfolio/irarott'
+        -#   = partial 'portfolio/cloudui'
+        -#   = partial 'portfolio/rott_org_ua'
+        -#   = partial 'portfolio/shlyapa'
+        -#   = partial 'portfolio/my_best_dates'
+        -# .posts#front-end
+        -#   %h2.content-subhead Front-end projects
+        -#   = partial 'portfolio/ow'
+        -#   = partial 'portfolio/landing_ix'
+
+        -# .posts#back-end
+        -#   %h2.content-subhead Back-end projects
+        -#   = partial 'portfolio/securevpn'
+        -#   = partial 'portfolio/findmegetme'
+
+        -# .posts#mobile
+        -#   %h2.content-subhead Mobile applications
+        -#   = partial 'portfolio/mobile_findmegetme'
+
+        -# .posts#oss
+        -#   %h2.content-subhead Open Source plugins and libs
+        -#   = partial 'portfolio/grunt_coffee_chain'
+        -#   = partial 'portfolio/asana_god_contact'
 
         .footer
           .pure-menu.pure-menu-horizontal

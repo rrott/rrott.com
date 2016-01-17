@@ -1,0 +1,49 @@
+title: "Landing pages for IxWebhosting.com and HostExcellence.com"
+by:
+  name:
+  url:
+tags:
+  - "Ruby"
+  - "Jquery"
+  - "CoffeeScript"
+images:
+  -
+    url: "../images/portfolio/landing/landing-hacker-shield"
+    title: "Landing page of IXwebhosting.com - Hacker Shiield"
+  -
+    url: "../images/portfolio/landing/landing-sitebuilder"
+    title: "Landing pageof IXwebhosting.com - Site Builder"
+  -
+    url: "../images/portfolio/landing/landing-popup"
+    title: "Landing page ofIXwebhosting.com - Popup on Dashboard"
+  -
+    url: "../images/portfolio/landing/landing-popup-thankyou"
+    title: "Landing page of IXwebhosting.com - Thank You Popup on Dashboard"
+  -
+    url: "../images/portfolio/landing/landing-domainclub"
+    title: "Landing pageof IXwebhosting.com - Domain Club"
+  -
+    url: "../images/portfolio/landing/landing-thankyou-page"
+    title: "Landing page of IXwebhosting.com - Thank You Page"
+about:
+  - "IXwebhosting.com and HostExcellence.com are hosting brands that have a lot of products including shared, cloud and VPN hostings, domain and SSL registrations, Site Builders and Design services, etc."
+  - "This project contains pop-ups and bunch of landing pages for current and pre-sales products that give the company an opportunity to sale a product using one-click purchase tool or Opt-In for a new project that is not yet released."
+role: "Front-end developer"
+responsibilities: "Integrating design with current API and Hosting Control panel, adding code needed for One-Click purchase tool."
+languages: "Ruby 2.1.3, CoffeeScript"
+libs: "Ruby on Rails 4.0, jQuery"
+testing: "Rspec 3.2, Capybara, Jasmine"
+other: "SASS, Faye, JSON"
+status:
+  message: "Online, used in 2 hosting brands: IXwebhosting and HostExcellence."
+  urls:
+    -
+      link:  "https://my.ixwebhosting.com/landing/431611/hacker_shield"
+      short: "https://my.ixwebhosting.com/landing"
+      description: "Hacker Shield"
+      nofollow: true
+    -
+      link:  "https://my.hostexcellence.com/landing/431611/site_builder"
+      short: "https://my.hostexcellence.com/landing"
+      description: "Hacker Shield"
+      nofollow: true

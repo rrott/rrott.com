@@ -1,0 +1,6 @@
+%p.post-meta
+  By
+  %a.post-author{href: "#{project.by.url}", title: "Projects created by #{project.by.name}"} #{project.by.name}
+  using
+  - project.tags.each do |tag|
+    %a.post-category{href: "/portfolio/#{tag.downcase}", title: "Projects created using #{tag}"} #{tag}

@@ -1,0 +1,16 @@
+portfolio_sections:
+  -
+    url: "#full-stack"
+    name: "Full-Stack"
+  -
+    url: "#front-end"
+    name: "Front-end"
+  -
+    url: "#back-end"
+    name: "Back-end"
+  -
+    url: "#mobile"
+    name: "Mobile"
+  -
+    url: "#oss"
+    name: "Open Source"

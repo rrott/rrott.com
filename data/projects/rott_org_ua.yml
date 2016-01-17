@@ -1,0 +1,54 @@
+title: "rott.org.ua - current website-portfolio"
+by:
+  name: "Roman Rott"
+  url: "https://rott.org.ua/portfolio/roman-rott"
+tags:
+  - "Ruby"
+  - "MiddleMan"
+  - "CoffeeScript"
+  - "DigitalOcean"
+images:
+  -
+    url: "../images/portfolio/website/rott-org-ua-main"
+    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+  -
+    url: "../images/portfolio/website/rott-org-ua-about"
+    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+  -
+    url: "../images/portfolio/website/rott-org-ua-portfolio"
+    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+about:
+  - "My own website with blog and portfolio. The Website includes basic information about myself, my projects, my contact information and blog post related to web-development and security researches."
+role: "Full-Stack developer."
+responsibilities: "Creating back-end, front-end, design, SEO-optimisation, performance optimisation, configuring and web server."
+languages: "Ruby 2.2, CoffeeScript"
+libs: "MiddleMan - static site generator."
+other: "Haml, Pure, Nginx, HTTP/2, WebP"
+status:
+  message: "Online"
+  urls:
+    -
+      link:  "https://rott.org.ua"
+      pre: "Website:"
+      short: "https://rott.org.ua"
+      description: "Website"
+      nofollow: false
+    -
+      link:  "https://rott.org.ua/portfolio/"
+      pre: "Portfolio:"
+      short: "https://rott.org.ua/portfolio"
+      description: "Portfolio page"
+      nofollow: false
+    -
+      link:  "https://rott.org.ua/blog"
+      pre: "Blog"
+      short: "https://rott.org.ua/blog"
+      description: "Blog:"
+      nofollow: false
+    -
+      link:  "https://github.com/rrott/rott.org.ua"
+      pre: 'GitHub:'
+      short: "https://github.com/rrott"
+      description: "Blog"
+      nofollow: false
+
