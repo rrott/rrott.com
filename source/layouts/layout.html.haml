@@ -9,12 +9,27 @@
 
     = yield
 
-    -# Javascripts
     -#= javascript_include_tag 'application', async: true
     = stylesheet_link_tag  'grids-min'
     = stylesheet_link_tag  'grids-responsive-min'
 
-    #%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
+    -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
+    %script{type: "application/ld+json"}
+      :plain
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "email": "mailto:roman.rott@gmail.com",
+          "image": "https://rott.org.ua/images/rrott-ruby-logo.png",
+          "jobTitle": "Full-Stack ruby developer",
+          "name": "Roman Rott",
+          "familyName": "Rott",
+          "givenName": "Roman",
+          "brand": "rrott",
+          "url": "https://rott.org.ua",
+          "nationality": "Ukraine"
+        }
+
     - if build?
       -# Google Analytics
       :javascript
@@ -26,18 +41,3 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-      %script{:type => "application/ld+json"}
-        :cdata
-          {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "email": "mailto:roman.rott@gmail.com",
-            "image": "https://rott.org.ua/images/rrott-ruby-logo.png",
-            "jobTitle": "Full-Stack ruby developer",
-            "name": "Roman Rott",
-            "familyName": "Rott",
-            "givenName": "Roman",
-            "brand": "rrott",
-            "url": "https://rott.org.ua",
-            "nationality": "Ukraine"
-          }

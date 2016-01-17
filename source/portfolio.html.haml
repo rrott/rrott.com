@@ -29,37 +29,6 @@
       %div
         - data.portfolio.current.each do |projects|
           = partial 'portfolio/section', locals: { projects: projects}
-
-
-
-
-
-
-
-        -#   = partial 'portfolio/irarott'
-        -#   = partial 'portfolio/cloudui'
-        -#   = partial 'portfolio/rott_org_ua'
-        -#   = partial 'portfolio/shlyapa'
-        -#   = partial 'portfolio/my_best_dates'
-        -# .posts#front-end
-        -#   %h2.content-subhead Front-end projects
-        -#   = partial 'portfolio/ow'
-        -#   = partial 'portfolio/landing_ix'
-
-        -# .posts#back-end
-        -#   %h2.content-subhead Back-end projects
-        -#   = partial 'portfolio/securevpn'
-        -#   = partial 'portfolio/findmegetme'
-
-        -# .posts#mobile
-        -#   %h2.content-subhead Mobile applications
-        -#   = partial 'portfolio/mobile_findmegetme'
-
-        -# .posts#oss
-        -#   %h2.content-subhead Open Source plugins and libs
-        -#   = partial 'portfolio/grunt_coffee_chain'
-        -#   = partial 'portfolio/asana_god_contact'
-
         .footer
           .pure-menu.pure-menu-horizontal
             = partial 'links'

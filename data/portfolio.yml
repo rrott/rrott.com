@@ -51,7 +51,7 @@ current:
         seo: 'false'
   -
     title: "OPEN SOURCE PLUGINS AND LIBS"
-    id: "oss"
+    id_name: "oss"
     url: "/portfolio/open-source"
     projects:
       -
