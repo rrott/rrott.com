@@ -15,7 +15,7 @@ images:
     url: "../images/portfolio/uisg11/mybestdate/my-best-dates-website"
     title: "website for CTF game"
   -
-    url: "./images/portfolio/uisg11/mybestdate/my-best-dates-users"
+    url: "../images/portfolio/uisg11/mybestdate/my-best-dates-users"
     title: "website for CTF game. list of users"
   -
     url: "../images/portfolio/uisg11/mybestdate/my-best-dates-user"

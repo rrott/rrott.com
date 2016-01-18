@@ -21,9 +21,9 @@ gem 'middleman-minify-html'
 gem "middleman-disqus"
 gem "middleman-syntax"
 gem 'middleman-search'
-
+gem 'middleman-vcard'
 gem 'middleman-meta-tags'
 gem 'middleman-search_engine_sitemap'
 gem 'middleman-robots'
-
+#gem "middleman-es6", github: "vast/middleman-es6"
 #gem 'capistrano-middleman', require: false

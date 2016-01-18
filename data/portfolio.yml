@@ -1,139 +1,417 @@
-current:
+sections:
   -
-    title: "Full-Stack projects"
-    id_name: "full-stack"
+    url: "/portfolio/all"
+    seo: false
+    projects_list:
+      -
+        title: "Full-Stack projects"
+        id_name: "full-stack"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: false
+          -
+            name: "my_best_dates"
+            seo: false
+      -
+        title: "Front-End projects"
+        id_name: "front-end"
+        projects:
+          -
+            name: "ow"
+            seo: false
+          -
+            name: "landing_ix"
+            seo: true
+      -
+        title: "Back-End projects"
+        id_name: "back-end"
+        projects:
+          -
+            name: "securevpn"
+            seo: true
+          -
+            name: 'findmegetme'
+            seo: true
+      -
+        title: "Mobile Applications"
+        id_name: "mobile"
+        projects:
+          -
+            name: "mobile_findmegetme"
+            seo: 'false'
+      -
+        title: "Open Source Plugins and Libs"
+        id_name: "oss"
+        projects:
+          -
+            name: "grunt_coffee_chain"
+            seo: false
+          -
+            name: "asana_god_contact"
+            seo: false
+  -
     url: "/portfolio/full-stack"
-    projects:
+    seo: true
+    projects_list:
       -
-        name: "irarott"
-        seo: true
-      -
-        name: 'cloudui'
-        seo: true
-      -
-        name: "rott_org_ua"
-        seo: true
-      -
-        name: "shlyapa"
-        seo: false
-      -
-        name: "my_best_dates"
-        seo: false
+        title: "Full-Stack projects"
+        id_name: "full-stack"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: false
+          -
+            name: "my_best_dates"
+            seo: false
   -
-    title: "Front-End projects"
-    id_name: "front-end"
-    url: "/portfolio/front-end"
-    projects:
+    url: "/portfolio/ruby"
+    seo: true
+    projects_list:
       -
-        name: "ow"
-        seo: false
-      -
-        name: "landing_ix"
-        seo: true
+        title: "Ruby projects"
+        id_name: "ruby"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: true
+          -
+            name: "my_best_dates"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+          -
+            name: "landing_ix"
+            seo: true
+          -
+            name: "securevpn"
+            seo: true
+          -
+            name: "findmegetme"
+            seo: true
+          -
+            name: "asana_god_contact"
+            seo: true
   -
-    title: "Back-End projects"
-    id_name: "back-end"
-    url: "/portfolio/back-end"
-    projects:
+    url: "/portfolio/padrino"
+    seo: true
+    projects_list:
       -
-        name: "securevpn"
-        seo: true
-      -
-        name: 'findmegetme'
-        seo: true
+        title: "Padrino projects"
+        id_name: "padrino"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: true
   -
-    title: "Mobile Applications"
-    id_name: "mobile"
-    url: "/portfolio/mobile"
-    projects:
+    url: "/portfolio/jquery"
+    seo: false
+    projects_list:
       -
-        name: "mobile_findmegetme"
-        seo: 'false'
-  -
-    title: "OPEN SOURCE PLUGINS AND LIBS"
-    id_name: "oss"
-    url: "/portfolio/open-source"
-    projects:
-      -
-        name: "grunt_coffee_chain"
-        seo: false
-      -
-        name: "asana_god_contact"
-        seo: false
-# ruby:
-#   - "irarott"
-#   - "cloudui"
-#   - "rott_org_ua"
-#   - "shlyapa"
-#   - "my_best_dates"
-#   - "ow"
-#   - "landing_ix"
-#   - "securevpn"
-#   - "findmegetme"
-#   - "asana_god_contact"
-# padrino:
-#   - "irarott"
-#   - "shlyapa"
+        title: "JQuery projects"
+        id_name: "jquery"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+          -
+            name: "landing_ix"
+            seo: true
 
-# jquery:
-#   - "irarott"
-#   - "cloudui"
-#   - "ow"
-#   - "landing_ix"
-# coffeescript:
-#   - "irarott"
-#   - "cloudui"
-#   - "rott_org_ua"
-#   - "my_best_dates"
-#   - "ow"
-#   - "landing_ix"
-#   - "grunt_coffee_chain"
-# digital_ocean:
-#   - "irarott"
-#   - "rott_org_ua"
-#   - "shlyapa"
-#   - "my_best_dates"
-#   - "securevpn"
-#   - "findmegetme"
-# ror:
-#   - "cloudui"
-#   - "my_best_dates"
-#   - "ow"
-#   - "landing_ix"
-#   - "securevpn"
-# backbone:
-#   - "cloudui"
-#   - "ow"
-# marionette:
-#   - "cloudui"
-#   - "ow"
-# middleman:
-#   - "rott_org_ua"
-# javascript:
-#   - "shlyapa"
-#   - "mobile_findmegetme"
-#   - "grunt_coffee_chain"
-# oss:
-#   - "rott_org_ua"
-#   - "grunt_coffee_chain"
-#   - "asana_god_contact"
-# sinatra:
-#   - "irarott"
-#   - "cloudui"
-#   - "shlyapa"
-#   - "my_best_dates"
-#   - "ow"
-#   - "findmegetme"
-# node:
-#   - "mobile_findmegetme"
-#   - "grunt_coffee_chain"
-# react:
-#   - "mobile_findmegetme"
-# ios:
-#   - "mobile_findmegetme"
-# grunt:
-#   - "grunt_coffee_chain"
-# rebu_gem:
-#   - "asana_god_contact"
-# npm:
-#   - "grunt_coffee_chain"
+  -
+    url: "/portfolio/coffeescript"
+    seo: false
+    projects_list:
+      -
+        title: "CoffeeScript projects"
+        id_name: "coffeescript"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: true
+          -
+            name: "my_best_dates"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+          -
+            name: "landing_ix"
+            seo: true
+          -
+            name: "grunt_coffee_chain"
+            seo: true
+  -
+    url: "/portfolio/digitalocean"
+    seo: false
+    projects_list:
+      -
+        title: "Projects hosted on Digital Ocean"
+        id_name: "digitalocean"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: true
+          -
+            name: "my_best_dates"
+            seo: true
+          -
+            name: "securevpn"
+            seo: true
+          -
+            name: "findmegetme"
+            seo: true
+  -
+    url: "/portfolio/rails"
+    seo: false
+    projects_list:
+      -
+        title: "Ruby on Rails projects"
+        id_name: "rails"
+        projects:
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "my_best_dates"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+          -
+            name: "landing_ix"
+            seo: true
+          -
+            name: "securevpn"
+            seo: true
+  -
+    url: "/portfolio/backbone"
+    seo: false
+    projects_list:
+      -
+        title: "Projects on BackBone.js"
+        id_name: "backbone"
+        projects:
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+  -
+    url: "/portfolio/marionette"
+    seo: false
+    projects_list:
+      -
+        title: "Projects on Backbone.js and Marionette.js"
+        id_name: "marionette"
+        projects:
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+  -
+    url: "/portfolio/middleman"
+    seo: false
+    projects_list:
+      -
+        title: "Static Page applications on Middleman"
+        id_name: "middleman"
+        projects:
+          -
+            name: "rott_org_ua"
+            seo: true
+  -
+    url: "/portfolio/javascript"
+    seo: false
+    projects_list:
+      -
+        title: "Projects with JavaScript"
+        id_name: "javascript"
+        projects:
+          -
+            name: "shlyapa"
+            seo: true
+          -
+            name: "mobile_findmegetme"
+            seo: true
+          -
+            name: "grunt_coffee_chain"
+            seo: true
+  -
+    url: "/portfolio/oss"
+    seo: false
+    projects_list:
+      -
+        title: "Open Source projects"
+        id_name: "oss"
+        projects:
+          -
+            name: "grunt_coffee_chain"
+            seo: true
+          -
+            name: "asana_god_contact"
+            seo: true
+          -
+            name: "rott_org_ua"
+            seo: false
+  -
+    url: "/portfolio/sinatra"
+    seo: false
+    projects_list:
+      -
+        title: "Sinatra projects"
+        id_name: "sinatra"
+        projects:
+          -
+            name: "irarott"
+            seo: true
+          -
+            name: "cloudui"
+            seo: true
+          -
+            name: "shlyapa"
+            seo: true
+          -
+            name: "ow"
+            seo: true
+          -
+            name: "findmegetme"
+            seo: true
+  -
+    url: "/portfolio/node"
+    seo: false
+    projects_list:
+      -
+        title: "Node.js related projects"
+        id_name: "node"
+        projects:
+          -
+            name: "mobile_findmegetme"
+            seo: true
+          -
+            name: "grunt_coffee_chain"
+            seo: true
+  -
+    url: "/portfolio/react"
+    seo: false
+    projects_list:
+      -
+        title: "React projects"
+        id_name: "react"
+        projects:
+          -
+            name: "mobile_findmegetme"
+            seo: false
+  -
+    url: "/portfolio/grunt"
+    seo: false
+    projects_list:
+      -
+        title: "Grunt projects"
+        id_name: "grunt"
+        projects:
+          -
+            name: "grunt_coffee_chain"
+            seo: true
+  -
+    url: "/portfolio/gems"
+    seo: false
+    projects_list:
+      -
+        title: "Ruby Gems"
+        id_name: "ruby_gem"
+        projects:
+          -
+            name: "asana_god_contact"
+            seo: true
+  -
+    url: "/portfolio/front-end"
+    seo: false
+    projects_list:
+      -
+        title: "Front-End projects"
+        id_name: "front-end"
+        projects:
+          -
+            name: "ow"
+            seo: false
+          -
+            name: "landing_ix"
+            seo: true
+  -
+    url: "/portfolio/back-end"
+    seo: false
+    projects_list:
+      -
+        title: "Back-End projects"
+        id_name: "back-end"
+        projects:
+          -
+            name: "securevpn"
+            seo: true
+          -
+            name: 'findmegetme'
+            seo: true
+  -
+    url: "/portfolio/mobile"
+    seo: false
+    projects_list:
+      -
+        title: "Mobile Applications"
+        id_name: "mobile"
+        projects:
+          -
+            name: "mobile_findmegetme"
+            seo: 'false'

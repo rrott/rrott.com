@@ -1,32 +1,9 @@
 require "middleman-smusher"
 require 'kramdown'
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
+require "middleman-vcard"
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
-# Use LiveReload
-
-# Compass configuration
 set :url_root, 'https://rott.org.ua'
 
 set :css_dir, 'stylesheets'
@@ -39,18 +16,25 @@ page 'feed.xml', layout: false
 page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
-page "/portfolio.html", :layout => :portfolio
+page "/portfolio.html", layout: :portfolio
 
+data.portfolio.sections.each do |project_page|
+  #binding.pry
+  proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: { all_projects: project_page.projects_list }
+end
 #activate :autoprefixer
 activate :directory_indexes
 #activate :minify_html
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
+  ignore 'favicons/*'
   ignore 'stylesheets/lib/*'
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
+  activate :gzip
+
   activate :disqus do |d|
     d.shortname = "production-shortname"
   end
@@ -64,6 +48,7 @@ configure :build do
     { user_agent: '*', allow: ['/'] }
   ],
   sitemap: "#{data.site.url}/sitemap.xml"
+
 end
 
 #activate :imageoptim
@@ -122,3 +107,6 @@ configure :development do
     d.shortname = nil
   end
 end
+
+# activate :vcard,
+#   name: 'Roman Rott'
