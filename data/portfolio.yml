@@ -1,7 +1,7 @@
 sections:
   -
     url: "/portfolio/all"
-    seo: false
+    canonical: 'https://rott.org.ua/portfolio/'
     projects_list:
       -
         title: "Full-Stack projects"
@@ -61,7 +61,6 @@ sections:
             seo: false
   -
     url: "/portfolio/full-stack"
-    seo: true
     projects_list:
       -
         title: "Full-Stack projects"
@@ -84,7 +83,6 @@ sections:
             seo: false
   -
     url: "/portfolio/ruby"
-    seo: true
     projects_list:
       -
         title: "Ruby projects"
@@ -122,7 +120,6 @@ sections:
             seo: true
   -
     url: "/portfolio/padrino"
-    seo: true
     projects_list:
       -
         title: "Padrino projects"
@@ -136,7 +133,6 @@ sections:
             seo: true
   -
     url: "/portfolio/jquery"
-    seo: false
     projects_list:
       -
         title: "JQuery projects"
@@ -157,7 +153,6 @@ sections:
 
   -
     url: "/portfolio/coffeescript"
-    seo: false
     projects_list:
       -
         title: "CoffeeScript projects"
@@ -186,7 +181,6 @@ sections:
             seo: true
   -
     url: "/portfolio/digitalocean"
-    seo: false
     projects_list:
       -
         title: "Projects hosted on Digital Ocean"
@@ -212,7 +206,6 @@ sections:
             seo: true
   -
     url: "/portfolio/rails"
-    seo: false
     projects_list:
       -
         title: "Ruby on Rails projects"
@@ -235,7 +228,6 @@ sections:
             seo: true
   -
     url: "/portfolio/backbone"
-    seo: false
     projects_list:
       -
         title: "Projects on BackBone.js"
@@ -249,7 +241,7 @@ sections:
             seo: true
   -
     url: "/portfolio/marionette"
-    seo: false
+    canonical: "https://rott.org.ua/portfolio/backbone"
     projects_list:
       -
         title: "Projects on Backbone.js and Marionette.js"
@@ -263,7 +255,6 @@ sections:
             seo: true
   -
     url: "/portfolio/middleman"
-    seo: false
     projects_list:
       -
         title: "Static Page applications on Middleman"
@@ -274,7 +265,6 @@ sections:
             seo: true
   -
     url: "/portfolio/javascript"
-    seo: false
     projects_list:
       -
         title: "Projects with JavaScript"
@@ -291,7 +281,6 @@ sections:
             seo: true
   -
     url: "/portfolio/oss"
-    seo: false
     projects_list:
       -
         title: "Open Source projects"
@@ -308,7 +297,6 @@ sections:
             seo: false
   -
     url: "/portfolio/sinatra"
-    seo: false
     projects_list:
       -
         title: "Sinatra projects"
@@ -331,7 +319,6 @@ sections:
             seo: true
   -
     url: "/portfolio/node"
-    seo: false
     projects_list:
       -
         title: "Node.js related projects"
@@ -345,7 +332,6 @@ sections:
             seo: true
   -
     url: "/portfolio/react"
-    seo: false
     projects_list:
       -
         title: "React projects"
@@ -356,7 +342,6 @@ sections:
             seo: false
   -
     url: "/portfolio/grunt"
-    seo: false
     projects_list:
       -
         title: "Grunt projects"
@@ -367,7 +352,6 @@ sections:
             seo: true
   -
     url: "/portfolio/gems"
-    seo: false
     projects_list:
       -
         title: "Ruby Gems"
@@ -378,7 +362,6 @@ sections:
             seo: true
   -
     url: "/portfolio/front-end"
-    seo: false
     projects_list:
       -
         title: "Front-End projects"
@@ -392,7 +375,6 @@ sections:
             seo: true
   -
     url: "/portfolio/back-end"
-    seo: false
     projects_list:
       -
         title: "Back-End projects"
@@ -406,7 +388,6 @@ sections:
             seo: true
   -
     url: "/portfolio/mobile"
-    seo: false
     projects_list:
       -
         title: "Mobile Applications"
