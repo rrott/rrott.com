@@ -1,5 +1,6 @@
 - all_projects ||= data.portfolio.sections.first.projects_list
 -if defined? canonical
+  %meta{name: "robots", content: "noindex, follow"}
   %link{href: canonical, rel: "canonical"}
 
 %body

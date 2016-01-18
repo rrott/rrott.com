@@ -9,56 +9,56 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: false
           -
             name: "cloudui"
-            seo: true
+            noindex: false
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: false
           -
             name: "shlyapa"
-            seo: false
+            noindex: true
           -
             name: "my_best_dates"
-            seo: false
+            noindex: true
       -
         title: "Front-End projects"
         id_name: "front-end"
         projects:
           -
             name: "ow"
-            seo: false
+            noindex: false
           -
             name: "landing_ix"
-            seo: true
+            noindex: false
       -
         title: "Back-End projects"
         id_name: "back-end"
         projects:
           -
             name: "securevpn"
-            seo: true
+            noindex: false
           -
             name: 'findmegetme'
-            seo: true
+            noindex: false
       -
         title: "Mobile Applications"
         id_name: "mobile"
         projects:
           -
             name: "mobile_findmegetme"
-            seo: 'false'
+            noindex: 'true'
       -
         title: "Open Source Plugins and Libs"
         id_name: "oss"
         projects:
           -
             name: "grunt_coffee_chain"
-            seo: false
+            noindex: false
           -
             name: "asana_god_contact"
-            seo: false
+            noindex: false
   -
     url: "/portfolio/full-stack"
     projects_list:
@@ -68,19 +68,19 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: false
           -
             name: "cloudui"
-            seo: true
+            noindex: false
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: false
           -
             name: "shlyapa"
-            seo: false
+            noindex: false
           -
             name: "my_best_dates"
-            seo: false
+            noindex: false
   -
     url: "/portfolio/ruby"
     projects_list:
@@ -90,34 +90,34 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "cloudui"
-            seo: true
+            noindex: true
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: true
           -
             name: "shlyapa"
-            seo: true
+            noindex: false
           -
             name: "my_best_dates"
-            seo: true
+            noindex: false
           -
             name: "ow"
-            seo: true
+            noindex: true
           -
             name: "landing_ix"
-            seo: true
+            noindex: true
           -
             name: "securevpn"
-            seo: true
+            noindex: false
           -
             name: "findmegetme"
-            seo: true
+            noindex: false
           -
             name: "asana_god_contact"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/padrino"
     projects_list:
@@ -127,10 +127,10 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "shlyapa"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/jquery"
     projects_list:
@@ -140,16 +140,16 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "cloudui"
-            seo: true
+            noindex: true
           -
             name: "ow"
-            seo: true
+            noindex: true
           -
             name: "landing_ix"
-            seo: true
+            noindex: true
 
   -
     url: "/portfolio/coffeescript"
@@ -160,25 +160,25 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "cloudui"
-            seo: true
+            noindex: false
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: false
           -
             name: "my_best_dates"
-            seo: true
+            noindex: true
           -
             name: "ow"
-            seo: true
+            noindex: false
           -
             name: "landing_ix"
-            seo: true
+            noindex: true
           -
             name: "grunt_coffee_chain"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/digitalocean"
     projects_list:
@@ -188,22 +188,22 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: true
           -
             name: "shlyapa"
-            seo: true
+            noindex: true
           -
             name: "my_best_dates"
-            seo: true
+            noindex: true
           -
             name: "securevpn"
-            seo: true
+            noindex: true
           -
             name: "findmegetme"
-            seo: true
+            noindex: true
   -
     url: "/portfolio/rails"
     projects_list:
@@ -213,19 +213,19 @@ sections:
         projects:
           -
             name: "cloudui"
-            seo: true
+            noindex: false
           -
             name: "my_best_dates"
-            seo: true
+            noindex: false
           -
             name: "ow"
-            seo: true
+            noindex: true
           -
             name: "landing_ix"
-            seo: true
+            noindex: true
           -
             name: "securevpn"
-            seo: true
+            noindex: true
   -
     url: "/portfolio/backbone"
     projects_list:
@@ -235,10 +235,10 @@ sections:
         projects:
           -
             name: "cloudui"
-            seo: true
+            noindex: true
           -
             name: "ow"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/marionette"
     canonical: "https://rott.org.ua/portfolio/backbone"
@@ -249,10 +249,10 @@ sections:
         projects:
           -
             name: "cloudui"
-            seo: true
+            noindex: true
           -
             name: "ow"
-            seo: true
+            noindex: true
   -
     url: "/portfolio/middleman"
     projects_list:
@@ -262,7 +262,7 @@ sections:
         projects:
           -
             name: "rott_org_ua"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/javascript"
     projects_list:
@@ -272,13 +272,13 @@ sections:
         projects:
           -
             name: "shlyapa"
-            seo: true
+            noindex: true
           -
             name: "mobile_findmegetme"
-            seo: true
+            noindex: false
           -
             name: "grunt_coffee_chain"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/oss"
     projects_list:
@@ -288,13 +288,13 @@ sections:
         projects:
           -
             name: "grunt_coffee_chain"
-            seo: true
+            noindex: false
           -
             name: "asana_god_contact"
-            seo: true
+            noindex: false
           -
             name: "rott_org_ua"
-            seo: false
+            noindex: true
   -
     url: "/portfolio/sinatra"
     projects_list:
@@ -304,19 +304,19 @@ sections:
         projects:
           -
             name: "irarott"
-            seo: true
+            noindex: true
           -
             name: "cloudui"
-            seo: true
+            noindex: true
           -
             name: "shlyapa"
-            seo: true
+            noindex: false
           -
             name: "ow"
-            seo: true
+            noindex: true
           -
             name: "findmegetme"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/node"
     projects_list:
@@ -326,10 +326,10 @@ sections:
         projects:
           -
             name: "mobile_findmegetme"
-            seo: true
+            noindex: true
           -
             name: "grunt_coffee_chain"
-            seo: true
+            noindex: true
   -
     url: "/portfolio/react"
     projects_list:
@@ -339,7 +339,7 @@ sections:
         projects:
           -
             name: "mobile_findmegetme"
-            seo: false
+            noindex: true
   -
     url: "/portfolio/grunt"
     projects_list:
@@ -349,7 +349,7 @@ sections:
         projects:
           -
             name: "grunt_coffee_chain"
-            seo: true
+            noindex: true
   -
     url: "/portfolio/gems"
     projects_list:
@@ -359,7 +359,7 @@ sections:
         projects:
           -
             name: "asana_god_contact"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/front-end"
     projects_list:
@@ -369,10 +369,10 @@ sections:
         projects:
           -
             name: "ow"
-            seo: false
+            noindex: false
           -
             name: "landing_ix"
-            seo: true
+            noindex: false
   -
     url: "/portfolio/back-end"
     projects_list:
@@ -382,10 +382,10 @@ sections:
         projects:
           -
             name: "securevpn"
-            seo: true
+            noindex: true
           -
             name: 'findmegetme'
-            seo: true
+            noindex: true
   -
     url: "/portfolio/mobile"
     projects_list:
@@ -395,4 +395,4 @@ sections:
         projects:
           -
             name: "mobile_findmegetme"
-            seo: 'false'
+            noindex: true

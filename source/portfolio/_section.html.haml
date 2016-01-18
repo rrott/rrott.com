@@ -1,8 +1,13 @@
 .posts{id: "#{projects.id_name}"}
   %h2.content-subhead
     - if projects.url
-      %a{href: "#{projects.url}", alt: "#{projects.title}"} #{projects.title}
+      %a{href: "#{projects.url}", alt: "#{projects.title}", target: '_blank'} #{projects.title}
     - else
       #{projects.title}
   - projects.projects.each do |project|
-    = partial 'portfolio/project', locals: { project: data.projects[project.name]}
+    - if project.noindex
+      %noindex
+        = partial 'portfolio/project', locals: { project: data.projects[project.name]}
+    - else
+      = partial 'portfolio/project', locals: { project: data.projects[project.name]}
+
