@@ -19,7 +19,6 @@ page "humans.txt", :layout => false
 page "/portfolio.html", layout: :portfolio
 
 data.portfolio.sections.each do |project_page|
-  #binding.pry
   proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: { all_projects: project_page.projects_list, canonical: project_page.canonical }
 end
 #activate :autoprefixer
