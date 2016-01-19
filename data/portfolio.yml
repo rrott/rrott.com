@@ -241,7 +241,7 @@ sections:
             noindex: false
   -
     url: "/portfolio/marionette"
-    canonical: "https://rott.org.ua/portfolio/backbone"
+    canonical: "https://rott.org.ua/portfolio/backbone/"
     projects_list:
       -
         title: "Projects on Backbone.js and Marionette.js"

@@ -8,22 +8,22 @@ tags:
   - "DigitalOcean"
 images:
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-website"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-website"
     title: "front-end of a CTF site with images served using Sockets"
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-socket-image"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-socket-image"
     title: "FindMeGetMe CTF site. web application for a white hat hacker"
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-api"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-api"
     title: "FindMeGetMe CTF site. Api part of site"
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-socket"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-socket"
     title: "FindMeGetMe CTF site. back-end with sockets"
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-app"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-app"
     title: "FindMeGetMe CTF site. web application's source code"
   -
-    url: "../images/portfolio/uisg11/findmegetme/findmegetme-static"
+    url: "/images/portfolio/uisg11/findmegetme/findmegetme-static"
     title: "FindMeGetMe CTF site. web application's back-end source code"
 about:
   - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag hacking game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non Government Organisation <strong>«Ukrainian Information Security Group»</strong>"

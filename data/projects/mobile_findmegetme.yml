@@ -8,13 +8,13 @@ tags:
   - "Node"
 images:
   -
-    url: "../images/portfolio/uisg11/mobile/iOS-app"
+    url: "/images/portfolio/uisg11/mobile/iOS-app"
     title: "Mobile React Native app from a security researcher"
   -
-    url: "../images/portfolio/uisg11/mobile/iOS-app-list"
+    url: "/images/portfolio/uisg11/mobile/iOS-app-list"
     title: "Screens of React Native app created to show how to hack web applications"
   -
-    url: "../images/portfolio/uisg11/mobile/react-native-source"
+    url: "/images/portfolio/uisg11/mobile/react-native-source"
     title: "React Native app's source code of a front end developer"
 
 about:

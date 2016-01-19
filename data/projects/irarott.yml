@@ -11,22 +11,22 @@ tags:
   - "DigitalOcean"
 images:
   -
-    url:   "../images/portfolio/ira-rott-com/irarott-com"
+    url:   "/images/portfolio/ira-rott-com/irarott-com"
     title: "IraRott.com - online store of knit and crochet patterns"
   -
-    url: "../images/portfolio/ira-rott-com/irarott-com-pattern"
+    url: "/images/portfolio/ira-rott-com/irarott-com-pattern"
     title: "front-end of IraRott.com website - pattern page"
   -
-    url: "../images/portfolio/ira-rott-com/irarott-com-categories"
+    url: "/images/portfolio/ira-rott-com/irarott-com-categories"
     title: "front end of IraRott.com website - List of patterns in category"
   -
-    url: "../images/portfolio/ira-rott-com/irarott-com-pattern-admin"
+    url: "/images/portfolio/ira-rott-com/irarott-com-pattern-admin"
     title: "admin page of IraRott.com wrote on ruby language"
   -
-    url: "../images/portfolio/ira-rott-com/irarott-com-pattern-admin-category"
+    url: "/images/portfolio/ira-rott-com/irarott-com-pattern-admin-category"
     title: "Category admin page wrote using ruby language"
   -
-    url: "../images/portfolio/ira-rott-com/irarott-com-admin-newrelic"
+    url: "/images/portfolio/ira-rott-com/irarott-com-admin-newrelic"
     title: "back-end of IraRott.com - newrelic stats"
 about:
   - "Ira Rott is a Knit & Crochet Designer living in Southern Ontario, Canada. This website is her online shopping cart for selling digital material (pdf files with patterns)."

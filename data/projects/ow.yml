@@ -12,13 +12,13 @@ tags:
   - "CoffeeScript"
 images:
   -
-    url: "../images/portfolio/ow/ordering-wizard-step1"
+    url: "/images/portfolio/ow/ordering-wizard-step1"
     title: "First step of Ordering Wizard - a single page web application"
   -
-    url: "../images/portfolio/ow/ordering-wizard-step2"
+    url: "/images/portfolio/ow/ordering-wizard-step2"
     title: "Second step of Ordering Wizard - a single page web application "
   -
-    url: "../images/portfolio/ow/ordering-wizard-last-step"
+    url: "/images/portfolio/ow/ordering-wizard-last-step"
     title: "Last step of Ordering Wizard - a single page web application"
 about:
   - "IXwebhosting.com and CloudByIX.com are hosting services that provide cloud hosting product for their customers. This project is an integrated Single Page Application that allows to pre-configure and bye cloud product without using external payment services."

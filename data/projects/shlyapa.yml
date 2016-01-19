@@ -10,22 +10,22 @@ tags:
   - "DigitalOcean"
 images:
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-new"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-new"
     title: "Fake payment system created to help researches to increase their web application security skills"
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-website"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-website"
     title: "Main website of the hacking game's payment system"
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-payment"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-payment"
     title: "List of plans of the payment system for hacking games"
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-merchant"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-merchant"
     title: "Merchant system of the web application security hacking game"
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-captcha"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-captcha"
     title: "Captcha with security issues to allow researchers to hack into the system"
   -
-    url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-money"
+    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-money"
     title: "List of falke users of the payment system created for security researches"
 about:
   - "«Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag hacking game) held by <a href='https://berezhasecurity.com/' target='_blank' title='Berezha Security'> «Berezha Security». </a>"

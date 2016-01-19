@@ -1,13 +1,16 @@
 portfolio_sections:
   -
-    url: "/portfolio/full-stack"
+    url: "/portfolio/full-stack/"
     name: "Full-Stack"
   -
-    url: "/portfolio/front-end"
+    url: "/portfolio/front-end/"
     name: "Front-end"
   -
-    url: "/portfolio/back-end"
+    url: "/portfolio/back-end/"
     name: "Back-end"
   -
-    url: "/portfolio/oss"
+    url: "/portfolio/oss/"
     name: "Open Source"
+  -
+    url: "/portfolio/"
+    name: "All"

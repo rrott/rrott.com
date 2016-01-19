@@ -9,22 +9,22 @@ tags:
   - "CoffeeScript"
 images:
   -
-    url: "../images/portfolio/landing/landing-hacker-shield"
+    url: "/images/portfolio/landing/landing-hacker-shield"
     title: "Hacker Shiield landing page about web application security"
   -
-    url: "../images/portfolio/landing/landing-sitebuilder"
+    url: "/images/portfolio/landing/landing-sitebuilder"
     title: "Landing page of Site Builder - service for web developers"
   -
-    url: "../images/portfolio/landing/landing-popup"
+    url: "/images/portfolio/landing/landing-popup"
     title: "Ruby on rails website with popup"
   -
-    url: "../images/portfolio/landing/landing-popup-thankyou"
+    url: "/images/portfolio/landing/landing-popup-thankyou"
     title: "ruby rails website with 'thank you' popup"
   -
-    url: "../images/portfolio/landing/landing-domainclub"
+    url: "/images/portfolio/landing/landing-domainclub"
     title: "Landing page of Domain Club - proposition for full stack developers"
   -
-    url: "../images/portfolio/landing/landing-thankyou-page"
+    url: "/images/portfolio/landing/landing-thankyou-page"
     title: "Thank you landing page of the hosting company"
 about:
   - "IXwebhosting.com and HostExcellence.com are hosting brands that have a lot of products including shared, cloud and VPN hostings, domain and SSL registrations, Site Builders and Design services, etc."

@@ -8,22 +8,22 @@ tags:
   - "DigitalOcean"
 images:
   -
-    url: "../images/portfolio/hackit/secure-vpn-admin-payment"
+    url: "/images/portfolio/hackit/secure-vpn-admin-payment"
     title: "ruby on rails website made for security researchers"
   -
-    url: "../images/portfolio/hackit/secure-vpn-admin-transactions"
+    url: "/images/portfolio/hackit/secure-vpn-admin-transactions"
     title: "Admin page of VPN service to test rails security"
   -
-    url: "../images/portfolio/hackit/secure-vpn-admin-traffic"
+    url: "/images/portfolio/hackit/secure-vpn-admin-traffic"
     title: "Traffic on sVPN service's admin page"
   -
-    url: "../images/portfolio/hackit/secure-vpn-servers"
+    url: "/images/portfolio/hackit/secure-vpn-servers"
     title: "Cloud hosting's admin page of the full stack developer with the list of servers"
   -
-    url: "../images/portfolio/hackit/secure-vpn-shlyapa"
+    url: "/images/portfolio/hackit/secure-vpn-shlyapa"
     title: "ruby on rails website with payment system integrated into web-site"
   -
-    url: "../images/portfolio/hackit/secure-vpn-admin-payment"
+    url: "/images/portfolio/hackit/secure-vpn-admin-payment"
     title: "Admin page with payments made by security researchers"
 about:
   - "«SecureVPN» is a service created for the Cybersecurity Olympiad <a href='http://www.hackit-ukraine.com/#content' target='_blank'> «HackIT-2015» </a> with deep integration of «ShlyapaPay» payment service that allowed users to get paid VPN server and connect to any other servers in the network."

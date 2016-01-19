@@ -12,31 +12,31 @@ tags:
   - "Marionette"
 images:
   -
-    url: "../images/portfolio/cloudui/cloudui-usage"
+    url: "/images/portfolio/cloudui/cloudui-usage"
     title: "Cloud hosting control panel web application"
   -
-    url: "../images/portfolio/cloudui/cloudui-dashboard"
+    url: "/images/portfolio/cloudui/cloudui-dashboard"
     title: "Dashboard of web application for Cloud hosting"
   -
-    url: "../images/portfolio/cloudui/cloudui-server"
+    url: "/images/portfolio/cloudui/cloudui-server"
     title: "Adding new servers to cloud hosting web applications"
   -
-    url: "../images/portfolio/cloudui/cloudui-servers"
+    url: "/images/portfolio/cloudui/cloudui-servers"
     title: "Cloud hosting panel with list of web-servers"
   -
-    url: "../images/portfolio/cloudui/cloudui-billing"
+    url: "/images/portfolio/cloudui/cloudui-billing"
     title: "Biiling page integrated into cloud hosting web application"
   -
-    url: "../images/portfolio/cloudui/cloudui-isos"
+    url: "/images/portfolio/cloudui/cloudui-isos"
     title: "control Cloud hosting iso images"
   -
-    url: "../images/portfolio/cloudui/cloudui-events"
+    url: "/images/portfolio/cloudui/cloudui-events"
     title: "Cloud hosting control panel. Events list"
   -
-    url: "../images/portfolio/cloudui/cloudui-ips"
+    url: "/images/portfolio/cloudui/cloudui-ips"
     title: "List of ips for web developers"
   -
-    url: "../images/portfolio/cloudui/cloudui-server-launch"
+    url: "/images/portfolio/cloudui/cloudui-server-launch"
     title: "Launch server pop-up"
 
 
