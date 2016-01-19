@@ -7,8 +7,10 @@ class ImagePreview
 
   initAllevents: ->
     @preview.onclick = (e) =>
-      if e.srcElement.className == 'preview'
+      el =  e.srcElement.id
+      if el == 'preview' || el == 'close'
         this.togglePreview()
+
 
     @preview_img.onclick = (e) => this.showNextImage(e)
 
@@ -19,7 +21,6 @@ class ImagePreview
     @preview.style.display = this._previewVisability()
 
   showNextImage: =>
-    console.log 'next'
 
   _changeLargePicture: (large_image, src) ->
     @preview_img.src = src.href
