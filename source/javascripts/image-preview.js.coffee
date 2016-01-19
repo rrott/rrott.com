@@ -3,12 +3,15 @@ class ImagePreview
     @post_images = document.getElementsByClassName('post-images')
     @preview_img = document.getElementById('preview-image')
     @preview     = document.getElementById('preview')
-
     this.initAllevents()
 
   initAllevents: ->
-    @preview.onclick = (e) => this.togglePreview()
+    @preview.onclick = (e) =>
+      if e.srcElement.className == 'preview'
+        this.togglePreview()
+
     @preview_img.onclick = (e) => this.showNextImage(e)
+
     for post_image in @post_images
       this._setUpImageEvent post_image
 
