@@ -9,16 +9,16 @@ tags:
 images:
   -
     url: "../images/portfolio/uisg11/mobile/iOS-app"
-    title: "Mobile React Native app"
+    title: "Mobile React Native app from a security researcher"
   -
     url: "../images/portfolio/uisg11/mobile/iOS-app-list"
-    title: "Mobile React Native app screens"
+    title: "Screens of React Native app created to show how to hack web applications"
   -
     url: "../images/portfolio/uisg11/mobile/react-native-source"
-    title: "Mobile React Native source code"
+    title: "React Native app's source code of a front end developer"
 
 about:
-  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag security game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
+  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag hacking game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
   - "This is a mobile iOS and Android multiplatform application that connects to FindMeGetMe.xyz to get information about fake accounts through the API. The application had several functions to hide the server it was connected to obfuscating its JS code."
 role: "Full-Stack developer, second Game-Master"
 responsibilities: "Creating and releasing the app, adding API required for the app."
@@ -26,4 +26,4 @@ languages: "JavaScript"
 libs: "React Native 0.15"
 other: ""
 status:
-  message: "«FindMeGetMe» is not in the Market or App Store due to the nature of applications created for CTF games. It as delivered to gamers using vulnerabilities in 3rd party applications."
+  message: "«FindMeGetMe» is not in the Market or App Store due to the nature of applications created for CTF hacking games. It as delivered to gamers using vulnerabilities in 3rd party applications."

@@ -13,13 +13,13 @@ tags:
 images:
   -
     url: "../images/portfolio/ow/ordering-wizard-step1"
-    title: "First step of Ordering Wizard"
+    title: "First step of Ordering Wizard - a single page web application"
   -
     url: "../images/portfolio/ow/ordering-wizard-step2"
-    title: "Second step of Ordering Wizard"
+    title: "Second step of Ordering Wizard - a single page web application "
   -
     url: "../images/portfolio/ow/ordering-wizard-last-step"
-    title: "Last step of Ordering Wizard"
+    title: "Last step of Ordering Wizard - a single page web application"
 about:
   - "IXwebhosting.com and CloudByIX.com are hosting services that provide cloud hosting product for their customers. This project is an integrated Single Page Application that allows to pre-configure and bye cloud product without using external payment services."
 role: "Full-Stack developer. Member of a team of front and back-end developers, BAs, PMs, admins, etc. This product was developed and released using Agile methodology."
@@ -29,15 +29,15 @@ libs: "Sinatra, Backbone.js, jQuery, Ruby on Rails 4.0"
 testing: "Rspec 3.2, Capybara, Jasmine, VCR, site_prism.vcr"
 other: "Capistrano, SASS, ROM"
 status:
-  message: "online and available inside of control panels of 2 Cloud Hosting products: CloudByIX and IXwebhosting."
+  message: "Online and available inside of control panels of 2 Cloud Hosting products: CloudByIX and IXwebhosting. Web application security testing."
   urls:
     -
       link:  "https://my.cloudbyix.com/login"
       short: "https://my.cloudbyix.com"
-      description: "Cloud by IX"
+      description: "Cloud by IX - ruby on rails website of the hosting company"
       nofollow: true
     -
       link:  "https://my.ixwebhosting.com/login"
       short: "https://my.ixwebhosting.com"
-      description: "Cloud by IX"
+      description: "IX web hosting - ruby on rails website of the company"
       nofollow: true

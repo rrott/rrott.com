@@ -9,29 +9,29 @@ tags:
 images:
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-website"
-    title: "FindMeGetMe CTF site. Sockets image"
+    title: "front-end of a CTF site with images served using Sockets"
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-socket-image"
-    title: "FindMeGetMe CTF site. Api part of site"
+    title: "FindMeGetMe CTF site. web application for a white hat hacker"
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-api"
-    title: "FindMeGetMe CTF site. Api"
+    title: "FindMeGetMe CTF site. Api part of site"
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-socket"
-    title: "FindMeGetMe CTF site. Sockets"
+    title: "FindMeGetMe CTF site. back-end with sockets"
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-app"
-    title: "FindMeGetMe CTF site. Website's source code"
+    title: "FindMeGetMe CTF site. web application's source code"
   -
     url: "../images/portfolio/uisg11/findmegetme/findmegetme-static"
-    title: "FindMeGetMe CTF site. Static site's source code"
+    title: "FindMeGetMe CTF site. web application's back-end source code"
 about:
-  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag security game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
-  - "This Fake Dating website had no real users or profiles and was created with a pre-defined vulnerabilities related to Redis. I used a Free design and added vulnerable Rack application that gets photos from Redis service using Sockets technology."
+  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag hacking game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
+  - "This Fake Dating website was created for security researchers and had no real users or profiles. It was created with a pre-defined vulnerabilities related to Redis and Sockets. I used a Free design and added vulnerable Rack application that gets photos from Redis service using Sockets technology."
 role: "Full-Stack developer, second Game-Master"
 responsibilities: "Creating back-end, integrating free design, configuring and optimising web, Redis servers, monitoring services and the application during the games. Creating API for a mobile app."
 languages: "Ruby 2.2"
 libs: "Sinatra"
 other: "Redis"
 status:
-  message: "«FindMeGetMe» is offline now due to the nature of applications created for CTF games."
+  message: "«FindMeGetMe» is offline now due to the nature of applications created for CTF hacking games."

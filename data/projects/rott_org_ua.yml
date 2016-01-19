@@ -10,19 +10,19 @@ tags:
 images:
   -
     url: "../images/portfolio/website/rott-org-ua-main"
-    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+    title: "rott.org.ua - web developer portfolio and blog about web application security"
   -
     url: "../images/portfolio/website/rott-org-ua-about"
-    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+    title: "Roman Rott - full stack developer, security researcher"
   -
     url: "../images/portfolio/website/rott-org-ua-portfolio"
-    title: "rott.org.ua portfolio website of Roman Rott, rrott"
+    title: "Web developer portfolio of Roman Rott"
 about:
   - "My own website with blog and portfolio. The Website includes basic information about myself, my projects, my contact information and blog post related to web-development and security researches."
-role: "Full-Stack developer."
-responsibilities: "Creating back-end, front-end, design, SEO-optimisation, performance optimisation, configuring and web server."
+role: "Full-Stack developer. Security researcher"
+responsibilities: "Creating back-end, front-end, design, SEO-optimisation, performance optimisation, configuring web server."
 languages: "Ruby 2.2, CoffeeScript"
-libs: "MiddleMan - static site generator."
+libs: "MiddleMan - static site generator. This is a JQuery-less website"
 other: "Haml, Pure, Nginx, HTTP/2, WebP"
 status:
   message: "Online"
@@ -31,17 +31,17 @@ status:
       link:  "https://rott.org.ua"
       pre: "Website:"
       short: "https://rott.org.ua"
-      description: "Website"
+      description: "rott.org.ua - web developer portfolio and blog about ethical hacking"
       nofollow: false
     -
       link:  "https://rott.org.ua/portfolio/"
       pre: "Portfolio:"
       short: "https://rott.org.ua/portfolio"
-      description: "Portfolio page"
+      description: "Roman Rott's web developer portfolio"
       nofollow: false
     -
       link:  "https://rott.org.ua/blog"
-      pre: "Blog"
+      pre: "Blog about how to hack and web application security by Full-Stack developer Roman Rott"
       short: "https://rott.org.ua/blog"
       description: "Blog:"
       nofollow: false

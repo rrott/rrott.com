@@ -11,24 +11,24 @@ tags:
 images:
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-new"
-    title: "Fake payment system website"
+    title: "Fake payment system created to help researches to increase their web application security skills"
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-website"
-    title: "ShlyapaPay fake payment system website"
+    title: "Main website of the hacking game's payment system"
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-payment"
-    title: "ShlyapaPay fake payment system. Plans"
+    title: "List of plans of the payment system for hacking games"
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-merchant"
-    title: "ShlyapaPay fake payment system"
+    title: "Merchant system of the web application security hacking game"
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-captcha"
-    title: "ShlyapaPay fake payment system. Captcha page"
+    title: "Captcha with security issues to allow researchers to hack into the system"
   -
     url: "../images/portfolio/shlyapa-pay-info/shlyapa-pay-money"
-    title: "ShlyapaPay fake payment system. List of users page"
+    title: "List of falke users of the payment system created for security researches"
 about:
-  - "«Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag security game) held by <a href='https://berezhasecurity.com/' target='_blank' title='Berezha Security'> «Berezha Security». </a>"
+  - "«Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag hacking game) held by <a href='https://berezhasecurity.com/' target='_blank' title='Berezha Security'> «Berezha Security». </a>"
   - "This payment system has its own website, blog, integration with ActiveMerchant as a fake payment processing. It behaves almost the same way as a common payment systems like PayPal or WebMoney allowing users to send and receive costs to/from each other. The project has its own shopping cart and kind of social network created with several pre-defined vulnerabilities in mind."
   - "«Shlyapa-Pay» was used in game held during International forum <a href='http://cybersecurity.pp.ua/en/Home' target='_blank' title='Cybersecurity, Ukraine and the world'> «Cybersecurity: Ukraine and the world» </a> and then, after fixing all the vulnerabilities and adding new ones, was a part of a game at the Cybersecurity Olympiad <a href='http://www.hackit-ukraine.com/#content' target='_blank' title='Cybersecurity Olympiad'> «HackIT-2015» </a>"
 role: "Full-Stack developer, Game-Master's assistant during 2 CTF games."

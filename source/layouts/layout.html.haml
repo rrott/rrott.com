@@ -5,6 +5,7 @@
     %title=data.site.title
     = stylesheet_link_tag  'application'
     = partial 'meta'
+    %meta{name: 'keywords', content: data.site.keywords}
     %link(rel="prerender" href="https://rott.org.ua/portfolio")
 
     = yield

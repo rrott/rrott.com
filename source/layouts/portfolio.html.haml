@@ -2,18 +2,17 @@
 
 %html{lang: 'en'}
   %head
-    %title=data.site.title
+    %title=data.site.portfolio_title
     = stylesheet_link_tag  'portfolio-blog'
-    = stylesheet_link_tag  'grids-min'
 
+    %meta{name: 'keywords',     content: data.site.keywords_portfolio}
     = partial 'meta'
-    %link(rel="prerender" href="https://irarott.com")
 
     = yield
 
     = javascript_include_tag 'image-preview', async: true
+    = stylesheet_link_tag  'grids-min'
     = stylesheet_link_tag  'grids-responsive-min'
-
     - if build?
       -# Google Analytics
       :javascript
