@@ -1,11 +1,11 @@
 %a{href: "#{project.images.first.url}.png", title: project.images.first.title }
-  %img.large-img.pure-img-responsive{ alt: project.images.first.title, src: "#{project.images.first.url}.png"}/
+  %img.large-img.pure-img-responsive.project-img{ alt: project.images.first.title, src: "#{project.images.first.url}.png"}/
 - if project.info
   .post-image-meta
     %br
     #{project.info}
 #thumbs.pure-g.is-center
-  - project.images.each do |img|
+  - project.images.each_with_index do |img, index|
     .pure-u-3
-      %a.thumb{href: "#{img.url}.png", title: img.title}
+      %a.thumb{href: "#{img.url}.png", title: img.title, index: index}
         %img{src: "#{img.url}-thumb.png", alt: img.title}/
