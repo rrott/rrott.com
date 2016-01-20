@@ -19,7 +19,13 @@ page "humans.txt", :layout => false
 page "/portfolio.html", layout: :portfolio
 
 data.portfolio.sections.each do |project_page|
-  proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: { all_projects: project_page.projects_list, canonical: project_page.canonical }
+  proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: {
+    all_projects: project_page.projects_list,
+    canonical:    project_page.canonical,
+    keywords:     project_page.keywords,
+    description:  project_page.description,
+    title:        project_page.title
+  }
 end
 #activate :autoprefixer
 activate :directory_indexes
