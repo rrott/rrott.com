@@ -5,27 +5,27 @@
 %br
 %br
 .pure-u-1
-  %strong Role:
+  .bold Role:
   #{project.role}
 .pure-u-1
-  %strong Responsibilities:
+  .bold Responsibilities:
   #{project.responsibilities}
 .pure-u-1
-  %strong Languages:
+  .bold Languages:
   #{project.languages}
 .pure-u-1
-  %strong Frameworks/Libs:
+  .bold Frameworks/Libs:
   #{project.libs}
 - if project.testing
   .pure-u-1
-    %strong Testing Frameworks:
+    .bold Testing Frameworks:
     #{project.testing}
 - if project.other
   .pure-u-1
-    %strong Other technologies:
+    .bold Other technologies:
     #{project.other}
 .pure-u-1
-  %strong Status:
+  .bold Status:
   #{project.status.message}
 .pure-u-1
   - if project.status.urls

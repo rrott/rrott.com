@@ -40,9 +40,9 @@ status:
       description: "Roman Rott's web developer portfolio"
       nofollow: false
     -
-      link:  "//blog"
+      link:  "/blog/"
       pre: "Blog about how to hack and web application security by Full-Stack developer Roman Rott"
-      short: "//blog"
+      short: "/blog"
       description: "Blog:"
       nofollow: false
     -

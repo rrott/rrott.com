@@ -5,8 +5,8 @@ Location: Ukraine
 
 Site: https://rott.org.ua
 Site: https://rrott.com
-Blog: https://rott.org.ua/blog
-Blog: https://rrott.com/blog
+Blog: https://rott.org.ua/blog/
+Blog: https://rrott.com/blog/
 
 /* THANKS */
 Middleman: http://middlemanapp.com
