@@ -20,6 +20,7 @@ page "/portfolio.html", layout: :portfolio
 
 data.portfolio.sections.each do |project_page|
   proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: {
+    type:         project_page.type,
     all_projects: project_page.projects_list,
     canonical:    project_page.canonical,
     keywords:     project_page.keywords,

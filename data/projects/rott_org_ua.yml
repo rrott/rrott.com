@@ -1,7 +1,7 @@
 title: "rott.org.ua - current website-portfolio"
 by:
   name: "Roman Rott"
-  url: "https://rott.org.ua"
+  url: "/"
 tags:
   - "Ruby"
   - "MiddleMan"
@@ -28,21 +28,21 @@ status:
   message: "Online"
   urls:
     -
-      link:  "https://rott.org.ua"
+      link:  "/"
       pre: "Website:"
-      short: "https://rott.org.ua"
+      short: "/"
       description: "rott.org.ua - web developer portfolio and blog about ethical hacking"
       nofollow: false
     -
-      link:  "https://rott.org.ua/portfolio/"
+      link:  "//portfolio/"
       pre: "Portfolio:"
-      short: "https://rott.org.ua/portfolio"
+      short: "//portfolio"
       description: "Roman Rott's web developer portfolio"
       nofollow: false
     -
-      link:  "https://rott.org.ua/blog"
+      link:  "//blog"
       pre: "Blog about how to hack and web application security by Full-Stack developer Roman Rott"
-      short: "https://rott.org.ua/blog"
+      short: "//blog"
       description: "Blog:"
       nofollow: false
     -

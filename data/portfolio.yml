@@ -61,9 +61,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/full-stack"
+    type: "Full-Stack"
     keywords: 'web developer portfolio, hacking games, full stack developer, full-stack, ruby language, hacking game, front-end, back-end'
     description: "Web developer Full-Stack portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Full-Stack Web developer portfolio."
+    title: "Roman Rott's Full-Stack Web developer portfolio"
     projects_list:
       -
         title: "Full-Stack projects"
@@ -86,9 +87,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/ruby"
+    type: "Ruby"
     keywords: 'web developer portfolio, hacking games, ruby developer, full-stack, ruby language, hacking game, front-end, back-end, security'
     description: "Ruby developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Ruby developer portfolio."
+    title: "Roman Rott's ruby developer portfolio."
     projects_list:
       -
         title: "Ruby projects"
@@ -126,9 +128,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/padrino"
+    type: "Padrino"
     keywords: 'web developer portfolio, hacking games, remote work, full-stack developer, ruby developer, ruby language, hacking game, front-end, back-end, security'
     description: "Ruby/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Ruby/Padrino developer portfolio."
+    title: "Roman Rott's Ruby/Padrino developer portfolio."
     projects_list:
       -
         title: "Padrino projects"
@@ -142,9 +145,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/jquery"
+    type: "JQuery"
     keywords: 'web developer portfolio, jquery, full stack developer, full-stack, back-end, front-end, ruby language, javascript developer'
     description: "Web developer portfolio of Roman Rott, Jquery projects"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Jquery projects"
+    title: "Roman Rott's Full-Stack Web developer portfolio. Jquery projects"
     projects_list:
       -
         title: "JQuery projects"
@@ -165,9 +169,10 @@ sections:
 
   -
     url: "/portfolio/coffeescript"
+    type: "CoffeeScript"
     keywords: 'web developer portfolio, jquery, full stack developer, full-stack, back-end, front-end, ruby language, javascript developer, security researcher, hacking game, security, white hat'
     description: "Web developer portfolio of Roman Rott. Projects on CoffeeScript"
-    title: "Roman Rott - Full-Stack Web developer portfolio. CoffeeScript projects"
+    title: "Roman Rott's Full-Stack Web developer portfolio. CoffeeScript projects"
     projects_list:
       -
         title: "CoffeeScript projects"
@@ -198,7 +203,7 @@ sections:
     url: "/portfolio/digitalocean"
     keywords: 'web developer portfolio, digital ocean, full stack developer, full-stack, back-end, front-end, ruby language, security researcher, hacking game, security, white hat hacker, ethical hacking'
     description: "Web developer portfolio of Roman Rott. Projects hosted on Digital Ocean"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects hosted on Digital Ocean"
+    title: "Roman Rott's Full-Stack developer portfolio. Projects hosted on Digital Ocean"
     projects_list:
       -
         title: "Projects hosted on Digital Ocean"
@@ -224,9 +229,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/rails"
+    type: "Ruby on Rails"
     keywords: 'web developer portfolio, rails security, ruby rails, ruby on rails, full stack developer, full-stack, back-end, front-end, ruby language, security researcher, hacking game, security, white hat hacker, ethical hacking'
     description: "Web developer portfolio of Roman Rott. Projects on Ruby On Rails"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on Ruby On Rails"
+    title: "Roman Rott's Full-Stack Web developer portfolio. Projects on Ruby On Rails"
     projects_list:
       -
         title: "Ruby on Rails projects"
@@ -249,9 +255,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/backbone"
+    type: "Backbone.js"
     keywords: 'web developer portfolio, backbone, backbone.js, ruby on rails, rails, back-end, front-end, ruby language, javascript developer'
     description: "Web developer portfolio of Roman Rott. Projects on Backbone.js"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on Backbone.js"
+    title: "Roman Rott's Front-end Web developer portfolio. Projects on Backbone.js"
     projects_list:
       -
         title: "Projects on BackBone.js"
@@ -265,9 +272,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/marionette"
+    type: "Backbone nad Marionette"
     keywords: 'web developer portfolio, marionette, marionette.js, backbone.js, backbone, ruby on rails, rails, back-end, front-end, ruby language, javascript developer'
     description: "Web developer portfolio of Roman Rott. Projects on Backbone and Marionette"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on Backbone and Marionette"
+    title: "Roman Rott's Front-end Web developer portfolio. Projects on Marionette"
     canonical: "https://rott.org.ua/portfolio/backbone/"
     projects_list:
       -
@@ -282,9 +290,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/middleman"
+    type: "MiddleMan"
     keywords: 'web developer portfolio, full stack developer, full-stack, back-end, front-end, ruby language, middleman'
     description: "Web developer portfolio of Roman Rott. Projects on MiddleMan"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on MiddleMan"
+    title: "Roman Rott's Full-Stack Web developer portfolio. Projects on MiddleMan"
     projects_list:
       -
         title: "Static Page applications on Middleman"
@@ -295,9 +304,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/javascript"
+    type: "JavaScript"
     keywords: 'web developer portfolio, javascript, front-end, javascript developer, security researcher, hacking game, security, white hat hacker'
     description: "Web developer portfolio of Roman Rott. Projects on JavaScript"
-    title: "Roman Rott - Front-end Web developer portfolio. Javascript projects"
+    title: "Roman Rott's Front-end Web developer portfolio. Javascript projects"
 
     projects_list:
       -
@@ -315,9 +325,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/oss"
+    type: "Open Source"
     keywords: 'web developer portfolio, full-stack, ruby developer, full-stack, ruby language, back-end, javascript developer'
     description: "Open Source projects of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Ruby/Javascript web developer portfolio."
+    title: "Roman Rott's Ruby/Javascript web developer portfolio."
     projects_list:
       -
         title: "Open Source projects"
@@ -334,9 +345,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/sinatra"
+    type: "Sinatra"
     keywords: 'web developer portfolio, hacking games, remote work, full-stack developer, ruby developer, ruby language, hacking game, front-end, back-end, security, sinatra'
     description: "Ruby/Sinatra/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Ruby/Sinatra/Padrino developer portfolio."
+    title: "Roman Rott's Ruby/Sinatra/Padrino developer portfolio."
     projects_list:
       -
         title: "Sinatra projects"
@@ -359,9 +371,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/node"
+    type: "Node.js"
     keywords: 'web developer portfolio, node, node.js, react, front-end, javascript developer, security researcher, hacking game, security, coffeescript'
     description: "Web developer portfolio of Roman Rott. Projects on Node.js"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on Node.js"
+    title: "Roman Rott's Full-Stack developer portfolio. Projects on Node.js"
     projects_list:
       -
         title: "Node.js related projects"
@@ -375,9 +388,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/react"
+    type: "React"
     keywords: 'web developer portfolio, node, node.js, react, front-end, javascript developer, security researcher, hacking game, security'
     description: "Web developer portfolio of Roman Rott. Projects on React"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on React"
+    title: "Roman Rott's Full-Stack developer portfolio. Projects on React"
     projects_list:
       -
         title: "React projects"
@@ -388,9 +402,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/grunt"
+    type: "Grunt"
     keywords: 'web developer portfolio, javascript, front-end, back-end, javascript developer, open source, coffeescript'
     description: "Full-Stack web developer portfolio of Roman Rott. Projects on JavaScript for Grunt"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects on JavaScript for Grunt"
+    title: "Roman Rott's Full-Stack developer portfolio. Projects on JavaScript for Grunt"
     projects_list:
       -
         title: "Grunt projects"
@@ -401,9 +416,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/gems"
+    type: "Ruby gems"
     keywords: 'web developer portfolio, ruby language, back-end, ruby developer, open source, ruby gems, front-end, opensource'
     description: "Full-Stack web developer portfolio of Roman Rott. Ruby Gems"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Ruby Gems"
+    title: "Roman Rott's Full-Stack developer portfolio. Ruby Gems"
 
     projects_list:
       -
@@ -415,9 +431,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/front-end"
+    type: "Front-end"
     keywords: 'Front-end web developer portfolio, full stack developer, front-end, ruby on rails, coffeescript, javascript'
     description: "Front-end Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Web developer portfolio. Front-end projets"
+    title: "Roman Rott's Web developer portfolio. Front-end projets"
     projects_list:
       -
         title: "Front-End projects"
@@ -431,9 +448,10 @@ sections:
             noindex: false
   -
     url: "/portfolio/back-end"
+    type: "Back-end"
     keywords: 'web developer portfolio, hacking games, full stack developer, back-end, ruby developer, security researcher'
     description: "back-end web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
-    title: "Roman Rott - Back-end web developer portfolio. Back-end developer, security researcher, ruby developer, front end developer."
+    title: "Roman Rott's portfolio - Back-end developer. Security researcher"
     projects_list:
       -
         title: "Back-End projects"
@@ -447,9 +465,10 @@ sections:
             noindex: true
   -
     url: "/portfolio/mobile"
+    type: "Mobile"
     keywords: 'web developer portfolio, node, node.js, mobile, react, front-end, javascript developer, security researcher, hacking game, security, coffeescript'
     description: "Web developer portfolio of Roman Rott. Projects for mobile"
-    title: "Roman Rott - Full-Stack Web developer portfolio. Projects for mobile"
+    title: "Roman Rott's Full-Stack developer portfolio. Projects for mobile"
     projects_list:
       -
         title: "Mobile Applications"

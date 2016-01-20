@@ -1,9 +1,6 @@
 .posts{id: "#{projects.id_name}"}
   %h2.content-subhead
-    - if projects.url
-      %a{href: "#{projects.url}", alt: "#{projects.title}", target: '_blank'} #{projects.title}
-    - else
-      #{projects.title}
+    #{projects.title}
   - projects.projects.each do |project|
     - if project.noindex
       %noindex

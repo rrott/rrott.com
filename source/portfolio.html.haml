@@ -1,14 +1,14 @@
 - all_projects ||= data.portfolio.sections.first.projects_list
 - keywords     ||= data.site.portfolio.keywords
 - description  ||= data.site.portfolio.description
-- title        ||= data.site.title
-
-%title=title
-%meta{name: 'keywords', content: keywords}
+- title        ||= data.site.portfolio.title
+- type         ||= ""
+%title= title
+%meta{name: 'keywords',    content: keywords}
 %meta{name: 'description', content: description}
-%meta{name: 'keywords', content: keywords}
+%meta{name: 'keywords',    content: keywords}
 
--if defined? canonical
+-if defined? canonical and canonical != nil
   %meta{name: "robots", content: "noindex, follow"}
   %link{href: canonical, rel: "canonical"}
 
@@ -25,14 +25,14 @@
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
       .header.portfolio-left-part
-        %h1.brand-title Portfolio page
-        %h2.brand-tagline Projects accomplished in 2015 and active in 2016
+        .brand-title Portfolio page
+        %h1.brand-tagline #{type} Projects accomplished in 2015 and active in 2016
         %nav.nav
           %ul.nav-list
             %li.nav-item
-              %a.pure-button{href: "https://rott.org.ua", title: 'Home page of rott.org.ua'} Home
+              %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
             -# %li.nav-item
-            -#   %a.pure-button{href: "https://rott.org.ua/blog/", title: "Roman Rott's blog"} Blog
+            -#   %a.pure-button{href: "/blog/", title: "Roman Rott's blog"} Blog
         .portfolio-contacts
           %br
           = partial 'links'

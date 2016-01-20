@@ -6,7 +6,9 @@
     = stylesheet_link_tag  'application'
     = partial 'meta'
     %meta{name: 'keywords', content: data.site.keywords}
-    %link(rel="prerender" href="https://rott.org.ua/portfolio")
+    %meta{name: 'description',  content: data.site.description}
+
+    %link(rel="prerender" href="/portfolio")
 
     = yield
 
@@ -15,19 +17,20 @@
     = stylesheet_link_tag  'grids-responsive-min'
 
     -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
+
     %script{type: "application/ld+json"}
       :plain
         {
           "@context": "http://schema.org",
           "@type": "Person",
-          "email": "mailto:roman.rott@gmail.com",
-          "image": "https://rott.org.ua/images/rrott-ruby-logo.png",
+          "email": "roman.rott@gmail.com",
+          "image": "https://rrott.com/images/rrott-ruby-logo.png",
           "jobTitle": "Full-Stack ruby developer",
           "name": "Roman Rott",
           "familyName": "Rott",
           "givenName": "Roman",
           "brand": "rrott",
-          "url": "https://rott.org.ua",
+          "url": "https://rrott.com",
           "nationality": "Ukraine"
         }
 
