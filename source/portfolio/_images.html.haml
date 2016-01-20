@@ -8,4 +8,4 @@
   - project.images.each_with_index do |img, index|
     .pure-u-3
       %a.thumb{href: "#{img.url}.png", title: img.title, index: index}
-        %img{src: "#{img.url}-thumb.png", alt: img.title}/
+        %img{src: "#{img.url}-thumb.png", title: img.title, alt: "Screenshot of #{img.title}"/
