@@ -5,10 +5,10 @@
     %title=data.site.title
     = stylesheet_link_tag  'application'
     = partial 'meta'
-    %meta{name: 'keywords', content: data.site.keywords}
-    %meta{name: 'description',  content: data.site.description}
-
-    %link(rel="prerender" href="/portfolio")
+    %meta{name: 'keywords',    content: data.site.keywords}
+    %meta{name: 'description', content: data.site.description}
+    %link{rel:  'subresource', href: "/portfolio-blog.css"}
+    %link{rel:  'prerender',   href: "/blog"}
 
     = yield
 
