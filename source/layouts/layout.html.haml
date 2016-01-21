@@ -4,11 +4,12 @@
   %head
     %title=data.site.title
     = stylesheet_link_tag  'application'
+    %link{rel:  'subresource', href: "/stylesheets/grids-responsive-min.css"}
+    %link{rel:  'subresource', href: "/stylesheets/grids-min.css"}
+
     = partial 'meta'
     %meta{name: 'keywords',    content: data.site.keywords}
     %meta{name: 'description', content: data.site.description}
-    %link{rel:  'subresource', href: "/portfolio-blog.css"}
-    %link{rel:  'prerender',   href: "/blog"}
 
     = yield
 
@@ -20,19 +21,7 @@
 
     %script{type: "application/ld+json"}
       :plain
-        {
-          "@context": "http://schema.org",
-          "@type": "Person",
-          "email": "roman.rott@gmail.com",
-          "image": "https://rrott.com/images/rrott-ruby-logo.png",
-          "jobTitle": "Full-Stack ruby developer",
-          "name": "Roman Rott",
-          "familyName": "Rott",
-          "givenName": "Roman",
-          "brand": "rrott",
-          "url": "https://rrott.com",
-          "nationality": "Ukraine"
-        }
+        {"@context":"http://schema.org","@type":"Person","email":"roman.rott@gmail.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
 
     - if build?
       -# Google Analytics
