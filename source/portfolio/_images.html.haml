@@ -1,5 +1,12 @@
-%a{href: "#{project.images.first.url}.png", title: project.images.first.title }
-  %img.large-img.pure-img-responsive.project-img{ alt: project.images.first.title, src: "#{project.images.first.url}.png"}/
+- image=  project.images.first
+%a{href: "#{image.url}.png", title: image.title }
+  %picture.large-img.pure-img-responsive
+    %source{media: "(max-width: 24em)",  srcset: "#{image.url}-336.png  1x, #{image.url}-768.png 2x"}
+    %source{media: "(max-width: 48em)",  srcset: "#{image.url}-768.png  1x, #{image.url}-1024.png 2x"}
+    %source{media: "(max-width: 64em)",  srcset: "#{image.url}-336.png  1x, #{image.url}-768.png 2x"}
+    %source{media: "(max-width: 112em)", srcset: "#{image.url}-768.png  1x, #{image.url}-1024.png 2x"}
+    %source{media: "(min-width: 112em)", srcset: "#{image.url}-1024.png 1x, #{image.url}-2048.png 2x"}
+    %img.project-img{:alt => image.title, :title => image.title, :src => "#{image.url}-336.png", :srcset => "#{image.url}-336.png 336w, #{image.url}-768.png 768w, #{image.url}-1024.png 1024w, #{image.url}-2048.png 2048w ", :sizes => "(max-width: 48em) 100vw, 33vw"}/
 - if project.info
   .post-image-meta
     %br
