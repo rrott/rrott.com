@@ -1,12 +1,12 @@
 - image=  project.images.first
-%a{href: "#{image.url}.png", title: image.title }
+%a{href: "#{image.url}.jpg", title: image.title }
   %picture.large-img.pure-img-responsive
-    %source{media: "(max-width: 24em)",  srcset: "#{image.url}-336.png  1x, #{image.url}-768.png 2x"}
-    %source{media: "(max-width: 48em)",  srcset: "#{image.url}-768.png  1x, #{image.url}-1024.png 2x"}
-    %source{media: "(max-width: 64em)",  srcset: "#{image.url}-336.png  1x, #{image.url}-768.png 2x"}
-    %source{media: "(max-width: 112em)", srcset: "#{image.url}-768.png  1x, #{image.url}-1024.png 2x"}
-    %source{media: "(min-width: 112em)", srcset: "#{image.url}-1024.png 1x, #{image.url}-2048.png 2x"}
-    %img.project-img{:alt => image.title, :title => image.title, :src => "#{image.url}-336.png", :srcset => "#{image.url}-336.png 336w, #{image.url}-768.png 768w, #{image.url}-1024.png 1024w, #{image.url}-2048.png 2048w ", :sizes => "(max-width: 48em) 100vw, 33vw"}/
+    %source{media: "(max-width: 24em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
+    %source{media: "(max-width: 48em)",  srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
+    %source{media: "(max-width: 64em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
+    %source{media: "(max-width: 112em)", srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
+    %source{media: "(min-width: 112em)", srcset: "#{image.url}-1024.jpg 1x, #{image.url}-2048.jpg 2x"}
+    %img.project-img{:alt => image.title, :title => image.title, :src => "#{image.url}-336.jpg", :srcset => "#{image.url}-336.jpg 336w, #{image.url}-768.jpg 768w, #{image.url}-1024.jpg 1024w, #{image.url}-2048.jpg 2048w ", :sizes => "(max-width: 48em) 100vw, 33vw"}/
 - if project.info
   .post-image-meta
     %br
@@ -14,5 +14,5 @@
 #thumbs.pure-g.is-center
   - project.images.each_with_index do |img, index|
     .pure-u-3
-      %a.thumb{href: "#{img.url}.png", title: img.title}
-        %img{src: "#{img.url}-thumb.png", title: img.title, alt: "Screenshot of #{img.title}", index: index}/
+      %a.thumb{href: "#{img.url}.jpg", title: img.title}
+        %img{src: "#{img.url}-thumb.jpg", title: img.title, alt: "Screenshot of #{img.title}", index: index}/
