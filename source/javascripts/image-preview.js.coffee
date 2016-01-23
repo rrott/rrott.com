@@ -1,8 +1,8 @@
 class ImagePreview
   constructor: ->
-    @portfolios = document.getElementsByClassName('post-images')
-    @preview     = document.getElementById('preview')
-    @preview_img = @preview.querySelector("#preview-image")
+    @portfolios   = document.getElementsByClassName('post-images')
+    @preview      = document.getElementById('preview')
+    @preview_img  = @preview.querySelector("#preview-image")
     @images_array = {images: [], current_image: 1}
     this.initAllevents()
 
@@ -24,6 +24,7 @@ class ImagePreview
   change_id: (id) ->
     #TODO: refactor once site is online
     current = @images_array.current_image
+
     increment = if current + id >= @images_array.images.length
       0
     else if current + id < 0
@@ -41,32 +42,21 @@ class ImagePreview
     document.getElementsByClassName('preview-image-title')[0].innerHTML = image.title
     @preview_img.src = image.src
 
-  _changeLargePicture: (project_image, src) ->
-    @preview_img.src = src.href
-    project_image.parentNode.href  = src.href
-    project_image.src  = src.href
-    project_image.alt  = src.title
-
   _setUpImageEvent: (post_image) ->
-    project_image  = post_image.querySelector(".project-img")
-    project_image.current_image  = 1
-    thumbs       = post_image.getElementsByClassName('thumb')
+    project_image_preview  = post_image.querySelector(".project-img")
+    project_thumbs         = post_image.getElementsByClassName('thumb')
 
-    project_image.images =  this._collectImagesList(thumbs)
+    project_images =
+      current_image: 1
+      images: this._collectImagesList(project_thumbs)
 
-    project_image.onclick = (e) =>
-      this._showImage(e, project_image)
+    this._setUpThumbEvents(project_images, project_thumbs)
+
+    project_image_preview.onclick = (e) =>
+      e.preventDefault()
+      @images_array = project_images
       this.togglePreview()
 
-    this._setUpThumbEvents(project_image, thumbs)
-
-  _showImage: (e, project_image) =>
-    e.preventDefault()
-    @images_array.images = project_image.images
-    @images_array.current_image = parseInt(project_image.current_image)
-
-    src = e.target.parentNode
-    this._changeLargePicture(project_image, src)
 
 
   _collectImagesList: (thumbs) ->
@@ -75,12 +65,13 @@ class ImagePreview
       list.push(src: thumb.href, title: thumb.title, id: index)
     list
 
-  _setUpThumbEvents: (project_image, thumbs) =>
+  _setUpThumbEvents: (project_images, thumbs) =>
     for thumb in thumbs
       thumb.onclick = (e) =>
-        project_image.current_image = thumb.getAttribute('index')
-        this._showImage(e, project_image)
-
+        e.preventDefault()
+        project_images.current_image = parseInt e.srcElement.getAttribute('index')
+        @images_array = project_images
+        this.togglePreview()
 
   _previewVisability: =>
     if this._isPreviewShown() then 'none' else 'block'
