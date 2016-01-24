@@ -1,0 +1,14 @@
+url: "/portfolio/gems"
+type: "Ruby gems"
+keywords: 'web developer portfolio, ruby language, back-end, open source, ruby gems, front-end, opensource'
+description: "Full-Stack web developer portfolio of Roman Rott. Ruby Gems"
+title: "Roman Rott's Full-Stack developer portfolio. Ruby Gems"
+
+projects_list:
+  -
+    title: "Ruby Gems"
+    id_name: "ruby_gem"
+    projects:
+      -
+        name: "asana_god_contact"
+        noindex: false

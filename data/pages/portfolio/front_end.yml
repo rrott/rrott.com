@@ -1,0 +1,16 @@
+url: "/portfolio/front-end"
+type: "Front-end"
+keywords: 'Front-end web developer portfolio, full stack, front-end, ruby on rails, coffeescript, javascript'
+description: "Front-end Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+title: "Roman Rott's Web developer portfolio. Front-end projets"
+projects_list:
+  -
+    title: "Front-End projects"
+    id_name: "front-end"
+    projects:
+      -
+        name: "ow"
+        noindex: false
+      -
+        name: "landing_ix"
+        noindex: false

@@ -18,7 +18,8 @@ page "robots.txt", :layout => false
 page "humans.txt", :layout => false
 page "/portfolio.html", layout: :portfolio
 
-data.portfolio.sections.each do |project_page|
+data.pages.portfolio.each do |page|
+  project_page = page[1]
   proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: {
     type:         project_page.type,
     all_projects: project_page.projects_list,

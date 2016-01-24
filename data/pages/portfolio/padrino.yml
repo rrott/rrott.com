@@ -1,0 +1,16 @@
+url: "/portfolio/padrino"
+type: "Padrino"
+keywords: 'web developer portfolio, hacking games, remote work, full-stack, ruby language, hacking game, front-end, back-end, security'
+description: "Ruby/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+title: "Roman Rott's Ruby/Padrino developer portfolio."
+projects_list:
+  -
+    title: "Padrino projects"
+    id_name: "padrino"
+    projects:
+      -
+        name: "irarott"
+        noindex: true
+      -
+        name: "shlyapa"
+        noindex: false

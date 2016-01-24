@@ -1,0 +1,13 @@
+url: "/portfolio/middleman"
+type: "MiddleMan"
+keywords: 'web developer portfolio, full stack, full-stack, back-end, front-end, ruby language, middleman'
+description: "Web developer portfolio of Roman Rott. Projects on MiddleMan"
+title: "Roman Rott's Full-Stack Web developer portfolio. Projects on MiddleMan"
+projects_list:
+  -
+    title: "Static Page applications on Middleman"
+    id_name: "middleman"
+    projects:
+      -
+        name: "rott_org_ua"
+        noindex: false

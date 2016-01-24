@@ -1,0 +1,16 @@
+url: "/portfolio/node"
+type: "Node.js"
+keywords: 'web developer portfolio, node, node.js, react, front-end, javascript, security researcher, hacking game, security, coffeescript'
+description: "Web developer portfolio of Roman Rott. Projects on Node.js"
+title: "Roman Rott's Full-Stack developer portfolio. Projects on Node.js"
+projects_list:
+  -
+    title: "Node.js related projects"
+    id_name: "node"
+    projects:
+      -
+        name: "mobile_findmegetme"
+        noindex: true
+      -
+        name: "grunt_coffee_chain"
+        noindex: true

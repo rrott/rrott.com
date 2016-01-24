@@ -1,0 +1,17 @@
+url: "/portfolio/marionette"
+type: "Backbone nad Marionette"
+keywords: 'web developer portfolio, marionette, marionette.js, backbone.js, backbone, ruby on rails, rails, back-end, front-end, ruby language, javascript'
+description: "Web developer portfolio of Roman Rott. Projects on Backbone and Marionette"
+title: "Roman Rott's Front-end Web developer portfolio. Projects on Marionette"
+canonical: "https://rott.org.ua/portfolio/backbone/"
+projects_list:
+  -
+    title: "Projects on Backbone.js and Marionette.js"
+    id_name: "marionette"
+    projects:
+      -
+        name: "cloudui"
+        noindex: true
+      -
+        name: "ow"
+        noindex: true

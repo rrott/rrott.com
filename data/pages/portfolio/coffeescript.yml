@@ -1,0 +1,31 @@
+url: "/portfolio/coffeescript"
+type: "CoffeeScript"
+keywords: 'web developer portfolio, jquery, full stack, full-stack, back-end, front-end, ruby language, javascript, security researcher, hacking game, security, white hat'
+description: "Web developer portfolio of Roman Rott. Projects on CoffeeScript"
+title: "Roman Rott's Full-Stack Web developer portfolio. CoffeeScript projects"
+projects_list:
+  -
+    title: "CoffeeScript projects"
+    id_name: "coffeescript"
+    projects:
+      -
+        name: "irarott"
+        noindex: true
+      -
+        name: "cloudui"
+        noindex: false
+      -
+        name: "rott_org_ua"
+        noindex: false
+      -
+        name: "my_best_dates"
+        noindex: true
+      -
+        name: "ow"
+        noindex: false
+      -
+        name: "landing_ix"
+        noindex: true
+      -
+        name: "grunt_coffee_chain"
+        noindex: false

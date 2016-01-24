@@ -1,0 +1,27 @@
+url: "/portfolio/digitalocean"
+keywords: 'web developer portfolio, digital ocean, full stack, full-stack, back-end, front-end, ruby language, security researcher, hacking game, security, white hat hacker, ethical hacking'
+description: "Web developer portfolio of Roman Rott. Projects hosted on Digital Ocean"
+title: "Roman Rott's Full-Stack developer portfolio. Projects hosted on Digital Ocean"
+projects_list:
+  -
+    title: "Projects hosted on Digital Ocean"
+    id_name: "digitalocean"
+    projects:
+      -
+        name: "irarott"
+        noindex: true
+      -
+        name: "rott_org_ua"
+        noindex: true
+      -
+        name: "shlyapa"
+        noindex: true
+      -
+        name: "my_best_dates"
+        noindex: true
+      -
+        name: "securevpn"
+        noindex: true
+      -
+        name: "findmegetme"
+        noindex: true

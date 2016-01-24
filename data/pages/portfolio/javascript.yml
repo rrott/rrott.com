@@ -1,0 +1,20 @@
+url: "/portfolio/javascript"
+type: "JavaScript"
+keywords: 'web developer portfolio, javascript, front-end, javascript, security researcher, hacking game, security, white hat hacker'
+description: "Web developer portfolio of Roman Rott. Projects on JavaScript"
+title: "Roman Rott's Front-end Web developer portfolio. Javascript projects"
+
+projects_list:
+  -
+    title: "Projects with JavaScript"
+    id_name: "javascript"
+    projects:
+      -
+        name: "shlyapa"
+        noindex: true
+      -
+        name: "mobile_findmegetme"
+        noindex: false
+      -
+        name: "grunt_coffee_chain"
+        noindex: false

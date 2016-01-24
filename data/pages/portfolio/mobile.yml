@@ -1,0 +1,13 @@
+url: "/portfolio/mobile"
+type: "Mobile"
+keywords: 'web developer portfolio, node, node.js, mobile, react, front-end, javascripts, security researcher, hacking game, security, coffeescript'
+description: "Web developer portfolio of Roman Rott. Projects for mobile"
+title: "Roman Rott's Full-Stack developer portfolio. Projects for mobile"
+projects_list:
+  -
+    title: "Mobile Applications"
+    id_name: "mobile"
+    projects:
+      -
+        name: "mobile_findmegetme"
+        noindex: true

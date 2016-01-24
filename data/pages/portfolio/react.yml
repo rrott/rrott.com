@@ -1,0 +1,13 @@
+url: "/portfolio/react"
+type: "React"
+keywords: 'web developer portfolio, node, node.js, react, front-end, javascript, security researcher, hacking game, security'
+description: "Web developer portfolio of Roman Rott. Projects on React"
+title: "Roman Rott's Full-Stack developer portfolio. Projects on React"
+projects_list:
+  -
+    title: "React projects"
+    id_name: "react"
+    projects:
+      -
+        name: "mobile_findmegetme"
+        noindex: true

@@ -1,0 +1,40 @@
+url: "/portfolio/ruby"
+type: "Ruby"
+keywords: 'web developer portfolio, hacking games, ruby, full-stack, ruby language, hacking game, front-end, back-end, security'
+description: "Ruby developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+title: "Roman Rott's ruby developer portfolio."
+projects_list:
+  -
+    title: "Ruby projects"
+    id_name: "ruby"
+    projects:
+      -
+        name: "irarott"
+        noindex: true
+      -
+        name: "cloudui"
+        noindex: true
+      -
+        name: "rott_org_ua"
+        noindex: true
+      -
+        name: "shlyapa"
+        noindex: false
+      -
+        name: "my_best_dates"
+        noindex: false
+      -
+        name: "ow"
+        noindex: true
+      -
+        name: "landing_ix"
+        noindex: true
+      -
+        name: "securevpn"
+        noindex: false
+      -
+        name: "findmegetme"
+        noindex: false
+      -
+        name: "asana_god_contact"
+        noindex: false
