@@ -49,7 +49,8 @@
     .content.pure-u-1.pure-u-md-3-4
       %div
         - all_projects.each do |sections|
-          = partial 'portfolio/section', locals: { projects: sections}
+          - breadcrumbs = all_projects != data.pages.portfolio.all_portfolios.projects_list
+          = partial 'portfolio/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
         .footer
           .pure-menu.pure-menu-horizontal
             = partial 'links'

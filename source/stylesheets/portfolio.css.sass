@@ -166,7 +166,6 @@ h3
   background: #aaa
   font-size: 80%
 
-
 .post-images
   margin: 1em 0
 
@@ -185,6 +184,28 @@ h3
   .pure-menu a
     &:hover, &:focus
       background: none
+
+.breadcrumb_el
+  text-transform: uppercase
+  color: #aaa
+  padding: 0.4em 0
+  font-size: 110%
+  font-weight: 500
+  letter-spacing: 0.1em
+
+.breadcrumb
+  border-bottom: 1px solid #1f8dd6
+  li
+    display: inline-block
+  li::before
+    content: "/ "
+
+  text-transform: uppercase
+  color: #aaa
+  padding: 0.4em 0
+  font-size: 110%
+  font-weight: 500
+  letter-spacing: 0.1em
 
 @media (min-width: 48em)
   .content

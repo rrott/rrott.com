@@ -1,6 +1,21 @@
 .posts{id: "#{projects.id_name}"}
-  %h2.content-subhead
-    #{projects.title}
+  - if breadcrumbs
+    %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %a{:href => "/", itemprop: "item"}
+          %span.breadcrumb_el{itemprop: "name"}Home
+        %meta{itemprop: "position", content: "1"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %a{:href => "/portfolio/", itemprop: "item"}
+          %span.breadcrumb_el{itemprop: "name"}Portfolio
+        %meta{itemprop: "position", content: "2"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %a{:href => "./", itemprop: "item"}
+          %span.breadcrumb_el{itemprop: "name"} #{projects.title}
+        %meta{itemprop: "position", content: "3"}
+  - else
+    %h2.content-subhead
+      #{projects.title}
   - projects.projects.each do |project|
     - if project.noindex
       %noindex
