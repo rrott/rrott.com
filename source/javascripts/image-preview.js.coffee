@@ -9,7 +9,7 @@ class ImagePreview
   initAllevents: ->
     #TODO: refactor once site is online
     @preview.onclick = (e) =>
-      el =  e.srcElement.id
+      el =  this.getTarget(e).id
       if el == 'preview' || el == 'close'
         this.togglePreview()
       if el == 'next' || el == 'preview-image'
@@ -42,6 +42,11 @@ class ImagePreview
     document.getElementsByClassName('preview-image-title')[0].innerHTML = image.title
     @preview_img.src = image.src
 
+  getTarget: (e) ->
+    target = if (e.target) then e.target else e.srcElement
+    if (target.nodeType == 3) then target = target.parentNode
+    target
+
   _setUpImageEvent: (post_image) ->
     project_image_preview  = post_image.querySelector(".project-img")
     project_thumbs         = post_image.getElementsByClassName('thumb')
@@ -69,7 +74,7 @@ class ImagePreview
     for thumb in thumbs
       thumb.onclick = (e) =>
         e.preventDefault()
-        project_images.current_image = parseInt e.srcElement.getAttribute('index')
+        project_images.current_image = parseInt this.getTarget(e).getAttribute('index')
         @images_array = project_images
         this.togglePreview()
 

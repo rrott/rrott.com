@@ -60,8 +60,8 @@
 .icon-mail-alt:before { content: '\e805'; }
 /*.icon-zoom-in:before { content: '\e807'; } */
 /*.icon-zoom-out:before { content: '\e808'; } */
-/*.icon-left-open:before { content: '\e809'; } */
-/*.icon-right-open:before { content: '\e80a'; } */
+.icon-left-open:before { content: '\e809'; }
+.icon-right-open:before { content: '\e80a'; }
 /*.icon-diamond:before { content: '\e80c'; } */
 /*.icon-facebook:before { content: '\e80d'; } */
 /*.icon-html5:before { content: '\e80f'; } */
