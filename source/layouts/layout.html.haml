@@ -4,9 +4,7 @@
   %head
     %title=data.site.title
     = partial 'meta'
-    = stylesheet_link_tag  'application'
-    %link{rel: 'subresource', href: "/stylesheets/grids-responsive-min.css"}
-    %link{rel: 'subresource', href: "/stylesheets/grids-min.css"}
+    = stylesheet_link_tag  'main'
     %link{rel: "next", href: "/portfolio/"}
 
     %meta{name: 'keywords',    content: data.site.keywords}
@@ -15,8 +13,9 @@
     = yield
 
     -#= javascript_include_tag 'application', async: true
-    = stylesheet_link_tag  'grids-min'
-    = stylesheet_link_tag  'grids-responsive-min'
+    = stylesheet_link_tag  'grids'
+    = stylesheet_link_tag  'rrott-webfont'
+    = stylesheet_link_tag  'application'
 
     -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
 
