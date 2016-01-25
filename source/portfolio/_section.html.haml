@@ -10,8 +10,7 @@
           %span.breadcrumb_el{itemprop: "name"}Portfolio
         %meta{itemprop: "position", content: "2"}
       %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %a{:href => "./", itemprop: "item"}
-          %span.breadcrumb_el{itemprop: "name"} #{projects.title}
+        %h2.breadcrumb_el{itemprop: "name"} #{projects.title}
         %meta{itemprop: "position", content: "3"}
   - else
     %h2.content-subhead
