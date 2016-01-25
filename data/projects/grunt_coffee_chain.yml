@@ -21,7 +21,7 @@ images:
     title: "back-end of grunt-coffee-chain compiller"
 
 about:
-  - "It is a grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies. It allows web developers in their CoffeeScript files to write Sprockets-style comments to indicate dependencies, e.g. <br><strong>#= require main</strong> <br><strong>#= require_tree lib</strong>"
+  - "It is a grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies. It allows web developers in their CoffeeScript files to write Sprockets-style comments to indicate dependencies, e.g. <br><div class='bold'>#= require main<br>#= require_tree lib</div>"
   - "This ruby gem is written in CoffeeScript but it compiles itself to JavaScript using the previous version of itself."
 role: "JavaScript developer"
 responsibilities: "Full-Stack"

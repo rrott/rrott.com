@@ -5,28 +5,28 @@
 %br
 %br
 .pure-u-1
-  .bold Role:
-  #{project.role}
+  .bold.inline Role:
+  .inline #{project.role}
 .pure-u-1
-  .bold Responsibilities:
-  #{project.responsibilities}
+  .bold.inline Responsibilities:
+  .inline #{project.responsibilities}
 .pure-u-1
-  .bold Languages:
-  #{project.languages}
+  .bold.inline Languages:
+  .inline #{project.languages}
 .pure-u-1
-  .bold Frameworks/Libs:
-  #{project.libs}
+  .bold.inline Frameworks/Libs:
+  .inline #{project.libs}
 - if project.testing
   .pure-u-1
-    .bold Testing Frameworks:
-    #{project.testing}
+    .bold.inline Testing Frameworks:
+    .inline #{project.testing}
 - if project.other
   .pure-u-1
-    .bold Other technologies:
-    #{project.other}
+    .bold.inline Other technologies:
+    .inline #{project.other}
 .pure-u-1
-  .bold Status:
-  #{project.status.message}
+  .bold.inline Status:
+  .inline #{project.status.message}
 .pure-u-1
   - if project.status.urls
     - project.status.urls.each do |url|
