@@ -25,5 +25,7 @@ gem 'middleman-vcard'
 gem 'middleman-meta-tags'
 gem 'middleman-search_engine_sitemap'
 gem 'middleman-robots'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+
 #gem "middleman-es6", github: "vast/middleman-es6"
 #gem 'capistrano-middleman', require: false

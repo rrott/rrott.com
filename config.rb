@@ -41,6 +41,16 @@ activate :search do |search|
   }
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method   = :sftp
+  deploy.host            = '46.101.119.187'
+  deploy.port            = 22
+  deploy.path            = '/var/www/rrott.com'
+  # Optional Settings
+  deploy.user     = 'roman' # no default
+  # deploy.password = 'secret' # no default
+end
+
 #activate :autoprefixer
 activate :directory_indexes
 #activate :minify_html
