@@ -3,4 +3,4 @@
   %a.post-author{href: "/", title: "Projects created by #{project.by.name}", nofollow: true} #{project.by.name}
   using
   - project.tags.each do |tag|
-    %a.post-category{href: "/portfolio/#{tag.downcase}/", title: "Projects created using #{tag}, #{project.libs} and other libs"} #{tag}
+    %a.post-category{href: "/portfolio/#{tag.downcase}/", title: "Projects created using #{tag}, like #{project.title}"} #{tag}

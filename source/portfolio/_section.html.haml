@@ -2,11 +2,11 @@
   - if breadcrumbs
     %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
       %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %a{:href => "/", itemprop: "item"}
+        %a{:href => "https://rrott.com", itemprop: "item", title: 'home page'}
           %span.breadcrumb_el{itemprop: "name"}Home
         %meta{itemprop: "position", content: "1"}
       %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %a{:href => "/portfolio/", itemprop: "item"}
+        %a{:href => "/portfolio/", itemprop: "item", title: "Rott's portfolio"}
           %span.breadcrumb_el{itemprop: "name"}Portfolio
         %meta{itemprop: "position", content: "2"}
       %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
