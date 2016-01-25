@@ -18,7 +18,7 @@
   - projects.projects.each do |project|
     - if project.noindex
       %noindex
-        = partial 'portfolio/project', locals: { project: data.projects[project.name]}
+        = partial 'portfolio/project', locals: { project: data.projects[project.name], index: project.noindex}
     - else
-      = partial 'portfolio/project', locals: { project: data.projects[project.name]}
+      = partial 'portfolio/project', locals: { project: data.projects[project.name], index: false}
 
