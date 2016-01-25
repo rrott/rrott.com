@@ -29,6 +29,18 @@ data.pages.portfolio.each do |page|
     title:        project_page.title
   }
 end
+
+activate :search do |search|
+  search.resources = ['portfolio/', 'index.html']
+  search.index_path = 'search.json' # defaults to `search.json`
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    content: {boost: 50},
+    url:     {index: false, store: true},
+    author:  {boost: 30}
+  }
+end
+
 #activate :autoprefixer
 activate :directory_indexes
 #activate :minify_html
@@ -92,16 +104,6 @@ activate :syntax, :line_numbers => true
 #   blog.summary_separator = /(READMORE)/
 #   blog.summary_length = 250
 # end
-
-activate :search do |search|
-  search.resources = ['blog/', 'index.html', 'portfolio/']
-  search.fields = {
-    title:   {boost: 100, store: true, required: true},
-    content: {boost: 50},
-    url:     {index: false, store: true},
-    author:  {boost: 30}
-  }
-end
 
 configure :development do
   # set :debug_assets, true
