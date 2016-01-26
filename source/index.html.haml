@@ -1,5 +1,6 @@
 %body
-  .main{style: 'background: #1f8dd6;'}
+  .main
+    .splash-container{style: 'background: #1f8dd6;'}
     .splash-container
       .splash
         %strong.splash-head{itemprop: "name"} Roman Rott
@@ -117,17 +118,18 @@
           %h5.content-subhead Contributed to open source projects:
           %ul
             %li
-              %a{href: "https://github.com/rack/rack/pull/992", target: '_blank', nofollow: true}
-                rack/rack
-              ,
-              %a{href: "https://github.com/jashkenas/backbone/pull/3909", target: '_blank', nofollow: true}
-                jashkenas/backbone
-              ,
-              %a{href: "https://github.com/floere/phony/pull/180", target: '_blank', nofollow: true}
-                floere/phony
-              ,
-              %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', nofollow: true}
-                dnesteryuk/site_prism.vcr
+              rack/rack, floere/phony, jashkenas/backbone, dnesteryuk/site_prism.vcr
+              -# %a{href: "https://github.com/rack/rack/pull/992", target: '_blank', nofollow: true}
+              -#   rack/rack
+              -# ,
+              -# %a{href: "https://github.com/jashkenas/backbone/pull/3909", target: '_blank', nofollow: true}
+              -#   jashkenas/backbone
+              -# ,
+              -# %a{href: "https://github.com/floere/phony/pull/180", target: '_blank', nofollow: true}
+              -#   floere/phony
+              -# ,
+              -# %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', nofollow: true}
+              -#   dnesteryuk/site_prism.vcr
           %h5.content-subhead Developed local community:
           %ul
             %li
