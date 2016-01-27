@@ -1,5 +1,8 @@
 {
 	"name": "rrott.com",
+	"short_name": "rrott",
+	"background_color": "#1f8dd6",
+  "theme_color": "#1f8dd6",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
