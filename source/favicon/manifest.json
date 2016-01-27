@@ -1,5 +1,5 @@
 {
-	"name": "rrott",
+	"name": "rrott.com",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -37,5 +37,7 @@
 			"type": "image\/png",
 			"density": 4
 		}
-	]
+	],
+	"start_url": "https:\/\/rrott.com",
+	"display": "standalone"
 }
