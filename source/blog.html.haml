@@ -1,0 +1,46 @@
+- all_projects ||= data.pages.blog.all_blogs.projects_list
+- keywords     ||= data.site.blog.keywords
+- description  ||= data.site.blog.description
+- title        ||= data.site.blog.title
+- type         ||= ""
+%title= title
+%meta{name: 'keywords',    content: keywords}
+%meta{name: 'description', content: description}
+%meta{name: 'keywords',    content: keywords}
+
+%body
+  #layout.pure-g
+    .sidebar.pure-u-1.pure-u-md-1-4
+      .header.blog-left-part
+        .brand-title rrott
+        %h1.brand-tagline Blog
+        %nav.nav
+          %ul.nav-list
+            %li.nav-item
+              %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
+            -# %li.nav-item
+            -#   %a.pure-button{href: "/blog/", title: "Roman Rott's blog"} Blog
+        .blog-contacts
+          %br
+          = partial 'links'
+          %br
+          Open for remote job opportunities
+        %br
+        .blog-categories
+          %nav.nav.tag-cloud
+            %ul.nav-list
+              -# - data.links.blog_sections.each do |section|
+              -#   %li
+              -#     %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
+
+
+
+    .content.pure-u-1.pure-u-md-3-4
+      %div
+        -# - all_projects.each do |sections|
+        -#   - breadcrumbs = all_projects != data.pages.blog.all_blogs.projects_list
+        -#   = partial 'blog/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
+        .footer
+          .pure-menu.pure-menu-horizontal
+            = partial 'links'
+          Projects accomplished in 2015 and active in 2016

@@ -1,50 +1,22 @@
 !!! 5
 
-%html{lang: 'en'}
+%html
   %head
-    %title #{data.page.title || "Roman Rott - full stack ruby developer"}
-    %meta(http-equiv="content-type" content="text/html" charset="utf-8")
-    %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
-    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
-    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
-    %meta(name='apple-mobile-web-app-capable' content='yes')
-    %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
-    %link(rel="stylesheet" href="/stylesheets/grids-min.css")
-    %link(rel="stylesheet" href="/stylesheets/grids-responsive-min.css")
-    = stylesheet_link_tag 'portfolio-blog'
+    = stylesheet_link_tag  'blog'
+    = partial 'meta'
 
-    %body
-      #layout.pure-g
-        .sidebar.pure-u-1.pure-u-md-1-4
-          .header
-            %h1.brand-title Roman's blog
-            %h2.brand-tagline rrott
-            %nav.nav
-              %ul.nav-list
-                %li.nav-item
-                  %a.pure-button{:href => "/"} Home
-                %li.nav-item
-                  %a.pure-button{:href => "https://twitter.com/roman_rott"} twitter
-        .content.pure-u-1.pure-u-md-3-4
-          %div
-            / A wrapper for all the blog posts
-            .posts
+    = yield
 
-
-      = yield
-
-    -# Javascripts
-    = javascript_include_tag 'application', async: true
-    -# = javascript_include_tag "http://www.skypeassets.com/i/scom/js/skype-uri.js", async: true
-
+    = javascript_include_tag 'image-preview', async: true, defer: true
+    = stylesheet_link_tag    'grids'
     - if build?
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-41765849-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      -# -# Google Analytics
+      -# :javascript
+      -#   var _gaq = _gaq || [];
+      -#   _gaq.push(['_setAccount', 'UA-72811093-1']);
+      -#   _gaq.push(['_trackPageview']);
+      -#   (function() {
+      -#     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      -#   })();
