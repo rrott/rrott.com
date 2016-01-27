@@ -4,7 +4,7 @@ require "middleman-vcard"
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-set :url_root, 'https://rott.org.ua'
+set :url_root, 'https://rrott.com'
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -41,16 +41,6 @@ activate :search do |search|
   }
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method   = :sftp
-  deploy.host            = '46.101.119.187'
-  deploy.port            = 22
-  deploy.path            = '/var/www/rrott.com'
-  # Optional Settings
-  deploy.user     = 'roman' # no default
-  # deploy.password = 'secret' # no default
-end
-
 #activate :autoprefixer
 activate :directory_indexes
 #activate :minify_html
@@ -62,8 +52,8 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
-  activate :gzip
 
+  activate :gzip
   activate :disqus do |d|
     d.shortname = "production-shortname"
   end
@@ -102,21 +92,21 @@ activate :syntax, :line_numbers => true
 #   options.image_extensions = %w(.png .jpg .gif .svg)
 # end
 
-# activate :blog do |blog|
-#   # set options on blog
-#   #blog.calendar_template
-#   blog.layout = "blog"
-#   blog.prefix = "blog"
-#   blog.permalink = "{lang}/{title}.html"
-#   blog.paginate = true
-#   blog.page_link = "p{num}"
-#   blog.per_page = 10
-#   blog.summary_separator = /(READMORE)/
-#   blog.summary_length = 250
-# end
+activate :blog do |blog|
+  # set options on blog
+  #blog.calendar_template
+  blog.layout = "blog"
+  blog.prefix = "blog"
+  blog.permalink = "{title}.html"
+  blog.paginate = true
+  blog.page_link = "p{num}"
+  blog.per_page = 10
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
+end
 
 configure :development do
-  # set :debug_assets, true
+  set :debug_assets, true
   activate :livereload
 
   activate :disqus do |d|
