@@ -17,6 +17,7 @@ page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
 page "/portfolio.html", layout: :portfolio
+page "/blog.html", layout: :blog
 
 data.pages.portfolio.each do |page|
   project_page = page[1]

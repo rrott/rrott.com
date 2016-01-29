@@ -12,6 +12,8 @@ keywords: 'roman rott, web developer, full stack, front-end, back-end, ruby deve
 
 
 blog:
+  title: "Roman Rott's blog - Full-stack developer, security researcher"
+  description: "Roman Rott's blog - posts about Ruby, JavaScript, EcmaScript, front-end/back-end development, security researches and analytics"
   keywords: 'security essentials, research, how to hack, web developer, full stack developer, front-end, back-end, ruby developer, security researcher'
 
 portfolio:
