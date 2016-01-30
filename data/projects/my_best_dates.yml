@@ -27,7 +27,7 @@ images:
     url: "/images/portfolio/mybestdate/my-best-dates-addprofile"
     title: "Add profile page, ethical hacking"
 about:
-  - " «MyBestDate» is a fake Dating website created for a CTF(Capture The Flag security game) organised for<a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank' nofollow=true title='UISGCon 11(2015)'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non-Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
+  - " «MyBestDate» is a fake Dating website created for a CTF(Capture The Flag security game) organised for<a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank' rel='nofollow' title='UISGCon 11(2015)'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by Non-Government Organisation <strong>«Ukrainian Information Security Group»</strong>"
   - "This Dating website had no real users or profiles and was created with several pre-defined vulnerabilities that allowed researchers to get flags and proceed with the next part of the hacking game. It has integrated chat and rating systems to allows gamers to use their skills on a system close to real ones."
 role: "Full-Stack developer, second Game-Master"
 responsibilities: "Creating back-end, front-end; integrating free design, admin page; protecting application from all possible security issues, except pre-defined ones; configuring and optimising web, SQL servers; monitoring services and applications during the games."

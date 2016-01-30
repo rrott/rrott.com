@@ -6,4 +6,8 @@ module TemplateHelpers
   def page_url page
     "#{data.site.url}#{page.url}"
   end
+
+  def nofollow(param)
+    if param then 'nofollow' else 'prefetch' end
+  end
 end
