@@ -1,6 +1,6 @@
 !!! 5
 
-%html
+%html{itemscope: true, itemtype: "http://schema.org/WebPage"}
   %head
     %title=data.site.title
     = partial 'meta'
@@ -32,3 +32,4 @@
         -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         -#   })();
+}
