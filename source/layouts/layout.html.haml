@@ -8,27 +8,27 @@
 
     %meta{name: 'keywords',    content: data.site.keywords}
     %meta{name: 'description', content: data.site.description}
+    %body
+      = yield
 
-    = yield
+      -#= javascript_include_tag 'application', async: true
+      = stylesheet_link_tag  'grids'
+      = stylesheet_link_tag  'application'
 
-    -#= javascript_include_tag 'application', async: true
-    = stylesheet_link_tag  'grids'
-    = stylesheet_link_tag  'application'
+      -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
 
-    -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
+      %script{type: "application/ld+json"}
+        :plain
+          {"@context":"http://schema.org","@type":"Person","email":"roman.rott@gmail.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
 
-    %script{type: "application/ld+json"}
-      :plain
-        {"@context":"http://schema.org","@type":"Person","email":"roman.rott@gmail.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
-
-    - if build?
-      -# -# Google Analytics
-      -# :javascript
-      -#   var _gaq = _gaq || [];
-      -#   _gaq.push(['_setAccount', 'UA-72811093-1']);
-      -#   _gaq.push(['_trackPageview']);
-      -#   (function() {
-      -#     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      -#   })();
+      - if build?
+        -# -# Google Analytics
+        -# :javascript
+        -#   var _gaq = _gaq || [];
+        -#   _gaq.push(['_setAccount', 'UA-72811093-1']);
+        -#   _gaq.push(['_trackPageview']);
+        -#   (function() {
+        -#     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        -#   })();
