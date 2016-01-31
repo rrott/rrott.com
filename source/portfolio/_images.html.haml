@@ -11,7 +11,7 @@
   .post-image-meta
     %br
     #{project.info}
-#thumbs.pure-g.is-center
+.pure-g.is-center.thumbs
   - project.images.each_with_index do |img, index|
     .pure-u-3
       %a.thumb{href: "#{img.url}.png", title: img.title}
