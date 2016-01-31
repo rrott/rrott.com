@@ -74,7 +74,7 @@ class ImagePreview
     for thumb in thumbs
       thumb.onclick = (e) =>
         e.preventDefault()
-        project_images.current_image = parseInt this.getTarget(e).getAttribute('index')
+        project_images.current_image = parseInt this.getTarget(e).getAttribute('value')
         @images_array = project_images
         this.togglePreview()
 
