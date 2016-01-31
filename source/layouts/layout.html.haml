@@ -4,7 +4,7 @@
   %head
     %title=data.site.title
     = partial 'meta'
-    = stylesheet_link_tag  'index'
+    = stylesheet_link_tag  'index', property: 'stylesheet'
 
     %meta{name: 'keywords',    content: data.site.keywords}
     %meta{name: 'description', content: data.site.description}
@@ -12,8 +12,8 @@
       = yield
 
       -#= javascript_include_tag 'application', async: true
-      = stylesheet_link_tag  'grids'
-      = stylesheet_link_tag  'application'
+      = stylesheet_link_tag  'grids', property: 'stylesheet'
+      = stylesheet_link_tag  'application', property: 'stylesheet'
 
       -#%script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-569a9b685e52bf3d", :type => "text/javascript"}
 
