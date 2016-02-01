@@ -9,7 +9,7 @@ class ImagePreview
   initAllevents: ->
     #TODO: refactor once site is online
     @preview.onclick = (e) =>
-      el =  this.getTarget(e).id
+      el =  window.Helper.getTarget(e).id
       if el == 'preview' || el == 'close'
         this.togglePreview()
       if el == 'next' || el == 'preview-image'
@@ -42,10 +42,7 @@ class ImagePreview
     document.getElementsByClassName('preview-image-title')[0].innerHTML = image.title
     @preview_img.src = image.src
 
-  getTarget: (e) ->
-    target = if (e.target) then e.target else e.srcElement
-    if (target.nodeType == 3) then target = target.parentNode
-    target
+
 
   _setUpImageEvent: (post_image) ->
     project_image_preview  = post_image.querySelector(".project-img")
@@ -74,7 +71,7 @@ class ImagePreview
     for thumb in thumbs
       thumb.onclick = (e) =>
         e.preventDefault()
-        project_images.current_image = parseInt this.getTarget(e).getAttribute('value')
+        project_images.current_image = parseInt window.Helper.getTarget(e).getAttribute('value')
         @images_array = project_images
         this.togglePreview()
 
@@ -84,8 +81,24 @@ class ImagePreview
   _isPreviewShown: ->
     window.getComputedStyle(@preview).display == 'block'
 
+class Helper
+  constructor: ->
+    @links = document.getElementsByClassName('post-category')
+    for link in @links
+      link.onclick = (e) =>
+        e.preventDefault()
+        url = this.getTarget(e).getAttribute('value')
+        this.openLink(url)
+
+  getTarget: (e) ->
+    target = if (e.target) then e.target else e.srcElement
+    if (target.nodeType == 3) then target = target.parentNode
+    target
+
+  openLink: (url) ->
+    window.location.href = url;
 
 window.ImagePreview = new ImagePreview()
-
+window.Helper = new Helper()
 
 
