@@ -83,7 +83,7 @@ class ImagePreview
 
 class Helper
   constructor: ->
-    @links = document.getElementsByClassName('post-category')
+    @links = document.getElementsByClassName('internal-link')
     for link in @links
       link.onclick = (e) =>
         e.preventDefault()
