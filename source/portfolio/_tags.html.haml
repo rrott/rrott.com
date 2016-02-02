@@ -1,6 +1,6 @@
 %p.post-meta
   By
-  %a.post-author{href: "/", title: "Projects created by #{project.by.name}", rel: 'nofollow'} #{project.by.name}
+  %a.post-author{ title: "Projects created by #{project.by.name}", rel: 'nofollow'} #{project.by.name}
   using
   - project.tags.each do |tag|
     %a.post-category{value: "/portfolio/#{tag.downcase}/", title: "Projects created using #{tag}, like #{project.title}", rel: nofollow(index)} #{tag}
