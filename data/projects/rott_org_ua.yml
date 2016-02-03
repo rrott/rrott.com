@@ -34,9 +34,9 @@ status:
       description: "rott.org.ua - web developer portfolio and blog about ethical hacking"
       nofollow: false
     -
-      link:  "//portfolio/"
+      link:  "/portfolio/"
       pre: "Portfolio:"
-      short: "//portfolio"
+      short: "/portfolio"
       description: "Roman Rott's web developer portfolio"
       nofollow: false
     -
