@@ -1,0 +1,36 @@
+url: "/portfolio/online-projects"
+projects_list:
+  -
+    title: "Full-Stack projects"
+    id_name: "full-stack"
+    projects:
+      -
+        name: "irarott"
+        noindex: false
+      -
+        name: "cloudui"
+        noindex: false
+      -
+        name: "rott_org_ua"
+        noindex: false
+
+  -
+    title: "Front-End projects"
+    id_name: "front-end"
+    projects:
+      -
+        name: "ow"
+        noindex: false
+      -
+        name: "landing_ix"
+        noindex: false
+  -
+    title: "Open Source Plugins and Libs"
+    id_name: "oss"
+    projects:
+      -
+        name: "grunt_coffee_chain"
+        noindex: false
+      -
+        name: "asana_god_contact"
+        noindex: false

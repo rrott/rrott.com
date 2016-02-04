@@ -14,3 +14,28 @@ portfolio_sections:
   -
     url: "/portfolio/"
     name: "All"
+portfolio_list:
+  -
+    url: "/portfolio/full-stack/"
+    name: "Full-Stack"
+  -
+    url: "/portfolio/front-end/"
+    name: "Front-end"
+  -
+    url: "/portfolio/back-end/"
+    name: "Back-end"
+  -
+    url: "/portfolio/online-projects/"
+    name: "Projects, that are still online"
+  -
+    url: "/portfolio/rails/"
+    name: "Ruby on Rails"
+  -
+    url: "/portfolio/jquery/"
+    name: "JQuery and JavaScript projects"
+  -
+    url: "/portfolio/oss/"
+    name: "Open Source"
+  -
+    url: "/portfolio/all"
+    name: "All the projects"
