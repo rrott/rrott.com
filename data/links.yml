@@ -18,24 +18,35 @@ portfolio_list:
   -
     url: "/portfolio/full-stack/"
     name: "Full-Stack"
+    description: ''
+    image: ''
   -
     url: "/portfolio/front-end/"
     name: "Front-end"
+    class: ''
+    description: ''
+    image: ''
   -
     url: "/portfolio/back-end/"
     name: "Back-end"
+    class: ''
+    description: ''
+    image: ''
   -
     url: "/portfolio/online-projects/"
-    name: "Projects, that are still online"
+    name: "Online"
+    class: ''
+    description: ''
+    image: ''
   -
     url: "/portfolio/rails/"
-    name: "Ruby on Rails"
-  -
-    url: "/portfolio/jquery/"
-    name: "JQuery and JavaScript projects"
-  -
-    url: "/portfolio/oss/"
     name: "Open Source"
+    class: ''
+    description: ''
+    image: ''
   -
-    url: "/portfolio/all"
-    name: "All the projects"
+    url: "/contact/"
+    name: "What's next?"
+    description: ''
+    class: ''
+    image: ''
