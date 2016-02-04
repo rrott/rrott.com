@@ -35,6 +35,3 @@ projects_list:
       -
         name: "findmegetme"
         noindex: false
-      -
-        name: "asana_god_contact"
-        noindex: false
