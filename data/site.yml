@@ -3,7 +3,7 @@ name: 'rrott'
 twitter_handle: '@Roman_Rott'
 logo_image_name: 'rrott-ruby-logo.png'
 logo_image_path: 'rrott-ruby-logo.png'
-image: '/rrott-ruby-logo.png'
+image: '//rrott.com/images/rrott-ruby-logo.svg'
 
 
 title: "Roman Rott - Full-stack ruby developer, security researcher"
