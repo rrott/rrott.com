@@ -87,7 +87,7 @@ class Helper
     for link in @links
       link.onclick = (e) =>
         e.preventDefault()
-        url = this.getTarget(e).getAttribute('value')
+        url = this.getTarget(e).getAttribute('link')
         this.openLink(url)
 
   getTarget: (e) ->
