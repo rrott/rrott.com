@@ -16,8 +16,9 @@ page 'feed.xml', layout: false
 page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
-page "/portfolio.html", layout: :portfolio
+proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
 page "/blog.html", layout: :blog
+ignore "/portfolios.html"
 
 data.pages.portfolio.each do |page|
   project_page = page[1]
@@ -31,20 +32,20 @@ data.pages.portfolio.each do |page|
   }
 end
 
-activate :search do |search|
-  search.resources = ['portfolio/', 'index.html']
-  search.index_path = 'search.json' # defaults to `search.json`
-  search.fields = {
-    title:   {boost: 100, store: true, required: true},
-    content: {boost: 50},
-    url:     {index: false, store: true},
-    author:  {boost: 30}
-  }
-end
+# activate :search do |search|
+#   search.resources = ['portfolio/', 'index.html']
+#   search.index_path = 'search.json' # defaults to `search.json`
+#   search.fields = {
+#     title:   {boost: 100, store: true, required: true},
+#     content: {boost: 50},
+#     url:     {index: false, store: true},
+#     author:  {boost: 30}
+#   }
+# end
 
 #activate :autoprefixer
 activate :directory_indexes
-activate :minify_html
+#activate :minify_html
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
