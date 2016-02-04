@@ -1,11 +1,14 @@
-- keywords     ||= data.site.blog.keywords
-- description  ||= data.site.blog.description
-- title        ||= data.site.blog.title
-- type         ||= ""
-%title= title
-%meta{name: 'keywords',    content: keywords}
-%meta{name: 'description', content: description}
-%meta{name: 'keywords',    content: keywords}
+%head
+  = stylesheet_link_tag  'blog', property: 'stylesheet'
+  = partial 'meta'
+  - keywords     ||= data.site.blog.keywords
+  - description  ||= data.site.blog.description
+  - title        ||= data.site.blog.title
+  - type         ||= ""
+  %title= title
+  %meta{name: 'keywords',    content: keywords}
+  %meta{name: 'description', content: description}
+  %meta{name: 'keywords',    content: keywords}
 
 %body
   #layout.pure-g

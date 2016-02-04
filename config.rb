@@ -44,7 +44,7 @@ end
 
 #activate :autoprefixer
 activate :directory_indexes
-activate :minify_html
+#activate :minify_html
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'

@@ -1,16 +1,19 @@
-- all_projects ||= data.pages.portfolio.all_portfolios.projects_list
-- keywords     ||= data.site.portfolio.keywords
-- description  ||= data.site.portfolio.description
-- title        ||= data.site.portfolio.title
-- type         ||= ""
-%title= title
-%meta{name: 'keywords',    content: keywords}
-%meta{name: 'description', content: description}
-%meta{name: 'keywords',    content: keywords}
+%head
+  = stylesheet_link_tag  'portfolio', property: 'stylesheet'
+  = partial 'meta'
+  - all_projects ||= data.pages.portfolio.all_portfolios.projects_list
+  - keywords     ||= data.site.portfolio.keywords
+  - description  ||= data.site.portfolio.description
+  - title        ||= data.site.portfolio.title
+  - type         ||= ""
+  %title= title
+  %meta{name: 'keywords',    content: keywords}
+  %meta{name: 'description', content: description}
+  %meta{name: 'keywords',    content: keywords}
 
--if defined? canonical and canonical != nil
-  %meta{name: "robots", content: "noindex, follow"}
-  %link{href: canonical, rel: "canonical"}
+  -if defined? canonical and canonical != nil
+    %meta{name: "robots", content: "noindex, follow"}
+    %link{href: canonical, rel: "canonical"}
 
 %body
   #preview
