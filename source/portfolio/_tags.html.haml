@@ -1,6 +1,6 @@
 %p.post-meta
   By
-  %a.post-author.internal-link{link: '/', title: "Projects created by #{project.by.name}", rel: 'nofollow'} #{project.by.name}
+  %a.post-author.internal-link{value: '/', title: "Projects created by #{project.by.name}", rel: 'nofollow'} #{project.by.name}
   using
   - project.tags.each do |tag|
-    %a.post-category.internal-link{link: "/portfolio/#{tag.downcase}/", title: "Projects created using #{tag}, like #{project.title}", rel: nofollow(index)} #{tag}
+    %a.post-category.internal-link{value: "/portfolio/#{tag.downcase}/", title: "Projects created using #{tag}, like #{project.title}", rel: nofollow(index)} #{tag}
