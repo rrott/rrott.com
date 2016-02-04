@@ -1,17 +1,7 @@
 .posts{id: "#{projects.id_name}"}
-  %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-    %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-      %a{:href => "https://rrott.com", itemprop: "item", title: 'home page'}
-        %span.breadcrumb_el{itemprop: "name"}Home
-      %meta{itemprop: "position", content: "1"}
-    %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-      %a{:href => "/portfolio/", itemprop: "item", title: "Rott's portfolio"}
-        %span.breadcrumb_el{itemprop: "name"}Portfolio
-      %meta{itemprop: "position", content: "2"}
-    %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-      %h2.breadcrumb_el{itemprop: "name"} #{projects.title}
-      %meta{itemprop: "position", content: "3"}
-
+  - if multipart
+    %h3.content-subhead
+      #{projects.title}
   - projects.projects.each do |project|
     - if project.noindex
       %noindex

@@ -28,7 +28,8 @@ data.pages.portfolio.each do |page|
     canonical:    project_page.canonical,
     keywords:     project_page.keywords,
     description:  project_page.description,
-    title:        project_page.title
+    title:        project_page.title,
+    multipart:    project_page.multipart
   }
 end
 

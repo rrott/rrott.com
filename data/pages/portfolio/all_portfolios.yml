@@ -1,4 +1,6 @@
 url: "/portfolio/all"
+type: 'All'
+multipart: true
 canonical: 'https://rott.org.ua/portfolio/'
 projects_list:
   -
