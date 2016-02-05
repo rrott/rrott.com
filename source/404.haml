@@ -1,3 +1,20 @@
-%h2 The page you are looking for was not found.
+%main
+  %section#contacts.content.is-center
+    %h1 404 Error Page
+    %h2.is-center.content-subhead
+      The page you are looking for was not found.
+    .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
+      %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "images/rrott-ruby-logo.svg"}
+    .pure-g.l-box-lrg.ribbon.l-box-lrg
 
-= link_to 'Home', '/'
+  %section#contacts.content
+    %header.pure-g
+      %h2.content-subhead.is-center.pure-u-1
+        Contact information
+      .pure-u-1.is-center
+        If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
+    = partial 'contacts'
+    %h3.is-center.pure-u-1 Lets build something great!
+
+  %footer.footer.l-box.is-center
+    = partial 'links'

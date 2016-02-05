@@ -19,6 +19,7 @@ page "humans.txt", :layout => false
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
 page "/blog.html", layout: :blog
 ignore "/portfolios.html"
+ignore "/portfolio.html"
 
 data.pages.portfolio.each do |page|
   project_page = page[1]
@@ -46,15 +47,18 @@ end
 
 #activate :autoprefixer
 activate :directory_indexes
-#activate :minify_html
+activate :minify_html
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
-  ignore 'favicons/*'
   ignore 'stylesheets/lib/*'
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
+  ignore 'images/portfolio/*/origin/*'
+  ignore 'images/portfolio/*/jpegs/*'
+  ignore 'images/portfolio/*/small/*'
+  ignore 'favicon/*'
 
   activate :gzip
   activate :disqus do |d|
@@ -78,9 +82,9 @@ activate :webp do |webp|
   webp.append_extension = true
 end
 
-activate :search_engine_sitemap
+# activate :search_engine_sitemap
 
-activate :i18n
+#activate :i18n
 activate :build_info
 #activate :spellcheck
 

@@ -5,7 +5,7 @@ description: "Roman Rott's projects that are online at the moment"
 title: "Roman Rott's Ruby/Javascript web developer portfolio. Online Projects"
 projects_list:
   -
-    title: "Full-Stack projects"
+    title: "Online projects"
     id_name: "full-stack"
     projects:
       -
@@ -17,21 +17,12 @@ projects_list:
       -
         name: "rott_org_ua"
         noindex: false
-
-  -
-    title: "Front-End projects"
-    id_name: "front-end"
-    projects:
       -
         name: "ow"
         noindex: false
       -
         name: "landing_ix"
         noindex: false
-  -
-    title: "Open Source Plugins and Libs"
-    id_name: "oss"
-    projects:
       -
         name: "grunt_coffee_chain"
         noindex: false

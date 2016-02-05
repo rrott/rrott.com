@@ -4,7 +4,7 @@ twitter_handle: '@Roman_Rott'
 logo_image_name: 'rrott-ruby-logo.png'
 logo_image_path: 'rrott-ruby-logo.png'
 image: '//rrott.com/images/rrott-ruby-logo.svg'
-
+url: 'https://rrott.com'
 
 title: "Roman Rott - Full-stack ruby developer, security researcher"
 description: "Roman Rott is a Ukrainian Full-stack developer with 10+ years of IT experience and 4 years experience dedicated to web development and security auditing"
