@@ -18,35 +18,30 @@ portfolio_list:
   -
     url: "/portfolio/full-stack/"
     name: "Full-Stack"
-    description: ''
-    image: ''
+    title: 'Full-Stack projects'
+    image: '/images/portfolio/ira-rott-com/irarott-com'
   -
     url: "/portfolio/front-end/"
     name: "Front-end"
-    class: ''
-    description: ''
-    image: ''
+    title: 'Front-end projects'
+    image: '/images/portfolio/landing/landing-hacker-shield'
   -
     url: "/portfolio/back-end/"
     name: "Back-end"
-    class: ''
-    description: ''
-    image: ''
+    title: 'Back-end Projects'
+    image: '/images/portfolio/asana-god-contact/asana-god-contact-contact'
+  -
+    url: "/portfolio/oss/"
+    name: "Open Source"
+    title: 'Open Source Projects'
+    image: '/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-npm'
   -
     url: "/portfolio/online-projects/"
     name: "Online"
-    class: ''
-    description: ''
-    image: ''
+    title: 'Online at the moment projects'
+    image: '/images/portfolio/website/rott-org-ua-main'
   -
-    url: "/portfolio/rails/"
-    name: "Open Source"
-    class: ''
-    description: ''
-    image: ''
-  -
-    url: "/contact/"
-    name: "What's next?"
-    description: ''
-    class: ''
-    image: ''
+    url: "/portfolio/all"
+    name: "All"
+    title: 'All the projects.'
+    image: '/images/portfolio/findmegetme/findmegetme-socket-image'
