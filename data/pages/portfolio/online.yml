@@ -1,4 +1,8 @@
 url: "/portfolio/online-projects"
+type: "Online"
+keywords: 'web developer portfolio, full-stack, front-end, ruby language, back-end, javascript developer'
+description: "Roman Rott's projects that are online at the moment"
+title: "Roman Rott's Ruby/Javascript web developer portfolio. Online Projects"
 projects_list:
   -
     title: "Full-Stack projects"
