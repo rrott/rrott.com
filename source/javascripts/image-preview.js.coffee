@@ -71,7 +71,7 @@ class ImagePreview
     for thumb in thumbs
       thumb.onclick = (e) =>
         e.preventDefault()
-        project_images.current_image = parseInt window.Helper.getTarget(e).getAttribute('value')
+        project_images.current_image = parseInt window.Helper.getTarget(e).getAttribute('data-index')
         @images_array = project_images
         this.togglePreview()
 
@@ -87,7 +87,7 @@ class Helper
     for link in @links
       link.onclick = (e) =>
         e.preventDefault()
-        url = this.getTarget(e).getAttribute('value')
+        url = this.getTarget(e).getAttribute('data-href')
         this.openLink(url)
 
   getTarget: (e) ->
