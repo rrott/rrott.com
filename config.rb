@@ -47,7 +47,6 @@ end
 
 #activate :autoprefixer
 activate :directory_indexes
-activate :minify_html
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
@@ -66,6 +65,7 @@ configure :build do
   end
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html
   #activate :cache_buster
   activate :relative_assets
   #activate :smusher
