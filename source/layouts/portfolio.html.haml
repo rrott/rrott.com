@@ -3,7 +3,6 @@
 %html{itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en'}
   %head
     = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = stylesheet_link_tag    'grids', property: 'stylesheet'
     = partial 'meta'
     %title= title
     %meta{name: 'keywords',    content: keywords}
@@ -15,7 +14,7 @@
 
   %body
     = yield
-
+    = stylesheet_link_tag    'grids', property: 'stylesheet'
     = javascript_include_tag 'image-preview'
     - if build?
       -# Google Analytics
