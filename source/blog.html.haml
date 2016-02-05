@@ -1,19 +1,14 @@
 %head
   = stylesheet_link_tag  'blog', property: 'stylesheet'
   = partial 'meta'
-  - keywords     ||= data.site.blog.keywords
-  - description  ||= data.site.blog.description
-  - title        ||= data.site.blog.title
-  - type         ||= ""
-  %title= title
-  %meta{name: 'keywords',    content: keywords}
-  %meta{name: 'description', content: description}
-  %meta{name: 'keywords',    content: keywords}
+  %title= data.site.blog.title
+  %meta{name: 'keywords',    content: data.site.blog.keywords}
+  %meta{name: 'description', content: data.site.blog.description}
 
 %body
   #layout.pure-g
     .sidebar.pure-u-1.pure-u-md-1-4
-      .header.blog-left-part
+      %header.header.blog-left-part
         .brand-title Blog
         %h1.brand-tagline Full-Stack development and security researches
         %nav.nav
@@ -38,11 +33,12 @@
 
 
     .content.pure-u-1.pure-u-md-3-4
-      %div
+      %article
+        %section
         -# - all_projects.each do |sections|
         -#   - breadcrumbs = all_projects != data.pages.blog.all_blogs.projects_list
         -#   = partial 'blog/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
-        .footer
+        %footer.footer
           .pure-menu.pure-menu-horizontal
             = partial 'links'
           -# Projects accomplished in 2015 and active in 2016

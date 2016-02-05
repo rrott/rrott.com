@@ -1,22 +1,22 @@
-.main
+%header.main
   .splash-container{style: 'background: #1f8dd6;'}
   .splash-container
     .splash
       %strong.splash-head{itemprop: "name"} Roman Rott
-  }
 
-.content-wrapper{itemscope: true, itemtype: "http://schema.org/Person"}
-  .content.content-head
-    .links.is-center
+%main.content-wrapper{itemscope: true, itemtype: "http://schema.org/Person"}
+  %section.content.content-head
+    %header.links.is-center
       = partial 'links'
       %br
       Open for remote job opportunities. Contact me if you're interested
-    .pure-g
+    %section.pure-g
       .l-box.pure-u-1
         .about.pure-u-1
-          %h1.is-center.content-subhead
-            Hello, my name is
-            %span Roman Rott!
+          %header
+            %h1.is-center.content-subhead
+              Hello, my name is
+              %span Roman Rott!
           .pure-g
             %p.pure-u-1
               I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.
@@ -29,7 +29,7 @@
               I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
 
-        -# .pure-g
+        -# %aside.pure-g
         -#   %ul.pure-u-1.pure-u-md-1-2
         -#     %h3.is-center Recent posts from my blog:
         -#     - blog.articles[0...5].each do |article|
@@ -49,11 +49,11 @@
           -#       "#{article.summary}"
           -#       %a{href: "#{article.url}"} Read more
 
-  .ribbon.l-box-lrg
-    %h2.content-subhead.is-center
-      Web Developer
+  %section.ribbon.l-box-lrg
+    %header.section-header
+      %h2.content-subhead.is-center Web Developer
     .pure-g
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
+      %header.l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
         %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "images/rrott-ruby-logo.svg"}
 
       .pure-u-1.pure-u-md-3-4
@@ -68,9 +68,9 @@
         %h3
           %a{href: "/portfolio/"}
             Check out my portfolio
-  .content.infosec
-    %h2.content-subhead.is-center.pure-u-1
-      Security Researcher
+  %section.content.infosec
+    %header.section-header
+      %h2.content-subhead.is-center.pure-u-1 Security Researcher
     .pure-g
       .pure-u-1.pure-u-md-3-5.infosec-text
         %p I like to test websites for security vulnerabilities (both white-box and black-box) challenging at
@@ -100,8 +100,9 @@
       .l-box-lrg.is-center.pure-u-1.pure-u-md-2-5.image.hat
         .roman_rott
 
-  .ribbon.l-box-lrg.pure-g
-    %h2.content-subhead.is-center.pure-u-1 Community development
+  %section.ribbon.l-box-lrg.pure-g
+    %header.section-header
+      %h2.content-subhead.pure-u-1 Community development
     .pure-g
       .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
         %img.pure-img-responsive{title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183'}
@@ -139,8 +140,8 @@
             %a{href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank'}
               «24Hack»
 
-  #contacts.content
-    .pure-g
+  %section#contacts.content
+    %header.pure-g
       %h2.content-subhead.is-center.pure-u-1
         Contact information
       .pure-u-1.is-center
@@ -148,5 +149,5 @@
     = partial 'contacts'
     %h3.is-center.pure-u-1 Lets build something great!
 
-  .footer.l-box.is-center
+  %footer.footer.l-box.is-center
     = partial 'links'

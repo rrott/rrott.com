@@ -7,9 +7,9 @@
       .preview-image-title  Roman Rott's web projects' screenshots preview
     #next.icon-right-open
 #layout.pure-g
-  .sidebar.pure-u-1.pure-u-md-1-4
+  %section.sidebar.pure-u-1.pure-u-md-1-4
     .header.portfolio-left-part
-      .brand-title Portfolio page
+      %header.brand-title Portfolio page
       %h1.brand-tagline #{type} Projects accomplished in 2015 and active in 2016
       %nav.nav
         %ul.nav-list
@@ -49,7 +49,7 @@
     %div
       - all_projects.each do |sections|
         = partial 'portfolio/section', locals: { projects: sections, multipart: multipart}
-      .footer
+      %footer.footer
         .pure-menu.pure-menu-horizontal
           = partial 'links'
         Projects accomplished in 2015 and active in 2016

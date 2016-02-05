@@ -10,7 +10,7 @@ tags:
 images:
   -
     url: "/images/portfolio/website/rott-org-ua-main"
-    title: "rott.org.ua - web developer portfolio and blog about web application security"
+    title: "rrott.com - web developer portfolio and blog about web application security"
   -
     url: "/images/portfolio/website/rott-org-ua-about"
     title: "Roman Rott - full stack developer, security researcher"
@@ -23,7 +23,7 @@ role: "Full-Stack developer. Security researcher"
 responsibilities: "Creating back-end, front-end, design, SEO-optimisation, performance optimisation, configuring web server."
 languages: "Ruby 2.2, CoffeeScript"
 libs: "MiddleMan - static site generator. This is a JQuery-less website"
-other: "Haml, Pure, Nginx, HTTP/2, WebP"
+other: "HTML5, Haml, Pure, Nginx, HTTP/2, WebP"
 status:
   message: "Online"
   urls:
@@ -31,7 +31,7 @@ status:
       link:  "/"
       pre: "Website:"
       short: "/"
-      description: "rott.org.ua - web developer portfolio and blog about ethical hacking"
+      description: "rrott.com - web developer portfolio and blog about ethical hacking"
       nofollow: false
     -
       link:  "/portfolio/"
