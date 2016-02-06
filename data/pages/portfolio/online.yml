@@ -3,6 +3,7 @@ type: "Online"
 keywords: 'web developer portfolio, full-stack, front-end, ruby language, back-end, javascript developer'
 description: "Roman Rott's projects that are online at the moment"
 title: "Roman Rott's Ruby/Javascript web developer portfolio. Online Projects"
+message: "Applications I've been woking on for Capture The Flag hacking game are offline now due to the nature of applications created for such events. Here is the list of the projects that are still online and avaliable around the globe."
 projects_list:
   -
     title: "Online projects"
