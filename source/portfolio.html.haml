@@ -49,6 +49,9 @@
         %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
           %h2.breadcrumb_el{itemprop: "name"} #{type}
           %meta{itemprop: "position", content: "3"}
+    %section.pure-g
+      %p.pure-u-1.post-description
+        = message
     %div
       - all_projects.each do |sections|
         = partial 'portfolio/section', locals: { projects: sections, multipart: multipart}

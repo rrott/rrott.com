@@ -32,7 +32,8 @@ data.pages.portfolio.each do |page|
     keywords:     project_page.keywords,
     description:  project_page.description,
     title:        project_page.title,
-    multipart:    project_page.multipart
+    multipart:    project_page.multipart,
+    message:      project_page.message
   }
 end
 
