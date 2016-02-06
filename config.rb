@@ -17,6 +17,8 @@ page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
+page "/404.html", layout: false
+page "/sitemap.html", layout: false
 page "/blog.html", layout: :blog
 ignore "/portfolios.html"
 ignore "/portfolio.html"

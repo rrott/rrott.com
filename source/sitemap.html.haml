@@ -1,72 +1,75 @@
-%main
-  %section.content.is-center
-    %h1.is-center.content-subhead
-      Sitemap of rrott.com website
-    .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-      %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "/images/rrott-ruby-logo.svg"}
-    .pure-g.l-box-lrg.ribbon.l-box-lrg
-      .pure-u-1.pure-u-md-1-3
-        %h3 Blog Posts
-        - sitemap.resources.select { |page| page.path =~ /blog.*\.html/ }.each do |page|
-          %a{href: page_url(page), title: "Blog's #{page_url(page)} page" }
-            = page_url(page)
-          %br
-      .pure-u-1.pure-u-md-1-3
-        %h3 Portfolio
-        - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
-          %a{href: page_url(page), title: "Portfolio #{page_url(page)} page"}
-            = page_url(page)
-          %br
-      .pure-u-1.pure-u-md-1-3
-        %h3 Pages
-        %a{href: '/', title: 'Home Page' }
-          Home Page
-          %br
-        %a{href: '/sitemap/', title: 'Home Page' }
-          Site Map
-          %br
-        %a{href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
-          Logo
-          %br
+!!! 5
 
+%html
+  %head
+    %title=data.site.sitemap.title
+    = stylesheet_link_tag  'index', property: 'stylesheet'
+    = partial 'meta'
 
+    %meta{name: 'keywords',    content: data.site.sitemap.keywords}
+    %meta{name: 'description', content: data.site.sitemap.description}
+  %body
+    %main
+      %section.content.is-center
+        %h1.is-center.content-subhead
+          Sitemap of rrott.com website
+        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
+          %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "/images/rrott-ruby-logo.svg"}
+        .pure-g.l-box-lrg.ribbon.l-box-lrg
+          .pure-u-1.pure-u-md-1-3
+            %h3 Blog Posts
+            - sitemap.resources.select { |page| page.path =~ /blog.*\.html/ }.each do |page|
+              %a{href: page_url(page), title: "Blog's #{page_url(page)} page" }
+                = page_url(page)
+              %br
+          .pure-u-1.pure-u-md-1-3
+            %h3 Portfolio
+            - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
+              %a{href: page_url(page), title: "Portfolio #{page_url(page)} page"}
+                = page_url(page)
+              %br
+          .pure-u-1.pure-u-md-1-3
+            %h3 Pages
+            %a{href: '/', title: 'Home Page' }
+              Home Page
+              %br
+            %a{href: '/sitemap/', title: 'Home Page' }
+              Site Map
+              %br
+            %a{href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
+              Logo
+              %br
 
+              -# %aside.pure-g
+              -#   %ul.pure-u-1.pure-u-md-1-2
+              -#     %h3.is-center Recent posts from my blog:
+              -#     - blog.articles[0...5].each do |article|
+              -#       %article
+              -#         %h3
+              -#           %a{href: "#{article.url}", title: "#{article.title}" }
+              -#           %time="#{article.date.strftime('%b %e %Y')}"
+              -#         "#{article.summary}"
+              -#         %a{href: "#{article.url}"} Read more
+                -# %ul.pure-u-1.pure-u-md-1-2
+                -#   %h3.is-center Pined posts from my blog:
+                -#   - blog.articles[0...5].each do |article|
+                -#     %article
+                -#       %h3
+                -#         %a{href: "#{article.url}", title: "#{article.title}" }
+                -#         %time="#{article.date.strftime('%b %e %Y')}"
+                -#       "#{article.summary}"
+                -#       %a{href: "#{article.url}"} Read more
 
+      %section#contacts.content
+        %header.pure-g
+          %h2.content-subhead.is-center.pure-u-1
+            Contact information
+          .pure-u-1.is-center
+            If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
+        = partial 'contacts'
+        %h3.is-center.pure-u-1 Lets build something great!
 
-
-
-
-
-
-
-          -# %aside.pure-g
-          -#   %ul.pure-u-1.pure-u-md-1-2
-          -#     %h3.is-center Recent posts from my blog:
-          -#     - blog.articles[0...5].each do |article|
-          -#       %article
-          -#         %h3
-          -#           %a{href: "#{article.url}", title: "#{article.title}" }
-          -#           %time="#{article.date.strftime('%b %e %Y')}"
-          -#         "#{article.summary}"
-          -#         %a{href: "#{article.url}"} Read more
-            -# %ul.pure-u-1.pure-u-md-1-2
-            -#   %h3.is-center Pined posts from my blog:
-            -#   - blog.articles[0...5].each do |article|
-            -#     %article
-            -#       %h3
-            -#         %a{href: "#{article.url}", title: "#{article.title}" }
-            -#         %time="#{article.date.strftime('%b %e %Y')}"
-            -#       "#{article.summary}"
-            -#       %a{href: "#{article.url}"} Read more
-
-  %section#contacts.content
-    %header.pure-g
-      %h2.content-subhead.is-center.pure-u-1
-        Contact information
-      .pure-u-1.is-center
-        If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-    = partial 'contacts'
-    %h3.is-center.pure-u-1 Lets build something great!
-
-  %footer.footer.l-box.is-center
-    = partial 'links'
+      %footer.footer.l-box.is-center
+        = partial 'links'
+    = stylesheet_link_tag  'grids', property: 'stylesheet'
+    = stylesheet_link_tag  'application', property: 'stylesheet'

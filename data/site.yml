@@ -20,3 +20,13 @@ portfolio:
   title: "Roman Rott's portfolio - Full-stack, front-end, back-end developer"
   keywords: 'web developer portfolio, hacking games, full stack developer, front-end, back-end, ruby developer, security researcher, rails security'
   description: "Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+
+not_found:
+  title: "Roman Rott's website - The page you are looking for was not found!"
+  keywords: 'web developer, full stack, front-end, back-end, ruby, security, rails security'
+  description: "Roman Rott's website - Page not found! 404 error..."
+
+sitemap:
+  title: "Roman Rott's website - Sitemap Page."
+  keywords: 'rrott, roman rott, web developer, full stack, front-end, back-end, ruby, security, rails security'
+  description: "Roman Rott's website - Sitemap Page with all the internal links"

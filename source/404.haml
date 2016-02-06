@@ -1,22 +1,35 @@
-%main
-  %section#contacts.content.is-center
-    %h1 404 Error Page
-    %h2.is-center.content-subhead
-      The page you are looking for was not found.
-    .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-      %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "/images/rrott-ruby-logo.svg"}
-    .pure-g.l-box-lrg.ribbon.l-box-lrg
+!!! 5
 
-  %section#contacts.content
-    %header.pure-g
-      %h2.content-subhead.is-center.pure-u-1
-        Contact information
-      .pure-u-1.is-center
-        If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-    = partial 'contacts'
-    %h3.is-center.pure-u-1 Lets build something great!
+%html
+  %head
+    %title=data.site.not_found.title
+    = stylesheet_link_tag  'index', property: 'stylesheet'
+    = partial 'meta'
 
-  %footer.footer.l-box.is-center
-    = partial 'links'
-    %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-      SiteMap
+    %meta{name: 'keywords',    content: data.site.not_found.keywords}
+    %meta{name: 'description', content: data.site.not_found.description}
+  %body
+    %main
+      %section#contacts.content.is-center
+        %h1 404 Error Page
+        %h2.is-center.content-subhead
+          The page you are looking for was not found.
+        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
+          %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "/images/rrott-ruby-logo.svg"}
+        .pure-g.l-box-lrg.ribbon.l-box-lrg
+
+      %section#contacts.content
+        %header.pure-g
+          %h2.content-subhead.is-center.pure-u-1
+            Contact information
+          .pure-u-1.is-center
+            If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
+        = partial 'contacts'
+        %h3.is-center.pure-u-1 Lets build something great!
+
+      %footer.footer.l-box.is-center
+        = partial 'links'
+        %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+          SiteMap
+    = stylesheet_link_tag  'grids', property: 'stylesheet'
+    = stylesheet_link_tag  'application', property: 'stylesheet'
