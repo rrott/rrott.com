@@ -30,7 +30,9 @@
             - data.links.portfolio_sections.each do |section|
               %li
                 %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
-
+      .share
+        Share:
+        .addthis_sharing_toolbox
   .content.pure-u-1.pure-u-md-3-4
     %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
       %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
@@ -56,11 +58,3 @@
               %img.large-img.pure-img-responsive.project-img{:alt => portfolio.title, :title => portfolio.title, :src => "#{portfolio.image}-336.jpg", :srcset => "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", :sizes => "(max-width: 48em) 100vw, 33vw"}/
             %h3.is_center
               = portfolio.name
-
-
-
-
-    %footer.footer
-      .pure-menu.pure-menu-horizontal
-        = partial 'links'
-      Projects accomplished in 2015 and active in 2016

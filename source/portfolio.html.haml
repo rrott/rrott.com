@@ -30,7 +30,9 @@
             - data.links.portfolio_sections.each do |section|
               %li
                 %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
-
+      .share
+        Share:
+        .addthis_sharing_toolbox
 
 
   .content.pure-u-1.pure-u-md-3-4
@@ -50,7 +52,3 @@
     %div
       - all_projects.each do |sections|
         = partial 'portfolio/section', locals: { projects: sections, multipart: multipart}
-      %footer.footer
-        .pure-menu.pure-menu-horizontal
-          = partial 'links'
-        %time{datetime: '2015'}Projects accomplished in 2015 and active in 2016
