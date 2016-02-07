@@ -3,6 +3,8 @@ type: "React"
 keywords: 'web developer portfolio, node, node.js, react, front-end, javascript, security researcher, hacking game, security'
 description: "Web developer portfolio of Roman Rott. Projects on React"
 title: "Roman Rott's Full-Stack developer portfolio. Projects on React"
+canonical: 'https://rrott.com/portfolio/node/'
+
 projects_list:
   -
     title: "React projects"

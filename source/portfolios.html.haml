@@ -58,3 +58,10 @@
               %img.large-img.pure-img-responsive.project-img{:alt => portfolio.title, :title => portfolio.title, :src => "#{portfolio.image}-336.jpg", :srcset => "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", :sizes => "(max-width: 48em) 100vw, 33vw"}/
             %h3.is_center
               = portfolio.name
+    %footer.footer.l-box.is-center
+      = partial 'links'
+      %br
+      Projects accomplished in 2015 and active in 2016
+      %br
+      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+        SiteMap

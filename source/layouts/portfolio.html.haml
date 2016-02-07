@@ -16,9 +16,9 @@
     = yield
     = stylesheet_link_tag    'grids', property: 'stylesheet'
     = javascript_include_tag 'image-preview'
-    %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
 
     - if build?
+      %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
       -# Google Analytics
       :javascript
         var _gaq = _gaq || [];

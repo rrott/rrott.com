@@ -3,7 +3,7 @@ type: "JavaScript"
 keywords: 'web developer portfolio, javascript, front-end, javascript, security researcher, hacking game, security, white hat hacker'
 description: "Web developer portfolio of Roman Rott. Projects on JavaScript"
 title: "Roman Rott's Front-end Web developer portfolio. Javascript projects"
-
+canonical: 'https://rrott.com/portfolio/front-end/'
 projects_list:
   -
     title: "Projects with JavaScript"

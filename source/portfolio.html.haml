@@ -55,3 +55,10 @@
     %div
       - all_projects.each do |sections|
         = partial 'portfolio/section', locals: { projects: sections, multipart: multipart}
+    %footer.footer.l-box.is-center
+      = partial 'links'
+      %br
+      #{type} Projects accomplished in 2015 and active in 2016
+      %br
+      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+        SiteMap

@@ -3,6 +3,7 @@ type: "Backbone.js"
 keywords: 'web developer portfolio, backbone, backbone.js, ruby on rails, rails, back-end, front-end, ruby language, javascript'
 description: "Web developer portfolio of Roman Rott. Projects on Backbone.js"
 title: "Roman Rott's Front-end Web developer portfolio. Projects on Backbone.js"
+canonical: 'https://rrott.com/portfolio/front-end/'
 projects_list:
   -
     title: "Projects on BackBone.js"
@@ -13,4 +14,4 @@ projects_list:
         noindex: true
       -
         name: "ow"
-        noindex: false
+        noindex: true
