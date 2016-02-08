@@ -3,7 +3,7 @@ type: "Backbone nad Marionette"
 keywords: 'web developer portfolio, marionette, marionette.js, backbone.js, backbone, ruby on rails, rails, back-end, front-end, ruby language, javascript'
 description: "Web developer portfolio of Roman Rott. Projects on Backbone and Marionette"
 title: "Roman Rott's Front-end Web developer portfolio. Projects on Marionette"
-canonical: "https://rrott.com/portfolio/backbone/"
+canonical: "https://rrott.com/portfolio/front-end/"
 projects_list:
   -
     title: "Projects on Backbone.js and Marionette.js"
