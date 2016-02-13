@@ -53,8 +53,8 @@
       %h2.content-subhead.is-center Web Developer
     .pure-g
       .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-        %img.pure-img-responsive.logo{title: "rrott logo", alt: "rrott ruby logo", src: "images/rrott-ruby-logo.svg"}
-
+        .pure-img-responsive.logo
+          = sprockets.find_asset('rrott-ruby-logo.svg').to_s
       .pure-u-1.pure-u-md-3-4
         %p During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services  the high-level of world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.
 
