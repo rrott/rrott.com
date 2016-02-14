@@ -27,8 +27,7 @@ h5
   background: url(../images/roman-rott-in-hat.jpg)
   width: 418px
   height: 480px
-  &:hover
-    background-position: -418px 0px
+  z-index: -2
 
 .ribbon
   h1, h2, h3, h4, h5, h6, label
@@ -61,13 +60,15 @@ a
     padding-right: 0
   .infosec-text
     padding-right: 10%
-    padding-left: 5%
   padding: 1em
   padding-bottom: 0
   padding-right: 0
   .hat
     min-height: 460px
     position: relative
+    &:hover
+      .roman_rott
+        background-position: 0px -480px
     .roman_rott
       position: absolute
       bottom: 0
