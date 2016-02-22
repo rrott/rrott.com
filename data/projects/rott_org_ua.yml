@@ -20,7 +20,7 @@ images:
 about:
   - "My own website with blog and portfolio. The Website includes basic information about myself, my projects, my contact information and blog post related to web-development and security researches."
 role: "Full-Stack developer. Security researcher"
-responsibilities: "Creating back-end, front-end, design, SEO-optimisation, performance optimisation, configuring web server."
+responsibilities: "Creating back-end, front-end, design, SEO-optimization, performance optimization, configuring web server."
 languages: "Ruby 2.2, CoffeeScript"
 libs: "MiddleMan - static site generator. This is a JQuery-less website"
 other: "HTML5, Haml, Pure, Nginx, HTTP/2, WebP"
