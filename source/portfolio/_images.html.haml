@@ -1,12 +1,12 @@
 - image=  project.images.first
 %a{href: "#{image.url}.png", title: image.title }
-  %picture.large-img.pure-img-responsive
+  %picture.large-img.pure-img-responsive{'data-index': 0}
     %source{media: "(max-width: 24em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
     %source{media: "(max-width: 48em)",  srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
     %source{media: "(max-width: 64em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
     %source{media: "(max-width: 112em)", srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
     %source{media: "(min-width: 112em)", srcset: "#{image.url}-1024.jpg 1x, #{image.url}-2048.jpg 2x"}
-    %img.large-img.pure-img-responsive.project-img{:alt => image.title, :title => image.title, :src => "#{image.url}-336.jpg", :srcset => "#{image.url}-336.jpg 336w, #{image.url}-768.jpg 768w, #{image.url}-1024.jpg 1024w, #{image.url}-2048.jpg 2048w ", :sizes => "(max-width: 48em) 100vw, 33vw"}/
+    %img.large-img.pure-img-responsive.project-img{'data-index': 0, alt: image.title, title: image.title, src: "#{image.url}-336.jpg", srcset: "#{image.url}-336.jpg 336w, #{image.url}-768.jpg 768w, #{image.url}-1024.jpg 1024w, #{image.url}-2048.jpg 2048w ", sizes: "(max-width: 48em) 100vw, 33vw"}/
 - if project.info
   .post-image-meta
     %br

@@ -1,29 +1,27 @@
+#= require portfolio
+
 class ImagePreview
   constructor: ->
-    @portfolios   = document.getElementsByClassName('post-images')
     @preview      = document.getElementById('preview')
     @preview_img  = @preview.querySelector("#preview-image")
-    @images_array = {images: [], current_image: 1}
+    @images_array = {images: [], current_image_id: 1}
     this.initAllevents()
 
   initAllevents: ->
     #TODO: refactor once site is online
     @preview.onclick = (e) =>
-      el =  window.Helper.getTarget(e).id
+      el =  window.Helpers.getTarget(e).id
       if el == 'preview' || el == 'close'
         this.togglePreview()
       if el == 'next' || el == 'preview-image'
         this.change_id(1)
       if el == 'prev'
         this.change_id(-1)
-      this.changeImage()
-
-    for post_image in @portfolios
-      this._setUpImageEvent post_image
+      this.changePreviewImage()
 
   change_id: (id) ->
     #TODO: refactor once site is online
-    current = @images_array.current_image
+    current = @images_array.current_image_id
 
     increment = if current + id >= @images_array.images.length
       0
@@ -31,49 +29,19 @@ class ImagePreview
       @images_array.images.length - 1
     else
       current + id
-    @images_array.current_image = increment
+    @images_array.current_image_id = increment
+
+  setImagesArray: (images) ->
+    @images_array = images
 
   togglePreview: =>
-    this.changeImage()
+    this.changePreviewImage()
     @preview.style.display = this._previewVisability()
 
-  changeImage: =>
-    image = @images_array.images[@images_array.current_image]
+  changePreviewImage: =>
+    image = @images_array.images[@images_array.current_image_id]
     document.getElementsByClassName('preview-image-title')[0].innerHTML = image.title
     @preview_img.src = image.src
-
-
-
-  _setUpImageEvent: (post_image) ->
-    project_image_preview  = post_image.querySelector(".project-img")
-    project_thumbs         = post_image.getElementsByClassName('thumb')
-
-    project_images =
-      current_image: 1
-      images: this._collectImagesList(project_thumbs)
-
-    this._setUpThumbEvents(project_images, project_thumbs)
-
-    project_image_preview.onclick = (e) =>
-      e.preventDefault()
-      @images_array = project_images
-      this.togglePreview()
-
-
-
-  _collectImagesList: (thumbs) ->
-    list = []
-    for thumb, index in thumbs
-      list.push(src: thumb.href, title: thumb.title, id: index)
-    list
-
-  _setUpThumbEvents: (project_images, thumbs) =>
-    for thumb in thumbs
-      thumb.onclick = (e) =>
-        e.preventDefault()
-        project_images.current_image = parseInt window.Helper.getTarget(e).getAttribute('data-index')
-        @images_array = project_images
-        this.togglePreview()
 
   _previewVisability: =>
     if this._isPreviewShown() then 'none' else 'block'
@@ -81,24 +49,6 @@ class ImagePreview
   _isPreviewShown: ->
     window.getComputedStyle(@preview).display == 'block'
 
-class Helper
-  constructor: ->
-    @links = document.getElementsByClassName('internal-link')
-    for link in @links
-      link.onclick = (e) =>
-        e.preventDefault()
-        url = this.getTarget(e).getAttribute('data-href')
-        this.openLink(url)
-
-  getTarget: (e) ->
-    target = if (e.target) then e.target else e.srcElement
-    if (target.nodeType == 3) then target = target.parentNode
-    target
-
-  openLink: (url) ->
-    window.location.href = url;
-
 window.ImagePreview = new ImagePreview()
-window.Helper = new Helper()
 
 
