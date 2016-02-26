@@ -20,6 +20,7 @@ class ImagePreview
   changePreviewImage: =>
     image = @images_array.images[@images_array.current_image_id]
     document.getElementsByClassName('preview-image-title')[0].innerHTML = image.title
+    @preview_img.src = ''
     @preview_img.src = image.src
     this.showLoadingIndivcator()
 
