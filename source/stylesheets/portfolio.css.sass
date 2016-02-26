@@ -52,6 +52,16 @@ h3
   .preview-image-title
     color: white
     text-align: center
+
+  #preview-image
+    &.dark
+      -webkit-filter: grayscale(1)
+      filter: grayscale(1)
+      transition: all 1s ease
+  #spinner
+    color: white
+    text-align: left
+
   .overlay
     display: table
 

@@ -33,8 +33,9 @@ class Portfolio
   _triggerEvent: (e) ->
     e.preventDefault()
     @images.current_image_id = parseInt window.Helpers.getTarget(e).getAttribute('data-index')
-    #TODO: refactor to not to use ImagePreview
+    #TODO: refactor to not use ImagePreview
     ImagePreview.setImagesArray @images
+    ImagePreview.changePreviewImage()
     ImagePreview.togglePreview()
 
   _collectImagesList: ->
