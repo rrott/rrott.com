@@ -22,6 +22,7 @@ page "/sitemap.html", layout: false
 page "/blog.html", layout: :blog
 ignore "/portfolios.html"
 ignore "/portfolio.html"
+ignore "/syntax.css.erb"
 
 data.pages.portfolio.each do |page|
   project_page = page[1]
@@ -89,6 +90,7 @@ end
 
 #activate :i18n
 activate :build_info
+activate :syntax, :line_numbers => true
 #activate :spellcheck
 
 # Enable syntax highlighting

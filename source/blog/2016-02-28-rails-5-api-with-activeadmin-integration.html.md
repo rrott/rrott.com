@@ -181,4 +181,8 @@ Let's do it!
   **Password:** password
   
   ![Image of Rails 5 API application with ActiveAdmin enabled](/images/blog/rails5-api-active-admin/active-admin-with-rails5.png)
+
 That it. =)
+> Note: Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is avaliable from your internal IP address only.
+
+Have Fun!
