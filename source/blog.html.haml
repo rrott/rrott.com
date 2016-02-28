@@ -32,8 +32,15 @@
     %article
       %section
         %h1.is-center.content-subhead
-          Blog about Full-Stack development and security researches. I will be adding new post during this month and on.
+          Blog about Full-Stack development and security researches.
       -# %time{datetime: '2013-06-12T16:23-05:00'} June 2012
       -# - all_projects.each do |sections|
       -#   - breadcrumbs = all_projects != data.pages.blog.all_blogs.projects_list
       -#   = partial 'blog/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
+    - blog.articles[0...5].each do |article|
+      %article
+        %h2
+          %a{:href => article.url}= article.title
+          %time= article.date.strftime('%b %e %Y')
+        = article.summary
+        %a{:href => article.url} Read more

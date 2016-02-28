@@ -104,10 +104,10 @@ activate :syntax, :line_numbers => true
 
 activate :blog do |blog|
   # set options on blog
-  #blog.calendar_template
+  blog.calendar_template
   blog.layout = "blog"
   blog.prefix = "blog"
-  blog.permalink = "{title}.html"
+  blog.permalink = "{category}/{title}.html"
   blog.paginate = true
   blog.page_link = "p{num}"
   blog.per_page = 10
