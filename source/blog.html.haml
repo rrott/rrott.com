@@ -37,6 +37,22 @@
       -# - all_projects.each do |sections|
       -#   - breadcrumbs = all_projects != data.pages.blog.all_blogs.projects_list
       -#   = partial 'blog/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
+      -# %ul
+      -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+      -#     %li
+      -#       %h5= year
+      -#       %ul
+      -#         - articles.each do |article|
+      -#           %li
+      -#             %a{:href => article.url}= article.title
+    -# %ul
+    -#   - blog.tags.each do |tag, articles|
+    -#     %li
+    -#       %h5= tag
+    -#       %ul
+    -#         - articles.each do |article|
+    -#           %li
+    -#             %a{:href => article.url}= article.title
     - blog.articles[0...5].each do |article|
       %article
         %h2

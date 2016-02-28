@@ -105,7 +105,7 @@ activate :syntax, :line_numbers => true
 activate :blog do |blog|
   # set options on blog
   blog.calendar_template
-  blog.layout = "blog"
+  blog.layout = "blog_post"
   blog.prefix = "blog"
   blog.permalink = "{category}/{title}.html"
   blog.paginate = true
@@ -113,6 +113,7 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
+  Time.zone = "Kyiv"
 end
 
 configure :development do

@@ -3,6 +3,7 @@ title: Setting Up Rails 5 API App with ActiveAdmin
 date: 2016-02-28 15:44 UTC
 tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api
 category: ror
+
 ---
 #Setting Up Rails 5 API Only App with ActiveAdmin enabled
 
