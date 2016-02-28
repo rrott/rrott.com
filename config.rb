@@ -96,8 +96,7 @@ activate :syntax, :line_numbers => true
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
-activate :syntax, :line_numbers => true
-
+set :haml, { ugly: true }
 # activate :imageoptim do |options|
 #   # Use a build manifest to prevent re-compressing images between builds
 #   options.manifest = true

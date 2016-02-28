@@ -16,6 +16,7 @@ gem 'middleman-pry'
 gem 'middleman-build-info'
 gem 'pry'
 gem "redcarpet"
+gem 'kramdown'
 gem "sitemap_generator"
 gem 'middleman-minify-html'
 gem "middleman-disqus"

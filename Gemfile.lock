@@ -233,6 +233,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  kramdown
   middleman
   middleman-autoprefixer
   middleman-blog
