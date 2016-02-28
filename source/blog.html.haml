@@ -1,28 +1,29 @@
-
 #layout.pure-g
-  .sidebar.pure-u-1.pure-u-md-1-4
-    .header.blog-left-part
-      .brand-title Blog
-      %h1.brand-tagline Full-Stack development and security researches
+  %section.sidebar.pure-u-1.pure-u-md-1-4
+    .header.portfolio-left-part
+      %header.brand-title Blog
+      %h1.brand-tagline Full-Stack web development and security researches
       %nav.nav
         %ul.nav-list
           %li.nav-item
             %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
           \/
           %li.nav-item
-            %a.pure-button{href: "/portfolio/", title: "Portfolio page"} Portfolio
-      .blog-contacts
+            %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
+      .pure-img-responsive.logo
+        = sprockets.find_asset('rrott-ruby-logo.svg').to_s
+      .portfolio-contacts
         %br
         = partial 'links'
         %br
         Open for remote job opportunities
       %br
-      .blog-categories
+      .portfolio-categories
         %nav.nav.tag-cloud
           %ul.nav-list
-            -# - data.links.blog_sections.each do |section|
-            -#   %li
-            -#     %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
+            - data.links.blog_sections.each do |section|
+              %li
+                %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
       .share
         Share:
         .addthis_sharing_toolbox
@@ -33,18 +34,15 @@
       %section
         %h1.is-center.content-subhead
           Blog about Full-Stack development and security researches.
-      -# %time{datetime: '2013-06-12T16:23-05:00'} June 2012
-      -# - all_projects.each do |sections|
-      -#   - breadcrumbs = all_projects != data.pages.blog.all_blogs.projects_list
-      -#   = partial 'blog/section', locals: { projects: sections, breadcrumbs: breadcrumbs}
-      -# %ul
-      -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-      -#     %li
-      -#       %h5= year
-      -#       %ul
-      -#         - articles.each do |article|
-      -#           %li
-      -#             %a{:href => article.url}= article.title
+
+      %ul
+        - blog.articles.group_by {|a| a.date }.each do |date, articles|
+          %li
+            %h5= date.strftime('%b %e %Y')
+            %ul
+              - articles.each do |article|
+                %li
+                  %a{:href => article.url}= article.title
     -# %ul
     -#   - blog.tags.each do |tag, articles|
     -#     %li
@@ -53,10 +51,11 @@
     -#         - articles.each do |article|
     -#           %li
     -#             %a{:href => article.url}= article.title
-    - blog.articles[0...5].each do |article|
-      %article
-        %h2
-          %a{:href => article.url}= article.title
-          %time= article.date.strftime('%b %e %Y')
-        = article.summary
-        %a{:href => article.url} Read more
+    -# %ul
+    -#   - blog.articles.each do |article|
+    -#     %article
+    -#       = article.summary
+    -#       %time{datetime: article.date} #{ article.date.strftime('%b %e %Y')}
+    -#       %br
+    -#       %br
+    -#       %a{:href => article.url} Read more...

@@ -24,12 +24,15 @@
               \/
               %li.nav-item
                 %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
+          .pure-img-responsive.logo
+            = sprockets.find_asset('rrott-ruby-logo.svg').to_s
           .portfolio-contacts
             %br
             = partial 'links'
             %br
             Open for remote job opportunities
           %br
+
           .portfolio-categories
             %nav.nav.tag-cloud
               %ul.nav-list
@@ -61,6 +64,8 @@
             %meta{itemprop: "position", content: "4"}
 
       %article
+        %br
+        %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
         = yield
         %br
         %br
