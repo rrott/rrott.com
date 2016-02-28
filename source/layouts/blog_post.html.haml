@@ -15,7 +15,7 @@
     .sidebar.pure-u-1.pure-u-md-1-4
       .header.blog-left-part
         .brand-title Blog
-        %h1.brand-tagline Full-Stack development and security researches
+        %h1.brand-tagline about Full-Stack development and security researches.
         %nav.nav
           %ul.nav-list
             %li.nav-item
@@ -42,8 +42,23 @@
 
     .content.pure-u-1.pure-u-md-3-4
       %section
-        %h1.is-center.content-subhead
-          Blog about Full-Stack development and security researches.
+        %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
+          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+            %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
+              %span.breadcrumb_el{itemprop: "name"}Home
+            %meta{itemprop: "position", content: "1"}
+          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+            %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
+              %span.breadcrumb_el{itemprop: "name"}Blog
+            %meta{itemprop: "position", content: "2"}
+          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+            %a{href: "/blog/#{current_article.data["category"]}", itemprop: "item", title: "Blog about #{current_article.data["category"]}"}
+              %span.breadcrumb_el{itemprop: "name"} #{current_article.data["category"]}
+            %meta{itemprop: "position", content: "3"}
+          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+            %h2.breadcrumb_el{itemprop: "name"} #{current_article.title}
+            %meta{itemprop: "position", content: "4"}
+
       %article
         = yield
 

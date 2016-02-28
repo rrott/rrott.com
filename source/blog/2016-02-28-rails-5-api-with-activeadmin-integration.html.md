@@ -1,5 +1,6 @@
 ---
 title: Setting Up Rails 5 API App with ActiveAdmin
+short: 
 date: 2016-02-28 15:44 UTC
 tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api
 category: ror
@@ -51,19 +52,19 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
   
     > Note, I am running this command from the directory  where cloned version of rails is located. It means I have to put an additional param with the directory name started from `../` to put the newly generated application into a place above current wd. `../new_api_app` in this case.
 
-5. The next step is to cd into directory of your new rails Api application and run `bundle` and `rake db:setup` to install all the necessary gems and setup the database:
-  
+5. The next step is to cd into directory of your new rails API application and run `bundle` and `rake db:setup` to install all the necessary gems and setup the database:
+
     ```bash
       $ cd ../new_api_app
       $ bundle install
       $ bin/rake db:setup
     ```
-  >Note that I am using `bin/rake`(and will be using `bin/rails` in the next steps) cause this version of rails was not installed globablly and the full path to apropriate binnary should be used.
-  
-  Now we have a new tiny-tyne API only Rails application without tons of Front-end related stuff that is useless in case of API apps.
+    >Note that I am using `bin/rake`(and will be using `bin/rails` in the next steps) cause this version of rails was not installed globally and the full path to appropriate binary should be used.
 
-6. The very next step would be installing and setting up `RSpec`, adding tests and may be a `factory_girl` for creating factories, etc, but this part is out of my theme. 
-  > The same is for scafolding and generating new resources, but you will probably note that when an app is created with the `--api` flag generator will not create views and only api-related recources are created, e.g.:
+    Now we have a new tiny-tyne API only Rails application without tons of Front-end related stuff that is useless in case of API apps.
+
+6. The very next step would be: installing and setting up `RSpec`, adding tests, scaffolding resources, etc, etc, but this part is out of my theme. 
+> You have probably noted that when an app is created with the `--api` flag, generator did not create views but only api-related resources were created, e.g.:
 
     ```bash
     $ bin/rails g scaffold user
@@ -88,9 +89,10 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
         create        spec/requests/users_spec.rb
     ```
 
+---
 ## Setting Up ActiveAdmin
 
-Even thought Rails 5 API allows us to get rid of senseless Rails' Front-End parts, generating a new project using `--api` param, we can easely integrate ActiveAdmin into it.
+Even thought Rails 5 API allows us to get rid of senseless Rails' Front-End parts, generating a new project using `--api` param, we can easily integrate ActiveAdmin into it.
 
 They did it by having base API controller inherit from `ActionController::API` instead of `ApplicationController` so integrating ActiveAdmin is as easy as setting `ApplicationController` to be inherited from `ActionController::Base`.
 
@@ -100,21 +102,24 @@ Let's do it!
 
 ###Prepare Rails API application.
 1. Update your `application_controller.rb` file.
-  before:
+
+    before:
 
     ```ruby
       class ApplicationController < ActionController::API
         # your code here
       end
     ```
-  after:
+
+    after:
 
     ```ruby
       class ApplicationController < ActionController::Base
         # your code here
       end
     ```
-2. Update `config/application.rb` file to include necessary for ActiveAdmin classes, such as `ActionDispatch::Flash`, `Rack::MethodOverride`, `ActionDispatch::Cookies`
+
+2. Update `config/application.rb` file to include necessary for ActiveAdmin `ActionDispatch::Flash`, `Rack::MethodOverride` and `ActionDispatch::Cookies`
 
     ```ruby
       module NewApiApp
@@ -180,12 +185,11 @@ Let's do it!
     Visit http://localhost:3000/admin and log in as the default user:
 
     **User:** admin@example.com
-    
     **Password:** password
 
   ![Image of Rails 5 API application with ActiveAdmin enabled](/images/blog/rails5-api-active-admin/active-admin-with-rails5.png)
 
 That it. =)
-> Note: Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is avaliable from your internal IP address only.
+> Note: Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is available from your internal IP address only.
 
 Have Fun!
