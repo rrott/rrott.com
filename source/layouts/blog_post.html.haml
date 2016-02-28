@@ -41,11 +41,11 @@
 
 
     .content.pure-u-1.pure-u-md-3-4
+      %section
+        %h1.is-center.content-subhead
+          Blog about Full-Stack development and security researches.
       %article
-        %section
-          %h1.is-center.content-subhead
-            Blog about Full-Stack development and security researches.
-      = yield
+        = yield
 
     = stylesheet_link_tag    'grids', property: 'stylesheet'
 
