@@ -56,19 +56,24 @@
               %span.breadcrumb_el{itemprop: "name"}Blog
             %meta{itemprop: "position", content: "2"}
           %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "/blog/#{current_article.data["category"].downcase}", itemprop: "item", title: "Blog about #{current_article.data["category"]}"}
-              %span.breadcrumb_el{itemprop: "name"} #{current_article.data["category"]}
+            %h2.breadcrumb_el{itemprop: "name"} #{category}
             %meta{itemprop: "position", content: "3"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %h2.breadcrumb_el{itemprop: "name"} #{current_article.title}
-            %meta{itemprop: "position", content: "4"}
 
       %article
-        %br
-        %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
-        = yield
-        %br
-        %br
+        %section
+          %h3.is-center
+            Blog about Full-Stack development and security researches.
+
+        %ul
+          - blog.tags.each do |tag, articles|
+            - if tag == category
+              %li
+                %h5= tag
+                %ul
+                  - articles.each do |article|
+                    %li
+                      %a{:href => article.url}= article.title
+
     = stylesheet_link_tag    'grids', property: 'stylesheet'
 
     - if build?

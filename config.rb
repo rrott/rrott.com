@@ -115,6 +115,12 @@ activate :blog do |blog|
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
   Time.zone = "Kyiv"
+  blog.custom_collections = {
+    category: {
+      link: '/{category}',
+      template: '/blog_category.html'
+    }
+  }
 end
 
 configure :development do

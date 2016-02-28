@@ -17,7 +17,7 @@ portfolio_sections:
 
 blog_sections:
   -
-    url: "/blog/RoR/"
+    url: "/blog/ror/"
     name: "Ruby on Rails"
   -
     url: "/blog/"

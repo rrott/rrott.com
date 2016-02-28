@@ -2,7 +2,7 @@
 title: Rails 5 API with ActiveAdmin integration
 short: 
 date: 2016-02-28 15:44 UTC
-tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api
+tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api, RoR, ror
 category: RoR
 
 ---
