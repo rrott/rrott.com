@@ -19,10 +19,11 @@
         .pure-g.l-box-lrg.ribbon.l-box-lrg
           .pure-u-1.pure-u-md-1-3
             %h3 Blog Posts
-            - sitemap.resources.select { |page| page.path =~ /blog.*\.html/ }.each do |page|
+            - blog.articles.each do |page|
               %a{href: page_url(page), title: "Blog's #{page_url(page)} page" }
                 = page_url(page)
               %br
+
           .pure-u-1.pure-u-md-1-3
             %h3 Portfolio
             - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
