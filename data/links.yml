@@ -14,6 +14,14 @@ portfolio_sections:
   -
     url: "/portfolio/"
     name: "All"
+
+blog_sections:
+  -
+    url: "/blog/RoR/"
+    name: "Ruby on Rails"
+  -
+    url: "/blog/"
+    name: "All"
 portfolio_list:
   -
     url: "/portfolio/full-stack/"
