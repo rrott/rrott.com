@@ -1,10 +1,9 @@
-# How to stop worrying and start using Sketch
+# How to stop worrying and start using Sketch.
 
-> *SVG is an image format for vector graphics. It literally means Scalable Vector Graphics. Basically, what you work with in Adobe Illustrator.*
-
+> *SVG is an image format for vector graphics. It literally means Scalable Vector Graphics.*
 ...they say
 
-blah! If you are kind of developers, who used to be involved to design work only when all other designers are offline because of Gandhi Jayanti or whatewer, you would not install Illustrator on your machine, it senseless. It's like byeing Bently for traveling across the country, especially if you do this once per decade. 
+From my expirience, some(if not most of) developers hate working with such huge graphic editors as GIMP, Photoshop or Illustrator. And I am one of such developers. It was really too hard for me to edit images using them: from one hand I am a perfectionist but from another hand I'm too lazy to focus in one tool for a long time =)
 
 I like SVG and used it a lot, but creating or editing svg images was the worst episodes in my life... till I tried Sketch 3! It's reaaly cool and this story tell you why =)
 
