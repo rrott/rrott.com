@@ -22,7 +22,7 @@ page "/sitemap.html", layout: false
 page "/blog.html", layout: :blog
 ignore "/portfolios.html"
 ignore "/portfolio.html"
-ignore "/syntax.css.erb"
+ignore "/stylesheets/syntax.css.erb"
 
 data.pages.portfolio.each do |page|
   project_page = page[1]
@@ -65,7 +65,7 @@ configure :build do
 
   activate :gzip
   activate :disqus do |d|
-    d.shortname = "production-shortname"
+    d.shortname = "rrott-blog"
   end
   activate :minify_css
   activate :minify_javascript
@@ -117,7 +117,7 @@ activate :blog do |blog|
   Time.zone = "Kyiv"
   blog.custom_collections = {
     category: {
-      link: '/{category}',
+      link: '/{category}.html',
       template: '/blog_category.html'
     }
   }
@@ -129,7 +129,6 @@ configure :development do
 
   activate :disqus do |d|
     # using a special shortname
-    d.shortname = "development-shortname"
     # or setting to `nil` will stop Disqus loading
     d.shortname = nil
   end

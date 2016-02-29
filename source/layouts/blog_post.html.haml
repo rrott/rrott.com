@@ -68,6 +68,9 @@
         %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
         = yield
         %br
+        = disqus
+        = disqus_count
+        %br
         %br
     = stylesheet_link_tag    'grids', property: 'stylesheet'
 
