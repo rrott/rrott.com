@@ -1,6 +1,5 @@
 require "middleman-smusher"
-require 'kramdown'
-require "middleman-vcard"
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -39,12 +38,11 @@ data.pages.portfolio.each do |page|
 end
 
 # activate :search do |search|
-#   search.resources = ['portfolio/', 'index.html']
-#   search.index_path = 'search.json' # defaults to `search.json`
+#   search.resources = ['blog/', 'index.html', 'portfolio/']
 #   search.fields = {
 #     title:   {boost: 100, store: true, required: true},
 #     content: {boost: 50},
-#     url:     {index: false, store: true},
+#     url:     {index: true, store: true},
 #     author:  {boost: 30}
 #   }
 # end
@@ -86,22 +84,15 @@ activate :webp do |webp|
   webp.append_extension = true
 end
 
-# activate :search_engine_sitemap
 
 #activate :i18n
 activate :build_info
 activate :syntax, :line_numbers => true
-#activate :spellcheck
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :haml, { ugly: true }
-# activate :imageoptim do |options|
-#   # Use a build manifest to prevent re-compressing images between builds
-#   options.manifest = true
-#   options.image_extensions = %w(.png .jpg .gif .svg)
-# end
 
 activate :blog do |blog|
   # set options on blog
@@ -128,11 +119,6 @@ configure :development do
   activate :livereload
 
   activate :disqus do |d|
-    # using a special shortname
-    # or setting to `nil` will stop Disqus loading
     d.shortname = nil
   end
 end
-
-# activate :vcard,
-#   name: 'Roman Rott'
