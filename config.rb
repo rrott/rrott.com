@@ -94,6 +94,7 @@ set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
 set :haml, { ugly: true }
 
+page "blog/*/index.html", :layout => :blog_category
 activate :blog do |blog|
   # set options on blog
   blog.calendar_template

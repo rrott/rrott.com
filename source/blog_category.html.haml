@@ -1,90 +1,61 @@
-!!! 5
+#layout.pure-g
+  %section.sidebar.pure-u-1.pure-u-md-1-4
+    .header.portfolio-left-part
+      %header.brand-title Blog
+      %h1.brand-tagline Full-Stack web development and security researches
+      %nav.nav
+        %ul.nav-list
+          %li.nav-item
+            %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
+          \/
+          %li.nav-item
+            %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
+      .pure-img-responsive.logo-small
+        = sprockets.find_asset('rrott-ruby-logo.svg').to_s
+      .portfolio-contacts
+        %br
+        = partial 'links'
+        %br
+        Open for remote job opportunities
+      %br
 
-%html{itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en'}
-  %head
-    -# = stylesheet_link_tag  'blog', property: 'stylesheet'
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = stylesheet_link_tag  'syntax', property: 'stylesheet'
-
-    = partial 'meta'
-    %title= data.site.blog.title
-    %meta{name: 'keywords',    content: data.site.blog.keywords}
-    %meta{name: 'description', content: data.site.blog.description}
-
-  %body
-    #layout.pure-g
-      %section.sidebar.pure-u-1.pure-u-md-1-4
-        .header.portfolio-left-part
-          %header.brand-title Blog
-          %h1.brand-tagline Full-Stack web development and security researches
-          %nav.nav
-            %ul.nav-list
-              %li.nav-item
-                %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
-              \/
-              %li.nav-item
-                %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
-          .pure-img-responsive.logo-small
-            = sprockets.find_asset('rrott-ruby-logo.svg').to_s
-          .portfolio-contacts
-            %br
-            = partial 'links'
-            %br
-            Open for remote job opportunities
-          %br
-
-          .portfolio-categories
-            %nav.nav.tag-cloud
-              %ul.nav-list
-                - data.links.blog_sections.each do |section|
-                  %li
-                    %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
-          .share
-            Share:
-            .addthis_sharing_toolbox
-
-
-    .content.pure-u-1.pure-u-md-3-4
-      %section
-        %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
-              %span.breadcrumb_el{itemprop: "name"}Home
-            %meta{itemprop: "position", content: "1"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
-              %span.breadcrumb_el{itemprop: "name"}Blog
-            %meta{itemprop: "position", content: "2"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %h2.breadcrumb_el{itemprop: "name"} #{category}
-            %meta{itemprop: "position", content: "3"}
-
-      %article
-        %section
-          %h3.is-center
-            Blog about Full-Stack development and security researches.
-
-        %ul
-          - blog.tags.each do |tag, articles|
-            - if tag == category
+      .portfolio-categories
+        %nav.nav.tag-cloud
+          %ul.nav-list
+            - data.links.blog_sections.each do |section|
               %li
-                %h5= tag
-                %ul
-                  - articles.each do |article|
-                    %li
-                      %a{:href => article.url}= article.title
+                %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
+      .share
+        Share:
+        .addthis_sharing_toolbox
 
-    = stylesheet_link_tag    'grids', property: 'stylesheet'
 
-    - if build?
-      %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72811093-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+.content.pure-u-1.pure-u-md-3-4
+  %section
+    %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
+          %span.breadcrumb_el{itemprop: "name"}Home
+        %meta{itemprop: "position", content: "1"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
+          %span.breadcrumb_el{itemprop: "name"}Blog
+        %meta{itemprop: "position", content: "2"}
+      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+        %h2.breadcrumb_el{itemprop: "name"} #{category}
+        %meta{itemprop: "position", content: "3"}
+
+  %article
+    %section
+      %h3.is-center
+        Blog about Full-Stack development and security researches.
+
+    %ul
+      - blog.tags.each do |tag, articles|
+        - if tag == category
+          %li
+            %h5= tag
+            %ul
+              - articles.each do |article|
+                %li
+                  %a{:href => article.url}= article.title

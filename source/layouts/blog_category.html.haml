@@ -1,0 +1,31 @@
+!!! 5
+
+%html{itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en'}
+  %head
+    -# = stylesheet_link_tag  'blog', property: 'stylesheet'
+    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
+    = stylesheet_link_tag  'syntax', property: 'stylesheet'
+
+    = partial 'meta'
+    %title= "Roman Rott's blog - #{category} category on the blog"
+    %meta{name: 'keywords',    content: "#{category}, #{data.site.blog.keywords}"}
+    %meta{name: 'description', content: "#{category} category on the blog"}
+
+
+  %body
+    = yield
+
+    = stylesheet_link_tag    'grids', property: 'stylesheet'
+
+    - if build?
+      %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
+      -# Google Analytics
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-72811093-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
