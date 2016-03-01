@@ -10,7 +10,8 @@
     %title= "Roman Rott's blog - #{category} category on the blog"
     %meta{name: 'keywords',    content: "#{category}, #{data.site.blog.keywords}"}
     %meta{name: 'description', content: "#{category} category on the blog"}
-
+    %meta{name: "robots", content: "noindex, follow"}
+    %link{href: "https://rrott.com/blog/", rel: "canonical"}
 
   %body
     = yield
