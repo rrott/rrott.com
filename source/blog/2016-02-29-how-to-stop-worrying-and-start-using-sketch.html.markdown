@@ -1,21 +1,29 @@
+---
+title: How to stop worrying and start using Sketch
+short: 
+date: 2016-02-29 20:00 UTC
+tags: sketch, logo, rrott, web-design, front-end, svg
+category: SVG
+
+---
+
 # How to stop worrying and start using Sketch.
 
 > *SVG is an image format for vector graphics. It literally means Scalable Vector Graphics.*
 ...they say
 
-From my expirience, some(if not most of) developers hate working with such huge graphic editors as GIMP, Photoshop or Illustrator. And I am one of such developers. It was really too hard for me to edit images using them: from one hand I am a perfectionist but from another hand I'm too lazy to focus in one tool for a long time =)
+**Preamble #1:** From my experience, some(if not most of) developers hate working with such huge graphic editors as GIMP, Photoshop or Illustrator, and I am one of such developers. It was really too hard for me to edit images using them: from one hand I am a perfectionist and love working on awesome pictures and interfaces but from another hand I'm too lazy to spend a lot of time in a single tool =)
 
-I like SVG and used it a lot, but creating or editing svg images was the worst episodes in my life... till I tried Sketch 3! It's reaaly cool and this story tell you why =)
+**Preamble #2:** I've been using SVG since IE9, and even I had a lot of problem with supporting it, I faced much more problems creating or editing SVG images. It was the worst moments of my life when I had to update an SVG image "a bit"... Each time I tried to find any really good vector graphic editor I got nothing but SublimeText. And it was true till I tried **Sketch 3**! And I really suggest using it, I love it and this blog post tells why.
 
-I leave it up in Ukraine, I love my country and you know =) ... when I started designing my site and my blog, I found myself happy with thinking about some kind of logo that would show who I am and what I do. Don't remember when and how I got this idea, but I came to this:
+**Preamble #3:** When I started designing my site and blog, I found myself happy with thinking about creating some kind of logo that would show who I am and what I do. I leave it up in Ukraine, I love my country and know what?, I came to the following result:
 ![Ruby-Logo](https://rrott.com/images/rrott-ruby-logo.svg)
 
-It's the final version of my idea: put ukrainan symbol into the ruby. It looked like a good one, but even thought I used Gimp for almost everything I need to do, I had no idea how to create an svg with less efforts and as fast as possible. I even had no idea how to do this slow as if I had unlimited time =(
+My initial idea was simple as door: **mix Ukrainan emblem with ruby**. When I started working on it, I choose Gimp as it was my favorite editor and previously I used it to paint almost everything I need.
+But I had no idea how designers create logos, where they start from, what tools use, etc, etc. And I wanted to do this with as less efforts and as fast as possible. But I even had no idea how to do this slow and with max eforts! =(
 
 I knew about Sketch and tried it at once a year ago, but I did not get it... till now.
 
-Here is my workflow:
-    1. Add ruby
-    2. make ruby a bit sharpen
-    3. drow the owel =) kidding
-Then I had to put an antem into it, but how? 
+Here is a slow-motion of the creation process of my logo's second version.
+
+It's smart and fast, is not it?

@@ -46,11 +46,12 @@
       %ul
         - blog.articles.group_by {|a| a.date }.each do |date, articles|
           %li
-            %h5= date.strftime('%b %e %Y')
+            %strong= date.strftime('%b %e %Y')
             %ul
               - articles.each do |article|
                 %li
                   %a{:href => article.url}= article.title
+            %br
     -# %ul
     -#   - blog.tags.each do |tag, articles|
     -#     %li

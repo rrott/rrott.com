@@ -91,7 +91,7 @@ activate :syntax, :line_numbers => true
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
 set :haml, { ugly: true }
 
 activate :blog do |blog|
