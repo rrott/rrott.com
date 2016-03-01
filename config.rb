@@ -108,7 +108,7 @@ activate :blog do |blog|
   Time.zone = "Kyiv"
   blog.custom_collections = {
     category: {
-      link: '/{category}.html',
+      link: '/{category}/index.html',
       template: '/blog_category.html'
     }
   }
