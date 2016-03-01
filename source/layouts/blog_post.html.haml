@@ -7,9 +7,9 @@
     = stylesheet_link_tag  'syntax', property: 'stylesheet'
 
     = partial 'meta'
-    %title= data.site.blog.title
-    %meta{name: 'keywords',    content: data.site.blog.keywords}
-    %meta{name: 'description', content: data.site.blog.description}
+    %title= "Roman Rott's blog - #{current_article.title}"
+    %meta{name: 'keywords',    content: current_article.tags.join(', ')}
+    %meta{name: 'description', content: current_article.title}
 
   %body
     #layout.pure-g
