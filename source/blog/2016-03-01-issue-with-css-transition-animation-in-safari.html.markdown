@@ -97,7 +97,7 @@ This solution moves logo outside of the link and sets logo above it using positi
 Where `#logo` is a new div that has our `.tanuki-shape` SVG image inside.
 
 ---
-SVG image in Safari before | and after the change
--------------------------- | --------------------
-  ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_before_change.gif) | ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_after_change.gif)
+| SVG image in Safari before | and after the change |
+|:--------------------------:|:--------------------:|
+|  ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_before_change.gif) | ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_after_change.gif)|
 
