@@ -20,14 +20,17 @@ Honestly, I love it!
 
 When I started working on my website and my blog, I've got an idea about creating a small logo or something to describe who am I and what I do. 
 
-I leave it up in Ukraine; I love my country; and know what? I've got an idea that is a simple as that: **put Ukrainan emblem into the ruby**. 
+###I leave it up in Ukraine; I love my country; and know what? I've got an idea that is a simple as that: 
+>**What if I put Ukrainan emblem into the ruby logo?**
+
 
 ![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/logo-ideas.png)
 
 
-And after several weeks of painting, I finished with the following result:
+##And after several weeks of painting, I finished with the following result:
 
-![Ruby-Logo](https://rrott.com/images/rrott-ruby-logo.svg)
+
+![Ruby-Logo-ukraine](../images/rrott-ruby-logo-ukraine.svg)![Ruby-Logo](../images/rrott-ruby-logo.svg)
 
 At the moment, my less hated editor was Gimp, so I started working with it, but got stack right away... I spent a day for nothing and have got an ugly not-scalable picture that looked like big red blot =(
 
