@@ -7,23 +7,47 @@ category: SVG
 
 ---
 
-# How to stop worrying and start using Sketch.
+# How to stop worrying and start using Sketch =)
 
 > *SVG is an image format for vector graphics. It literally means Scalable Vector Graphics.*
-...they say
+...okay
 
-**Preamble #1:** From my experience, some(if not most of) developers hate working with such huge graphic editors as GIMP, Photoshop or Illustrator, and I am one of such developers. It was really too hard for me to edit images using them: from one hand I am a perfectionist and love working on awesome pictures and interfaces but from another hand I'm too lazy to spend a lot of time in a single tool =)
 
-**Preamble #2:** I've been using SVG since IE9, and even I had a lot of problem with supporting it, I faced much more problems creating or editing SVG images. It was the worst moments of my life when I had to update an SVG image "a bit"... Each time I tried to find any really good vector graphic editor I got nothing but SublimeText. And it was true till I tried **Sketch 3**! And I really suggest using it, I love it and this blog post tells why.
+**Preamble #1:** I am a developer who hates working with such huge graphic editors as Photoshop, GIMP or Illustrator and the problem there is that from one hand I am a perfectionist and love makind perfect websites but from another hand I'm too lazy to spend a lot of time learning tons of information on how to use these image editors =(
 
-**Preamble #3:** When I started designing my site and blog, I found myself happy with thinking about creating some kind of logo that would show who I am and what I do. I leave it up in Ukraine, I love my country and know what?, I came to the following result:
+**Preamble #2:** I've been using SVG since IE9, and even I had a lot of problem with supporting it, I faced much more problems creating or editing SVG images. The worst moments of my life were when I had to update **"a bit"** an SVG image... Each time I tried to find a really good vector graphic editor but with no success... till I tried **Sketch 3**! 
+Honestly, I love it!
+
+When I started working on my website and my blog, I've got an idea about creating a small logo or something to describe who am I and what I do. 
+
+I leave it up in Ukraine; I love my country; and know what? I've got an idea that is a simple as that: **put Ukrainan emblem into the ruby**. 
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/logo-ideas.png)
+
+
+And after several weeks of painting, I finished with the following result:
+
 ![Ruby-Logo](https://rrott.com/images/rrott-ruby-logo.svg)
 
-My initial idea was simple as door: **mix Ukrainan emblem with ruby**. When I started working on it, I choose Gimp as it was my favorite editor and previously I used it to paint almost everything I need.
-But I had no idea how designers create logos, where they start from, what tools use, etc, etc. And I wanted to do this with as less efforts and as fast as possible. But I even had no idea how to do this slow and with max eforts! =(
+At the moment, my less hated editor was Gimp, so I started working with it, but got stack right away... I spent a day for nothing and have got an ugly not-scalable picture that looked like big red blot =(
 
-I knew about Sketch and tried it at once a year ago, but I did not get it... till now.
+I knew about Sketch and tried it a year ago, but it was too simple for its prise and I abandoned idea of using it... till now. I gave it a chance once again, and it made my day!
 
-Here is a slow-motion of the creation process of my logo's second version.
+Above is how it looked like:
 
-It's smart and fast, is not it?
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/sketch-with-rulles.png)
+
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/sketch-with-grids.png)
+
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/transparent-emblem-of-ukraine.png)
+
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/emblem-of-ukraine.png)
+
+
+![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/collored-emblem-of-ukraine.png)
+
+It's smart and simple, is not it?
