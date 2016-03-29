@@ -1,7 +1,7 @@
 ---
 title: How to stop worrying and start using Sketch
-short: 
-date: 2016-03-29 20:00 UTC
+short: How to stop worrying and start using Sketch
+date: 2016-03-29 20:22 UTC
 tags: sketch, logo, rrott, web-design, front-end, svg, ukraine
 category: SVG
 
@@ -55,3 +55,9 @@ Above is how it looked like:
 ![Ruby-Logo-Idea](../images/blog/sketch-svg-ruby-logo/collored-emblem-of-ukraine.png)
 
 It's smart and simple, is not it?
+
+##So what?
+I am going to publish several additional blog posts about using svg and (probably) Sketch.
+
+You can follow this topic here: [SVG category](/blog/svg/)
+And here is my first post about [Bug with CSS transition animation in Safari](/blog/svg/issue-with-css-transition-animation-in-safari.html)
