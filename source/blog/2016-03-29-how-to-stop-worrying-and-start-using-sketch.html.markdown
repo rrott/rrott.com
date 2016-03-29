@@ -6,7 +6,6 @@ tags: SVG, sketch, logo, rrott, web-design, front-end, svg, ukraine
 category: SVG
 
 ---
-
 # How to stop worrying and start using Sketch =)
 
 > *SVG is an image format for vector graphics. It literally means Scalable Vector Graphics.*
