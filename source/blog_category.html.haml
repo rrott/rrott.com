@@ -58,4 +58,6 @@
             %ul
               - articles.each do |article|
                 %li
-                  %a{:href => article.url}= article.title
+                  %a{:href => article.url} #{article.date.strftime("%Y-%m-%d")} - #{article.title}
+                  %br
+                  %br
