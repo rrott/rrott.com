@@ -1,8 +1,8 @@
 ---
 title: How to stop worrying and start using Sketch
 short: How to stop worrying and start using Sketch
-date: 2016-03-29 20:22 UTC
-tags: SVG, sketch, logo, rrott, web-design, front-end, svg, ukraine
+date: 2016-03-29 20:01 UTC
+tags: SVG, sketch, logo, rrott, web-design, front-end, svg, Ukraine
 category: SVG
 
 ---
