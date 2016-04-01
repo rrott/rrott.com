@@ -26,5 +26,9 @@ gem 'middleman-meta-tags'
 gem 'middleman-robots'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
+group :development do
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-passenger"
+end
 #gem "middleman-es6", github: "vast/middleman-es6"
 #gem 'capistrano-middleman', require: false
