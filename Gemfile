@@ -28,7 +28,11 @@ gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'm
 
 group :development do
   gem "capistrano", "~> 3.4"
-  gem "capistrano-passenger"
+  #gem "capistrano-passenger"
+  gem 'capistrano-deploy'
+  gem 'capistrano-bundler'
+  gem 'capistrano-console'
+  gem 'capistrano-rvm'
 end
 #gem "middleman-es6", github: "vast/middleman-es6"
 #gem 'capistrano-middleman', require: false
