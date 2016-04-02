@@ -1,29 +1,19 @@
+image: ruby:2.3
+services:
+  - ruby
 before_script:
-  - gem install bundler
-  - bundle install
+  - bundle_install
 
-rspec:
-  test: "rake spec"
-  tags:
-    - ruby
-  only:
-    - branches
+stages:
+  - build
+  - test
 
-# staging:
-#   deploy: "cap deploy stating"
-#   tags:
-#     - capistrano
-#     - debian
-#   except:
-#     - stable
-
-production:
-  deploy:
-    - cap deploy production
-    - cap notify
-  tags:
-    - capistrano
-    - debian
+job1:
+  stage: build
+  script:
+    - bundle middleman build
+    - mv build public
   only:
     - master
-    - /^deploy-.*$/
+  tags:
+    - docker
