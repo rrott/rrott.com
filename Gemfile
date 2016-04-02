@@ -32,7 +32,7 @@ group :development do
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
   gem 'capistrano-console'
-  gem 'capistrano-rvm'
+  gem 'rvm1-capistrano3', require: false
 end
 #gem "middleman-es6", github: "vast/middleman-es6"
 #gem 'capistrano-middleman', require: false
