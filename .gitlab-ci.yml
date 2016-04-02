@@ -11,8 +11,8 @@ stages:
 job1:
   stage: build
   script:
-    - bundle middleman build
-    - mv build public
+    - bundle exec middleman build
+    - cp build public
   only:
     - master
   tags:
