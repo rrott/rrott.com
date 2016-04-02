@@ -6,9 +6,9 @@ set :rvm_roles, [:web]
 
 role :web, %w{roman@rrott.com}
 set :ssh_options, {
-   keys: %w(/Users/roman/.ssh/id_rsa),
-   forward_agent: false,
-   auth_methods: %w(publickey)
- }
+  keys: %w(~/.ssh/id_rsa),
+  forward_agent: false,
+  auth_methods: %w(publickey)
+}
 
-after "deploy:updated", "deploy:build_site"
+after  "deploy:updated", "deploy:build_site"
