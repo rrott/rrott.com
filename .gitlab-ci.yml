@@ -2,7 +2,7 @@ image: ruby:2.3
 services:
   - ruby
 before_script:
-  - bundle_install
+  - bundle install
 
 stages:
   - build
