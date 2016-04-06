@@ -5,15 +5,12 @@ ruby "2.3.0"
 gem "middleman"
 gem 'rake'
 gem 'builder'
-
 gem "middleman-blog"
-
 gem 'middleman-webp'
 gem 'middleman-imageoptim'
 gem 'middleman-autoprefixer'
 gem 'middleman-smusher'
 gem 'middleman-blog-similar'
-gem 'middleman-pry'
 gem "redcarpet"
 gem 'kramdown'
 gem "sitemap_generator"
@@ -24,8 +21,9 @@ gem 'middleman-search'
 gem 'middleman-meta-tags'
 gem 'middleman-robots'
 
-group :development do
+group :development, :test do
   gem 'pry'
+  gem 'middleman-pry'
   gem "capistrano", "~> 3.4"
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
@@ -33,9 +31,6 @@ group :development do
   gem 'rvm1-capistrano3', require: false
   gem 'middleman-build-info'
   gem "middleman-livereload"
-end
-
-group :test do
   gem 'rspec'
   gem 'capybara'
 end

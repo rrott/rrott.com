@@ -5,7 +5,13 @@
 **This is a JQuery-less website**
 
 **Languages:** Ruby 2.2, CoffeeScript
+
 **Libs:** MiddleMan - static site generator. 
+
+**Deployment** Capistrano
+
+**Tests** Rspec, Capybara
+
 **Other:** HTML5, Haml, Pure, Nginx, HTTP/2, WebP
 
 <center> ![rrott Logo](https://rrott.com/images/rrott-ruby-logo.svg) </center>

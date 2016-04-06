@@ -1,1 +1,4 @@
 language: rubyrvm: 2.3
+install: bundle install
+before_script: bundle exec rspec
+script: bundle exec middleman build
