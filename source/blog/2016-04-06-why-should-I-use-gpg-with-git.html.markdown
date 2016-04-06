@@ -55,7 +55,7 @@ To git@github.com:rrott/gpg_test.git
 And here is the result in GitHub:
 <a href="/images/blog/gpg-and-github/tender-love-commits.gif" target="_blank">Screencast: Aaron Patterson's commitst to my git</a>
 
-Repo: <a href="https://github.com/rrott/gpg_test" target="_blank">rrott/gpg_test</a>
+Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank">rrott/gpg_test</a>
 
 ---
 ## How to use GPG with git
