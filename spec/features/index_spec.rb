@@ -142,7 +142,6 @@ describe 'index', type: :feature do
       end
 
       context '«Cybersecurity: Ukraine and the world»' do
-
         it 'displays link to «Cybersecurity: Ukraine and the world»' do
           expect(page).to have_selector('ul li.link a[href="http://cybersecurity.pp.ua/en/Home"]', 
             text: '«Cybersecurity: Ukraine and the world»')
@@ -165,9 +164,65 @@ describe 'index', type: :feature do
     it 'displays picture with me' do
       expect(page).to have_selector('.image.hat .roman_rott')
     end
-
   end
 
+  context 'Community developmetn' do
+    it 'displays Community development section' do
+      expect(page).to have_selector('h2', text: "Community development")
+
+    end
+    it 'displays Open Source logo' do
+      expect(page).to have_selector('img.pure-img-responsive')
+    end
+
+    context 'OSS projects' do
+      it 'displays my oss' do
+        expect(page).to have_selector('h5', text: "I do maintain my own open source projects:")
+      end
+
+      context 'Grunt Coffee Chain' do
+        it 'displays link to Grunt Coffee Chain' do
+          expect(page).to have_selector('ul li.link a[href="/portfolio/oss/"]', text: '«Grunt Coffee Chain» -')
+        end
+
+        it 'displays what it is' do
+          expect(page).to have_selector('ul li.link',
+            text: "«Grunt Coffee Chain» - grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies."
+          )
+        end
+      end
+
+      context '«Asana God Contact»' do
+        it 'displays link to «Asana God Contact»' do
+          expect(page).to have_selector('ul li.link a[href="/portfolio/oss/"]', text: '«Asana God Contact» -')
+        end
+        it 'displays what it is' do
+          expect(page).to have_selector('ul li.link',
+            text: "«Asana God Contact» - A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby."
+          )
+        end
+      end
+    end
+
+    context 'Contributed to' do
+      it 'displays link to «Asana God Contact»' do
+        expect(page).to have_selector('ul li.link a[href="https://github.com/rack/rack/pull/992"]', text: 'rack/rack')
+      end
+
+      it 'displays link to «Asana God Contact»' do
+        expect(page).to have_selector('ul li.link a[href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658"]', text: 'gitlab-org/gitlab-ce')
+      end
+
+      it 'displays link to «Asana God Contact»' do
+        expect(page).to have_selector('ul li.link a[href="https://github.com/floere/phony/pull/180"]', text: 'floere/phony')
+      end
+
+      it 'displays link to «Asana God Contact»' do
+        expect(page).to have_selector('ul li.link a[href="https://github.com/dnesteryuk/site_prism.vcr/pull/3"]', text: 'dnesteryuk/site_prism.vcr')
+      end
+    end
+  end
+ 
     # it 'displays ' do
     #   expect(page).to have_selector('',
     #     text: ""
