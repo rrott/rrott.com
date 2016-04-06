@@ -17,3 +17,6 @@
 - [Open Source](https://rrott.com/portfolio/oss/)
 - [SiteMap](https://rrott.com/sitemap/)
 - [My Resume](https://rrott.com/cv/roman.rott.cv.2016.pdf)
+
+
+[![Build Status](https://travis-ci.org/rrott/rrott.com.svg?branch=master)](https://travis-ci.org/rrott/rrott.com)
