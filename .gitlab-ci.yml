@@ -8,10 +8,19 @@ stages:
   - build
   - test
 
+# job1:
+#   stage: build
+#   script:
+#     - bundle exec middleman build
+#   only:
+#     - master
+#   tags:
+#     - ruby
+
 job1:
-  stage: build
+  stage: test
   script:
-    - bundle exec middleman build
+    - bundle exec rspec
   only:
     - master
   tags:
