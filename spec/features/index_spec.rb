@@ -161,6 +161,11 @@ describe 'index', type: :feature do
         )
       end
     end
+
+    it 'displays picture with me' do
+      expect(page).to have_selector('.image.hat .roman_rott')
+    end
+
   end
 
     # it 'displays ' do
