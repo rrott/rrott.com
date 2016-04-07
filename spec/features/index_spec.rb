@@ -250,7 +250,7 @@ describe 'index', type: :feature do
           expect(page).to have_selector('ul li.link a[href="http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785"]', text: '«24Hack»')
         end
       end
- 
+
       context 'blog' do
         it 'displays ' do
           expect(page).to have_selector('h5.content-subhead',
@@ -262,7 +262,7 @@ describe 'index', type: :feature do
         before do
           @app = application
         end
-        
+
         application.blog.articles[0...3].each do |article|
           it 'displays last 3 blog articles' do
 
@@ -404,28 +404,32 @@ describe 'index', type: :feature do
  
   describe 'footer' do
     it 'displays linkedin icon' do
-      expect(page).to have_selector('a[href="https://www.linkedin.com/in/rrott"]')
-      expect(page).to have_selector('em.icon-linkedin')
+      expect(page).to have_selector('a[href="https://www.linkedin.com/in/rrott"]', count: 3)
+      expect(page).to have_selector('em.icon-linkedin', count: 2)
     end
 
     it 'displays github icon' do
-      expect(page).to have_selector('a[href="https://github.com/rrott"]')
-      expect(page).to have_selector('em.icon-github-circled')
+      expect(page).to have_selector('a[href="https://github.com/rrott"]', count: 3)
+      expect(page).to have_selector('em.icon-github-circled', count: 2)
     end
 
     it 'displays twitter icon' do
-      expect(page).to have_selector('a[href="https://twitter.com/roman_rott"]')
-      expect(page).to have_selector('em.icon-twitter.size3')
+      expect(page).to have_selector('a[href="https://twitter.com/roman_rott"]', count: 3)
+      expect(page).to have_selector('em.icon-twitter.size3', count: 2)
     end
 
     it 'displays skype icon' do
-      expect(page).to have_selector('a[href="skype:roman.rott?chat"]')
-      expect(page).to have_selector('em.icon-skype.skype')
+      expect(page).to have_selector('a[href="skype:roman.rott?chat"]', count: 3)
+      expect(page).to have_selector('em.icon-skype.skype', count: 2)
     end
 
     it 'displays mail icon' do
-      expect(page).to have_selector('a[href="mailto:roman.rott@gmail.com"]')
-      expect(page).to have_selector('em.icon-mail-alt')
+      expect(page).to have_selector('a[href="mailto:roman.rott@gmail.com"]', count: 3)
+      expect(page).to have_selector('em.icon-mail-alt', count: 2)
+    end
+
+    it 'displays sitemap' do
+      expect(page).to have_selector('a[href="/sitemap/"]', text: 'SiteMap')
     end
   end
 end
