@@ -266,28 +266,166 @@ describe 'index', type: :feature do
         application.blog.articles[0...3].each do |article|
           it 'displays last 3 blog articles' do
 
-              expect(page).to have_selector("article a[href='#{article.url}']",
+              expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
                 text: "#{article.title}"
               )
             end
           end
         end
       end
+
+      it 'displays link to blog' do
+        expect(page).to have_selector('ul li.link a[href="/blog"]', text: 'Read more...')
+      end
+    end
+
+    context 'Contact information' do
+      it 'displays Contact information section' do
+        expect(page).to have_selector('h2',
+          text: "Contact information"
+        )
+      end
+
+      it 'displays promo' do
+        expect(page).to have_selector('.pure-u-1.is-center',
+          text: "If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me."
+        )
+      end
+
+      it 'displays ' do
+        expect(page).to have_selector('h3.is-center',
+          text: "Lets build something great!"
+        )
+      end
+    end
+
+    context 'contacts links' do
+
+      context 'Contact Me:' do
+        it 'displays contact me links' do
+          expect(page).to have_selector('h4', text: "Contact Me:")
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "LinkedIn:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="https://www.linkedin.com/in/rrott"]', text: 'Roman Rott')
+        end
+
+        it 'displays contact me links' do
+          expect(page).to have_selector('.contacts', text: "Skype:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="skype:roman.rott?chat"]', text: 'roman.rott')
+        end
+
+        it 'displays contact me links' do
+          expect(page).to have_selector('.contacts', text: "Mail:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="mailto:roman.rott@gmail.com"]', text: 'roman.rott@gmail.com')
+        end
+      end
+
+      context 'My Resume:' do
+        it 'displays resume links' do
+          expect(page).to have_selector('h4', text: "My Resume:")
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "Pdf:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.pdf"]', text: 'open/download')
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "Odt:")
+        end
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.odt"]', text: 'download')
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "Docx:")
+        end
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.docx"]', text: 'download')
+        end
+      end
+
+      context 'Social Connections:' do
+        it 'displays social links' do
+          expect(page).to have_selector('h4', text: "Social Connections:")
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "Blog:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="/blog/"]', text: 'rrott.com/blog')
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "Twitter:")
+        end
+
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="https://twitter.com/roman_rott"]', text: 'roman_rott')
+        end
+
+        it 'displays LinkedIn' do
+          expect(page).to have_selector('.contacts', text: "GitHub:")
+        end
+        it 'displays link to blog' do
+          expect(page).to have_selector('.link a[href="https://github.com/rrott"]', text: 'rrott')
+        end
+      end
+
+      it 'displays link to Vcard' do
+        expect(page).to have_selector('h4 a[href="/roman.rott.vcf"]', text: 'Download my VCard')
+      end
+
+      it 'displays link to portfolio' do
+        expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'Check out my portfolio')
+      end
+
+      it 'displays link to RSS' do
+        expect(page).to have_selector('h4 a[href="/feed.xml"]', text: 'Subscribe to my Blog')
+      end
     end
   end
  
-    # it 'displays ' do
-    #   expect(page).to have_selector('',
-    #     text: ""
-    #   )
-    # end
-  # it 'displays the "New Blog" blog post' do
-  #   expect(page).to have_selector('ul li a[href="/blog/2014/08/20/new-blog/"]', text: 'New Blog')
-  # end
+  describe 'footer' do
+    it 'displays linkedin icon' do
+      expect(page).to have_selector('a[href="https://www.linkedin.com/in/rrott"]')
+      expect(page).to have_selector('em.icon-linkedin')
+    end
 
-  # it 'properly links to the "New Blog" blog post' do
-  #   click_link 'New Blog'
+    it 'displays github icon' do
+      expect(page).to have_selector('a[href="https://github.com/rrott"]')
+      expect(page).to have_selector('em.icon-github-circled')
+    end
 
-  #   expect(page).to have_selector('h2', text: 'New Blog')
-  # end
+    it 'displays twitter icon' do
+      expect(page).to have_selector('a[href="https://twitter.com/roman_rott"]')
+      expect(page).to have_selector('em.icon-twitter.size3')
+    end
+
+    it 'displays skype icon' do
+      expect(page).to have_selector('a[href="skype:roman.rott?chat"]')
+      expect(page).to have_selector('em.icon-skype.skype')
+    end
+
+    it 'displays mail icon' do
+      expect(page).to have_selector('a[href="mailto:roman.rott@gmail.com"]')
+      expect(page).to have_selector('em.icon-mail-alt')
+    end
+  end
 end
