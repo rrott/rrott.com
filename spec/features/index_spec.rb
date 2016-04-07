@@ -221,6 +221,59 @@ describe 'index', type: :feature do
         expect(page).to have_selector('ul li.link a[href="https://github.com/dnesteryuk/site_prism.vcr/pull/3"]', text: 'dnesteryuk/site_prism.vcr')
       end
     end
+
+    context 'Developed local community' do
+      it 'displays ' do
+        expect(page).to have_selector('h5.content-subhead',
+          text: "Developed local community:"
+        )
+      end
+
+      context 'Hackathon' do
+        it 'displays ' do
+          expect(page).to have_selector('ul li.link',
+            text: "Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first"
+          )
+        end
+
+        it 'displays link to «Asana God Contact»' do
+          expect(page).to have_selector('ul li.link a[href="https://en.wikipedia.org/wiki/Hackathon"]', text: 'Hackathon')
+        end
+
+        it 'displays ' do
+          expect(page).to have_selector('ul li.link',
+            text: "in Zaporizhzhya city -"
+          )
+        end
+
+        it 'displays link to «Asana God Contact»' do
+          expect(page).to have_selector('ul li.link a[href="http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785"]', text: '«24Hack»')
+        end
+      end
+ 
+      context 'blog' do
+        it 'displays ' do
+          expect(page).to have_selector('h5.content-subhead',
+            text: "Recent posts from my blog:"
+          )
+        end
+
+      context 'recent blogposts' do
+        before do
+          @app = application
+        end
+        
+        application.blog.articles[0...3].each do |article|
+          it 'displays last 3 blog articles' do
+
+              expect(page).to have_selector("article a[href='#{article.url}']",
+                text: "#{article.title}"
+              )
+            end
+          end
+        end
+      end
+    end
   end
  
     # it 'displays ' do

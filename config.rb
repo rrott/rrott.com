@@ -77,16 +77,17 @@ configure :build do
   ],
   sitemap: "#{data.site.url}/sitemap.xml"
 
+  #activate :imageoptim
+  activate :webp do |webp|
+    webp.append_extension = true
+  end
+  
+  activate :build_info
 end
 
-#activate :imageoptim
-activate :webp do |webp|
-  webp.append_extension = true
-end
 
 
 #activate :i18n
-activate :build_info
 activate :syntax, :line_numbers => true
 
 # Enable syntax highlighting

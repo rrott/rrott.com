@@ -24,10 +24,11 @@ gem 'middleman-robots'
 group :development, :test do
   gem 'pry'
   gem 'middleman-pry'
+  gem "middleman-blog"
   gem "capistrano", "~> 3.4"
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
-  gem 'capistrano-console'
+  #gem 'capistrano-console'
   gem 'rvm1-capistrano3', require: false
   gem 'middleman-build-info'
   gem "middleman-livereload"
