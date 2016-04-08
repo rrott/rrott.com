@@ -12,7 +12,6 @@ set :relative_links, true
 
 page 'sitemap.xml', layout: false
 page 'feed.xml', layout: false
-page "/blog/feed.xml", :layout => false
 page "robots.txt", :layout => false
 page "humans.txt", :layout => false
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
