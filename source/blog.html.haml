@@ -24,6 +24,12 @@
             - data.links.blog_sections.each do |section|
               %li
                 %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
+      %br
+      .search
+        %form#search{ role: "search" }
+          %input#search-field{type: "search", placeholder: "Search", required: "required", autocomplete: "off"}
+          %input#search-submit{type: "submit", value: "Search"}
+        %ul#results
       .share
         Share:
         .addthis_sharing_toolbox
