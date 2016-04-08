@@ -22,7 +22,7 @@ class LunarSearch
     if result.length > 0
       foundData = this.foundData(result)
       for res in foundData
-        # TODO: refactor this 
+        # TODO: refactor this
         item = document.createElement('li')
         a = document.createElement('a')
         a.href = res.url
