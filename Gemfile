@@ -28,7 +28,6 @@ group :development, :test do
   gem "capistrano", "~> 3.4"
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
-  #gem 'capistrano-console'
   gem 'rvm1-capistrano3', require: false
   gem 'middleman-build-info'
   gem "middleman-livereload"

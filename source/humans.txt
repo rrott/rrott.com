@@ -3,9 +3,7 @@ Developer: Roman Rott
 Twitter: @Roman_Rott
 Location: Ukraine
 
-Site: https://rott.org.ua
 Site: https://rrott.com
-Blog: https://rott.org.ua/blog/
 Blog: https://rrott.com/blog/
 
 /* THANKS */
