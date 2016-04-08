@@ -3,7 +3,7 @@
 %html
   %head
     %title=data.site.not_found.title
-    = stylesheet_link_tag  'index', property: 'stylesheet'
+    %link{href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet'}
     = partial 'meta'
 
     %meta{name: 'keywords',    content: data.site.not_found.keywords}
@@ -37,5 +37,5 @@
         %br
         %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
           SiteMap
-    = stylesheet_link_tag  'grids', property: 'stylesheet'
-    = stylesheet_link_tag  'application', property: 'stylesheet'
+    %link{href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet'}
+    %link{href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet'}
