@@ -37,7 +37,7 @@ data.pages.portfolio.each do |page|
 end
 
 activate :search do |search|
-  search.resources = ['blog/', 'portfolio/']
+  search.resources = ['blog/']
   search.index_path = 'search.json' # defaults to `search.json`
   search.fields = {
     title:   {boost: 100, store: true, required: true},

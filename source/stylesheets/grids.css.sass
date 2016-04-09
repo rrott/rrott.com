@@ -148,23 +148,25 @@ img
 .icon-twitter:before
   content: '\e822'
 
-form
-  width: '500px'
-  margin: '50px auto'
+#search
+  display: flex
+  position: realtive
+  margin: 0 auto
+  width: 80%
 
-.search-term
-  padding: '8px 15'
-  background: rgba(50, 50, 50, 0.2)
-  border: '0px solid #dbdbdb'
+#search input[type=search], #search button
+  display:block
+  
+#search input[type=search]
+  flex: 1
+  padding: 0.6em
+  border: 0.2em
 
-.search-submit
-  position: relative
-  padding: '6px 15px'
-  left: '-8px'
-  border: '2px solid #207cca'
-  background-color: '#207cca'
-  color: '#fafafa'
+#search-submit
+  padding: '0.6em 0.8em'
+  background-color: '#2ecc71'
+  color: white
+  border: none
 
-.search-submit:hover
-  background-color: '#fafafa'
-  color: '#207cca'
+#search-submit:hover
+  cursor:pointer

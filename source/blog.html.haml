@@ -18,29 +18,20 @@
         %br
         Open for remote job opportunities
       %br
-      .portfolio-categories
-        %nav.nav.tag-cloud
-          %ul.nav-list
-            - data.links.blog_sections.each do |section|
-              %li
-                %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
-      %br
       .search
         %form#search{ role: "search" }
-          %input#search-field{type: "search", placeholder: "Search", required: "required", autocomplete: "off"}
+          %input#search-field{type: "search", placeholder: "Search", required: "required", autocomplete: "off", results: 5, autosave: "rrott_search", tabindex: 1}
           %input#search-submit{type: "submit", value: "Search"}
         %ul#results
       .share
         Share:
         .addthis_sharing_toolbox
 
-
   .content.pure-u-1.pure-u-md-3-4
     %article
       %section
         %h1.is-center.content-subhead
           Blog about Full-Stack development and security researches.
-
       %section
         %p
           Hello, my name is <strong>Roman Rott</strong> and I am a <strong>Ruby/JS developer</strong> with 10+ years of IT experience and about 4 years experience dedicated to web development and security auditing of web applications. I consider myself a <strong>Full-Stack developer</strong>, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes CoffeeScript, Backbone.js, a bit of Ember, Node,js and some other frameworks/libs. I like testing websites against security vulnerabilities and getting a lot of fun refactoring and optimizing existing apps/libs/sites.
