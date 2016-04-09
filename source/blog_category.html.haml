@@ -3,6 +3,7 @@
     .header.portfolio-left-part
       %header.brand-title Blog
       %h1.brand-tagline Full-Stack web development and security researches
+      %br
       %nav.nav
         %ul.nav-list
           %li.nav-item
@@ -18,13 +19,17 @@
         %br
         Open for remote job opportunities
       %br
-
-      .portfolio-categories
-        %nav.nav.tag-cloud
-          %ul.nav-list
-            - data.links.blog_sections.each do |section|
-              %li
-                %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
+      .search
+        %form#search{ role: "search" }
+          %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "off", results: 5, autosave: "rrott_search", tabindex: 1}
+          %input#search-submit{type: "submit", value: "Search", tabindex: 2}
+        %ul#results
+      -# .portfolio-categories
+      -#   %nav.nav.tag-cloud
+      -#     %ul.nav-list
+      -#       - data.links.blog_sections.each do |section|
+      -#         %li
+      -#           %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
       .share
         Share:
         .addthis_sharing_toolbox
