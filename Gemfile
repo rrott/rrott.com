@@ -24,7 +24,6 @@ gem 'middleman-robots'
 group :development, :test do
   gem 'pry'
   gem 'middleman-pry'
-  gem "middleman-blog"
   gem "capistrano", "~> 3.4"
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
