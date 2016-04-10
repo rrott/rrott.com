@@ -2,7 +2,6 @@
   - if multipart
     %h3.content-subhead
       #{projects.title}
-    }
   - projects.projects.each do |project|
     %section.post{id: project.name}
       - if project.noindex

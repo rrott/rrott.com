@@ -9,8 +9,9 @@
 #layout.pure-g
   %section.sidebar.pure-u-1.pure-u-md-1-4
     .header.portfolio-left-part
-      %header.brand-title Portfolio page
+      %header.brand-title Portfolio
       %h1.brand-tagline Projects accomplished in 2015 and active in 2016
+      %br
       %nav.nav
         %ul.nav-list
           %li.nav-item
@@ -18,6 +19,8 @@
           \/
           %li.nav-item
             %a.pure-button{href: "/blog/", title: "Roman Rott's blog"} Blog
+      .pure-img-responsive.logo-small
+        = sprockets.find_asset('rrott-ruby-logo.svg').to_s
       .portfolio-contacts
         %br
         = partial 'links'

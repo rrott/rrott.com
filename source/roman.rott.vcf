@@ -1,7 +1,7 @@
 BEGIN:VCARD
 VERSION:4.0
 CLASS:PUBLIC
-REV:2016-02-29
+REV:2016-04-10
 N:Rott;Roman;;;
 FN:Roman Rott
 NICKNAME:rrott
@@ -10,7 +10,8 @@ TITLE:Full-Stack Ruby Developer
 ORG:rrott.com
 CATEGORIES:INTERNET,INFORMATION TECHNOLOGY,WEB DEVELOPMENT,SECURITY
 LOGO;VALUE=uri:https://rrott.com/images/rrott-ruby-logo.svg
-EMAIL;TYPE=work;PREF=1:roman.rott@gmail.com
+EMAIL;TYPE=work;PREF=1:roman@rrott.com
+EMAIL;TYPE=home;PREF=1:roman.rott@gmail.com
 ADR;TYPE=home;PREF=1:;;;Zaporizhzhya;;;Ukraine
 URL;TYPE=work;PREF=1:https://rrott.com
 IMPP;TYPE=work;PREF=1:skype:roman.rott
