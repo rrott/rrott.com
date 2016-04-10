@@ -15,7 +15,7 @@ For example, one can scam his investors showing them that [Aaron Paterson](https
 
 Yes, it's just a funny example, but... you know.
 
-![Aaron Patterson Commitst to my git](../images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png)
+<img class='pure-img-responsive' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png"/> 
 
 ## A bit about GPG in Git and GitHub
 >When you're building software with people from around the world, sometimes it's important to validate that commits and tags are coming from an identified source. Git supports signing commits and tags with GPG and starting today GitHub will show you when commits and tags are signed.
