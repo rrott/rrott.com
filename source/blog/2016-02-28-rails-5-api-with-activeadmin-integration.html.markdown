@@ -192,8 +192,7 @@ Let's do it!
     **User:** admin@example.com
     **Password:** password
 
-  ![Image of Rails 5 API application with ActiveAdmin enabled](/images/blog/rails5-api-active-admin/active-admin-with-rails5.png)
-
+  <img class='pure-img-responsive' title="Image of Rails 5 API application with ActiveAdmin enabled", alt="Image of Rails 5 API application with ActiveAdmin enabled", src="/images/blog/rails5-api-active-admin/active-admin-with-rails5.png"/> 
 That it. =)
 > Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is available from your internal IP address only.
 
