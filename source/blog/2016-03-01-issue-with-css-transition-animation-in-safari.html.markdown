@@ -29,11 +29,11 @@ Assume we have SVG image inlined into a page where the following SCSS animates `
 
 In Chrome and Firefox, the logo animation has a nice fade-out effect on each piece:
 
-![GitHub Logo in FireFox and Chrome](/images/blog/safari-svg-animation/good-logo-chrome.gif) 
+<img class='pure-img-responsive' title="GitHub Logo in FireFox and Chrome", alt="GitHub Logo in FireFox and Chrome", src="/images/blog/safari-svg-animation/good-logo-chrome.gif"/>
 
 But Safari doesn't seem to respect the transition property, and we get no fade:
 
-![GitHub Logo in Safari](/images/blog/safari-svg-animation/bad-logo-safari.gif)
+<img class='pure-img-responsive' title="GitHub Logo in Safari", alt="GitHub Logo in Safari", src="/images/blog/safari-svg-animation/bad-logo-safari.gif"/>
 
 > Note, there are several ways to put SVG image into a page: 
 > 
@@ -57,7 +57,7 @@ Above assumption was a quite correct, as sometimes this transition animation was
 I did a research and after deeper investigation and dozens manual tests, I found that the **transition stops working for all the visited links** and that could be the reason why I was not able to reproduce the issue on one machine while it is failed on another. 
 Here is my Proof of Concept: 
 
-![Animation stops working for all the visited links in Safari](/images/blog/safari-svg-animation/safari-visited-links-bug.gif)
+<img class='pure-img-responsive' title="Animation stops working for all the visited links in Safari", alt="Animation stops working for all the visited links in Safari", src="/images/blog/safari-svg-animation/safari-visited-links-bug.gif"/>
 
 Looks like Safari has the same protection of users' history as Mozilla, but with its own realisation: [Privacy and the :visited selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector)
 
@@ -99,5 +99,7 @@ Where `#logo` is a new div that has our `.tanuki-shape` SVG image inside.
 ---
 | SVG image in Safari before | and after the change |
 |:--------------------------:|:--------------------:|
-|  ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_before_change.gif) | ![SVG animation in Safari before chages](/images/blog/safari-svg-animation/logo_after_change.gif)|
+| <img class='pure-img-responsive' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_before_change.gif"/> | <img class='pure-img-responsive' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_after_change.gif"/> | 
 
+
+P.S. Try GitLab, you'll like it!
