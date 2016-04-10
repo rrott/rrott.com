@@ -53,9 +53,12 @@ To git@github.com:rrott/gpg_test.git
 ```
 
 And here is the result in GitHub:
-<a href="/images/blog/gpg-and-github/tender-love-commits.gif" target="_blank">Screencast: Aaron Patterson's commitst to my git</a>
+
+<img class='pure-img-responsive' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/> 
 
 Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank">rrott/gpg_test</a>
+
+<a href="/images/blog/gpg-and-github/tender-love-commits.gif" target="_blank">Detailed Screencast: Aaron Patterson's commitst to my git</a>
 
 ---
 ## How to use GPG with git
@@ -89,6 +92,6 @@ Try to commit:
 
  That's it:
 
- ![Commit in GitHub signed by gpg](../images/blog/gpg-and-github/github-gpg.png)
+<img class='pure-img-responsive' title="Commit in GitHub signed by gpg", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/> 
 
 "I hope you enjoyed this article. Please have a good day!!"
