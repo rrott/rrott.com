@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/rrott
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rrott.com
+  * I am rrott (https://keybase.io/rrott) on keybase.
+  * I have a public key ASCk07a37d52NbY7-eSnpkZo_e93otkP4BOermIySJNT6go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120a4d3b6b7edde7635b63bf9e4a7a64668fdef77a2d90fe0139eae6232489353ea0a",
+            "host": "keybase.io",
+            "kid": "0120a4d3b6b7edde7635b63bf9e4a7a64668fdef77a2d90fe0139eae6232489353ea0a",
+            "uid": "6586e44d9a33ac2091c56fec48d3aa19",
+            "username": "rrott"
+        },
+        "service": {
+            "hostname": "rrott.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.13"
+    },
+    "ctime": 1461700788,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1461700754,
+        "hash": "4720e34d749cbf97d1bd083594348dd031f607cb7430957a35d54493772003ad4bc7992b42b37b1d503d01d282ff75400bfd4447d386eb64616811101c02b7b9",
+        "seqno": 451688
+    },
+    "prev": "332a6750fc9502a9bb434c6bcc9cb4d16340149d4657f184087870c29aa29cf2",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpNO2t+3edjW2O/nkp6ZGaP3vd6LZD+ATnq5iMkiTU+oKp3BheWxvYWTFAu97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYTRkM2I2YjdlZGRlNzYzNWI2M2JmOWU0YTdhNjQ2NjhmZGVmNzdhMmQ5MGZlMDEzOWVhZTYyMzI0ODkzNTNlYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYTRkM2I2YjdlZGRlNzYzNWI2M2JmOWU0YTdhNjQ2NjhmZGVmNzdhMmQ5MGZlMDEzOWVhZTYyMzI0ODkzNTNlYTBhIiwidWlkIjoiNjU4NmU0NGQ5YTMzYWMyMDkxYzU2ZmVjNDhkM2FhMTkiLCJ1c2VybmFtZSI6InJyb3R0In0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJycm90dC5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xMyJ9LCJjdGltZSI6MTQ2MTcwMDc4OCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDYxNzAwNzU0LCJoYXNoIjoiNDcyMGUzNGQ3NDljYmY5N2QxYmQwODM1OTQzNDhkZDAzMWY2MDdjYjc0MzA5NTdhMzVkNTQ0OTM3NzIwMDNhZDRiYzc5OTJiNDJiMzdiMWQ1MDNkMDFkMjgyZmY3NTQwMGJmZDQ0NDdkMzg2ZWI2NDYxNjgxMTEwMWMwMmI3YjkiLCJzZXFubyI6NDUxNjg4fSwicHJldiI6IjMzMmE2NzUwZmM5NTAyYTliYjQzNGM2YmNjOWNiNGQxNjM0MDE0OWQ0NjU3ZjE4NDA4Nzg3MGMyOWFhMjljZjIiLCJzZXFubyI6MTMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAXcBek9AjSjJ+keP56dOqcCBYIJusM9nHKiFOJ11TT2KUO1vkAVLq2FOJiHFaETxAw6BGzBPlTZFaaVoZD1FZBKhzaWdfdHlwZSCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rrott
+
+==================================================================
