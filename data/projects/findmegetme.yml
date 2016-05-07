@@ -26,7 +26,7 @@ images:
     url: "/images/portfolio/findmegetme/findmegetme-static"
     title: "FindMeGetMe CTF site. web application's back-end source code"
 about:
-  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag hacking game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank' rel='noopener'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by <strong>Non-Government Organisation «Ukrainian Information Security Group»</strong>"
+  - "«FindMeGetMe» is a fake Dating website with an API for mobile application created for a CTF(Capture The Flag hacking game) organised for <a href='https://11.uisgcon.org/en/about-uisgcon' target='_blank' rel='noopener noreferrer'> UISGCon 11(2015)</a> - Ukrainian InfoSec conference held by <strong>Non-Government Organisation «Ukrainian Information Security Group»</strong>"
   - "This Fake Dating website was created for security researchers and had no real users or profiles. It was created with a pre-defined vulnerabilities related to Redis and Sockets. I used a Free design and added vulnerable Rack application that gets photos from Redis service using Sockets technology."
 role: "Full-Stack developer, second Game-Master"
 responsibilities: "Creating back-end, integrating free design, configuring and optimising web, Redis servers, monitoring services and the application during the games. Creating API for a mobile app."

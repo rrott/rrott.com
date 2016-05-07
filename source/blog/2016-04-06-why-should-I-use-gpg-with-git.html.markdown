@@ -56,20 +56,20 @@ And here is the result in GitHub:
 
 <img class='pure-img-responsive' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/> 
 
-Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank" rel="noopener">rrott/gpg_test</a>
+Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank" rel="noopener noreferrer">rrott/gpg_test</a>
 
-<a href="/images/blog/gpg-and-github/tender-love-commits.gif" target="_blank" rel="noopener">Detailed Screencast: Aaron Patterson's commitst to my git</a>
+<a href="/images/blog/gpg-and-github/tender-love-commits.gif" target="_blank" rel="noopener noreferrer">Detailed Screencast: Aaron Patterson's commitst to my git</a>
 
 ---
 ## How to use GPG with git
 
 Honestly, I am not going to describe each step as there are several manuals in GitHub, that has everything you need:
 
-<a href="https://help.github.com/categories/gpg/" target="_blank" rel="noopener">All about GPG in github</a>
+<a href="https://help.github.com/categories/gpg/" target="_blank" rel="noopener noreferrer">All about GPG in github</a>
 
-<a href="https://help.github.com/articles/generating-a-gpg-key/" target="_blank" rel="noopener">Generating a GPG key</a>
+<a href="https://help.github.com/articles/generating-a-gpg-key/" target="_blank" rel="noopener noreferrer">Generating a GPG key</a>
 
-<a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" target="_blank" rel="noopener">Git Tools - Signing Your Work</a>
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" target="_blank" rel="noopener noreferrer">Git Tools - Signing Your Work</a>
 
 If you don't have GPG key, use the following commands:
 
@@ -105,7 +105,7 @@ $ git config --global commit.gpgsign true
 where `key-name` - is the name of your PGP key. 
 It's `roman.rott@gmail.com` in my case.
 
-Here is my <a href="https://keybase.io/rrott" target="_blank" rel="noopener">GPG key</a> to contact me securelly ;)
+Here is my <a href="https://keybase.io/rrott" target="_blank" rel="noopener noreferrer">GPG key</a> to contact me securelly ;)
 
 ---
 "I hope you enjoyed this article. Please have a good day!!"
