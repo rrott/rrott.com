@@ -10,8 +10,11 @@ RSpec.configure do |config|
 
   # A work-around to support accessing the current example that works in both
   # RSpec 2 and RSpec 3.
-  fetch_current_example = RSpec.respond_to?(:current_example) ?
-    proc { RSpec.current_example } : proc { |context| context.example }
+  fetch_current_example = if RSpec.respond_to?(:current_example)
+    proc { RSpec.current_example }
+  else
+    proc { |context| context.example }
+  end
 
   # The before and after blocks must run instantaneously, because Capybara
   # might not actually be used in all examples where it's included.

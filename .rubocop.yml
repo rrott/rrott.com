@@ -10,6 +10,8 @@ Metrics/CyclomaticComplexity:
 Metrics/LineLength:
   Max: 300
   Severity: convention
+  Exclude:
+  - 'spec/**/*'
 
 Metrics/ClassLength:
   Max: 150

@@ -50,7 +50,7 @@ describe 'index', type: :feature do
 
   context 'Web Developer' do
     it 'displays Web Developer section' do
-      expect(page).to have_selector('h2',text: "Web Developer")
+      expect(page).to have_selector('h2', text: "Web Developer")
     end
 
     it 'displays ruby logo' do
@@ -80,12 +80,11 @@ describe 'index', type: :feature do
     it 'displays link to Portfolio' do
       expect(page).to have_selector('h3 a[href="/portfolio/"]', text: 'Check out my portfolio')
     end
-
   end
 
   context 'Security Researcher' do
     it 'displays Security Researcher section' do
-      expect(page).to have_selector('h2',text: "Security Researcher")
+      expect(page).to have_selector('h2', text: "Security Researcher")
     end
 
     context 'bugcrowd' do
@@ -129,7 +128,7 @@ describe 'index', type: :feature do
 
       context '«Cybersecurity: Ukraine and the world»' do
         it 'displays link to «Cybersecurity: Ukraine and the world»' do
-          expect(page).to have_selector('ul li.link a[href="http://cybersecurity.pp.ua/en/Home"]', 
+          expect(page).to have_selector('ul li.link a[href="http://cybersecurity.pp.ua/en/Home"]',
             text: '«Cybersecurity: Ukraine and the world»')
         end
 
@@ -153,8 +152,8 @@ describe 'index', type: :feature do
   context 'Community developmetn' do
     it 'displays Community development section' do
       expect(page).to have_selector('h2', text: "Community development")
-
     end
+
     it 'displays Open Source logo' do
       expect(page).to have_selector('img.pure-img-responsive')
     end
@@ -236,16 +235,15 @@ describe 'index', type: :feature do
             text: "Recent posts from my blog:")
         end
 
-      context 'recent blogposts' do
-        before do
-          @app = application
-        end
+        context 'recent blogposts' do
+          before do
+            @app = application
+          end
 
-        application.blog.articles[0...3].each do |article|
-          it 'displays last 3 blog articles' do
-
+          application.blog.articles[0...3].each do |article|
+            it 'displays last 3 blog articles' do
               expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
-                text: "#{article.title}")
+                text: article.title.to_s)
             end
           end
         end
@@ -274,7 +272,6 @@ describe 'index', type: :feature do
     end
 
     context 'contacts links' do
-
       context 'Contact Me:' do
         it 'displays contact me links' do
           expect(page).to have_selector('h4', text: "Contact Me:")
