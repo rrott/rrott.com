@@ -3,11 +3,11 @@ module TemplateHelpers
     "#{data.site.url}#{current_page.url}"
   end
 
-  def page_url page
+  def page_url(page)
     "#{data.site.url}#{page.url}"
   end
 
   def nofollow(param)
-    if param then 'nofollow' else 'prefetch' end
+    param ? 'nofollow' : 'prefetch'
   end
 end

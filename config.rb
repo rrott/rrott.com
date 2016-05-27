@@ -10,14 +10,14 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :relative_links, true
 
-page 'sitemap.xml', layout: false
-page 'feed.xml', layout: false
-page "robots.txt", :layout => false
-page "humans.txt", :layout => false
-proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
-page "/404.html", layout: false
+page 'sitemap.xml',   layout: false
+page 'feed.xml',      layout: false
+page "robots.txt",    layout: false
+page "humans.txt",    layout: false
+page "/404.html",     layout: false
 page "/sitemap.html", layout: false
-page "/blog.html", layout: :blog
+page "/blog.html",    layout: :blog
+proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
 ignore "/portfolios.html"
 ignore "/portfolio.html"
 ignore "/stylesheets/syntax.css.erb"
@@ -40,13 +40,13 @@ activate :search do |search|
   search.resources = ['blog/']
   search.index_path = 'search.json' # defaults to `search.json`
   search.fields = {
-    title:   {boost: 100, store: true, required: true},
-    content: {boost: 50},
-    url:     {index: true, store: true}
+    title:   { boost: 100, store: true, required: true },
+    content: { boost: 50 },
+    url:     { index: true, store: true }
   }
 end
 
-#activate :autoprefixer
+# activate :autoprefixer
 activate :directory_indexes
 # Build-specific configuration
 configure :build do
@@ -67,46 +67,43 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  #activate :cache_buster
+  # activate :cache_buster
   activate :relative_assets
-  #activate :smusher
-  #activate :asset_hash
+  # activate :smusher
+  # activate :asset_hash
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
   ],
   sitemap: "#{data.site.url}/sitemap.xml"
 
-  #activate :imageoptim
+  # activate :imageoptim
   activate :webp do |webp|
     webp.append_extension = true
   end
-  
   activate :build_info
 end
 
-
-
-#activate :i18n
-activate :syntax, :line_numbers => true
+# activate :i18n
+activate :syntax, line_numbers: true
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
-set :haml, { ugly: true }
+set :haml, ugly: true
 
-page "blog/*/index.html", :layout => :blog_category
+page "blog/*/index.html", layout: :blog_category
 activate :blog do |blog|
+  Time.zone = "Kyiv"
   # set options on blog
   blog.calendar_template
-  blog.layout = "blog_post"
-  blog.prefix = "blog"
-  blog.permalink = "{category}/{title}.html"
-  blog.paginate = true
-  blog.page_link = "p{num}"
-  blog.per_page = 10
-  blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
-  Time.zone = "Kyiv"
+  blog.layout     = "blog_post"
+  blog.prefix     = "blog"
+  blog.permalink  = "{category}/{title}.html"
+  blog.paginate   = true
+  blog.page_link  = "p{num}"
+  blog.per_page   = 10
+  blog.summary_separator  = /(READMORE)/
+  blog.summary_length     = 250
   blog.custom_collections = {
     category: {
       link: '/{category}/index.html',

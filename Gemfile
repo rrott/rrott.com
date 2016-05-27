@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby "2.3.0"
-#ruby "2.3.0"
+# ruby "2.3.0"
 
 gem "middleman"
 gem 'rake'
@@ -34,4 +34,4 @@ group :development, :test do
   gem 'capybara'
   gem 'rubocop', require: false
 end
-#gem "middleman-es6", github: "vast/middleman-es6"
+# gem "middleman-es6", github: "vast/middleman-es6"
