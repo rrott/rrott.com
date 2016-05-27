@@ -14,8 +14,8 @@ describe 'index', type: :feature do
       expect(page).to have_selector('h1', text: 'Hello, my name is Roman Rott')
     end
 
-    it 'displays message that I am open for job' do
-      expect(page).to have_selector('.is-center',
+    it 'does not display message that I am open for job' do
+      expect(page).to_not have_selector('.is-center',
         text: "Open for remote job opportunities. Contact me if you're interested"
       )
     end
@@ -310,24 +310,32 @@ describe 'index', type: :feature do
           expect(page).to have_selector('.contacts', text: "LinkedIn:")
         end
 
-        it 'displays link to blog' do
+        it 'displays link to linkedIn' do
           expect(page).to have_selector('.link a[href="https://www.linkedin.com/in/rrott"]', text: 'Roman Rott')
         end
 
-        it 'displays contact me links' do
+        it 'displays skype' do
           expect(page).to have_selector('.contacts', text: "Skype:")
         end
 
-        it 'displays link to blog' do
+        it 'displays link to skype' do
           expect(page).to have_selector('.link a[href="skype:roman.rott?chat"]', text: 'roman.rott')
         end
 
-        it 'displays contact me links' do
+        it 'displays mail' do
           expect(page).to have_selector('.contacts', text: "Mail:")
         end
 
-        it 'displays link to blog' do
+        it 'displays link to mail' do
           expect(page).to have_selector('.link a[href="mailto:roman.rott@gmail.com"]', text: 'roman.rott@gmail.com')
+        end
+
+        it 'displays GPG' do
+          expect(page).to have_selector('.contacts', text: "GPG:")
+        end
+
+        it 'displays link to gpg' do
+          expect(page).to have_selector('.link a[href="https://keybase.io/rrott"]', text: 'keybase.io/rrott')
         end
       end
 
@@ -336,26 +344,34 @@ describe 'index', type: :feature do
           expect(page).to have_selector('h4', text: "My Resume:")
         end
 
-        it 'displays LinkedIn' do
+        it 'displays Pdf' do
           expect(page).to have_selector('.contacts', text: "Pdf:")
         end
 
-        it 'displays link to blog' do
+        it 'displays link to pdf' do
           expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.pdf"]', text: 'open/download')
         end
 
-        it 'displays LinkedIn' do
+        it 'displays odt' do
           expect(page).to have_selector('.contacts', text: "Odt:")
         end
-        it 'displays link to blog' do
+        it 'displays link to odt' do
           expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.odt"]', text: 'download')
         end
 
-        it 'displays LinkedIn' do
+        it 'displays docx' do
           expect(page).to have_selector('.contacts', text: "Docx:")
         end
-        it 'displays link to blog' do
+        it 'displays link to docx' do
           expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.docx"]', text: 'download')
+        end
+
+        it 'displays Google Docs' do
+          expect(page).to have_selector('.contacts', text: "Google Docs")
+        end
+
+        xit 'displays link to Google Docs' do
+          expect(page).to have_selector('.link a[href="https://docs.google.com/document/d"]', text: 'download')
         end
       end
 
@@ -364,7 +380,7 @@ describe 'index', type: :feature do
           expect(page).to have_selector('h4', text: "Social Connections:")
         end
 
-        it 'displays LinkedIn' do
+        it 'displays blog' do
           expect(page).to have_selector('.contacts', text: "Blog:")
         end
 
@@ -372,19 +388,26 @@ describe 'index', type: :feature do
           expect(page).to have_selector('.link a[href="/blog/"]', text: 'rrott.com/blog')
         end
 
-        it 'displays LinkedIn' do
+        it 'displays twitter' do
           expect(page).to have_selector('.contacts', text: "Twitter:")
         end
 
-        it 'displays link to blog' do
+        it 'displays link to twitter' do
           expect(page).to have_selector('.link a[href="https://twitter.com/roman_rott"]', text: 'roman_rott')
         end
 
-        it 'displays LinkedIn' do
+        it 'displays github' do
           expect(page).to have_selector('.contacts', text: "GitHub:")
         end
-        it 'displays link to blog' do
+        it 'displays link to github' do
           expect(page).to have_selector('.link a[href="https://github.com/rrott"]', text: 'rrott')
+        end
+
+        it 'displays gitlab' do
+          expect(page).to have_selector('.contacts', text: "GitLab:")
+        end
+        it 'displays link to gitlab' do
+          expect(page).to have_selector('.link a[href="https://gitlab.com/u/rrott"]', text: 'rrott')
         end
       end
 
@@ -401,7 +424,7 @@ describe 'index', type: :feature do
       end
     end
   end
- 
+
   describe 'footer' do
     it 'displays linkedin icon' do
       expect(page).to have_selector('a[href="https://www.linkedin.com/in/rrott"]', count: 3)
