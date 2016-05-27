@@ -33,5 +33,6 @@ group :development, :test do
   gem 'rspec'
   gem 'capybara'
   gem 'rubocop', require: false
+  gem 'overcommit', require: false
 end
 # gem "middleman-es6", github: "vast/middleman-es6"
