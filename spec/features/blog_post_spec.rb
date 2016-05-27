@@ -7,18 +7,14 @@ describe 'index', type: :feature do
   end
 
   context 'Menu' do
-
   end
 
   context 'Message' do
-
   end
 
   context 'main Part' do
-
   end
 
   context 'Footer' do
-
   end
 end

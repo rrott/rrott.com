@@ -32,5 +32,6 @@ group :development, :test do
   gem "middleman-livereload"
   gem 'rspec'
   gem 'capybara'
+  gem 'rubocop', require: false
 end
 #gem "middleman-es6", github: "vast/middleman-es6"

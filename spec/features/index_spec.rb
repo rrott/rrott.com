@@ -16,41 +16,35 @@ describe 'index', type: :feature do
 
     it 'does not display message that I am open for job' do
       expect(page).to_not have_selector('.is-center',
-        text: "Open for remote job opportunities. Contact me if you're interested"
-      )
+        text: "Open for remote job opportunities. Contact me if you're interested")
     end
 
     context 'who I am' do
       it 'displays who I am' do
         expect(page).to have_selector('.pure-u-1',
-          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications."
-        )
+          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.")
       end
 
       it 'displays specialization' do
         expect(page).to have_selector('.pure-u-1',
-          text: "I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities."
-        )
+          text: "I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities.")
       end
     end
 
     context 'languages' do
       it 'displays languages' do
         expect(page).to have_selector('.pure-u-1',
-          text: "CoffeeScript and Ruby are among my favorites when it comes to following TDD and OOP best practices."
-        )
+          text: "CoffeeScript and Ruby are among my favorites when it comes to following TDD and OOP best practices.")
       end
 
       it 'displays ' do
         expect(page).to have_selector('.pure-u-1',
-          text: "I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications."
-        )
+          text: "I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications.")
       end
     end
     it 'displays how I work' do
       expect(page).to have_selector('.pure-u-1',
-        text: "I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs."
-      )
+        text: "I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.")
     end
   end
 
@@ -65,26 +59,22 @@ describe 'index', type: :feature do
 
     it 'displays my expirience in dev' do
       expect(page).to have_selector('.pure-u-md-3-4',
-        text: "During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person."
-      )
+        text: "During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.")
     end
 
     it 'displays my expirience in secure web dev' do
       expect(page).to have_selector('.pure-u-md-3-4 p',
-        text: "I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services."
-      )
+        text: "I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services.")
     end
 
     it 'displays languages' do
       expect(page).to have_selector('.pure-u-md-3-4 p',
-        text: "All of these sites were developed using Ruby, CoffeeScript, Javascript, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis."
-      )
+        text: "All of these sites were developed using Ruby, CoffeeScript, Javascript, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
     end
 
     it 'displays portfolio message' do
       expect(page).to have_selector('.pure-u-md-3-4 p',
-        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015."
-      )
+        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.")
     end
 
     it 'displays link to Portfolio' do
@@ -101,8 +91,7 @@ describe 'index', type: :feature do
     context 'bugcrowd' do
       it 'displays bugcrowd' do
         expect(page).to have_selector('.infosec-text',
-          text: "I like to test websites for security vulnerabilities (both white-box and black-box) at BugCrowd and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc"
-        )
+          text: "I like to test websites for security vulnerabilities (both white-box and black-box) at BugCrowd and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc")
       end
 
       it 'displays link to bugcrowd' do
@@ -113,8 +102,7 @@ describe 'index', type: :feature do
     context 'List of CTF games' do
       it 'displays what I did last year' do
         expect(page).to have_selector('.infosec-text',
-          text: "Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:"
-        )
+          text: "Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:")
       end
 
       context 'UISGCon 11(2015)' do
@@ -124,8 +112,7 @@ describe 'index', type: :feature do
 
         it 'displays info about UISGCon 11(2015)' do
           expect(page).to have_selector('ul li.link',
-            text: "Ukrainian InfoSec conference held by Non Government Organisation «Ukrainian Information Security Group»"
-          )
+            text: "Ukrainian InfoSec conference held by Non Government Organisation «Ukrainian Information Security Group»")
         end
       end
 
@@ -136,8 +123,7 @@ describe 'index', type: :feature do
 
         it 'displays The Cybersecurity Olympiad' do
           expect(page).to have_selector('ul li.link',
-            text: "The Cybersecurity Olympiad"
-          )
+            text: "The Cybersecurity Olympiad")
         end
       end
 
@@ -149,15 +135,13 @@ describe 'index', type: :feature do
 
         it 'displays The Cybersecurity Olympiad' do
           expect(page).to have_selector('ul li.link',
-            text: "International forum «Cybersecurity: Ukraine and the world»"
-          )
+            text: "International forum «Cybersecurity: Ukraine and the world»")
         end
       end
 
       it 'displays link to UISGCon 10(2014)' do
         expect(page).to have_selector('ul li.link',
-          text: "UISGCon 10(2014) - Ukrainian InfoSec conference"
-        )
+          text: "UISGCon 10(2014) - Ukrainian InfoSec conference")
       end
     end
 
@@ -187,8 +171,7 @@ describe 'index', type: :feature do
 
         it 'displays what it is' do
           expect(page).to have_selector('ul li.link',
-            text: "«Grunt Coffee Chain» - grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies."
-          )
+            text: "«Grunt Coffee Chain» - grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.")
         end
       end
 
@@ -198,8 +181,7 @@ describe 'index', type: :feature do
         end
         it 'displays what it is' do
           expect(page).to have_selector('ul li.link',
-            text: "«Asana God Contact» - A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby."
-          )
+            text: "«Asana God Contact» - A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.")
         end
       end
     end
@@ -225,15 +207,13 @@ describe 'index', type: :feature do
     context 'Developed local community' do
       it 'displays ' do
         expect(page).to have_selector('h5.content-subhead',
-          text: "Developed local community:"
-        )
+          text: "Developed local community:")
       end
 
       context 'Hackathon' do
         it 'displays ' do
           expect(page).to have_selector('ul li.link',
-            text: "Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first"
-          )
+            text: "Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first")
         end
 
         it 'displays link to «Asana God Contact»' do
@@ -242,8 +222,7 @@ describe 'index', type: :feature do
 
         it 'displays ' do
           expect(page).to have_selector('ul li.link',
-            text: "in Zaporizhzhya city -"
-          )
+            text: "in Zaporizhzhya city -")
         end
 
         it 'displays link to «Asana God Contact»' do
@@ -254,8 +233,7 @@ describe 'index', type: :feature do
       context 'blog' do
         it 'displays ' do
           expect(page).to have_selector('h5.content-subhead',
-            text: "Recent posts from my blog:"
-          )
+            text: "Recent posts from my blog:")
         end
 
       context 'recent blogposts' do
@@ -267,8 +245,7 @@ describe 'index', type: :feature do
           it 'displays last 3 blog articles' do
 
               expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
-                text: "#{article.title}"
-              )
+                text: "#{article.title}")
             end
           end
         end
@@ -282,20 +259,17 @@ describe 'index', type: :feature do
     context 'Contact information' do
       it 'displays Contact information section' do
         expect(page).to have_selector('h2',
-          text: "Contact information"
-        )
+          text: "Contact information")
       end
 
       it 'displays promo' do
         expect(page).to have_selector('.pure-u-1.is-center',
-          text: "If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me."
-        )
+          text: "If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me.")
       end
 
       it 'displays ' do
         expect(page).to have_selector('h3.is-center',
-          text: "Lets build something great!"
-        )
+          text: "Lets build something great!")
       end
     end
 
