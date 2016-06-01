@@ -1,0 +1,106 @@
+---
+title: How to start using GitLab
+short: How to start using GitLab
+date:  2016-05-30 7:17 UTC
+tags:  git, gitlab, github, repo
+category: git
+---
+# How to start using gitlab.com as your additional Git remote server.
+One may say that "I wish I could switch to GitLab, but all my issues and all my history are on GitHub; I don't want to loose my history..." 
+
+But you know, it is not really necessary to switch everything and stop using GitHub(or BitBucket). You can easily add GitLab as your second `remote` and all your commits will be available on both GitLab and GitHab using advantages of both platforms!
+
+## Adding a new remote to your git.
+
+Here is the "magic" command:
+
+```bash
+$ git remote set-url --add origin git@gitlab.com:<username>/<repo>.git
+```
+
+After that all time you run push command, all your commits will be sent to both remote servers.
+
+>Note: You may add Bitbucket there as well, or your own private GitLab server, but the more servers you have the slowest push you get.
+
+Let's see if all is ok:
+
+```bash
+$ git remote -v
+origin  git@github.com:rrott/rrott.com.git (fetch)
+origin  git@github.com:rrott/rrott.com.git (push)
+origin  git@gitlab.com:rrott/rrott.com.git (push)
+```
+
+It means that you will be fetching all the data from GitHub while pushes will go to both GitLab and GitHub. We can make GitLab be the default one, for example, this way:
+
+- 1. delete origin:
+
+```bash
+$ git remote remove origin
+
+```
+
+> If you run `git remote -v` you will see that you don't have origins anymore.
+
+```bash
+$ git remote -v
+$
+```
+
+- 2. Add GitLab's repo as origin:
+
+```bash
+git remote add origin git@gitlab.com:rrott/rrott.com.git
+```
+
+- 3. Add GitHub's repo as additional origin:
+
+```bash
+$ git remote set-url --add origin  git@github.com:rrott/rrott.com.git
+```
+
+And here is the result:
+
+```bash
+$ git remote -v
+origin  git@gitlab.com:rrott/rrott.com.git (fetch)
+origin  git@gitlab.com:rrott/rrott.com.git (push)
+origin  git@github.com:rrott/rrott.com.git (push)
+```
+
+---
+| Commits in GitLab | Commits in GitHub |
+|:--------------------------:|:--------------------:|
+| <img class='pure-img-responsive' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/> | <img class='pure-img-responsive' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/> |
+
+> Notice how perfectly responsive design work on both websites ;)
+
+----
+
+## Using GitLab's mirrors
+
+Above looks like a **mirror** but it's technically not a mirror. It's just an additional remote server, and if your collaborators push something to GitHub you will not see these changes in GitLab
+> To "fix" this your collaborators will need to configure their git clients the same way as you did. Or you may pull the changes to your local git and then push them once again, each time GitHub is updated.
+
+It may be good if:
+
+- you are working alone
+- or all your collaborators forced to configure their git clients this way.
+- or you don't need others to use GitLab/GitHUb, it's just for you.
+
+In case you need everything to be synchronized, try using GitLab's cool feature named(surprise!) **Mirrors**. This feature will synchronize git repo from GitHub or BitBucket once a commit is pushed.
+
+Let's do that:
+
+ 1. Open your project on GitLab
+ 2. Go to Settings Page.
+ <img class='pure-img-responsive' title="GitLab project settings page", alt="GitLab project settings page", src="/images/blog/start-using-gitlab/gitlab-project-settings.png"/> 
+
+ 3. Click on `Mirror Repository` menu item.
+ 4. Configure it to be a mirror or to use another server as a mirror as described on the page.
+  <img class='pure-img-responsive' title="GitLab project mirror settings page", alt="GitLab project mirror settings page", src="/images/blog/start-using-gitlab/gitlab-project-mirror.png"/> 
+
+Is it the same? No. It is *almost* the same, the only problem is that you will have to use your login/password here. 
+
+That's it! Have a good day!
+

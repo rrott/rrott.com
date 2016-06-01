@@ -3,7 +3,7 @@ title: Why should I use git with GPG?
 short: Why should I use git with GPG?
 date:  2016-04-06 10:49 UTC
 tags:  git, gpg, security, github
-category: Security
+category: security
 ---
 # Why should I use git with GPG?
 You probably missed this recent news from [GitHub](https://github.com/blog/2144-gpg-signature-verification) because it may sound like a marketing bullshit you can leave without. Actually, you can, but if you care about who exactly commits to your repo, you should not.
