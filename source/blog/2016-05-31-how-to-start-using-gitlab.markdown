@@ -1,14 +1,14 @@
 ---
 title: How to start using GitLab
 short: How to start using GitLab
-date:  2016-05-30 7:17 UTC
+date:  2016-05-31 17:40 UTC
 tags:  git, gitlab, github, repo
 category: git
 ---
 # How to start using gitlab.com as your additional Git remote server.
-One may say that "I wish I could switch to GitLab, but all my issues and all my history are on GitHub; I don't want to loose my history..." 
+Introducing GitLab to my friends/colleagues is causing me some concern because I have heard phrases like **"I wish I could switch to GitLab, but I use GitHub Issues"** or **"I don't want to lose all my history..."**, but you know, it is not really true!
 
-But you know, it is not really necessary to switch everything and stop using GitHub(or BitBucket). You can easily add GitLab as your second `remote` and all your commits will be available on both GitLab and GitHab using advantages of both platforms!
+You don't have to switch everything and stop using GitHub(or BitBucket if you wish)! You can easily add GitLab as your second `remote` and all your commits will be available on both GitLab and GitHab allowing you to use advantages of all the platforms!
 
 ## Adding a new remote to your git.
 
@@ -18,9 +18,9 @@ Here is the "magic" command:
 $ git remote set-url --add origin git@gitlab.com:<username>/<repo>.git
 ```
 
-After that all time you run push command, all your commits will be sent to both remote servers.
+After that each time you run `push` command, all your commits will be sent to both remote servers.
 
->Note: You may add Bitbucket there as well, or your own private GitLab server, but the more servers you have the slowest push you get.
+>Note: You may add Bitbucket as well, or even your own private GitLab server, but the more remote servers you have the slowest push you get.
 
 Let's see if all is ok:
 
@@ -31,7 +31,7 @@ origin  git@github.com:rrott/rrott.com.git (push)
 origin  git@gitlab.com:rrott/rrott.com.git (push)
 ```
 
-It means that you will be fetching all the data from GitHub while pushes will go to both GitLab and GitHub. We can make GitLab be the default one, for example, this way:
+It means that you will be fetching all the data from GitHub while pushes will go to both GitLab and GitHub. We can also make GitLab be the default one, for example, this way:
 
 - 1. delete origin:
 
@@ -40,7 +40,7 @@ $ git remote remove origin
 
 ```
 
-> If you run `git remote -v` you will see that you don't have origins anymore.
+> Note: If you run `git remote -v` you will see no origins anymore.
 
 ```bash
 $ git remote -v
@@ -73,7 +73,7 @@ origin  git@github.com:rrott/rrott.com.git (push)
 |:--------------------------:|:--------------------:|
 | <img class='pure-img-responsive' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/> | <img class='pure-img-responsive' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/> |
 
-> Notice how perfectly responsive design work on both websites ;)
+> Notice how perfectly responsive designes work on both websites ;)
 
 ----
 
