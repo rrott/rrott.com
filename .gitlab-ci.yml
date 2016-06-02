@@ -6,7 +6,6 @@ before_script:
   - bundle install
 
 stages:
-  - build
   - test
   - deploy
 
@@ -14,11 +13,6 @@ deploy:
   stage: deploy
   script:
   - bundle exec cap production deploy
-  
-rubocop:
-  stage: build
-  script:
-    - rubocop
   only:
     - master
   tags:
@@ -28,6 +22,7 @@ spec:
   stage: test
   script:
     - bundle exec rspec
+    - rubocop
   only:
     - master
   tags:
