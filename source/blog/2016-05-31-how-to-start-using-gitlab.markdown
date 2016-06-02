@@ -85,6 +85,25 @@ origin  git@github.com:rrott/rrott.com.git (push)
 
 ----
 
+```bash
+$ git push
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 41.90 KiB | 0 bytes/s, done.
+Total 11 (delta 7), reused 0 (delta 0)
+To git@gitlab.com:rrott/rrott.com.git
+   2cccd71..5cb6e9f  master -> master
+   
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 41.90 KiB | 0 bytes/s, done.
+Total 11 (delta 7), reused 0 (delta 0)
+To git@github.com:rrott/rrott.com.git
+   2cccd71..5cb6e9f  master -> master
+```
+
 ## Using GitLab's mirrors
 
 Above looks like a **mirror** but it's technically not a mirror. It's just an additional remote server, and if your collaborators push something to GitHub you will not see these changes in GitLab
