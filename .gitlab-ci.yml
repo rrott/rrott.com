@@ -1,13 +1,20 @@
 image: ruby:2.3
 services:
   - ruby
+
 before_script:
   - bundle install
 
 stages:
   - build
   - test
+  - deploy
 
+deploy:
+  stage: deploy
+  script:
+  - bundle exec cap production deploy
+  
 rubocop:
   stage: build
   script:
