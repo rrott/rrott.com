@@ -7,23 +7,11 @@ before_script:
 
 stages:
   - test
-  - deploy
-
-deploy:
-  stage: deploy
-  script:
-  - bundle exec cap production deploy
-  only:
-    - master
-  tags:
-    - ruby
 
 spec:
   stage: test
   script:
     - bundle exec rspec
     - rubocop
-  only:
-    - master
   tags:
     - ruby
