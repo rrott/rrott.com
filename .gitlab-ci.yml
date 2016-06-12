@@ -15,7 +15,7 @@ rubocop:
   only:
     - master
   tags:
-    - ruby
+    - ruby, rrott-digital-ocean
 
 spec:
   stage: test
@@ -24,4 +24,4 @@ spec:
   only:
     - master
   tags:
-    - ruby
+    - ruby, rrott-digital-ocean
