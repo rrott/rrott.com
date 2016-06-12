@@ -25,6 +25,7 @@ namespace :deploy do
       wd = fetch(:release_path)
       within "#{wd}" do
         execute :bundle, :exec, "middleman build"
+        execute "cp #{wd}/source/favicon/*.* #{wd}/build"
         execute "mv #{wd}/build #{wd}/public"
       end
     end
