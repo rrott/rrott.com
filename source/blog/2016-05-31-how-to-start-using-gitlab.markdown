@@ -26,7 +26,7 @@ $ git remote set-url --add origin git@gitlab.com:<username>/<repo>.git
 
 After that, each time you push your changes all the commits will be sent to both remote servers.
 
->Note: You may add Bitbucket as well(or even your own private GitLab server) but the more remote servers you have the slowest push you get.
+>Note: You may add Bitbucket as well(or even your own private GitLab server) but the more remote servers you have the slower push will be.
 
 Let's see if we are ok:
 
