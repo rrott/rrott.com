@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.3.1"
 # ruby "2.3.1"
 
-gem "middleman"
+gem "middleman", '~> 4.1.9'
 gem 'rake'
 gem 'builder'
 gem "middleman-blog"
@@ -10,11 +10,11 @@ gem 'middleman-webp'
 gem 'middleman-imageoptim'
 gem 'middleman-autoprefixer'
 gem 'middleman-smusher'
-gem 'middleman-blog-similar'
+# gem 'middleman-blog-similar'
 gem "redcarpet"
 gem 'kramdown'
 gem "sitemap_generator"
-gem 'middleman-minify-html'
+# gem 'middleman-minify-html'
 gem "middleman-disqus"
 gem "middleman-syntax"
 gem 'middleman-search'
@@ -28,7 +28,7 @@ group :development, :test do
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
   gem 'rvm1-capistrano3', require: false
-  gem 'middleman-build-info'
+  # gem 'middleman-build-info'
   gem "middleman-livereload"
   gem 'rspec'
   gem 'capybara'
