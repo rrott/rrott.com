@@ -4,7 +4,7 @@
   %head
     %title=data.site.sitemap.title
     = stylesheet_link_tag  'index', property: 'stylesheet'
-    = partial 'meta'
+    = partial 'partials/meta'
 
     %meta{name: 'keywords',    content: data.site.sitemap.keywords}
     %meta{name: 'description', content: data.site.sitemap.description}
@@ -15,7 +15,7 @@
           Sitemap of rrott.com website
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
           .pure-img-responsive.logo
-            = sprockets.find_asset('rrott-ruby-logo.svg').to_s
+            = partial('images/rrott-ruby-logo.svg').to_s
         .pure-g.l-box-lrg.ribbon.l-box-lrg
           .pure-u-1.pure-u-md-1-3
             %h3 Blog Posts
@@ -71,10 +71,10 @@
             Contact information
           .pure-u-1.is-center
             If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'contacts'
+        = partial 'partials/contacts'
         %h3.is-center.pure-u-1 Lets build something great!
 
       %footer.footer.l-box.is-center
-        = partial 'links'
+        = partial 'partials/links'
     = stylesheet_link_tag  'grids', property: 'stylesheet'
     = stylesheet_link_tag  'application', property: 'stylesheet'

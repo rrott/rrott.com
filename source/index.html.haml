@@ -6,7 +6,7 @@
 %main.content-wrapper
   %section.content.content-head
     .links.is-center
-      = partial 'links'
+      = partial 'partials/links'
       %br
       -# Open for remote job opportunities. Contact me if you're interested
     %section.pure-g
@@ -32,13 +32,13 @@
     .pure-g
       .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
         .pure-img-responsive.logo
-          = sprockets.find_asset('rrott-ruby-logo.svg').to_s
+          = partial('images/rrott-ruby-logo.svg').to_s
       .pure-u-1.pure-u-md-3-4
-        %p During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.
+        %p During last 4 years, I have been developing, supporting and maintaining web-projects for  US companies - Sphere Software, Dabble, Enova, Ecommerce LLC.
 
         %p I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services.
 
-        %p All of these sites were developed using Ruby, CoffeeScript, Javascript, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.
+        %p All of these sites were developed using Ruby, CoffeeScript, Javascript, React, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.
 
         %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.
 
@@ -157,11 +157,11 @@
       .pure-u-1.is-center
         If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me.
 
-    = partial 'contacts'
+    = partial 'partials/contacts'
     %h3.is-center.pure-u-1 Lets build something great!
 
   %footer.footer.l-box.is-center
-    = partial 'links'
+    = partial 'partials/links'
     %br
     %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
       SiteMap

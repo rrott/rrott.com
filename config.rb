@@ -1,4 +1,4 @@
-require "middleman-smusher"
+# require "middleman-smusher"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -114,7 +114,7 @@ end
 
 configure :development do
   set :debug_assets, true
-  activate :livereload
+  # activate :livereload
 
   activate :disqus do |d|
     d.shortname = nil

@@ -4,7 +4,7 @@
   %head
     %title=data.site.not_found.title
     %link{href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet'}
-    = partial 'meta'
+    = partial 'partioals/meta'
 
     %meta{name: 'keywords',    content: data.site.not_found.keywords}
     %meta{name: 'description', content: data.site.not_found.description}
@@ -20,7 +20,7 @@
           %a{href: "/sitemap/", title: 'Sitemap of rrott.com'} Site Map
         .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
           .pure-img-responsive.logo
-            = sprockets.find_asset('rrott-ruby-logo.svg').to_s
+            = partial('images/rrott-ruby-logo.svg').to_s
         .pure-g.l-box-lrg.ribbon.l-box-lrg
 
       %section#contacts.content
@@ -29,11 +29,11 @@
             Contact information
           .pure-u-1.is-center
             If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'contacts'
+        = partial 'partioals/contacts'
         %h3.is-center.pure-u-1 Lets build something great!
 
       %footer.footer.l-box.is-center
-        = partial 'links'
+        = partial 'partioals/links'
         %br
         %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
           SiteMap
