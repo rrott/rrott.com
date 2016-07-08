@@ -7,7 +7,7 @@ gem 'rake'
 gem 'builder'
 gem "middleman-blog"
 gem 'middleman-webp'
-gem 'middleman-imageoptim'
+# gem 'middleman-imageoptim'
 gem 'middleman-autoprefixer'
 gem "middleman-sprockets", "~> 4.0.0"
 # gem 'middleman-smusher'
