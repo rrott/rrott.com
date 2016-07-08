@@ -34,8 +34,8 @@ RSpec.configure do |config|
 end
 
 
-middleman_app = ::Middleman::Application.new {config[:mode] = :test}
-Capybara.app =  ::Middleman::Rack.new(middleman_app).to_app do
+middleman_app = Middleman::Application.new
+Capybara.app =  Middleman::Rack.new(middleman_app).to_app do
   set :root, File.expand_path('../../../', __FILE__)
   set :show_exceptions, true
   set :environment, :test

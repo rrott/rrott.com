@@ -62,18 +62,18 @@ configure :build do
   end
   activate :minify_css
   activate :minify_javascript
-  activate :minify_html
+  # activate :minify_html
   activate :relative_assets
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
   ],
   sitemap: "#{data.site.url}/sitemap.xml"
 
-  activate :imageoptim
+  # activate :imageoptim
   activate :webp do |webp|
     webp.append_extension = true
   end
-  activate :build_info
+  # activate :build_info
 end
 
 # activate :i18n
