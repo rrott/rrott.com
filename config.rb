@@ -1,5 +1,3 @@
-# require "middleman-smusher"
-
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -24,7 +22,7 @@ ignore "/stylesheets/syntax.css.erb"
 
 data.pages.portfolio.each do |page|
   project_page = page[1]
-  proxy "#{project_page.url}.html", "/portfolio.html", layout: :portfolio, locals: {
+  proxy "#{project_page.url}/", "/portfolio.html", layout: :portfolio, locals: {
     type:         project_page.type,
     all_projects: project_page.projects_list,
     canonical:    project_page.canonical,
@@ -46,9 +44,7 @@ activate :search do |search|
   }
 end
 
-# activate :autoprefixer
 activate :directory_indexes
-# Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
   ignore 'stylesheets/lib/*'
@@ -67,16 +63,13 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  # activate :cache_buster
   activate :relative_assets
-  # activate :smusher
-  # activate :asset_hash
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
   ],
   sitemap: "#{data.site.url}/sitemap.xml"
 
-  # activate :imageoptim
+  activate :imageoptim
   activate :webp do |webp|
     webp.append_extension = true
   end
@@ -112,9 +105,9 @@ activate :blog do |blog|
   }
 end
 
+
 configure :development do
   set :debug_assets, true
-  # activate :livereload
 
   activate :disqus do |d|
     d.shortname = nil

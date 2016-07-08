@@ -9,6 +9,7 @@ gem "middleman-blog"
 gem 'middleman-webp'
 gem 'middleman-imageoptim'
 gem 'middleman-autoprefixer'
+gem "middleman-sprockets", "~> 4.0.0"
 # gem 'middleman-smusher'
 # gem 'middleman-blog-similar'
 gem "redcarpet"

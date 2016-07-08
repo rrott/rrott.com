@@ -16,10 +16,11 @@ def application
   initialize_commands.unshift lambda {
     # set :root, root_dir
     set :environment, :test
-    set :show_exceptions, false
+    set :show_exceptions, true
   }
 
-  app ||= Middleman::Application.server.inst do
+  middleman_app ||= ::Middleman::Application.new
+  app ||= ::Middleman::Rack.new(middleman_app).to_app do
     initialize_commands.each do |p|
       instance_exec(&p)
     end
