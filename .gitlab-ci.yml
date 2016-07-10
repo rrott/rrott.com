@@ -1,19 +1,24 @@
-image: ruby:2.3
-services:
-  - ruby
+image: "ruby:2.3"
 
-before_script:
-  - export LANG="en_US.UTF-8"
-  - export LC_ALL="en_US.UTF-8"
-  - bundle install
+cache:
+  key: bundle
+  paths:
+    - vendor
 
 stages:
   - test
+  - deploy
 
-spec:
+before_script:
+  - apt-get update -yqqq
+  - bundle install -j $(nproc) --path vendor
+
+rubocop:
   stage: test
   script:
-    - bundle exec rspec
-    - rubocop
-  tags:
-    - ruby
+  - rubocop
+
+rspec:
+  stage: test
+  script:
+  - bundle exec rspec
