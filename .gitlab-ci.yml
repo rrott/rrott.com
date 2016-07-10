@@ -10,7 +10,6 @@ stages:
   - deploy
 
 before_script:
-  - apt-get update -yqqq
   - bundle install -j $(nproc) --path vendor
 
 rubocop:
