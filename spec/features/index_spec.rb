@@ -236,17 +236,15 @@ describe 'index', type: :feature do
         end
 
         # TODO: fix after adding tests for blog itself
-        # context 'recent blogposts' do
-        #   # before do
-        #   #   @app = application
-        #   # end
-        #   application.blog.articles[0...3].each do |article|
-        #     it 'displays last 3 blog articles' do
-        #       expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
-        #         text: article.title.to_s)
-        #     end
-        #   end
-        # end
+        context 'recent blogposts' do
+          binding.pry
+          blog.articles[0...3].each do |article|
+            it 'displays last 3 blog articles' do
+              expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
+                text: article.title.to_s)
+            end
+          end
+        end
       end
 
       it 'displays link to blog' do

@@ -1,13 +1,17 @@
 require 'capybara'
 require 'capybara/dsl'
+require 'rspec'
+require 'capybara/rspec'
 require 'rspec/core'
 require 'capybara/rspec/matchers'
 require 'capybara/rspec/features'
+require 'middleman-core'
+require 'middleman-core/rack'
 
 RSpec.configure do |config|
   config.include Capybara::DSL
   config.include Capybara::RSpecMatchers
-
+  config.order = :random
   # A work-around to support accessing the current example that works in both
   # RSpec 2 and RSpec 3.
   fetch_current_example = if RSpec.respond_to?(:current_example)
@@ -32,11 +36,9 @@ RSpec.configure do |config|
     end
   end
 end
-
-
-middleman_app = Middleman::Application.new
-Capybara.app =  Middleman::Rack.new(middleman_app).to_app do
-  set :root, File.expand_path('../../../', __FILE__)
+middleman_app = ::Middleman::Application.new
+Capybara.app = ::Middleman::Rack.new(middleman_app).to_app do
+  set :root, File.expand_path(File.join(File.dirname(__FILE__), '..'))
   set :show_exceptions, true
-  set :environment, :test
+  set :environment, :development
 end

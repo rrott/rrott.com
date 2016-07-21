@@ -17,9 +17,9 @@ before_script:
 rubocop:
   stage: test
   script:
-  - rubocop
+    - rubocop
 
 rspec:
   stage: test
   script:
-  - bundle exec rspec
+    - bundle exec rspec
