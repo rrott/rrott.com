@@ -6,7 +6,7 @@
     %section.post{id: project.name}
       - if project.noindex
         %noindex
-          = partial 'portfolio/project', locals: { project: data.projects[project.name], index: project.noindex}
+          = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: project.noindex}
       - else
-        = partial 'portfolio/project', locals: { project: data.projects[project.name], index: false}
+        = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: false}
 

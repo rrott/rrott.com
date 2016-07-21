@@ -4,7 +4,7 @@
   %head
     %title=data.site.sitemap.title
     = stylesheet_link_tag  'index', property: 'stylesheet'
-    = partial 'meta'
+    = partial 'partials/meta'
 
     %meta{name: 'keywords',    content: data.site.sitemap.keywords}
     %meta{name: 'description', content: data.site.sitemap.description}
@@ -71,10 +71,10 @@
             Contact information
           .pure-u-1.is-center
             If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'contacts'
+        = partial 'partials/contacts'
         %h3.is-center.pure-u-1 Lets build something great!
 
       %footer.footer.l-box.is-center
-        = partial 'links'
+        = partial 'partials/links'
     = stylesheet_link_tag  'grids', property: 'stylesheet'
     = stylesheet_link_tag  'application', property: 'stylesheet'

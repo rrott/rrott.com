@@ -4,7 +4,7 @@
   %head
     %title=data.site.not_found.title
     %link{href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet'}
-    = partial 'meta'
+    = partial 'partials/meta'
 
     %meta{name: 'keywords',    content: data.site.not_found.keywords}
     %meta{name: 'description', content: data.site.not_found.description}
@@ -29,11 +29,11 @@
             Contact information
           .pure-u-1.is-center
             If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'contacts'
+        = partial 'partials/contacts'
         %h3.is-center.pure-u-1 Lets build something great!
 
       %footer.footer.l-box.is-center
-        = partial 'links'
+        = partial 'partials/links'
         %br
         %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
           SiteMap

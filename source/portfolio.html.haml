@@ -24,7 +24,7 @@
         = sprockets.find_asset('rrott-ruby-logo.svg').to_s
       .portfolio-contacts
         %br
-        = partial 'links'
+        = partial 'partials/links'
         %br
         Open for remote job opportunities
       %br
@@ -58,9 +58,9 @@
         = message
     %div
       - all_projects.each do |sections|
-        = partial 'portfolio/section', locals: { projects: sections, multipart: multipart}
+        = partial 'partials/portfolio/section', locals: { projects: sections, multipart: multipart}
     %footer.footer.l-box.is-center
-      = partial 'links'
+      = partial 'partials/links'
       %br
       #{type} Projects accomplished in 2015 and active in 2016
       %br
