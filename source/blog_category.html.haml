@@ -21,7 +21,7 @@
       %br
       .search
         %form#search{ role: "search" }
-          %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "off", results: 5, autosave: "rrott_search", tabindex: 1}
+          %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "on", results: 5, autosave: "rrott_search", tabindex: 1, spellcheck: true, autocapitalize: "off", autocorrect: "off", autofocus: true, 'x-webkit-speech': true, maxlength: 30 }
           %input#search-submit{type: "submit", value: "Search", tabindex: 2}
         %ul#results
       -# .portfolio-categories

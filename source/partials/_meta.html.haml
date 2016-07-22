@@ -1,9 +1,10 @@
 %meta{charset: "UTF-8"}
-%meta(http-equiv="X-UA-Compatible" content="IE=edge")
+%meta(http-equiv="x-ua-compatible" content="ie=edge")
+%meta(http-equiv="cleartype" content="on")
+%meta(http-equiv="Content-Security-Policy" content="default-src 'self'")
 %meta{name: "viewport", content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"}
 %meta{content: 'True', name: 'HandheldFriendly'}
 %meta{content: '320',  name: 'MobileOptimized'}
-
 %link{rel: "preconnect",  href: "//ssl.google-analytics.com"}
 %link{rel: "subresource", href: "//s7.addthis.com/js/300/addthis_widget.js"}
 %link{rel: "subresource", href: "//rrott.com/fonts/rrott-webfont.woff"}
@@ -17,7 +18,9 @@
 %link{rel:"icon", type:"image/png", href: "/favicon-16x16.png", sizes: "16x16"}
 %link{rel:"manifest", href: "/manifest.json"}
 %link{rel:"mask-icon", href: "/safari-pinned-tab.svg"}
+-# %link{rel:"amphtml", href: "https://rrott.com/amp"}
 %meta{name: "apple-mobile-web-app-title", content: "rrott.com"}
+%meta{name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"}
 %meta{name: "application-name", content: "rrott.com"}
 %meta{name: "msapplication-TileColor", content: "#1f8dd6"}
 %meta{name: "msapplication-TileImage", content: "/mstile-144x144.png"}
@@ -39,6 +42,8 @@
 %meta{property: 'og:image',         content: 'https://rrott.com/images/rrott-ruby-logo.png'}
 %meta{property: 'fb:app_id',        content: '1714618322129281'}
 %meta{property: 'og:type',          content: 'website'}
+%meta{property: "og:locale",        content: "en_US"}
+%meta{property: "article:author",   content: "Roman Rott"}
 %meta{property: "fb:admins",        content: "1440136372"}
 // Google Plus
 %meta{itemprop: 'name',             content: data.site.title}
@@ -48,5 +53,11 @@
 %meta{content:'Roman Rott', name:'author'}
 %link{href: 'https://plus.google.com/u/0/%2BRomanRott', rel: 'publisher'}
 
-%meta{name: 'robots', content:'index,follow'}
-%link{type: "text/plain",   rel:"author", href: "/humans.txt"}
+%link{type: "text/plain", rel:"author", href: "/humans.txt"}
+
+%meta{name: 'robots',    content:'index,follow'}
+%meta{name: "subject",   content: data.site.title}
+%meta{name: "rating",    content: "General"}
+%meta{name: "url",       content: "https://rrott.com"}
+%meta{name: "directory", content: "submission"}
+%meta{name: "coverage",  content: "Worldwide"}
