@@ -11,16 +11,10 @@ stages:
 before_script:
   - bundle install -j $(nproc) --path vendor
 
-rubocop:
-  stage: test
-  only:
-    - master
-  script:
-    - rubocop
-
 rspec:
   stage: test
   only:
     - master
   script:
     - bundle exec rspec
+    - rubocop
