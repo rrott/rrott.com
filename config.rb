@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require "middleman-smusher"
 
 # Automatic image dimensions on image_tag helper

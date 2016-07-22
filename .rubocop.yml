@@ -151,3 +151,6 @@ Style/PerlBackrefs:
 # There are valid cases (eg. Date.parse(date) rescue nil)
 Style/RescueModifier:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
