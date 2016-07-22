@@ -13,10 +13,14 @@ before_script:
 
 rubocop:
   stage: test
+  only:
+    - master
   script:
     - rubocop
 
 rspec:
   stage: test
+  only:
+    - master
   script:
     - bundle exec rspec
