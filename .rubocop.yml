@@ -80,10 +80,6 @@ Style/AlignHash:
 Style/ModuleFunction:
   Enabled: false
 
-Style/RegexpLiteral:
-  # The maximum number of (escaped) slashes that a slash-delimited regexp is
-  # allowed to have. If there are more slashes, a %r regexp shall be used.
-  MaxSlashes: 0
 
 Style/FormatString:
   Enabled: false
@@ -155,8 +151,3 @@ Style/PerlBackrefs:
 # There are valid cases (eg. Date.parse(date) rescue nil)
 Style/RescueModifier:
   Enabled: false
-
-Style/Blocks:
-  Severity: refactor
-  Exclude:
-  - '**/spec/**/*_spec.rb'

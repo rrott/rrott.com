@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 ruby "2.3.1"
 # ruby "2.3.1"
@@ -29,7 +30,6 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'rvm1-capistrano3', require: false
   gem 'middleman-build-info'
-  gem "middleman-livereload"
   gem 'rspec'
   gem 'capybara'
   gem 'rubocop', require: false

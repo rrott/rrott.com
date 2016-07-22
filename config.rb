@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "middleman-smusher"
 
 # Automatic image dimensions on image_tag helper
@@ -114,7 +115,6 @@ end
 
 configure :development do
   set :debug_assets, true
-  activate :livereload
 
   activate :disqus do |d|
     d.shortname = nil
