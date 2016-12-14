@@ -21,17 +21,11 @@
       %section.logo
         = partial('images/rrott-ruby-logo.svg').to_s
       %hr
-      %section#contacts
-        %h2.contacts-message
-          Contact information
-        .contacts-description
-          If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'partials/contacts'
-        %h3.contacts-message Lets build something great!
+      = partial 'partials/contacts'
 
-      %footer.footer
-        = partial 'partials/links'
-        %a.sitemap-links{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-          SiteMap
+    %footer.footer
+      = partial 'partials/links'
+      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+        SiteMap
     %link{href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet'}
     %link{href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet'}

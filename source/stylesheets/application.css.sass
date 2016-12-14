@@ -1,3 +1,36 @@
+body
+  display: flex
+  flex-direction: column
+  line-height: 180%
+  color: #7f8c8d
+  font-size: 13px
+
+main
+  display: flex
+  flex-direction: column
+
+.text-block
+  padding-left: 5%
+  padding-right: 5%
+
+.text-block.dark
+  h1, h2, h3, h4, h5, h6, label
+    color: #aaa
+  a:hover
+    color: #0061D2
+  background: #2d3e50
+  color: #aaa
+
+.flex
+  display: flex
+
+.text70
+  max-width: 70%
+
+.responsive
+  max-width: 100%
+  height: auto
+
 .contacts-box
   display: flex
   justify-content: space-around
@@ -26,8 +59,15 @@
 .center
   text-align: center
 
+.footer
+  background: #111
+  text-align: center
+  padding: 1rem
+
 .logo
   svg
+    height: auto
+    max-width: 100%
     width: 25rem
     transition: all 0.8s
     &:hover, &.highlight

@@ -1,39 +1,33 @@
-%header.main
+%header
   .splash-container
     .splash
       %strong.splash-head{itemprop: "name"} Roman Rott
 
-%main.content-wrapper
-  %section.content.content-head
-    .links.is-center
-      = partial 'partials/links'
-      %br
-      -# Open for remote job opportunities. Contact me if you're interested
-    %section.pure-g
-      .l-box.pure-u-1
-        .about.pure-u-1
-          %h1.is-center.content-subhead
-            Hello, my name is
-            %span Roman Rott!
-          .pure-g
-            %p.pure-u-1
-              I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.
-              I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities.
-            %p.pure-u-1
-              %strong CoffeeScript and Ruby
-              are among my favorites when it comes to following TDD and OOP best practices.
-              I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications.
-            %p.pure-u-1
-              I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
+%main
+  %section.about-me
+    = partial 'partials/links'
+    .center Open for remote job opportunities. Contact me if you're interested
+  %section.text-block.about
+    %h1.center
+      Hello, my name is
+      %span Roman Rott!
+    .text-block
+      %p
+        I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.
+        I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities.
+      %p
+        %strong CoffeeScript and Ruby
+        are among my favorites when it comes to following TDD and OOP best practices.
+        I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications.
+      %p
+        I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
-  %section.ribbon.l-box-lrg
-    .section-header
-      %h2.content-subhead.is-center Web Developer
-    .pure-g
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-        .pure-img-responsive.logo
-          = partial('images/rrott-ruby-logo.svg').to_s
-      .pure-u-1.pure-u-md-3-4
+  %section.text-block.dark.dev-skills
+    %h2.center Web Developer
+    .text-block.flex
+      .logo.responsive
+        = partial('images/rrott-ruby-logo.svg').to_s
+      .text-block.text70
         %p During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.
 
         %p I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services.
@@ -45,18 +39,15 @@
         %h3
           %a{href: "/portfolio/"}
             Check out my portfolio
-  %section.content.infosec
-    .section-header
-      %h2.content-subhead.is-center.pure-u-1 Security Researcher
-    .pure-g
-      .pure-u-1.pure-u-md-3-5.infosec-text
-        I like to test websites for security vulnerabilities (both white-box and black-box) at
+  %section.text-block.infosec
+    %h2.center Security Researcher
+    .text-block.flex
+      .text70
+        %p I like to test websites for security vulnerabilities (both white-box and black-box) at
         %a{href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer'}
           BugCrowd
-        and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
-        %br
-        %br
-        Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
+        %p and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
+        %p Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
         %ul
           %li.link
             %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer'}
@@ -74,17 +65,16 @@
           %li.link
             %strong UISGCon 10(2014) -
             Ukrainian InfoSec conference
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-2-5.image.hat
+      .center.image.hat
         .roman_rott
 
-  %section.ribbon.l-box-lrg.pure-g
-    .section-header
-      %h2.content-subhead.pure-u-1 Community development
-    .pure-g
-      .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-        %img.pure-img-responsive{title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183'}
-      .pure-u-1.pure-u-md-3-4
-        %h5.content-subhead I do maintain my own open source projects:
+  %section.text-block.dark
+    %h2.center Community development
+    .text-block.flex
+      .center
+        %img.responsive{title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183'}
+      .text-block.text70
+        %h5 I do maintain my own open source projects:
         %ul
           %li.link
             %a{href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott"}
@@ -95,7 +85,7 @@
             %a{href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott"}
               «Asana God Contact» -
             A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
-        %h5.content-subhead Contributed to open source projects:
+        %h5 Contributed to open source projects:
         %ul
           %li.link
             %a{href: "https://github.com/rack/rack/pull/992", target: '_blank', rel: 'nofollow noopener noreferrer'}
@@ -109,7 +99,7 @@
             ,
             %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer'}
               dnesteryuk/site_prism.vcr
-        %h5.content-subhead Developed local community:
+        %h5 Developed local community:
         %ul
           %li.link
             Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first
@@ -118,8 +108,7 @@
             in Zaporizhzhya city -
             %a{href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer'}
               «24Hack»
-              %aside.pure-g
-        %h5.content-subhead Recent posts from my blog:
+        %h5 Recent posts from my blog:
         %ul
           - blog.articles[0...3].each do |article|
             %li.link
@@ -129,39 +118,10 @@
           %li.link
             %a{href: "/blog", title: "link to my blog" }
               Read more...
-        -# %h5.content-subhead Github:
-        -# / Prepare a container for your calendar.
-        -# %script{:src => "https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"}
-        -# / Optionally, include the theme (if you don't want to struggle to write the CSS)
-        -# %link{:href => "https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css", :rel => "stylesheet"}/
-        -# / Prepare a container for your calendar.
-        -# .calendar
-        -#   / Loading stuff
-        -#   Loading the data just for you.
-        -# :javascript
-        -#   GitHubCalendar(".calendar", "rrott");
+  = partial 'partials/contacts'
 
-              -# %ul.pure-u-1.pure-u-md-1-2
-        -#   %h3.is-center Pined posts from my blog:
-        -#   - blog.articles[0...5].each do |article|
-        -#     %article
-        -#       %h3
-        -#         %a{href: "#{article.url}", title: "#{article.title}" }
-        -#         %time="#{article.date.strftime('%b %e %Y')}"
-        -#       "#{article.summary}"
-        -#       %a{href: "#{article.url}"} Read more
-  %section#contacts.content
-    .pure-g
-      %h2.content-subhead.is-center.pure-u-1
-        Contact information
-      .pure-u-1.is-center
-        If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me.
-
-    = partial 'partials/contacts'
-    %h3.is-center.pure-u-1 Lets build something great!
-
-  %footer.footer.l-box.is-center
-    = partial 'partials/links'
-    %br
-    %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-      SiteMap
+%footer.footer.l-box.is-center
+  = partial 'partials/links'
+  %br
+  %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+    SiteMap
