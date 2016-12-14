@@ -7,11 +7,29 @@
     display: flex
     flex-direction: column
     min-width: 15%
+    h4
+      text-align: center
     .link-block
       display: flex
       justify-content: space-between
     .link
       padding-left: 1rem
+
+//global
+.center
+  text-align: center
+
+.logo
+  svg
+    width: 25rem
+    transition: all 0.8s
+    &:hover, &.highlight
+      #ruby-bkg
+        fill: #0061D2
+        transition: all 0.1s
+      #logo-bkg
+        fill: #F8E81C
+        transition: all 0.1s
 //////////////////////////////
 h1, h2, h3, h4, h5, h6, label
   color: #34495e
@@ -31,18 +49,7 @@ p
   -ms-hyphens: auto
   hyphens: auto
 
-.logo
-  svg
-    width: 100%
-    height: 100%
-    transition: all 0.8s
-    &:hover, &.highlight
-      #ruby-bkg
-        fill: #0061D2
-        transition: all 0.1s
-      #logo-bkg
-        fill: #F8E81C
-        transition: all 0.1s
+
 .roman_rott
   background: url(../images/roman-rott-in-hat.jpg)
   width: 418px
