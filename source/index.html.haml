@@ -1,13 +1,12 @@
 %header
   .splash-container
-    .splash
-      %strong.splash-head{itemprop: "name"} Roman Rott
+    %strong.splash{itemprop: "name"} Roman Rott
 
 %main
-  %section.about-me
+  %section.flex.column.links-block
     = partial 'partials/links'
     .center Open for remote job opportunities. Contact me if you're interested
-  %section.text-block.about
+  %section.text-block.content.about-me
     %h1.center
       Hello, my name is
       %span Roman Rott!
@@ -22,12 +21,10 @@
       %p
         I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
-  %section.text-block.dark.dev-skills
+  %section.text-block.dark.content.dev-skills
     %h2.center Web Developer
-    .text-block.flex
-      .logo.responsive
-        = partial('images/rrott-ruby-logo.svg').to_s
-      .text-block.text70
+    .text-block.flex.row-reverse
+      .text-block.vh70
         %p During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.
 
         %p I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services.
@@ -39,41 +36,44 @@
         %h3
           %a{href: "/portfolio/"}
             Check out my portfolio
-  %section.text-block.infosec
+      .logo.responsive
+        = partial('images/rrott-ruby-logo.svg').to_s
+  %section.text-block.content.infosec
     %h2.center Security Researcher
-    .text-block.flex
-      .text70
-        %p I like to test websites for security vulnerabilities (both white-box and black-box) at
-        %a{href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer'}
-          BugCrowd
-        %p and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
-        %p Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
-        %ul
-          %li.link
-            %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer'}
-              UISGCon 11(2015) -
-            Ukrainian InfoSec conference held by Non Government Organisation
-            %strong «Ukrainian Information Security Group»
-          %li.link
-            The Cybersecurity Olympiad
-            %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank', rel: 'noopener noreferrer'}
-              «HackIT-2015»
-          %li.link
-            International forum
-            %a{href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer'}
-              «Cybersecurity: Ukraine and the world»
-          %li.link
-            %strong UISGCon 10(2014) -
-            Ukrainian InfoSec conference
-      .center.image.hat
-        .roman_rott
+    .image.hat.text-block
+      .roman_rott
+      .text-block.flex.row
+        .vh70
+          %div
+            %p I like to test websites for security vulnerabilities (both white-box and black-box) at
+            %a{href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer'}
+              BugCrowd
+          %p and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
+          %p Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
+          %ul
+            %li.link
+              %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer'}
+                UISGCon 11(2015) -
+              Ukrainian InfoSec conference held by Non Government Organisation
+              %strong «Ukrainian Information Security Group»
+            %li.link
+              The Cybersecurity Olympiad
+              %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank', rel: 'noopener noreferrer'}
+                «HackIT-2015»
+            %li.link
+              International forum
+              %a{href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer'}
+                «Cybersecurity: Ukraine and the world»
+            %li.link
+              %strong UISGCon 10(2014) -
+              Ukrainian InfoSec conference
 
-  %section.text-block.dark
+  %section.text-block.content.dark
     %h2.center Community development
     .text-block.flex
       .center
         %img.responsive{title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183'}
-      .text-block.text70
+      .text-block.vh70
         %h5 I do maintain my own open source projects:
         %ul
           %li.link
