@@ -1,7 +1,8 @@
 %meta{charset: "UTF-8"}
 %meta(http-equiv="x-ua-compatible" content="ie=edge")
 %meta(http-equiv="cleartype" content="on")
-%meta(http-equiv="Content-Security-Policy" content="default-src 'self'")
+-# %meta(http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://127.0.0.1:4567/")
+
 %meta{name: "viewport", content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"}
 %meta{content: 'True', name: 'HandheldFriendly'}
 %meta{content: '320',  name: 'MobileOptimized'}
@@ -9,7 +10,7 @@
 %link{rel: "subresource", href: "//s7.addthis.com/js/300/addthis_widget.js"}
 %link{rel: "subresource", href: "//rrott.com/fonts/rrott-webfont.woff"}
 
-%link{:href => "https://rrott.com/feed.xml", :rel => "alternate", :title => "Rss feed of rrott.com by Roman Rott", :type => "application/rss+xml"}/
+%link{:href => "https://rrott.com/feed.xml", :rel => "alternate", :title => "RSS feed of rrott.com by Roman Rott", :type => "application/rss+xml"}/
 -# favicons
 %link{rel:"icon", type:"image/png", href: "/favicon-32x32.png", sizes: "32x32"}
 %link{rel:"icon", type:"image/png", href: "/favicon-194x194.png", sizes: "194x194"}
@@ -22,6 +23,7 @@
 %meta{name: "apple-mobile-web-app-title", content: "rrott.com"}
 %meta{name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"}
 %meta{name: "application-name", content: "rrott.com"}
+%meta{name: "format-detection", content: "telephone=no"}
 %meta{name: "msapplication-TileColor", content: "#1f8dd6"}
 %meta{name: "msapplication-TileImage", content: "/mstile-144x144.png"}
 %meta{name: "msapplication-square150x150logo", content: "/mstile-150x150.png"}

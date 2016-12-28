@@ -11,9 +11,6 @@ portfolio_sections:
   -
     url: "/portfolio/oss/"
     name: "Open Source"
-  -
-    url: "/portfolio/"
-    name: "All"
 
 blog_sections:
   -
