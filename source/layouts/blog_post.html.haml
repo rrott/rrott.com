@@ -3,8 +3,8 @@
 %html{itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en'}
   %head
     -# = stylesheet_link_tag  'blog', property: 'stylesheet'
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = stylesheet_link_tag  'syntax', property: 'stylesheet'
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet'
+    = stylesheet_link_tag 'syntax', property: 'stylesheet'
 
     = partial 'partials/meta'
     %title= "Roman Rott's blog - #{current_article.title}"
@@ -77,7 +77,7 @@
         = disqus_count
         %br
         %br
-    = stylesheet_link_tag    'grids', property: 'stylesheet'
+    = stylesheet_link_tag 'application', property: 'stylesheet'
     = javascript_include_tag 'lunar-search'
 
     - if build?
