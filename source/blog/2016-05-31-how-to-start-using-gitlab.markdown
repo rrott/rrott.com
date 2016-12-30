@@ -7,9 +7,10 @@ category: git
 ---
 # How to start using GitLab as your additional Git remote server.
 
-|  |  |  |
-|:----:|:----:|:----:|
-| <img class='pure-img-responsive' title="GitHub logo", alt="GitHub logo", src="/images/blog/start-using-gitlab/github-logo.png"/>| <img class='pure-img-responsive' title="GitLab logo", alt="GitLab logo", src="/images/blog/start-using-gitlab/gitlab-logo.png"/>   | <img class='pure-img-responsive' title="Bitbucket logo", alt="Bitbucket logo", src="/images/blog/start-using-gitlab/bitbucket-logo.png"/> |
+
+<img class='pure-img-responsive' title="GitHub logo", alt="GitHub logo", src="/images/blog/start-using-gitlab/github-logo.png"/>
+<img class='pure-img-responsive' title="GitLab logo", alt="GitLab logo", src="/images/blog/start-using-gitlab/gitlab-logo.png"/>
+<img class='pure-img-responsive' title="Bitbucket logo", alt="Bitbucket logo", src="/images/blog/start-using-gitlab/bitbucket-logo.png"/>
 
 
 Introducing GitLab to my friends/colleagues is causing me some concern because I have heard phrases like **"This will void all my logs in GitHub Issues"** or **"I'll loose all my PRs' history, that's not ok!..."**, but you know, it is not really true!
@@ -77,9 +78,10 @@ origin  git@github.com:rrott/rrott.com.git (push)
 ```
 
 ---
-| Commits in GitLab | Commits in GitHub |
-|:--------------------------:|:--------------------:|
-| <img class='pure-img-responsive' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/> | <img class='pure-img-responsive' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/> |
+
+
+<img class='pure-img-responsive' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
+<img class='pure-img-responsive' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>
 
 > Notice how perfectly responsive designs work on both websites ;)
 

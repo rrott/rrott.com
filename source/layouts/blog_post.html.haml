@@ -12,73 +12,68 @@
     %meta{name: 'description', content: current_article.title}
 
   %body
-    #layout.pure-g
-      %section.sidebar.pure-u-1.pure-u-md-1-4
-        .header.portfolio-left-part
-          %header.brand-title Blog
-          %h1.brand-tagline Full-Stack web development and security researches
-          %br
-          %nav.nav
-            %ul.nav-list
-              %li.nav-item
-                %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
-              \/
-              %li.nav-item
-                %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
-          .pure-img-responsive.logo-small
-            = partial('images/rrott-ruby-logo.svg').to_s
-          .portfolio-contacts
-            %br
-            = partial 'partials/links'
-            %br
-            Open for remote job opportunities
-          %br
-          .search
-            %form#search{ role: "search" }
-              %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "off", results: 5, autosave: "rrott_search", tabindex: 1}
-              %input#search-submit{type: "submit", value: "Search", tabindex: 2}
-            %ul#results
-          -# .portfolio-categories
-          -#   %nav.nav.tag-cloud
-          -#     %ul.nav-list
-          -#       - data.links.blog_sections.each do |section|
-          -#         %li
-          -#           %a{href: section.url, title: "#{section.name} blog category"} #{section.name}
-          .share
-            Share:
-            .addthis_sharing_toolbox
+  %section.portfolio.flex.row
+    %aside.portfolio-menu.center.flex.row.wrap
+      %div
+        .brand-title Blog
+        %h1.brand-tagline Full-Stack web development and security researches
+        %nav.nav
+          %ul.nav-list
+            %li.nav-item
+              %a{href: "/", title: "Roman Rott's home page"} Home
+            \/
+            %li.nav-item
+              %a{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
+        .responsive.logo-small
+          = partial('images/rrott-ruby-logo.svg').to_s
+        .portfolio-contacts
+          = partial 'partials/links'
+          Open for remote job opportunities
 
+        .search
+          %form#search{ role: "search" }
+            %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "on", results: 5, autosave: "rrott_search", tabindex: 1, spellcheck: true, autocapitalize: "off", autocorrect: "off", autofocus: true, 'x-webkit-speech': true, maxlength: 30 }
+            %input#search-submit{type: "submit", value: "Search", tabindex: 2}
+          %ul#results
+        .share
+          Share:
+          .addthis_sharing_toolbox
 
-    .content.pure-u-1.pure-u-md-3-4
-      %section
-        %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
-              %span.breadcrumb_el{itemprop: "name"}Home
-            %meta{itemprop: "position", content: "1"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
-              %span.breadcrumb_el{itemprop: "name"}Blog
-            %meta{itemprop: "position", content: "2"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %a{href: "/blog/#{current_article.data["category"].downcase}/", itemprop: "item", title: "Blog about #{current_article.data["category"]}"}
-              %span.breadcrumb_el{itemprop: "name"} #{current_article.data["category"]}
-            %meta{itemprop: "position", content: "3"}
-          %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-            %h2.breadcrumb_el{itemprop: "name"} #{current_article.title}
-            %meta{itemprop: "position", content: "4"}
+    %section.portfolio-content.flex.column
+      %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
+        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+          %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
+            %span.breadcrumb_el{itemprop: "name"}Home
+          %meta{itemprop: "position", content: "1"}
+        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+          %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
+            %span.breadcrumb_el{itemprop: "name"}Blog
+          %meta{itemprop: "position", content: "2"}
+        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+          %a{href: "/blog/#{current_article.data["category"].downcase}/", itemprop: "item", title: "Blog about #{current_article.data["category"]}"}
+            %span.breadcrumb_el{itemprop: "name"} #{current_article.data["category"]}
+          %meta{itemprop: "position", content: "3"}
+        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
+          %h2.breadcrumb_el{itemprop: "name"} #{current_article.title}
+          %meta{itemprop: "position", content: "4"}
 
       %article
-        %br
-        %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
-        = yield
+        .text-block
+          %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
+          = yield
         %br
         = disqus
         = disqus_count
-        %br
-        %br
-    = stylesheet_link_tag 'application', property: 'stylesheet'
-    = javascript_include_tag 'lunar-search'
+
+        %footer.footer.l-box.center
+          = partial 'partials/links'
+          %br
+          Projects accomplished in 2015 and active in 2016
+          %br
+          %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+            SiteMap
+        = stylesheet_link_tag 'application', property: 'stylesheet'
+        = javascript_include_tag 'lunar-search'
 
     - if build?
       %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
