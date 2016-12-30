@@ -1,5 +1,3 @@
-//font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320)));
-
 @font-face
   font-family: 'rrott-webfont'
   font-display: auto
@@ -51,6 +49,26 @@ h1
 img
   border: 0
 
+// flex
+.flex
+  display: flex
+
+.wrap
+  flex-wrap: wrap
+
+.row
+  flex-direction: row
+
+.row-reverse
+  flex-direction: row-reverse
+
+.column
+  flex-direction: column
+
+.justify-center
+  justify-content: center
+
+// icons
 .icon-mail-alt:before
   content: '\e805'
 
@@ -72,6 +90,7 @@ img
 .icon-twitter:before
   content: '\e822'
 
+// icons
 .text-block
   padding-left: 5%
   padding-right: 5%
@@ -79,7 +98,6 @@ img
 
 .links-block
   height: 18vh
-  justify-content: center
 
 .content
   padding-bottom: 3%
@@ -92,36 +110,18 @@ img
   background: #2d3e50
   color: #aaa
 
-.flex
-  display: flex
-
-.wrap
-  flex-wrap: wrap
-
 .vh70
   max-width: 70%
 
-.row-reverse
-  flex-direction: row-reverse
-
-.row
-  flex-direction: row
-
-.column
-  flex-direction: column
 
 .responsive
   max-width: 100%
   height: auto
 
 .contacts-box
-  display: flex
   justify-content: space-around
-  flex-wrap: wrap
   padding: 1rem
   .contact
-    display: flex
-    flex-direction: column
     min-width: 15%
     .link-block
       display: flex
@@ -130,8 +130,6 @@ img
       padding-left: 1rem
 
 .social-links
-  display: flex
-  justify-content: center
   .social
     align-self: baseline
     margin: 0.5rem
