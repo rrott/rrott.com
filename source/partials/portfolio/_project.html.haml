@@ -1,10 +1,10 @@
 %header.post-header
-  %h3.text-block.post-title #{project.title}
-  = partial 'partials/portfolio/tags', locals: { project: project, index: index}
+  %h3.text-block.post-title=project.title
+  = partial 'partials/portfolio/tags', locals: { project: project, index: index }
 .post-description
   .post-images.flex.row
     .image
       %figure
-        = partial 'partials/portfolio/images', locals: { project: project}
+        = partial 'partials/portfolio/images', locals: { project: project }
     .post-description
-      = partial 'partials/portfolio/description', locals: { project: project}
+      = partial 'partials/portfolio/description', locals: { project: project }

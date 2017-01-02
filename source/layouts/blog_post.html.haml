@@ -1,6 +1,6 @@
 !!! 5
 
-%html{itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en'}
+%html{ itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en' }
   %head
     -# = stylesheet_link_tag  'blog', property: 'stylesheet'
     = stylesheet_link_tag 'portfolio', property: 'stylesheet'
@@ -8,8 +8,8 @@
 
     = partial 'partials/meta'
     %title= "Roman Rott's blog - #{current_article.title}"
-    %meta{name: 'keywords',    content: current_article.tags.join(', ')}
-    %meta{name: 'description', content: current_article.title}
+    %meta{ name: 'keywords',    content: current_article.tags.join(', ') }
+    %meta{ name: 'description', content: current_article.title }
 
   %body
   %section.portfolio.flex.row
@@ -20,10 +20,10 @@
         %nav.nav
           %ul.nav-list
             %li.nav-item
-              %a{href: "/", title: "Roman Rott's home page"} Home
+              %a{ href: "/", title: "Roman Rott's home page" } Home
             \/
             %li.nav-item
-              %a{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
+              %a{ href: "/portfolio/", title: "Roman Rott's Portfolio" } Portfolio
         .responsive.logo-small
           = partial('images/rrott-ruby-logo.svg').to_s
         .portfolio-contacts
@@ -31,35 +31,35 @@
           Open for remote job opportunities
 
         .search
-          %form#search{ role: "search" }
-            %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "on", results: 5, autosave: "rrott_search", tabindex: 1, spellcheck: true, autocapitalize: "off", autocorrect: "off", autofocus: true, 'x-webkit-speech': true, maxlength: 30 }
-            %input#search-submit{type: "submit", value: "Search", tabindex: 2}
+          %form#search{  role: "search" }
+            %input#search-field{ type: "search", placeholder: "Ruby", required: "required", autocomplete: "on", results: 5, autosave: "rrott_search", tabindex: 1, spellcheck: true, autocapitalize: "off", autocorrect: "off", autofocus: true, 'x-webkit-speech': true, maxlength: 30 }
+            %input#search-submit{ type: "submit", value: "Search", tabindex: 2 }
           %ul#results
         .share
           Share:
           .addthis_sharing_toolbox
 
     %section.portfolio-content.flex.column
-      %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
-            %span.breadcrumb_el{itemprop: "name"}Home
-          %meta{itemprop: "position", content: "1"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %a{href: "/blog/", itemprop: "item", title: "Rott's blog"}
-            %span.breadcrumb_el{itemprop: "name"}Blog
-          %meta{itemprop: "position", content: "2"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %a{href: "/blog/#{current_article.data["category"].downcase}/", itemprop: "item", title: "Blog about #{current_article.data["category"]}"}
-            %span.breadcrumb_el{itemprop: "name"} #{current_article.data["category"]}
-          %meta{itemprop: "position", content: "3"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %h2.breadcrumb_el{itemprop: "name"} #{current_article.title}
-          %meta{itemprop: "position", content: "4"}
+      %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
+        %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
+          %a{ href: "https://rrott.com", itemprop: "item", title: 'home page' }
+            %span.breadcrumb_el{ itemprop: "name" }Home
+          %meta{ itemprop: "position", content: "1" }
+        %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
+          %a{ href: "/blog/", itemprop: "item", title: "Rott's blog" }
+            %span.breadcrumb_el{ itemprop: "name" }Blog
+          %meta{ itemprop: "position", content: "2" }
+        %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
+          %a{ href: "/blog/#{current_article.data["category"].downcase}/", itemprop: "item", title: "Blog about #{current_article.data["category"]}" }
+            %span.breadcrumb_el{ itemprop: "name" } #{current_article.data["category"]}
+          %meta{ itemprop: "position", content: "3" }
+        %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
+          %h2.breadcrumb_el{ itemprop: "name" } #{current_article.title}
+          %meta{ itemprop: "position", content: "4" }
 
       %article
         .text-block
-          %time{datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y')}
+          %time{ datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y') }
           = yield
         %br
         = disqus
@@ -70,13 +70,13 @@
           %br
           Projects accomplished in 2015 and active in 2016
           %br
-          %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+          %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
             SiteMap
         = stylesheet_link_tag 'application', property: 'stylesheet'
         = javascript_include_tag 'lunar-search'
 
     - if build?
-      %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
+      %script{ async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript" }
       -# Google Analytics
       :javascript
         var _gaq = _gaq || [];

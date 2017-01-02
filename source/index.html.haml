@@ -1,6 +1,6 @@
 %header
   .splash-container
-    %strong.splash{itemprop: "name"} Roman Rott
+    %strong.splash{ itemprop: "name" } Roman Rott
 
 %main
   %section.flex.column.links-block.justify-center
@@ -34,7 +34,7 @@
         %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.
 
         %h3
-          %a{href: "/portfolio/"}
+          %a{ href: "/portfolio/" }
             Check out my portfolio
       .logo.responsive
         = partial('images/rrott-ruby-logo.svg').to_s
@@ -46,23 +46,23 @@
         .vh70
           %div
             %p I like to test websites for security vulnerabilities (both white-box and black-box) at
-            %a{href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer'}
+            %a{ href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer' }
               BugCrowd
           %p and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
           %p Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
           %ul
             %li.link
-              %a{href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer'}
+              %a{ href: "https://11.uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }
                 UISGCon 11(2015) -
               Ukrainian InfoSec conference held by Non Government Organisation
               %strong «Ukrainian Information Security Group»
             %li.link
               The Cybersecurity Olympiad
-              %a{href: "http://www.hackit-ukraine.com/#content", target: '_blank', rel: 'noopener noreferrer'}
+              %a{ href: "http://www.hackit-ukraine.com/#content", target: '_blank', rel: 'noopener noreferrer' }
                 «HackIT-2015»
             %li.link
               International forum
-              %a{href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer'}
+              %a{ href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer' }
                 «Cybersecurity: Ukraine and the world»
             %li.link
               %strong UISGCon 10(2014) -
@@ -72,56 +72,56 @@
     %h2.center Community development
     .text-block.flex
       .center
-        %img.responsive{title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183'}
+        %img.responsive{ title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183' }
       .text-block.vh70
         %h5 I do maintain my own open source projects:
         %ul
           %li.link
-            %a{href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott"}
+            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott" }
               «Grunt Coffee Chain» -
             grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.
 
           %li.link
-            %a{href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott"}
+            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott" }
               «Asana God Contact» -
             A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
         %h5 Contributed to open source projects:
         %ul
           %li.link
-            %a{href: "https://github.com/rack/rack/pull/992", target: '_blank', rel: 'nofollow noopener noreferrer'}
+            %a{ href: "https://github.com/rack/rack/pull/992", target: '_blank', rel: 'nofollow noopener noreferrer' }
               rack/rack
             ,
-            %a{href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer'}
+            %a{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }
               gitlab-org/gitlab-ce
             ,
-            %a{href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer'}
+            %a{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }
               floere/phony
             ,
-            %a{href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer'}
+            %a{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }
               dnesteryuk/site_prism.vcr
         %h5 Developed local community:
         %ul
           %li.link
             Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first
-            %a{href: "https://en.wikipedia.org/wiki/Hackathon", target: '_blank', rel: 'nofollow noopener noreferrer'}
+            %a{ href: "https://en.wikipedia.org/wiki/Hackathon", target: '_blank', rel: 'nofollow noopener noreferrer' }
               Hackathon
             in Zaporizhzhya city -
-            %a{href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer'}
+            %a{ href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer' }
               «24Hack»
         %h5 Recent posts from my blog:
         %ul
           - blog.articles[0...3].each do |article|
             %li.link
               %article
-                %a{href: "#{article.url}", title: "#{article.title}" }
+                %a{ href: "#{article.url}", title: "#{article.title}" }
                   %time="#{article.date.strftime('%b %e %Y')} - #{article.title}"
           %li.link
-            %a{href: "/blog", title: "link to my blog" }
+            %a{ href: "/blog", title: "link to my blog" }
               Read more...
   = partial 'partials/contacts'
 
 %footer.footer.l-box.is-center
   = partial 'partials/links'
   %br
-  %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+  %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
     SiteMap

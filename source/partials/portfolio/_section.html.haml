@@ -1,12 +1,12 @@
-.posts{id: "#{projects.id_name}"}
+.posts{ id: "#{projects.id_name}" }
   - if multipart
     %h3.content-subhead
       #{projects.title}
   - projects.projects.each do |project|
-    %section.post{id: project.name}
+    %section.post{ id: project.name }
       - if project.noindex
         %noindex
-          = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: project.noindex}
+          = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: project.noindex }
       - else
-        = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: false}
+        = partial 'partials/portfolio/project', locals: { project: data.projects[project.name], index: false }
 

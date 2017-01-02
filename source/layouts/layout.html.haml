@@ -1,19 +1,19 @@
 !!! 5
 
-%html{itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en'}
+%html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
     %title=data.site.title
     = stylesheet_link_tag  'index', property: 'stylesheet'
     = partial 'partials/meta'
 
-    %meta{name: 'keywords',    content: data.site.keywords}
-    %meta{name: 'description', content: data.site.description}
+    %meta{ name: 'keywords',    content: data.site.keywords }
+    %meta{ name: 'description', content: data.site.description }
   %body
     = yield
 
     = stylesheet_link_tag  'application', property: 'stylesheet'
 
-    %script{type: "application/ld+json"}
+    %script{ type: "application/ld+json" }
       :plain
         {"@context":"http://schema.org","@type":"Person","email":"roman.rott@gmail.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
 

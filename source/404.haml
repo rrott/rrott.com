@@ -3,11 +3,11 @@
 %html
   %head
     %title=data.site.not_found.title
-    %link{href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet'}
+    %link{ href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet' }
     = partial 'partials/meta'
 
-    %meta{name: 'keywords',    content: data.site.not_found.keywords}
-    %meta{name: 'description', content: data.site.not_found.description}
+    %meta{ name: 'keywords',    content: data.site.not_found.keywords }
+    %meta{ name: 'description', content: data.site.not_found.description }
   %body
     %main.center
       %header#error
@@ -15,9 +15,9 @@
         %h3.error-message
           The page you are looking for was not found.
       %nav
-        %a{href: "/", title: 'Home of rrott.com'} Home
+        %a{ href: "/", title: 'Home of rrott.com' } Home
         |
-        %a{href: "/sitemap/", title: 'Sitemap of rrott.com'} Site Map
+        %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' } Site Map
       %section.logo
         = partial('images/rrott-ruby-logo.svg').to_s
       %hr
@@ -25,7 +25,7 @@
 
     %footer.footer
       = partial 'partials/links'
-      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
+      %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
         SiteMap
-    %link{href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet'}
-    %link{href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet'}
+    %link{ href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet' }
+    %link{ href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet' }

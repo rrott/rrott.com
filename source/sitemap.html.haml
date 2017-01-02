@@ -6,8 +6,8 @@
     = stylesheet_link_tag  'index', property: 'stylesheet'
     = partial 'partials/meta'
 
-    %meta{name: 'keywords',    content: data.site.sitemap.keywords}
-    %meta{name: 'description', content: data.site.sitemap.description}
+    %meta{ name: 'keywords',    content: data.site.sitemap.keywords }
+    %meta{ name: 'description', content: data.site.sitemap.description }
   %body
     %main
       %section.content.center
@@ -20,28 +20,28 @@
           .div
             %h3 Blog Posts
             - blog.articles.each do |page|
-              %a{href: page_url(page), title: "Blog's #{page_url(page)} page" }
+              %a{ href: page_url(page), title: "Blog's #{page_url(page)} page" }
                 = page_url(page)
               %br
 
           .div
             %h3 Portfolio
             - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
-              %a{href: page_url(page), title: "Portfolio #{page_url(page)} page"}
+              %a{ href: page_url(page), title: "Portfolio #{page_url(page)} page" }
                 = page_url(page)
               %br
           .div
             %h3 Other pages on website
-            %a{href: '/', title: 'Home Page' }
+            %a{ href: '/', title: 'Home Page' }
               Home Page
               %br
-            %a{href: '/sitemap/', title: 'Site Map' }
+            %a{ href: '/sitemap/', title: 'Site Map' }
               SiteMap
               %br
-            %a{href: '/sitemap.xml', title: 'sitemap.xml' }
+            %a{ href: '/sitemap.xml', title: 'sitemap.xml' }
               sitemap.xml
               %br
-            %a{href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
+            %a{ href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
               Logo
               %br
 
