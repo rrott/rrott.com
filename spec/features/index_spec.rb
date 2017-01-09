@@ -22,7 +22,7 @@ describe 'index', type: :feature do
     context 'who I am' do
       it 'displays who I am' do
         expect(page).to have_selector('div',
-          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.")
+          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5 years experience dedicated to web development and security audit of web applications.")
       end
 
       it 'displays specialization' do
@@ -34,12 +34,12 @@ describe 'index', type: :feature do
     context 'languages' do
       it 'displays languages' do
         expect(page).to have_selector('div',
-          text: "CoffeeScript and Ruby are among my favorites when it comes to following TDD and OOP best practices.")
+          text: "Ruby is my favorites when it comes to following TDD and OOP best practices, while JavaScript is the best one for front-end and functional programming.")
       end
 
       it 'displays ' do
         expect(page).to have_selector('div',
-          text: "I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications.")
+          text: "I do enjoy building everything from small OSS libs, business sites, landing pages to rich interactive web apps, single page applications, etc.")
       end
     end
     it 'displays how I work' do
@@ -59,7 +59,7 @@ describe 'index', type: :feature do
 
     it 'displays my expirience in dev' do
       expect(page).to have_selector('div',
-        text: "During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.")
+        text: "During the last 5 years, I have been developing, supporting and maintaining web-projects for an US hosting company, consulting and finantial companies. Ecoommerce.com is the hosting company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person. Sphere inc is a consulting company, where I've got extended expirience in React and Redux.")
     end
 
     it 'displays my expirience in secure web dev' do
@@ -69,12 +69,12 @@ describe 'index', type: :feature do
 
     it 'displays languages' do
       expect(page).to have_selector('div p',
-        text: "All of these sites were developed using Ruby, CoffeeScript, Javascript, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
+        text: "All of these sites were developed using Ruby, CoffeeScript, JavaScript(EcmaScript), React, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
     end
 
     it 'displays portfolio message' do
       expect(page).to have_selector('div p',
-        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.")
+        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015-2016.")
     end
 
     it 'displays link to Portfolio' do
@@ -107,7 +107,7 @@ describe 'index', type: :feature do
 
       context 'UISGCon 11(2015)' do
         it 'displays link to UISGCon 11(2015)' do
-          expect(page).to have_selector('ul li.link a[href="https://11.uisgcon.org/en/about-uisgcon"]', text: 'UISGCon 11(2015) -')
+          expect(page).to have_selector('ul li.link a[href="https://uisgcon.org/en/about-uisgcon"]', text: 'UISGCon #10, #11, #12 (2014-2016) -')
         end
 
         it 'displays info about UISGCon 11(2015)' do
@@ -118,7 +118,7 @@ describe 'index', type: :feature do
 
       context 'The Cybersecurity Olympiad' do
         it 'displays link to The Cybersecurity Olympiad' do
-          expect(page).to have_selector('ul li.link a[href="http://www.hackit-ukraine.com/#content"]', text: '«HackIT-2015»')
+          expect(page).to have_selector('ul li', text: '«HackIT-2015»')
         end
 
         it 'displays The Cybersecurity Olympiad' do
@@ -138,15 +138,10 @@ describe 'index', type: :feature do
             text: "International forum «Cybersecurity: Ukraine and the world»")
         end
       end
-
-      it 'displays link to UISGCon 10(2014)' do
-        expect(page).to have_selector('ul li.link',
-          text: "UISGCon 10(2014) - Ukrainian InfoSec conference")
-      end
     end
 
-    it 'displays picture with me' do
-      expect(page).to have_selector('.image.hat .roman_rott')
+    it 'does not display picture with me' do
+      expect(page).to_not have_selector('.image.hat .roman_rott')
     end
   end
 
@@ -161,7 +156,7 @@ describe 'index', type: :feature do
 
     context 'OSS projects' do
       it 'displays my oss' do
-        expect(page).to have_selector('h5', text: "I do maintain my own open source projects:")
+        expect(page).to have_selector('h5', text: "I have my own open source projects:")
       end
 
       context 'Grunt Coffee Chain' do
@@ -187,19 +182,16 @@ describe 'index', type: :feature do
     end
 
     context 'Contributed to' do
-      it 'displays link to «Asana God Contact»' do
-        expect(page).to have_selector('ul li.link a[href="https://github.com/rack/rack/pull/992"]', text: 'rack/rack')
-      end
 
-      it 'displays link to «Asana God Contact»' do
+      it 'displays link to gitlab-ce' do
         expect(page).to have_selector('ul li.link a[href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658"]', text: 'gitlab-org/gitlab-ce')
       end
 
-      it 'displays link to «Asana God Contact»' do
+      it 'displays link to floere/phony' do
         expect(page).to have_selector('ul li.link a[href="https://github.com/floere/phony/pull/180"]', text: 'floere/phony')
       end
 
-      it 'displays link to «Asana God Contact»' do
+      it 'displays link to site_prism.vcr' do
         expect(page).to have_selector('ul li.link a[href="https://github.com/dnesteryuk/site_prism.vcr/pull/3"]', text: 'dnesteryuk/site_prism.vcr')
       end
     end
@@ -207,7 +199,7 @@ describe 'index', type: :feature do
     context 'Developed local community' do
       it 'displays ' do
         expect(page).to have_selector('h5',
-          text: "Developed local community:")
+          text: "Developing local community:")
       end
 
       context 'Hackathon' do
@@ -275,11 +267,11 @@ describe 'index', type: :feature do
     context 'contacts links' do
       context 'Contact Me:' do
         it 'displays contact me links' do
-          expect(page).to have_selector('h4', text: "Contact Me:")
+          expect(page).to have_selector('h4', text: "contact me:")
         end
 
         it 'displays LinkedIn' do
-          expect(page).to have_selector('.contacts', text: "LinkedIn:")
+          expect(page).to have_selector('.contacts', text: "linkedin:")
         end
 
         it 'displays link to linkedIn' do
@@ -287,7 +279,7 @@ describe 'index', type: :feature do
         end
 
         it 'displays skype' do
-          expect(page).to have_selector('.contacts', text: "Skype:")
+          expect(page).to have_selector('.contacts', text: "skype:")
         end
 
         it 'displays link to skype' do
@@ -295,7 +287,7 @@ describe 'index', type: :feature do
         end
 
         it 'displays mail' do
-          expect(page).to have_selector('.contacts', text: "Mail:")
+          expect(page).to have_selector('.contacts', text: "mail:")
         end
 
         it 'displays link to mail' do
@@ -303,7 +295,7 @@ describe 'index', type: :feature do
         end
 
         it 'displays GPG' do
-          expect(page).to have_selector('.contacts', text: "GPG:")
+          expect(page).to have_selector('.contacts', text: "gpg:")
         end
 
         it 'displays link to gpg' do
@@ -313,11 +305,11 @@ describe 'index', type: :feature do
 
       context 'My Resume:' do
         it 'displays resume links' do
-          expect(page).to have_selector('h4', text: "My Resume:")
+          expect(page).to have_selector('h4', text: "my resume:")
         end
 
         it 'displays Pdf' do
-          expect(page).to have_selector('.contacts', text: "Pdf:")
+          expect(page).to have_selector('.contacts', text: "pdf:")
         end
 
         it 'displays link to pdf' do
@@ -325,21 +317,21 @@ describe 'index', type: :feature do
         end
 
         it 'displays odt' do
-          expect(page).to have_selector('.contacts', text: "Odt:")
+          expect(page).to have_selector('.contacts', text: "odt:")
         end
         it 'displays link to odt' do
           expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.odt"]', text: 'download')
         end
 
         it 'displays docx' do
-          expect(page).to have_selector('.contacts', text: "Docx:")
+          expect(page).to have_selector('.contacts', text: "docx:")
         end
         it 'displays link to docx' do
           expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.docx"]', text: 'download')
         end
 
         it 'displays Google Docs' do
-          expect(page).to have_selector('.contacts', text: "Google Docs")
+          expect(page).to have_selector('.contacts', text: "google docs")
         end
 
         xit 'displays link to Google Docs' do
@@ -349,11 +341,11 @@ describe 'index', type: :feature do
 
       context 'Social Connections:' do
         it 'displays social links' do
-          expect(page).to have_selector('h4', text: "Social Connections:")
+          expect(page).to have_selector('h4', text: "social connections:")
         end
 
         it 'displays blog' do
-          expect(page).to have_selector('.contacts', text: "Blog:")
+          expect(page).to have_selector('.contacts', text: "blog:")
         end
 
         it 'displays link to blog' do
@@ -361,7 +353,7 @@ describe 'index', type: :feature do
         end
 
         it 'displays twitter' do
-          expect(page).to have_selector('.contacts', text: "Twitter:")
+          expect(page).to have_selector('.contacts', text: "twitter:")
         end
 
         it 'displays link to twitter' do
@@ -384,15 +376,15 @@ describe 'index', type: :feature do
       end
 
       it 'displays link to Vcard' do
-        expect(page).to have_selector('h4 a[href="/roman.rott.vcf"]', text: 'Download my VCard')
+        expect(page).to have_selector('h4 a[href="/roman.rott.vcf"]', text: 'download my VCard')
       end
 
       it 'displays link to portfolio' do
-        expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'Check out my portfolio')
+        expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'check out my portfolio')
       end
 
       it 'displays link to RSS' do
-        expect(page).to have_selector('h4 a[href="/feed.xml"]', text: 'Subscribe to my Blog')
+        expect(page).to have_selector('h4 a[href="/feed.xml"]', text: 'subscribe to my blog')
       end
     end
   end
