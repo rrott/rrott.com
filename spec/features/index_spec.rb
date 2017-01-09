@@ -7,43 +7,43 @@ describe 'index', type: :feature do
 
   context 'About myself' do
     it 'displays my name' do
-      expect(page).to have_selector('.splash-head', text: 'Roman Rott')
+      expect(page).to have_selector('.splash', text: 'Roman Rott')
     end
 
     it 'displays the correct heading' do
       expect(page).to have_selector('h1', text: 'Hello, my name is Roman Rott')
     end
 
-    it 'does not display message that I am open for job' do
-      expect(page).to_not have_selector('.is-center',
+    it 'display message that I am open for job' do
+      expect(page).to have_selector('.center',
         text: "Open for remote job opportunities. Contact me if you're interested")
     end
 
     context 'who I am' do
       it 'displays who I am' do
-        expect(page).to have_selector('.pure-u-1',
+        expect(page).to have_selector('div',
           text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and about 4 years experience dedicated to web development and security audit of web applications.")
       end
 
       it 'displays specialization' do
-        expect(page).to have_selector('.pure-u-1',
+        expect(page).to have_selector('div',
           text: "I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities.")
       end
     end
 
     context 'languages' do
       it 'displays languages' do
-        expect(page).to have_selector('.pure-u-1',
+        expect(page).to have_selector('div',
           text: "CoffeeScript and Ruby are among my favorites when it comes to following TDD and OOP best practices.")
       end
 
       it 'displays ' do
-        expect(page).to have_selector('.pure-u-1',
+        expect(page).to have_selector('div',
           text: "I do enjoy building everything from small OSS libs, business sites, Landing Pages to rich interactive web apps, single page applications.")
       end
     end
     it 'displays how I work' do
-      expect(page).to have_selector('.pure-u-1',
+      expect(page).to have_selector('div',
         text: "I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.")
     end
   end
@@ -58,22 +58,22 @@ describe 'index', type: :feature do
     end
 
     it 'displays my expirience in dev' do
-      expect(page).to have_selector('.pure-u-md-3-4',
+      expect(page).to have_selector('div',
         text: "During last 3+ years, I have been developing, supporting and maintaining web-projects for the US hosting company - Ecommerce.com. The company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person.")
     end
 
     it 'displays my expirience in secure web dev' do
-      expect(page).to have_selector('.pure-u-md-3-4 p',
+      expect(page).to have_selector('div p',
         text: "I also design and develop vulnerable applications for CTF hacking games that give an opportunity for researchers to practice their skills. Below is a portfolio that contains a list of such web services.")
     end
 
     it 'displays languages' do
-      expect(page).to have_selector('.pure-u-md-3-4 p',
+      expect(page).to have_selector('div p',
         text: "All of these sites were developed using Ruby, CoffeeScript, Javascript, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
     end
 
     it 'displays portfolio message' do
-      expect(page).to have_selector('.pure-u-md-3-4 p',
+      expect(page).to have_selector('div p',
         text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015.")
     end
 
@@ -92,6 +92,7 @@ describe 'index', type: :feature do
         expect(page).to have_selector('.infosec-text',
           text: "I like to test websites for security vulnerabilities (both white-box and black-box) at BugCrowd and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc")
       end
+
 
       it 'displays link to bugcrowd' do
         expect(page).to have_selector('.infosec-text a[href="https://bugcrowd.com/rrott"]', text: 'BugCrowd')
@@ -155,7 +156,7 @@ describe 'index', type: :feature do
     end
 
     it 'displays Open Source logo' do
-      expect(page).to have_selector('img.pure-img-responsive')
+      expect(page).to have_selector('img.responsive')
     end
 
     context 'OSS projects' do
@@ -205,7 +206,7 @@ describe 'index', type: :feature do
 
     context 'Developed local community' do
       it 'displays ' do
-        expect(page).to have_selector('h5.content-subhead',
+        expect(page).to have_selector('h5',
           text: "Developed local community:")
       end
 
@@ -231,7 +232,7 @@ describe 'index', type: :feature do
 
       context 'blog' do
         it 'displays ' do
-          expect(page).to have_selector('h5.content-subhead',
+          expect(page).to have_selector('h5',
             text: "Recent posts from my blog:")
         end
 
@@ -261,12 +262,12 @@ describe 'index', type: :feature do
       end
 
       it 'displays promo' do
-        expect(page).to have_selector('.pure-u-1.is-center',
-          text: "If you are a business looking for an expanded web presence or your an employer who is eager to add some remote expertise feel free to contact me.")
+        expect(page).to have_selector('.contacts-description.center',
+          text: "If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away!")
       end
 
       it 'displays ' do
-        expect(page).to have_selector('h3.is-center',
+        expect(page).to have_selector('h3.center',
           text: "Lets build something great!")
       end
     end
@@ -298,7 +299,7 @@ describe 'index', type: :feature do
         end
 
         it 'displays link to mail' do
-          expect(page).to have_selector('.link a[href="mailto:roman.rott@gmail.com"]', text: 'roman.rott@gmail.com')
+          expect(page).to have_selector('.link a[href="mailto:roman@rrott.com"]', text: 'roman@rrott.com')
         end
 
         it 'displays GPG' do
@@ -409,16 +410,16 @@ describe 'index', type: :feature do
 
     it 'displays twitter icon' do
       expect(page).to have_selector('a[href="https://twitter.com/roman_rott"]', count: 3)
-      expect(page).to have_selector('em.icon-twitter.size3', count: 2)
+      expect(page).to have_selector('em.icon-twitter', count: 2)
     end
 
     it 'displays skype icon' do
       expect(page).to have_selector('a[href="skype:roman.rott?chat"]', count: 3)
-      expect(page).to have_selector('em.icon-skype.skype', count: 2)
+      expect(page).to have_selector('em.icon-skype', count: 2)
     end
 
     it 'displays mail icon' do
-      expect(page).to have_selector('a[href="mailto:roman.rott@gmail.com"]', count: 3)
+      expect(page).to have_selector('a[href="mailto:roman@rrott.com"]', count: 3)
       expect(page).to have_selector('em.icon-mail-alt', count: 2)
     end
 
