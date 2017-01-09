@@ -11,8 +11,7 @@
   .post-image-meta
     %br
     #{project.info}
-.pure-g.is-center.thumbs
+.center.thumbs
   - project.images.each_with_index do |img, index|
-    .pure-u-3
-      %a.thumb{ href: "#{img.url}.png", title: img.title }
-        %img{ src: "#{img.url}-thumb.jpg", title: img.title, alt: "Screenshot of #{img.title}", 'data-index': index }/
+    %a.thumb{ href: "#{img.url}.png", title: img.title }
+      %img{ src: "#{img.url}-thumb.jpg", title: img.title, alt: "Screenshot of #{img.title}", 'data-index': index }/

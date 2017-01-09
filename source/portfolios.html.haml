@@ -2,7 +2,7 @@
   %aside.portfolio-menu.center.flex.row.wrap
     %div
       .brand-title Portfolio
-      %h1.brand-tagline Projects accomplished in 2015 and active in 2016
+      %h1.brand-tagline Projects accomplished in 2015 and 2016
       %nav.nav
         %ul.nav-list
           %li.nav-item
@@ -31,17 +31,17 @@
     %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
       %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
         %a{ href: "https://rrott.com", itemprop: "item", title: 'home page' }
-          %span.breadcrumb-el{ itemprop: "name"}Hom e
+          %span.breadcrumb-el{ itemprop: "name"}Home
         %meta{ itemprop: "position", content: "1" }
       %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
         %a{ href: "/portfolio/", itemprop: "item", title: "Rott's portfolio" }
-          %span.breadcrumb-el{ itemprop: "name"}Portfoli o
+          %span.breadcrumb-el{ itemprop: "name"}Portfolio
         %meta{ itemprop: "position", content: "2" }
       %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %h2.breadcrumb-el{ itemprop: "name"} List of project s
+        %h2.breadcrumb-el{ itemprop: "name"} List of projects
         %meta{ itemprop: "position", content: "3" }
     %section.text-block
-      %p.text-block.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes CoffeeScript, Backbone.js, Sinatra, SCSS, a bit of Ember, Node.js and some other frameworks/libs.
+      %p.text-block.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
       .portfolio-images.flex.row.wrap
         - data.links.portfolio_list.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: portfolio.title }
@@ -56,7 +56,7 @@
     %footer.footer.l-box.center
       = partial 'partials/links'
       %br
-      Projects accomplished in 2015 and active in 2016
+      Projects accomplished in 2015 and 2016
       %br
       %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
         SiteMap
