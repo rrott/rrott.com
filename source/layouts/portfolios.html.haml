@@ -2,26 +2,15 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = partial 'partials/meta'
     %title= data.site.portfolio.title
-    %meta{ name: 'keywords',    content: data.site.portfolio.keywords }
-    %meta{ name: 'description', content: data.site.portfolio.description }
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet'
+    = partial 'partials/meta'
+    %meta{ name: 'keywords',      content: data.site.portfolio.keywords }
+    %meta{ name: 'description',   content: data.site.portfolio.description }
+    %meta{ name: 'twitter:image', content: data.site.blog.preview }
 
   %body
     = yield
 
     = stylesheet_link_tag 'application', property: 'stylesheet'
-
-    - if build?
-      %script{ async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript" }
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72811093-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = 'https://ssl.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+    = partial 'partials/production_code'

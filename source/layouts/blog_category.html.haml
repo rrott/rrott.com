@@ -2,13 +2,13 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en' }
   %head
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-
-    = partial 'partials/meta'
     %title= "Roman Rott's blog - #{category} category on the blog"
-    %meta{ name: 'keywords',    content: "#{category}, #{data.site.blog.keywords}" }
-    %meta{ name: 'description', content: "#{category} category on the blog" }
-    %meta{ name: "robots", content: "noindex, follow" }
+    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
+    = partial 'partials/meta'
+    %meta{ name: 'keywords',      content: "#{category}, #{data.site.blog.keywords}" }
+    %meta{ name: 'description',   content: "#{category} category on the blog" }
+    %meta{ name: "robots",        content: "noindex, follow" }
+    %meta{ name: 'twitter:image', content: data.site.blog.preview }
     %link{ href: "https://rrott.com/blog/", rel: "canonical" }
 
   %body
@@ -16,16 +16,4 @@
 
     = stylesheet_link_tag 'application', property: 'stylesheet'
     = javascript_include_tag 'lunar-search'
-
-    - if build?
-      %script{ async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript" }
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72811093-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = 'https://ssl.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+    = partial 'partials/production_code'

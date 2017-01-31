@@ -28,14 +28,8 @@
       Share:
       .addthis_sharing_toolbox
   %section.portfolio-content.column
-    %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
-      %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %a{ href: "https://rrott.com", itemprop: "item", title: 'home page' }
-          %span.breadcrumb-el{ itemprop: "name"}Home
-        %meta{ itemprop: "position", content: "1" }
-      %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %span.breadcrumb-el{ itemprop: "name"}Portfolio
-        %meta{ itemprop: "position", content: "2" }
+    = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio'}] }
+
     %section.text-block
       %p.text-block.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
       .portfolio-images.row.wrap

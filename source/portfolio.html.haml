@@ -37,18 +37,8 @@
       Share:
       .addthis_sharing_toolbox
   %section.portfolio-content.column
-    %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
-      %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %a{ href: "https://rrott.com", itemprop: "item", title: 'home page'}
-          %span.breadcrumb-el{ itemprop: "name" }Home
-        %meta{ itemprop: "position", content: "1" }
-      %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %a{ href: "/portfolio/", itemprop: "item", title: "Rott's portfolio" }
-          %span.breadcrumb-el{ itemprop: "name" }Portfolio
-        %meta{ itemprop: "position", content: "2" }
-      %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %breadcrumb-el.upper{ itemprop: "name" } #{type}
-        %meta{ itemprop: "position", content: "3" }
+    = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio', url: '/portfolio/'}, {title: type }] }
+
     - if message
       %section.text-block
         %p.post-description

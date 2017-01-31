@@ -3,11 +3,12 @@
 %html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
     %title=data.site.title
-    = stylesheet_link_tag  'index', property: 'stylesheet'
+    = stylesheet_link_tag 'index', property: 'stylesheet'
     = partial 'partials/meta'
+    %meta{ name: 'keywords',      content: data.site.keywords }
+    %meta{ name: 'description',   content: data.site.description }
+    %meta{ name: 'twitter:image', content: data.site.blog.preview }
 
-    %meta{ name: 'keywords',    content: data.site.keywords }
-    %meta{ name: 'description', content: data.site.description }
   %body
     = yield
 
@@ -18,13 +19,5 @@
         {"@context":"http://schema.org","@type":"Person","email":"roman@rrott.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
 
     - if build?
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72811093-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = 'https://ssl.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      = partial 'partials/ga'
+
