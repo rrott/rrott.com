@@ -3,21 +3,22 @@
   %section.portfolio-content.column
     = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Blog', url: '/blog/'}, {title: category}] }
 
-    %article.text-block
-      %section
-        %h3.center
-          Blog about Full-Stack development and security researches.
+    %article.justify-between
+      .text-block
+        %section
+          %h3.center
+            Blog about Full-Stack development and security researches.
 
-      %ul
-        - blog.tags.each do |tag, articles|
-          - if tag == category
-            %li
-              %h5= tag
-              %ul
-                - articles.each do |article|
-                  %li
-                    %a{ :href => article.url} #{article.date.strftime("%Y-%m-%d") } - #{article.title}
-                    %br
-                    %br
+        %ul
+          - blog.tags.each do |tag, articles|
+            - if tag == category
+              %li
+                %h5= tag
+                %ul
+                  - articles.each do |article|
+                    %li
+                      %a{ :href => article.url} #{article.date.strftime("%Y-%m-%d") } - #{article.title}
+                      %br
+                      %br
 
-    = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
+      = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
