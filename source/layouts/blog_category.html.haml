@@ -2,9 +2,7 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en' }
   %head
-    -# = stylesheet_link_tag  'blog', property: 'stylesheet'
     = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = stylesheet_link_tag  'syntax', property: 'stylesheet'
 
     = partial 'partials/meta'
     %title= "Roman Rott's blog - #{category} category on the blog"
@@ -28,6 +26,6 @@
         _gaq.push(['_trackPageview']);
         (function() {
           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          ga.src = 'https://ssl.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();

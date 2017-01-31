@@ -94,7 +94,7 @@ Try to commit:
 <img class='pure-img-responsive' title="Commit in GitHub signed by gpg", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/> 
 
 ---
-## How to set up git to use PGP with every commit
+## How to set up git to use GPG with every commit
 
 Just run 2 simple commands:
 
@@ -102,7 +102,7 @@ Just run 2 simple commands:
 $ git config --global user.signingkey key-name
 $ git config --global commit.gpgsign true
 ```
-where `key-name` - is the name of your PGP key. 
+where `key-name` - is the name of your GPG key. 
 It's `roman.rott@gmail.com` in my case.
 
 Here is my <a href="https://keybase.io/rrott" target="_blank" rel="noopener noreferrer">GPG key</a> to contact me securelly ;)

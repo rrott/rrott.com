@@ -47,7 +47,7 @@
           %span.breadcrumb-el{ itemprop: "name" }Portfolio
         %meta{ itemprop: "position", content: "2" }
       %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-        %h2.breadcrumb-el{ itemprop: "name" } List of projects
+        %breadcrumb-el.upper{ itemprop: "name" } #{type}
         %meta{ itemprop: "position", content: "3" }
     - if message
       %section.text-block
@@ -59,7 +59,7 @@
     %footer.footer.l-box.is-center
       = partial 'partials/links'
       %br
-      #{ type} Projects accomplished in 2015 and 2016
+      #{ type } Projects accomplished in 2015 and 2016
       %br
       %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
         SiteMap

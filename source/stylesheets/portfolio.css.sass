@@ -1,26 +1,10 @@
-a
-  text-decoration: none
-  color: #1f8dd6
-  &:hover, &:focus
-    text-decoration: underline
-
-h3
-  font-weight: 100
-
-.bold
-  font-weight: bold
-
 .tag-cloud
   ul
     overflow: hidden
-
   li
     display: inline-block
   li.links::after
     content: " | "
-
-.red
-  color: #F8831C
 
 #preview
   background: rgba(0, 0, 0, 0.85)
@@ -33,6 +17,7 @@ h3
   display: none
   overflow: hidden
   text-align: center
+
   img
     max-height: 80%
     width: 80%
@@ -60,6 +45,7 @@ h3
       -webkit-filter: grayscale(1)
       filter: grayscale(1)
       transition: all 1s ease
+
   #spinner
     color: white
     text-align: left
@@ -177,6 +163,7 @@ h3
     padding-bottom: 3rem
     max-width: 30%
     min-width: 30%
+
 .post-meta
   color: #34495e
   font-size: 90%
@@ -189,6 +176,7 @@ h3
   color: #fff
   background: #34495e
   font-size: 80%
+
 .post-author
   cursor: pointer
 
@@ -204,7 +192,6 @@ h3
   margin: 0 auto
   margin-bottom: 3.125em
 
-
 .footer
   text-align: center
   padding: 1em 0
@@ -219,11 +206,16 @@ h3
   font-size: 110%
   margin: 0
   letter-spacing: 0.1em
+  text-transform: capitalize
 
 .breadcrumb
-
   margin: 2rem
   border-bottom: 1px solid #1f8dd6
+  color: #aaa
+  padding: 0.4em 0
+  font-size: 110%
+  font-weight: 500
+  letter-spacing: 0.1em
   li, h2
     display: inline-block
   li::before
@@ -231,20 +223,11 @@ h3
   h2::before
     border-bottom: none
 
-  color: #aaa
-  padding: 0.4em 0
-  font-size: 110%
-  font-weight: 500
-  letter-spacing: 0.1em
-
-.inline
-  display: inline
-
 .share
   width: 100%
   bottom: 0
 
-// abit of blog
+// a bit of blog
 article
   display: flex
   flex-direction: column
@@ -252,14 +235,16 @@ article
   font-weight: 200
   font-size: 1.2em
   color: #34495e
-  p
-    color: #7f8c8d
   img
     text-align: center
     display: block
     margin-left: auto
     margin-right: auto
     max-width: 100vh
+  table
+    height: 100%
+    width: 100%
+    display: table
 
 .logo-small
   svg
@@ -273,12 +258,6 @@ article
       #logo-bkg
         fill: #F8E81C
         transition: all 0.1s
-
-article
-  table
-    height: 100%
-    width: 100%
-    display: table
 
 blockquote
   padding: 20px

@@ -6,6 +6,40 @@ body
   font-size: 1rem
   margin: 0
 
+h1
+  font-size: 2rem
+  margin: 2rem 0
+
+h1, h2, h3, h4, h5, h6, label
+  color: #34495e
+
+h2
+  font-size: 220%
+h3
+  font-size: 190%
+h4
+  font-size: 150%
+h5
+  font-size: 120%
+
+a
+  color: #1f8dd6
+  text-decoration: none
+  -webkit-transition: color 300ms linear
+  -ms-transition: color 300ms linear
+  transition: color 300ms linear
+  &:hover, &:focus
+    background: none
+    border: none
+    color: #2d3e50
+    text-decoration: none
+
+p
+  -moz-hyphens: auto
+  -webkit-hyphens: auto
+  -ms-hyphens: auto
+  hyphens: auto
+
 main
   display: flex
   flex-direction: column
@@ -16,10 +50,6 @@ html
 strong
   font-weight: bold
 
-h1
-  font-size: 2rem
-  margin: 2rem 0
-
 img
   border: 0
 
@@ -28,67 +58,26 @@ img
   display: flex
 
 .wrap
+  display: flex
   flex-wrap: wrap
 
 .row
+  display: flex
   flex-direction: row
 
 .row-reverse
+  display: flex
   flex-direction: row-reverse
 
 .column
+  display: flex
   flex-direction: column
 
 .justify-center
+  display: flex
   justify-content: center
 
-// icons
-.icon-mail-alt:before
-  content: '\e805'
-  font-size: 2rem
-
-.icon-left-open:before
-  content: '\e809'
-
-.icon-right-open:before
-  content: '\e80a'
-
-.icon-github-circled:before
-  content: '\e810'
-  font-size: 2rem
-
-.icon-linkedin:before
-  content: '\e812'
-  font-size: 2rem
-
-.icon-skype:before
-  content: '\e816'
-  font-size: 2rem
-
-.icon-twitter:before
-  content: '\e822'
-  font-size: 3rem
-
-// icons
-.text-block
-  padding-left: 5%
-  padding-right: 5%
-  font-family: FreeSans, Arimo, Helvetica, Arial
-
-.links-block
-  height: 18vh
-
-.content
-  padding-bottom: 3%
-
-.text-block.dark
-  h1, h2, h3, h4, h5, h6, label
-    color: #aaa
-  a:hover
-    color: #0061D2
-  background: #2d3e50
-  color: #aaa
-
+// global
 .vh70
   max-width: 70%
 
@@ -96,9 +85,42 @@ img
   margin-left: 2rem
   margin-right: 2rem
 
+.upper
+  text-transform: capitalize
+
 .responsive
+  align-self: center
   max-width: 100%
+  max-height: 100%
   height: auto
+
+.center
+  text-align: center
+
+.inline
+  display: inline
+
+.red
+  color: #F8831C
+
+// application-wide
+.text-block
+  padding-left: 5%
+  padding-right: 5%
+  font-family: FreeSans, Arimo, Helvetica, Arial
+  .dark
+    h1, h2, h3, h4, h5, h6, label
+      color: #aaa
+    a:hover
+      color: #0061D2
+    background: #2d3e50
+    color: #aaa
+
+.links-block
+  height: 18vh
+
+.content
+  padding-bottom: 3%
 
 .contacts-box
   justify-content: space-around
@@ -113,14 +135,6 @@ img
       padding-left: 1rem
     h4
       margin-left: 1rem
-.social-links
-  .social
-    align-self: baseline
-    margin: 0.2rem
-
-//global
-.center
-  text-align: center
 
 .footer
   background: #111
@@ -140,57 +154,6 @@ img
       #logo-bkg
         fill: #F8E81C
         transition: all 0.5s
-//////////////////////////////
-h1, h2, h3, h4, h5, h6, label
-  color: #34495e
-
-h2
-  font-size: 220%
-h3
-  font-size: 190%
-h4
-  font-size: 150%
-h5
-  font-size: 120%
-
-p
-  -moz-hyphens: auto
-  -webkit-hyphens: auto
-  -ms-hyphens: auto
-  hyphens: auto
-
-.roman_rott
-  background: url(../images/roman-rott-in-hat.jpg)
-  width: 418px
-  height: 480px
-  z-index: -2
-
-a
-  color: #1f8dd6
-  text-decoration: none
-  -webkit-transition: color 300ms linear
-  -ms-transition: color 300ms linear
-  transition: color 300ms linear
-  &:hover, &:focus
-    background: none
-    border: none
-    color: #2d3e50
-    text-decoration: none
-
-.content.infosec
-  padding: 1em
-  padding-bottom: 0
-  padding-right: 0
-  .hat
-    min-height: 460px
-    position: relative
-    &:hover
-      .roman_rott
-        background-position: 0px -480px
-    .roman_rott
-      position: absolute
-      bottom: 0
-      right: 0%
 
 .social-icon
   color: #1f8dd6
@@ -202,8 +165,12 @@ a
     opacity: 0.5
     fill: currentColor
 
-.social-links div
-  align-self: flex-end
+.social-links
+  div
+    align-self: flex-end
+  .social
+    align-self: baseline
+    margin: 0.2rem
 
 .icon
   width: 2rem
@@ -213,3 +180,25 @@ a
   width: 3rem
   height: 3rem
 
+#search
+  display: flex
+  position: realtive
+  margin: 0 auto
+  width: 80%
+  resize: none
+
+#search input[type=search], #search button
+  display:block
+
+#search input[type=search]
+  flex: 1
+  padding: 0.6em
+  border: 0.2em
+
+#search-submit
+  padding: '0.6em 0.8em'
+  background-color: #7f8c8d
+  color: white
+  border: none
+  &:hover, &:focus
+    cursor:pointer

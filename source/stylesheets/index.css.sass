@@ -16,6 +16,27 @@
   background-size: cover
   display: flex
 
+.roman-rott
+  background: url(../images/roman-rott-in-hat.jpg)
+  width: 418px
+  height: 480px
+  z-index: -2
+
+.content.infosec
+  padding: 1em
+  padding-bottom: 0
+  padding-right: 0
+  .hat
+    min-height: 460px
+    position: relative
+    &:hover
+      .roman-rott
+        background-position: 0px -480px
+    .roman-rott
+      position: absolute
+      bottom: 0
+      right: 0%
+
 @media (max-width: 72em)
   .splash-container
     background: url(../images/roman-rott-background-small.jpg)

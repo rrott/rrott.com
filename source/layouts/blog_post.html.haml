@@ -2,9 +2,8 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en' }
   %head
-    -# = stylesheet_link_tag  'blog', property: 'stylesheet'
     = stylesheet_link_tag 'portfolio', property: 'stylesheet'
-    = stylesheet_link_tag 'syntax', property: 'stylesheet'
+    = stylesheet_link_tag  'syntax', property: 'stylesheet'
 
     = partial 'partials/meta'
     %title= "Roman Rott's blog - #{current_article.title}"
@@ -43,18 +42,18 @@
       %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
         %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
           %a{ href: "https://rrott.com", itemprop: "item", title: 'home page' }
-            %span.breadcrumb_el{ itemprop: "name" }Home
+            %span.breadcrumb-el{ itemprop: "name" }Home
           %meta{ itemprop: "position", content: "1" }
         %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
           %a{ href: "/blog/", itemprop: "item", title: "Rott's blog" }
-            %span.breadcrumb_el{ itemprop: "name" }Blog
+            %span.breadcrumb-el{ itemprop: "name" }Blog
           %meta{ itemprop: "position", content: "2" }
         %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
           %a{ href: "/blog/#{current_article.data["category"].downcase}/", itemprop: "item", title: "Blog about #{current_article.data["category"]}" }
-            %span.breadcrumb_el{ itemprop: "name" } #{current_article.data["category"]}
+            %span.breadcrumb-el.upper{ itemprop: "name" } #{current_article.data["category"]}
           %meta{ itemprop: "position", content: "3" }
         %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
-          %h2.breadcrumb_el{ itemprop: "name" } #{current_article.title}
+          %span.breadcrumb-el.upper{ itemprop: "name" } #{current_article.title}
           %meta{ itemprop: "position", content: "4" }
 
       %article
@@ -84,6 +83,6 @@
         _gaq.push(['_trackPageview']);
         (function() {
           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          ga.src = 'https://ssl.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
