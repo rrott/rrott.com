@@ -142,10 +142,5 @@
           %li.link
             %a{ href: "/blog", title: "link to my blog" }
               Read more...
-  = partial 'partials/contacts'
-
-%footer.footer.l-box.center
-  = partial 'partials/links'
-  %br
-  %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
-    SiteMap
+= partial 'partials/contacts'
+= partial 'partials/footer', locals: { title: nil }

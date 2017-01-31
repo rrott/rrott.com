@@ -46,14 +46,7 @@
           %br
           = disqus
           = disqus_count
-
-          %footer.footer.l-box.center
-            = partial 'partials/links'
-            %br
-            Projects accomplished in 2015 and active in 2016
-            %br
-            %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
-              SiteMap
+          = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
 
     = stylesheet_link_tag 'application', property: 'stylesheet'
     = javascript_include_tag 'lunar-search'

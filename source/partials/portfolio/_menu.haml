@@ -1,0 +1,27 @@
+%aside.portfolio-menu.center.row.wrap
+  %div
+    .brand-title Portfolio
+    %h1.brand-tagline Projects accomplished in 2016 and active in 2017
+    %nav.nav
+      %ul.nav-list
+        %li.nav-item
+          %a{ href: "/", title: "Roman Rott's home page" } Home
+        \/
+        %li.nav-item
+          %a{ href: "/blog/", title: "Roman Rott's blog" } Blog
+    .responsive.logo-small
+      = partial('images/rrott-ruby-logo.svg').to_s
+    .portfolio-contacts
+      = partial 'partials/links'
+      Open for remote job opportunities
+    .portfolio-categories
+      %nav.nav.tag-cloud
+        %ul.nav-list
+          - data.links.portfolio_sections.each do |section|
+            %li.links
+              %a{ href: section.url, title: "#{ section.name} projects by Roman Rott" } #{ section.name }
+          %li
+            %a{ href: '/portfolio/', title: "All projects by Roman Rott" } All
+  .share
+    Share:
+    .addthis_sharing_toolbox

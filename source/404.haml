@@ -22,10 +22,7 @@
         = partial('images/rrott-ruby-logo.svg').to_s
       %hr
       = partial 'partials/contacts'
+      = partial 'partials/footer', locals: { title: nil }
 
-    %footer.footer
-      = partial 'partials/links'
-      %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' }
-        SiteMap
     %link{ href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet' }
     %link{ href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet' }
