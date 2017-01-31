@@ -1,5 +1,5 @@
-%section.portfolio.flex.row
-  %aside.portfolio-menu.center.flex.row.wrap
+%section.portfolio.row
+  %aside.portfolio-menu.center.row.wrap
     %div
       .brand-title Portfolio
       %h1.brand-tagline Projects accomplished in 2015 and 2016
@@ -27,7 +27,7 @@
     .share
       Share:
       .addthis_sharing_toolbox
-  %section.portfolio-content.flex.column
+  %section.portfolio-content.column
     %ol.breadcrumb{ itemscope: true, itemtype: "http://schema.org/BreadcrumbList" }
       %li{ itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem" }
         %a{ href: "https://rrott.com", itemprop: "item", title: 'home page' }
@@ -38,7 +38,7 @@
         %meta{ itemprop: "position", content: "2" }
     %section.text-block
       %p.text-block.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
-      .portfolio-images.flex.row.wrap
+      .portfolio-images.row.wrap
         - data.links.portfolio_list.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: portfolio.title }
             .center

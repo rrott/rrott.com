@@ -3,7 +3,7 @@
     %strong.splash{ itemprop: "name" } Roman Rott
 
 %main
-  %section.flex.column.links-block.justify-center
+  %section.links-block.column.justify-center
     = partial 'partials/links'
     .center Open for remote job opportunities. Contact me if you're interested.
   %section.text-block.content.about-me
@@ -25,7 +25,7 @@
 
   %section.text-block.dark.content.dev-skills
     %h2.center Web Developer
-    .text-block.flex.row
+    .text-block.row
       .logo.responsive.center
         = partial('images/rrott-ruby-logo.svg').to_s
       .text-block.vh70
@@ -46,7 +46,7 @@
             Check out my portfolio
   %section.text-block.content.infosec
     %h2.center Security Researcher
-    .text-block.flex.row
+    .text-block.row
       .infosec-text
         %p
           I like to test websites for security vulnerabilities (both white-box and black-box) at
