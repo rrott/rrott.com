@@ -20,11 +20,13 @@ gem "middleman-syntax"
 gem 'middleman-search'
 gem 'middleman-meta-tags'
 gem 'middleman-robots'
+gem 'middleman-livereload'
+gem "middleman-es6", github: "vast/middleman-es6"
 
 group :development, :test do
   gem 'pry'
   gem 'middleman-pry'
-  gem "capistrano", "~> 3.4"
+  gem 'capistrano', '~> 3.4'
   gem 'capistrano-deploy'
   gem 'capistrano-bundler'
   gem 'rvm1-capistrano3', require: false

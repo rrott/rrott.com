@@ -133,4 +133,4 @@ Is it the same? No. It is *almost* the same, the only problem is that you will h
 
 That's it! I believe these 2 tricks will help you or your organization with switching to such a great project as GitHub. Give it a try, I really suggest doing this!
 
-Have a good day!
+Keep having a good day!

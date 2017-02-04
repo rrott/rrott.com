@@ -53,3 +53,5 @@ I am going to publish several additional blog posts about using svg and (probabl
 
 You can follow this topic here: [SVG category](/blog/svg/)
 And here is my first post about [Bug with CSS transition animation in Safari](/blog/svg/issue-with-css-transition-animation-in-safari.html)
+
+Keep having a good day!

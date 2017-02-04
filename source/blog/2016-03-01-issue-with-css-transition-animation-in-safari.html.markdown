@@ -102,4 +102,4 @@ Where `#logo` is a new div that has our `.tanuki-shape` SVG image inside.
 | <img class='pure-img-responsive' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_before_change.gif"/> | <img class='pure-img-responsive' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_after_change.gif"/> | 
 
 
-P.S. Try GitLab, you'll like it!
+Keep having a good day!

@@ -32,6 +32,7 @@ Git is cryptographically secure, but it’s not foolproof. If you’re taking wo
 
 You can set user name and email for any your repo using simple `git config` command and you can take any:
 
+
 ```bash
 $ git config user.name "Aaron Patterson"
 $ git config user.email "tenderlove@github.com"
@@ -108,4 +109,4 @@ It's `roman.rott@gmail.com` in my case.
 Here is my <a href="https://keybase.io/rrott" target="_blank" rel="noopener noreferrer">GPG key</a> to contact me securelly ;)
 
 ---
-"I hope you enjoyed this article. Please have a good day!!"
+"I hope you enjoyed this article. Please have a good day!!" (c)

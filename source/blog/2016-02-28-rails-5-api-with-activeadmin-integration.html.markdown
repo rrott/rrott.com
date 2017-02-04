@@ -70,26 +70,26 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
 > You have probably noted that when an app is created with the `--api` flag, generator did not create views but only api-related resources were created, e.g.:
 
     ```bash
-    $ bin/rails g scaffold user
-      Running via Spring preloader in process 55287
-        invoke  active_record
-        create    db/migrate/20160228093108_create_users.rb
-        create    app/models/user.rb
-        invoke    rspec
-        create      spec/models/user_spec.rb
-        invoke      factory_girl
-        create        spec/factories/users.rb
-        invoke  resource_route
-         route    resources :users
-        invoke  serializer
-        create    app/serializers/user_serializer.rb
-        invoke  scaffold_controller
-        create    app/controllers/users_controller.rb
-        invoke    rspec
-        create      spec/controllers/users_controller_spec.rb
-        create      spec/routing/users_routing_spec.rb
-        invoke      rspec
-        create        spec/requests/users_spec.rb
+      $ bin/rails g scaffold user
+        Running via Spring preloader in process 55287
+          invoke  active_record
+          create    db/migrate/20160228093108_create_users.rb
+          create    app/models/user.rb
+          invoke    rspec
+          create      spec/models/user_spec.rb
+          invoke      factory_girl
+          create        spec/factories/users.rb
+          invoke  resource_route
+           route    resources :users
+          invoke  serializer
+          create    app/serializers/user_serializer.rb
+          invoke  scaffold_controller
+          create    app/controllers/users_controller.rb
+          invoke    rspec
+          create      spec/controllers/users_controller_spec.rb
+          create      spec/routing/users_routing_spec.rb
+          invoke      rspec
+          create        spec/requests/users_spec.rb
     ```
 
 
@@ -193,7 +193,7 @@ Let's do it!
     **Password:** password
 
   <img class='pure-img-responsive' title="Image of Rails 5 API application with ActiveAdmin enabled", alt="Image of Rails 5 API application with ActiveAdmin enabled", src="/images/blog/rails5-api-active-admin/active-admin-with-rails5.png"/> 
-That it. =)
+That's it. =)
 > Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is available from your internal IP address only.
 
-Have Fun!
+Keep having a good day!

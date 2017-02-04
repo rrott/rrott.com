@@ -8,7 +8,7 @@
 
 **Languages:** Ruby 2.2, CoffeeScript
 
-**Libs:** MiddleMan - static site generator. 
+**Libs:** MiddleMan - static site generator.
 
 **Deployment** Capistrano
 

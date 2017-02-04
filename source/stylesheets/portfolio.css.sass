@@ -1,3 +1,5 @@
+@import "colors"
+
 .tag-cloud
   ul
     overflow: hidden
@@ -27,17 +29,17 @@
   #close
     height: 4rem
     width: 4rem
-    color: white
+    color: $color-white
     position: absolute
     right: 0px
     z-index: 13
     font-size: 150%
     &:hover
-      color: #7f8c8d
+      color: $color-grey
       cursor: pointer
 
   .preview-image-title
-    color: white
+    color: $color-white
     text-align: center
 
   #preview-image
@@ -47,7 +49,7 @@
       transition: all 1s ease
 
   #spinner
-    color: white
+    color: $color-white
     text-align: left
 
   .overlay
@@ -55,13 +57,13 @@
 
   #prev, #next
     display: table-cell
-    color: white
+    color: $color-white
     width: 4rem
     height:  4rem
     top: 50%
     transform: translateY(-50%)
     &:hover
-      color: #7f8c8d
+      color: $color-grey
       cursor: pointer
 
 .thumbs
@@ -83,8 +85,8 @@
 
 .portfolio-menu
   padding: 0
-  background: #34495e
-  color: #fff
+  background: $color-dark-grey
+  color: $color-white
   max-width: 25%
   nav
     padding-top: 1rem
@@ -113,7 +115,7 @@
 .brand-tagline
   font-weight: 300
   font-size:  1.5em
-  color: #7f8c8d
+  color: $color-grey
 
 .nav-list
   margin: 0
@@ -125,19 +127,19 @@
   zoom: 1
   a
     background: transparent
-    color: #fff
+    color: $color-white
     margin-top: 1em
     letter-spacing: 0.05em
     text-transform: uppercase
     font-size: 85%
     &:hover, &:focus
-      border: 2px solid #1f8dd6
+      border: 2px solid $color-light-blue
       text-decoration: none
 
 .content-subhead
   text-transform: uppercase
-  color: #aaa
-  border-bottom: 1px solid #1f8dd6
+  color: $color-grey
+  border-bottom: 1px solid $color-light-blue
   padding: 0.4em 0
   font-size: 110%
   font-weight: 500
@@ -148,11 +150,11 @@
 
 .post-title
   font-size: 2em
-  color: #34495e
+  color: $color-dark-grey
   margin-bottom: 0.2em
 
 .post-description
-  color: #34495e
+  color: $color-dark-grey
   line-height: 1.8em
 
 .portfolio-images
@@ -165,7 +167,7 @@
     min-width: 30%
 
 .post-meta
-  color: #34495e
+  color: $color-dark-grey
   font-size: 90%
   margin: 0
 
@@ -173,8 +175,8 @@
   margin: 0 0.1em
   cursor: pointer
   padding: 0.3em 1em
-  color: #fff
-  background: #34495e
+  color: $color-white
+  background: $color-dark-grey
   font-size: 80%
 
 .post-author
@@ -196,7 +198,7 @@
   text-align: center
   padding: 1em 0
   a
-    color: #aaa
+    color: $color-grey
     font-size: 80%
   .pure-menu a
     &:hover, &:focus
@@ -210,8 +212,8 @@
 
 .breadcrumb
   margin: 2rem
-  border-bottom: 1px solid #1f8dd6
-  color: #aaa
+  border-bottom: 1px solid $color-light-blue
+  color: $color-grey
   padding: 0.4em 0
   font-size: 110%
   font-weight: 500
@@ -234,7 +236,7 @@ article
   flex-grow: 1
   font-weight: 200
   font-size: 1.2em
-  color: #34495e
+  color: $color-dark-grey
   img
     text-align: center
     display: block
@@ -253,19 +255,19 @@ article
     transition: all 0.8s
     &:hover, &.highlight
       #ruby-bkg
-        fill: #0061D2
+        fill: $color-blue
         transition: all 0.1s
       #logo-bkg
-        fill: #F8E81C
+        fill: $color-yellow
         transition: all 0.1s
 
 blockquote
   padding: 20px
   margin: 20px 0
-  border: 1px solid #eee
+  border: 1px solid $color-grey
   border-left-width: 5px
   border-radius: 3px
-  border-left-color: #1f8dd6
+  border-left-color: $color-light-blue
 
 @media (max-width: 48em)
   .share
