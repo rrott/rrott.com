@@ -20,7 +20,7 @@
         <path d="M210.900826,255.116999 C140.253453,255.325241 64.1871481,249.088855 60.1560471,248.045512 C53.9560471,246.445512 7.69829578,189.888331 7.69829578,189.888331 C7.69829578,189.888331 187.104323,8.10740118 210.900821,8.10740118 C234.697319,8.10740118 412.315428,186.488331 412.415428,189.888331 C412.415428,192.188331 362.685187,248.045512 360.985187,248.045512 C360.61716,248.045512 289.220859,254.886141 210.900826,255.116999 Z" id="ruby-bkg" stroke="none" fill="none" sketch:type="MSShapeGroup" transform="translate(210.056862, 131.614748) scale(1, -1) translate(-210.056862, -131.614748) "></path>
         <g sketch:type="MSLayerGroup" transform="translate(209.700000, 134.100000) scale(1, -1) translate(-209.700000, -134.100000) translate(6.700000, 10.100000)" id="logo" filter="url(#filter-1)">
             <g>
-                <use id="logo-bkg" stroke="#000000" stroke-width="4" fill="#D0021B" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                <use id="logo-bkg" stroke="#000000" stroke-width="4" fill="#fa625f" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
                 <use stroke="none" fill="none" ></use>
             </g>
         </g>

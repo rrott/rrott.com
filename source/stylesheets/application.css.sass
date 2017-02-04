@@ -13,7 +13,7 @@ h1
   margin: 2rem 0
 
 h1, h2, h3, h4, h5, h6, label
-  color: $color-dark-grey
+  color: $color-grey
 
 h2
   font-size: 220%
@@ -26,15 +26,13 @@ h5
 
 a
   color: $color-light-blue
-  text-decoration: none
   -webkit-transition: color 300ms linear
   -ms-transition: color 300ms linear
   transition: color 300ms linear
   &:hover, &:focus
     background: none
     border: none
-    color: $color-dark-grey
-    text-decoration: none
+    color: $color-blue
 
 p
   -moz-hyphens: auto
@@ -109,17 +107,27 @@ img
 .red
   color: $color-red
 
+.dark
+  a
+    color: $color-light-blue
+  a:hover
+    color: $color-blue
+
 // application-wide
 .text-block
   padding-left: 5%
   padding-right: 5%
   font-family: FreeSans, Arimo, Helvetica, Arial
+.text-block.content, .links-block, .contacts
+  background: $color-white
 .text-block.dark
   h1, h2, h3, h4, h5, h6, label
     color: $color-grey
+  a
+    color: $color-light-blue
   a:hover
     color: $color-blue
-  background: $color-dark-grey
+  background: $color-light-grey
   color: $color-grey
 
 .links-block
@@ -146,6 +154,7 @@ img
   background: $color-black
   text-align: center
   padding: 1rem
+  color: $color-light-grey
 
 .logo
   svg
@@ -162,8 +171,9 @@ img
         transition: all 0.5s
 
 .social-icon
-  color: $color-light-blue
+  color: $color-blue
   fill: currentColor
+
   -webkit-transition: opacity 300ms linear
   -ms-transition: opacity 300ms linear
   transition: opacity 300ms linear
@@ -175,6 +185,7 @@ img
   div
     align-self: flex-end
   .social
+    text-decoration: none
     align-self: baseline
     margin: 0.2rem
 

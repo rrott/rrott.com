@@ -82,12 +82,14 @@
 
 .portfolio
   justify-content: space-between
+  background: $color-white
 
 .portfolio-menu
   padding: 0
-  background: $color-dark-grey
-  color: $color-white
-  max-width: 25%
+  background: $color-light-grey
+  max-width: 25vw
+  min-width: 25vw
+  width: 25vw
   nav
     padding-top: 1rem
 
@@ -127,13 +129,12 @@
   zoom: 1
   a
     background: transparent
-    color: $color-white
+    color: $color-light-blue
     margin-top: 1em
     letter-spacing: 0.05em
     text-transform: uppercase
     font-size: 85%
     &:hover, &:focus
-      border: 2px solid $color-light-blue
       text-decoration: none
 
 .content-subhead
@@ -150,11 +151,10 @@
 
 .post-title
   font-size: 2em
-  color: $color-dark-grey
+  color: $color-black
   margin-bottom: 0.2em
 
 .post-description
-  color: $color-dark-grey
   line-height: 1.8em
 
 .portfolio-images
@@ -167,7 +167,7 @@
     min-width: 30%
 
 .post-meta
-  color: $color-dark-grey
+  color: $color-light-blue
   font-size: 90%
   margin: 0
 
@@ -176,7 +176,7 @@
   cursor: pointer
   padding: 0.3em 1em
   color: $color-white
-  background: $color-dark-grey
+  background: $color-light-blue
   font-size: 80%
 
 .post-author
@@ -200,9 +200,6 @@
   a
     color: $color-grey
     font-size: 80%
-  .pure-menu a
-    &:hover, &:focus
-      background: none
 
 .breadcrumb-el
   font-size: 110%
@@ -224,6 +221,8 @@
     content: "/ "
   h2::before
     border-bottom: none
+  a
+    text-decoration: none
 
 .share
   width: 100%
@@ -236,7 +235,6 @@ article
   flex-grow: 1
   font-weight: 200
   font-size: 1.2em
-  color: $color-dark-grey
   img
     text-align: center
     display: block
@@ -267,7 +265,7 @@ blockquote
   border: 1px solid $color-grey
   border-left-width: 5px
   border-radius: 3px
-  border-left-color: $color-light-blue
+  border-left-color: $color-red
 
 @media (max-width: 48em)
   .share
