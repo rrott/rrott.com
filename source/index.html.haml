@@ -23,10 +23,13 @@
       %p
         I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
+  %section.logo-place
+    .logo.responsive
+      = partial('images/rrott-ruby-logo.svg').to_s
   %section.text-block.dark.content.dev-skills
     %h2.center Web Developer
     .text-block.row
-      .logo.responsive.center
+      .logo.responsive
         = partial('images/rrott-ruby-logo.svg').to_s
       .text-block.vh70
         %p During the last 5 years, I have been developing, supporting and maintaining web-projects for an US hosting company, consulting and finantial companies. Ecoommerce.com is the hosting company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person. Sphere inc is a consulting company, where I've got extended expirience in React and Redux.
@@ -39,7 +42,7 @@
             Ruby, CoffeeScript, JavaScript(EcmaScript), React, Backbone, Sinatra, Padrino, and Ruby on Rails
           frameworks. Some of them handles large amounts of traffic on daily basis.
 
-        %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015-2016.
+        %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished during last 2 years.
 
         %h4
           %a{ href: "/portfolio/" }
@@ -50,27 +53,26 @@
       .text-block.infosec-text
         %p
           I like to test websites for security vulnerabilities (both white-box and black-box) at
-          %a{ href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer' }
+          %a{ href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer' }<
             BugCrowd
           and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
         %p
           Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
           %ul
             %li.link
-              %a{ href: "https://uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }
-                UISGCon #10, #11, #12 (2014-2016) -
-              Ukrainian InfoSec conference held by Non Government Organisation
+              %a{ href: "https://uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }<
+                UISGCon #10, #11, #12 (2014-2016)
+              &mdash; Ukrainian InfoSec conference held by Non Government Organisation
               %strong «Ukrainian Information Security Group»
             %li.link
               The Cybersecurity Olympiad
               %strong «HackIT-2015»
             %li.link
               International forum
-              %a{ href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer' }
+              %a{ href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer' }<
                 «Cybersecurity: Ukraine and the world»
-      -# .roman-rott
 
-  %section.text-block.content.dark
+  %section.text-block.content.oss.dark
     %h2.center Community development
     .text-block.flex
       .center
@@ -78,59 +80,39 @@
       .text-block.vh70
         %h5 Contributing to open source projects:
         %ul
-          %li.link
-            %div
-              react-toolbox:
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/846", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#846
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/848", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#848
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/849", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#849
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/850", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#850
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/856", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#856
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/857", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#857
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/871", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#871
-              %a{ href: "https://github.com/react-toolbox/react-toolbox/pull/888", target: '_blank', rel: 'nofollow noopener noreferrer' }
-                \#888
-          %li.link
-            %a{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }
-              gitlab-org/gitlab-ce
-          %li.link
-            %a{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }
-              floere/phony
-          %li.link
-            %a{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }
-              dnesteryuk/site_prism.vcr
+          %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+            react-toolbox
+          %a.link{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+            gitlab-org/gitlab-ce
+          %a.link{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+            floere/phony
+          %a.link{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+            dnesteryuk/site_prism.vcr
         %h5 I have my own open source projects:
         %ul
           %li.link
-            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott" }
-              «Grunt Coffee Chain» -
-            grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.
+            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott" }<
+              «Grunt Coffee Chain»
+            &mdash; grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.
 
           %li.link
-            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott" }
-              «Asana God Contact» -
-            A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
+            %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott" }<
+              «Asana God Contact»
+            &mdash; a God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
 
         %h5 Developing local community:
         %ul
           %li.link
             Had a speach on the
-            %a{ href: "https://www.facebook.com/RubyMeditation/posts/1122062657874189", target: '_blank', rel: 'noopener noreferrer' }
+            %a{ href: "https://www.facebook.com/RubyMeditation/posts/1122062657874189", target: '_blank', rel: 'noopener noreferrer' }<
               11th Ruby Meditation
             meetup
           %li.link
             Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first
-            %a{ href: "https://en.wikipedia.org/wiki/Hackathon", target: '_blank', rel: 'nofollow noopener noreferrer' }
+            %a{ href: "https://en.wikipedia.org/wiki/Hackathon", target: '_blank', rel: 'nofollow noopener noreferrer' }<
               Hackathon
-            in Zaporizhzhya city -
-            %a{ href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer' }
+            in Zaporizhzhya city &mdash;
+            %a{ href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer' }<
               «24Hack»
         %h5 Recent posts from my blog:
         %ul
