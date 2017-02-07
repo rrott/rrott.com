@@ -8,9 +8,7 @@ category: git
 # How to start using GitLab as your additional Git remote server.
 
 <p class='flex wrap'>
-  <img class='responsive' title="GitHub logo", alt="GitHub logo", src="/images/blog/start-using-gitlab/github-logo.png"/>
-  <img class='responsive' title="GitLab logo", alt="GitLab logo", src="/images/blog/start-using-gitlab/gitlab-logo.png"/>
-  <img class='responsive' title="Bitbucket logo", alt="Bitbucket logo", src="/images/blog/start-using-gitlab/bitbucket-logo.png"/>
+  <img class='responsive' title="GitHub logo", alt="GitHub logo", src="/images/blog/start-using-gitlab/git.png"/>
 </p>
 
 Introducing GitLab to my friends/colleagues is causing me some concern because I have heard phrases like **"This will void all my logs in GitHub Issues"** or **"I'll loose all my PRs' history, that's not ok!..."**, but you know, it is not really true!
