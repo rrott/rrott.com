@@ -10,8 +10,8 @@ projects_list:
     id_name: "marionette"
     projects:
       -
-        name: "cloudui"
+        name: "ix_cloudui"
         noindex: true
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: true

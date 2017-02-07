@@ -32,9 +32,9 @@ status:
   message: "Online"
   urls:
     -
-      link:  "http://coffee.rott.org.ua/"
+      link:  "https://rrott.github.io/grunt_coffee_chain/"
       pre: "Website:"
-      short: "http://coffee.rott.org.ua/"
+      short: "https://rrott.github.io/grunt_coffee_chain/"
       description: "Grunt plugin inspired by Sprockets to compile CoffeeScripts"
       nofollow: false
     -

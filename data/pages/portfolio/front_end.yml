@@ -10,8 +10,8 @@ projects_list:
     id_name: "front-end"
     projects:
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: false
       -
-        name: "landing_ix"
+        name: "ix_landing"
         noindex: false

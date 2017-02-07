@@ -13,16 +13,16 @@ projects_list:
         name: "irarott"
         noindex: false
       -
-        name: "cloudui"
+        name: "ix_cloudui"
         noindex: false
       -
-        name: "rott_org_ua"
+        name: "rrott_com"
         noindex: false
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: false
       -
-        name: "landing_ix"
+        name: "ix_landing"
         noindex: false
       -
         name: "grunt_coffee_chain"

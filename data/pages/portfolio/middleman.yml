@@ -9,5 +9,5 @@ projects_list:
     id_name: "middleman"
     projects:
       -
-        name: "rott_org_ua"
+        name: "rrott_com"
         noindex: false

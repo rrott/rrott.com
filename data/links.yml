@@ -29,7 +29,7 @@ portfolio_list:
     url: "/portfolio/front-end/"
     name: "Front-end"
     title: 'Front-end projects'
-    image: '/images/portfolio/landing/landing-hacker-shield'
+    image: '/images/portfolio/ix-landing/landing-hacker-shield'
   -
     url: "/portfolio/back-end/"
     name: "Back-end"
@@ -44,7 +44,7 @@ portfolio_list:
     url: "/portfolio/online-projects/"
     name: "Online"
     title: 'Online at the moment projects'
-    image: '/images/portfolio/website/rott-org-ua-main'
+    image: '/images/portfolio/website/rrott-com-main'
   -
     url: "/portfolio/all/"
     name: "All"

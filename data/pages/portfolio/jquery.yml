@@ -13,11 +13,11 @@ projects_list:
         name: "irarott"
         noindex: true
       -
-        name: "cloudui"
+        name: "ix_cloudui"
         noindex: true
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: true
       -
-        name: "landing_ix"
+        name: "ix_landing"
         noindex: true

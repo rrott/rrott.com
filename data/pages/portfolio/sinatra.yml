@@ -12,13 +12,13 @@ projects_list:
         name: "irarott"
         noindex: true
       -
-        name: "cloudui"
+        name: "ix_cloudui"
         noindex: true
       -
         name: "shlyapa"
         noindex: false
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: true
       -
         name: "findmegetme"
