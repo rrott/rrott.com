@@ -1,13 +1,8 @@
-// application.js.es6
+// // application.js.es6
 
-let [first, , last] = [1, 2, 3];
+// let stickers = document.querySelectorAll('.sticker')
+// stickers.forEach( (sticker) =>
+//   sticker.style.order = Math.floor(Math.random() * 100)
+// )
 
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
 
-  get fullName() {
-    return `Mr. ${this.name}`;
-  }
-}

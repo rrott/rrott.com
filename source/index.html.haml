@@ -23,14 +23,19 @@
       %p
         I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
-  %section.logo-place
-    .logo.responsive
-      = partial('images/rrott-ruby-logo.svg').to_s
   %section.text-block.dark.content.dev-skills
     %h2.center Web Developer
     .text-block.row
-      .logo.responsive
-        = partial('images/rrott-ruby-logo.svg').to_s
+      .logo.responsive.wrap
+        %img.sticker.responsive{ title: "React sticker",      alt: "React sticker",      src: "images/react.png"  }
+        %img.sticker.responsive{ title: "Redux sticker",      alt: "Redux sticker",      src: "images/redux.png"  }
+        %img.sticker.responsive{ title: "Ruby sticker",       alt: "Ruby sticker",       src: "images/ruby.png"   }
+        %img.sticker.responsive{ title: "Rails sticker",      alt: "Rails sticker",      src: "images/rails.png"  }
+        %img.sticker.responsive{ title: "JavaScript sticker", alt: "JavaScript sticker", src: "images/js.png"     }
+        %img.sticker.responsive{ title: "EcmaScript sticker", alt: "EcmaScript sticker", src: "images/es6.png"    }
+        %img.sticker.responsive{ title: "html5 sticker",      alt: "html sticker",       src: "images/html5.png"  }
+        %img.sticker.responsive{ title: "css3 sticker",       alt: "css sticker",        src: "images/css.png"    }
+
       .text-block.vh70
         %p During the last 5 years, I have been developing, supporting and maintaining web-projects for an US hosting company, consulting and finantial companies. Ecoommerce.com is the hosting company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person. Sphere inc is a consulting company, where I've got extended expirience in React and Redux.
 
@@ -72,11 +77,14 @@
               %a{ href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer' }<
                 «Cybersecurity: Ukraine and the world»
 
+  %section.logo-place
+    .logo.responsive
+      = partial('images/rrott-ruby-logo.svg').to_s
   %section.text-block.content.oss.dark
     %h2.center Community development
     .text-block.flex
       .center
-        %img.responsive{ title: "Open Source", alt: "Open Source symbol", src: "images/open-source-logo.svg", height: '177', width: '183' }
+        %img.responsive{ height: '177', width: '183' }
       .text-block.vh70
         %h5 Contributing to open source projects:
         %ul
