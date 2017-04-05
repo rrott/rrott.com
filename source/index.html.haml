@@ -6,7 +6,7 @@
   %section.links-block.column.justify-center
     = partial 'partials/links'
     .center Open for remote job opportunities. Contact me if you're interested.
-  %section.text-block.content.about-me
+  %section.content.about-me
     %h1.center
       Hello, my name is
       %span Roman Rott!
@@ -23,9 +23,9 @@
       %p
         I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
 
-  %section.text-block.dark.content.dev-skills
+  %section.dark.content.dev-skills
     %h2.center Web Developer
-    .text-block.row
+    .stickers
       .logo.responsive.wrap.justify-center
         %img.sticker.responsive{ title: "React sticker",      alt: "React sticker",      src: "images/react.png"  }
         %img.sticker.responsive{ title: "Redux sticker",      alt: "Redux sticker",      src: "images/redux.png"  }
@@ -36,7 +36,7 @@
         %img.sticker.responsive{ title: "html5 sticker",      alt: "html sticker",       src: "images/html5.png"  }
         %img.sticker.responsive{ title: "css3 sticker",       alt: "css sticker",        src: "images/css.png"    }
 
-      .text-block.vh70
+      .text-block.vw70
         %p  Over the 9 years I was working on a various positions and different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.
 
         %p Now I am an Engineer at Sphere Software, a consulting company, where I've got extended expirience in React, Redux and ES6.
@@ -54,9 +54,9 @@
         %h4
           %a{ href: "/portfolio/" }
             Check out my portfolio
-  %section.text-block.content.infosec
+  %section.content.infosec
     %h2.center Security Researcher
-    .text-block.row
+    .row
       .text-block.infosec-text
         %p
           I like to test websites for security vulnerabilities (both white-box and black-box) at
@@ -82,12 +82,11 @@
   %section.logo-place
     .logo.responsive
       = partial('images/rrott-ruby-logo.svg').to_s
-  %section.text-block.content.oss.dark
-    %h2.center Community development
-    .text-block.flex
-      .center
-        %img.responsive{ height: '177', width: '183' }
-      .text-block.vh70
+  %section.content.oss.dark
+    %h2.center Community Development
+    .flex
+      .center.vw30
+      .text-block.vw70
         %h5 Contributing to open source projects:
         %ul
           %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
@@ -98,19 +97,8 @@
             floere/phony
           %a.link{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }<
             dnesteryuk/site_prism.vcr
-        -# %h5 I have my own open source projects:
-        -# %ul
-        -#   %li.link
-        -#     %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource JavaScript projrct by Roman Rott" }<
-        -#       «Grunt Coffee Chain»
-        -#     &mdash; grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.
 
-        -#   %li.link
-        -#     %a{ href: "/portfolio/oss/", target: '_blank', title: "OpenSource ruby projrct by Roman Rott" }<
-        -#       «Asana God Contact»
-        -#     &mdash; a God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.
-
-        %h5 Developing local community:
+        %h5.padding2 Developing local community:
         %ul
           %li.link
             Had a talk on the
@@ -124,7 +112,7 @@
             in Zaporizhzhya city &mdash;
             %a{ href: "http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785", target: '_blank',rel: 'noopener noreferrer' }<
               «24Hack»
-        %h5 Recent posts from my blog:
+        %h5.padding2 Recent posts from my blog:
         %ul
           - blog.articles[0...3].each do |article|
             %li.link

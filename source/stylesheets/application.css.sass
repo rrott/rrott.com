@@ -1,6 +1,10 @@
 @import "colors"
 
 *
+  font-family: sans-serif
+  font-weight: 100
+  font-size: 18px
+  line-height: 1.5
   box-sizing: border-box
   margin: 0
   padding: 0
@@ -15,7 +19,6 @@ body
 
 h1
   font-size: 2rem
-  margin: 2rem 0
 
 h1, h2, h3, h4, h5, h6, label
   color: $color-grey
@@ -45,6 +48,10 @@ p
   -webkit-hyphens: auto
   -ms-hyphens: auto
   hyphens: auto
+  padding-bottom: 1.5rem
+
+ul
+  margin-left: 2rem
 
 main
   display: flex
@@ -58,6 +65,12 @@ strong
 
 img
   border: 0
+
+section
+  background: $color-white
+
+span
+  font-size: inherit
 
 // flex
 .flex
@@ -88,8 +101,15 @@ img
   justify-content: space-between
 
 // global
-.vh70
+.vw30
+  width: 30%
+
+.vw70
   max-width: 70%
+  justify-content: flex-end
+
+.padding2
+  padding-top: 2rem
 
 .mr2
   margin-left: 2rem
@@ -120,10 +140,15 @@ img
     color: $color-blue
 
 // application-wide
+
+section.dark
+  background: $color-light-grey
+  color: $color-grey
+
 .text-block
-  padding-left: 5%
-  padding-right: 5%
-  font-family: FreeSans, Arimo, Helvetica, Arial
+  padding: 0 20% 0 20%
+.text-block.vw70
+  padding: 0 7% 0 7%
 .text-block.content, .links-block, .contacts
   background: $color-white
 .text-block.dark
@@ -134,8 +159,7 @@ img
     color: $color-light-blue
   a:hover
     color: $color-blue
-  background: $color-light-grey
-  color: $color-grey
+
 
 .links-block
   height: 18vh
@@ -147,7 +171,7 @@ img
 
 .contacts-box
   justify-content: space-around
-  padding: 1rem
+  padding: 3rem
   .contact
     min-width: 15%
     .link-block
@@ -233,3 +257,14 @@ img
   max-width: 2rem
   min-width: 2rem
   width: 2rem
+
+@media (max-width: 72em)
+  .text-block
+    padding: 0 5% 0 5%
+  .text-block.vw70
+    padding: 0 5% 0 5%
+  .vw70
+    max-width: 100%
+  .contacts-box
+    .contact
+      min-width: 90%

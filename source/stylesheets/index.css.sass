@@ -40,17 +40,41 @@
 
 .content.infosec, .content.dev-skills, .content.oss, .contacts
   padding: 1em
-  padding-bottom: 5rem
+  padding-bottom: 3rem
+  padding-top: 3rem
   padding-right: 0
 
+.dev-skills
+  .stickers
+    display: flex
+    flex-direction: row
+
+.sticker
+  width: 6rem
+  height: 6rem
+  padding: 0.2rem
+
 @media (max-width: 72em)
+  .splash
+    padding: 2rem 0
   .splash-container
-    background: url(../images/1327.jpg)
     min-height: 88vh
     background-attachment: fixed
     background-repeat: no-repeat
     background-size: cover
 
-.sticker
-  width: 6rem
-  height: 6rem
+  .content.infosec, .content.dev-skills, .content.oss, .contacts
+    padding: 0
+    padding-bottom: 2rem
+    padding-top: 2rem
+    padding-right: 0
+
+  .dev-skills
+    .stickers
+      display: flex
+      flex-direction: column
+      .logo
+        order: 1
+      .text-block
+        order: 0
+
