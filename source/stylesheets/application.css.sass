@@ -106,6 +106,8 @@ span
 .vw30
   width: 30%
 
+.vw100
+  width: 100%
 .vw70
   max-width: 70%
   justify-content: flex-end
@@ -248,7 +250,7 @@ section.dark
   border: 0.2em
 
 #search-submit
-  padding: '0.6em 0.8em'
+  padding: 0.6em 0.8em
   background-color: $color-grey
   color: $color-white
   border: none
@@ -260,6 +262,15 @@ section.dark
   min-width: 2rem
   width: 2rem
 
+.code
+  padding: 1.3rem
+  pre
+    white-space: pre-wrap
+    white-space: -moz-pre-wrap
+    word-wrap: break-word
+    .gp
+      margin-left: -1rem
+
 @media (max-width: 72em)
   .text-block
     padding: 0 5% 0 5%
@@ -270,3 +281,9 @@ section.dark
   .contacts-box
     .contact
       min-width: 90%
+  .code
+    padding: 1rem 0 1rem 0
+  .gutter.gl
+    pre
+      color: #272822
+      margin-right: 1.3rem

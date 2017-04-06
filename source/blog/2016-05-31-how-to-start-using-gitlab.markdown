@@ -40,31 +40,30 @@ It means that your git client will fetch all the data from GitHub while pushes w
 
 If you want to set GitLab as the default one follow these steps, for example:
 
-- 1. delete origin:
 
-```bash
-$ git remote remove origin
+1. delete origin:
 
-```
+    ```bash
+    $ git remote remove origin
+    ```
 
-> Note: If you run `git remote -v` you'll see no origins anymore.
+    > Note: If you run `git remote -v` you'll see no origins anymore.
 
-```bash
-$ git remote -v
-$
-```
+    ```bash
+    $ git remote -v
+    ```
+2. Add GitLab's repo as origin:
 
-- 2. Add GitLab's repo as origin:
+    ```bash
+    $ git remote add origin git@gitlab.com:rrott/rrott.com.git
+    ```
 
-```bash
-$ git remote add origin git@gitlab.com:rrott/rrott.com.git
-```
+3. Add GitHub's repo as additional origin:
 
-- 3. Add GitHub's repo as additional origin:
+    ```bash
+    $ git remote set-url --add origin  git@github.com:rrott/rrott.com.git
+    ```
 
-```bash
-$ git remote set-url --add origin  git@github.com:rrott/rrott.com.git
-```
 
 And here is the result:
 
@@ -78,8 +77,8 @@ origin  git@github.com:rrott/rrott.com.git (push)
 ---
 
 
-<img class='pure-img-responsive' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
-<img class='pure-img-responsive' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>
+<img class='blog-image' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
+<img class='blog-image' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>
 
 > Notice how perfectly responsive designs work on both websites ;)
 
@@ -94,7 +93,7 @@ Writing objects: 100% (11/11), 41.90 KiB | 0 bytes/s, done.
 Total 11 (delta 7), reused 0 (delta 0)
 To git@gitlab.com:rrott/rrott.com.git
    2cccd71..5cb6e9f  master -> master
-   
+
 Counting objects: 11, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (11/11), done.
@@ -121,14 +120,12 @@ Let's do that:
 
  1. Open your project on GitLab
  2. Go to Settings Page.
- <img class='pure-img-responsive' title="GitLab project settings page", alt="GitLab project settings page", src="/images/blog/start-using-gitlab/gitlab-project-settings.png"/> 
+ <img class='blog-image' title="GitLab project settings page", alt="GitLab project settings page", src="/images/blog/start-using-gitlab/gitlab-project-settings.png"/>
 
  3. Click on `Mirror Repository` menu item.
  4. Configure it to be a mirror or to use another server as a mirror as described on the page.
-  <img class='pure-img-responsive' title="GitLab project mirror settings page", alt="GitLab project mirror settings page", src="/images/blog/start-using-gitlab/gitlab-project-mirror.png"/> 
+  <img class='blog-image' title="GitLab project mirror settings page", alt="GitLab project mirror settings page", src="/images/blog/start-using-gitlab/gitlab-project-mirror.png"/>
 
 Is it the same? No. It is *almost* the same, the only problem is that you will have to use your login/password here.
 
 That's it! I believe these 2 tricks will help you or your organization with switching to such a great project as GitHub. Give it a try, I really suggest doing this!
-
-Keep having a good day!

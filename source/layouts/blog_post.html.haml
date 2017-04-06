@@ -10,15 +10,16 @@
     %meta{ name: 'description', content: current_article.title }
 
   %body
-    %section.portfolio.row
+    %section.portfolio
       = partial 'partials/blog/menu'
 
       %section.portfolio-content.column
         = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Blog', url: '/blog/'}, {title:current_article.data["category"], url: "/blog/#{current_article.data["category"].downcase}/"}, {title: current_article.title}] }
         %article
-          .text-block
+          .blog-block
             %time{ datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y') }
             = yield
+            %h3 Keep having a good day!
           %br
           = disqus
           = disqus_count
