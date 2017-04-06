@@ -12,10 +12,10 @@ projects_list:
         name: "irarott"
         noindex: true
       -
-        name: "cloudui"
+        name: "ix_cloudui"
         noindex: true
       -
-        name: "rott_org_ua"
+        name: "rrott_com"
         noindex: true
       -
         name: "shlyapa"
@@ -24,10 +24,10 @@ projects_list:
         name: "my_best_dates"
         noindex: false
       -
-        name: "ow"
+        name: "ix_ow"
         noindex: true
       -
-        name: "landing_ix"
+        name: "ix_landing"
         noindex: true
       -
         name: "securevpn"

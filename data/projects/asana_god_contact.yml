@@ -32,9 +32,9 @@ status:
   message: "Online and supported."
   urls:
     -
-      link:  "http://asana.rott.org.ua/"
+      link:  "https://rrott.github.io/asana-god-contact/"
       pre: "Website:"
-      short: "http://asana.rott.org.ua/"
+      short: "https://rrott.github.io/asana-god-contact/"
       description: "Website of AsanaGodContact - ruby gem for back-end developers"
       nofollow: false
     -

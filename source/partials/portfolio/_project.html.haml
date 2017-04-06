@@ -1,10 +1,10 @@
 %header.post-header
-  %h3.post-title #{project.title}
-  = partial 'partials/portfolio/tags', locals: { project: project, index: index}
-.post-description
-  .post-images.pure-g
-    .pure-u-1.pure-u-md-1-2.is_center
-      %figure
-        = partial 'partials/portfolio/images', locals: { project: project}
-    .pure-u-1.pure-u-md-1-2.post-description
-      = partial 'partials/portfolio/description', locals: { project: project}
+  %h3.post-title=project.title
+  = partial 'partials/portfolio/tags', locals: { project: project, index: index }
+
+.post-images.wrap
+  .image
+    %figure
+      = partial 'partials/portfolio/images', locals: { project: project }
+  .post-description.flex.column
+    = partial 'partials/portfolio/description', locals: { project: project }

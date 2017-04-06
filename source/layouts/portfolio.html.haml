@@ -1,35 +1,24 @@
 !!! 5
 
-%html{itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en'}
+%html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
-    = partial 'partials/meta'
     %title= title
-    %meta{name: 'keywords',    content: keywords}
-    %meta{name: 'description', content: description}
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet'
+    = partial 'partials/meta'
+    %meta{ name: 'keywords',    content: keywords }
+    %meta{ name: 'description', content: description }
 
     -if defined? canonical and canonical != nil
-      %meta{name: "robots", content: "noindex, follow"}
-      %link{href: canonical, rel: "canonical"}
+      %meta{ name: "robots", content: "noindex, follow" }
+      %link{ href: canonical, rel: "canonical" }
 
   %body
     = yield
-    = stylesheet_link_tag    'grids', property: 'stylesheet'
+
+    = stylesheet_link_tag 'application', property: 'stylesheet'
     = javascript_include_tag 'image-preview'
-    -# = javascript_include_tag 'application'
+    = partial 'partials/production_code'
 
     :javascript
       window.Helpers.disableLinks()
 
-    - if build?
-      %script{async: true, src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52d2dafa2886822d", type: "text/javascript"}
-      -# Google Analytics
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-72811093-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();

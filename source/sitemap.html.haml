@@ -6,42 +6,42 @@
     = stylesheet_link_tag  'index', property: 'stylesheet'
     = partial 'partials/meta'
 
-    %meta{name: 'keywords',    content: data.site.sitemap.keywords}
-    %meta{name: 'description', content: data.site.sitemap.description}
+    %meta{ name: 'keywords',    content: data.site.sitemap.keywords }
+    %meta{ name: 'description', content: data.site.sitemap.description }
   %body
     %main
-      %section.content.is-center
-        %h1.is-center.content-subhead
+      %section.content.center
+        %h1.center.content-subhead
           Sitemap of rrott.com website
-        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-          .pure-img-responsive.logo
+        .center
+          .img-responsive.logo
             = partial('images/rrott-ruby-logo.svg').to_s
-        .pure-g.l-box-lrg.ribbon.l-box-lrg
-          .pure-u-1.pure-u-md-1-3
+        .ribbon
+          .div
             %h3 Blog Posts
             - blog.articles.each do |page|
-              %a{href: page_url(page), title: "Blog's #{page_url(page)} page" }
+              %a{ href: page_url(page), title: "Blog's #{page_url(page)} page" }
                 = page_url(page)
               %br
 
-          .pure-u-1.pure-u-md-1-3
+          .div
             %h3 Portfolio
             - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
-              %a{href: page_url(page), title: "Portfolio #{page_url(page)} page"}
+              %a{ href: page_url(page), title: "Portfolio #{page_url(page)} page" }
                 = page_url(page)
               %br
-          .pure-u-1.pure-u-md-1-3
+          .div
             %h3 Other pages on website
-            %a{href: '/', title: 'Home Page' }
+            %a{ href: '/', title: 'Home Page' }
               Home Page
               %br
-            %a{href: '/sitemap/', title: 'Site Map' }
+            %a{ href: '/sitemap/', title: 'Site Map' }
               SiteMap
               %br
-            %a{href: '/sitemap.xml', title: 'sitemap.xml' }
+            %a{ href: '/sitemap.xml', title: 'sitemap.xml' }
               sitemap.xml
               %br
-            %a{href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
+            %a{ href: 'https://rrott.com/images/rrott-ruby-logo.svg', title: 'rrott logo' }
               Logo
               %br
 
@@ -66,15 +66,8 @@
                 -#       %a{href: "#{article.url}"} Read more
 
       %section#contacts.content
-        %header.pure-g
-          %h2.content-subhead.is-center.pure-u-1
-            Contact information
-          .pure-u-1.is-center
-            If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
         = partial 'partials/contacts'
-        %h3.is-center.pure-u-1 Lets build something great!
 
-      %footer.footer.l-box.is-center
+      %footer.footer.center
         = partial 'partials/links'
-    = stylesheet_link_tag  'grids', property: 'stylesheet'
     = stylesheet_link_tag  'application', property: 'stylesheet'

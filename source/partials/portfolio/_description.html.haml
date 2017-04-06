@@ -1,35 +1,33 @@
-.pure-u-1
-  - project.about.each do |about|
-    %p.pure-u-1
-      #{about}
-%br
-%br
-.pure-u-1
+- project.about.each do |about|
+  %p
+    #{about}
+
+%div
   .bold.inline Role:
   .inline #{project.role}
-.pure-u-1
+%div
   .bold.inline Responsibilities:
   .inline #{project.responsibilities}
-.pure-u-1
+%div
   .bold.inline Languages:
   .inline #{project.languages}
-.pure-u-1
+%div
   .bold.inline Frameworks/Libs:
   .inline #{project.libs}
 - if project.testing
-  .pure-u-1
+  %div
     .bold.inline Testing Frameworks:
     .inline #{project.testing}
 - if project.other
-  .pure-u-1
+  %div
     .bold.inline Other technologies:
     .inline #{project.other}
-.pure-u-1
+%div
   .bold.inline Status:
   .inline #{project.status.message}
-.pure-u-1
+%div
   - if project.status.urls
     - project.status.urls.each do |url|
       #{url.pre}
-      %a{href: url.link, target: '_blank', rel: nofollow(url.nofollow), title: url.description} #{url.short}
+      %a{ href: url.link, target: '_blank', rel: nofollow(url.nofollow), title: url.description } #{url.short}
       %br

@@ -1,0 +1,47 @@
+title: "rrott.com - current website-portfolio"
+by:
+  name: "Roman Rott"
+  url: "https://rrott.com"
+tags:
+  - "Ruby"
+  - "MiddleMan"
+  - "CoffeeScript"
+  - "DigitalOcean"
+images:
+  -
+    url: "/images/portfolio/website/rrott-com-main"
+    title: "rrott.com - web developer portfolio and blog about web application security"
+  -
+    url: "/images/portfolio/website/rrott-com-about"
+    title: "Roman Rott - full stack developer, security researcher"
+  -
+    url: "/images/portfolio/website/rrott-com-portfolio"
+    title: "Web developer portfolio of Roman Rott"
+about:
+  - "My own website with blog and portfolio. The Website includes basic information about myself, my projects, my contact information and blog post related to web-development and security researches."
+role: "Full-Stack developer. Security researcher"
+responsibilities: "Creating back-end, front-end, design, SEO-optimization, performance optimization, configuring web server."
+languages: "Ruby 2.2, CoffeeScript"
+libs: "MiddleMan - static site generator. This is a JQuery-less website"
+other: "HTML5, Haml, Pure, Nginx, HTTP/2, WebP"
+status:
+  message: "Online"
+  urls:
+    -
+      link:  "/"
+      pre: "Website:"
+      short: "rrott.com"
+      description: "rrott.com - web developer portfolio and blog about ethical hacking"
+      nofollow: false
+    -
+      link:  "/portfolio/"
+      pre: "Portfolio:"
+      short: "/portfolio"
+      description: "Roman Rott's web developer portfolio"
+      nofollow: false
+    -
+      link:  "/blog/"
+      pre: "Blog:"
+      short: "/blog"
+      description: "Blog:"
+      nofollow: false

@@ -1,63 +1,64 @@
-%meta{charset: "UTF-8"}
+%meta{ charset: "UTF-8" }
 %meta(http-equiv="x-ua-compatible" content="ie=edge")
 %meta(http-equiv="cleartype" content="on")
-%meta(http-equiv="Content-Security-Policy" content="default-src 'self'")
-%meta{name: "viewport", content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"}
-%meta{content: 'True', name: 'HandheldFriendly'}
-%meta{content: '320',  name: 'MobileOptimized'}
-%link{rel: "preconnect",  href: "//ssl.google-analytics.com"}
-%link{rel: "subresource", href: "//s7.addthis.com/js/300/addthis_widget.js"}
-%link{rel: "subresource", href: "//rrott.com/fonts/rrott-webfont.woff"}
+-# %meta(http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://127.0.0.1:4567/")
 
-%link{:href => "https://rrott.com/feed.xml", :rel => "alternate", :title => "Rss feed of rrott.com by Roman Rott", :type => "application/rss+xml"}/
+%meta{ name: "viewport", content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" }
+%meta{ content: 'True', name: 'HandheldFriendly' }
+%meta{ content: '320',  name: 'MobileOptimized' }
+%link{ rel: "preconnect",  href: "//ssl.google-analytics.com" }
+%link{ rel: "subresource", href: "//s7.addthis.com/js/300/addthis_widget.js" }
+
+%link{ :href => "https://rrott.com/feed.xml", :rel => "alternate", :title => "RSS feed of rrott.com by Roman Rott", :type => "application/rss+xml" }/
 -# favicons
-%link{rel:"icon", type:"image/png", href: "/favicon-32x32.png", sizes: "32x32"}
-%link{rel:"icon", type:"image/png", href: "/favicon-194x194.png", sizes: "194x194"}
-%link{rel:"icon", type:"image/png", href: "/favicon-96x96.png", sizes: "96x96"}
-%link{rel:"icon", type:"image/png", href: "/android-chrome-192x192.png", sizes: "192x192"}
-%link{rel:"icon", type:"image/png", href: "/favicon-16x16.png", sizes: "16x16"}
-%link{rel:"manifest", href: "/manifest.json"}
-%link{rel:"mask-icon", href: "/safari-pinned-tab.svg"}
--# %link{rel:"amphtml", href: "https://rrott.com/amp"}
-%meta{name: "apple-mobile-web-app-title", content: "rrott.com"}
-%meta{name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"}
-%meta{name: "application-name", content: "rrott.com"}
-%meta{name: "msapplication-TileColor", content: "#1f8dd6"}
-%meta{name: "msapplication-TileImage", content: "/mstile-144x144.png"}
-%meta{name: "msapplication-square150x150logo", content: "/mstile-150x150.png"}
-%meta{name: "theme-color", content: "#ffffff"}
+%link{ rel:"icon", type:"image/png", href: "/favicon-32x32.png", sizes: "32x32" }
+%link{ rel:"icon", type:"image/png", href: "/favicon-194x194.png", sizes: "194x194" }
+%link{ rel:"icon", type:"image/png", href: "/favicon-96x96.png", sizes: "96x96" }
+%link{ rel:"icon", type:"image/png", href: "/android-chrome-192x192.png", sizes: "192x192" }
+%link{ rel:"icon", type:"image/png", href: "/favicon-16x16.png", sizes: "16x16" }
+%link{ rel:"manifest", href: "/manifest.json" }
+%link{ rel:"mask-icon", href: "/safari-pinned-tab.svg" }
+-# %link{ rel:"amphtml", href: "https://rrott.com/amp" }
+%meta{ name: "apple-mobile-web-app-title", content: "rrott.com" }
+%meta{ name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" }
+%meta{ name: "application-name", content: "rrott.com" }
+%meta{ name: "format-detection", content: "telephone=no" }
+%meta{ name: "msapplication-TileColor", content: "#1f8dd6" }
+%meta{ name: "msapplication-TileImage", content: "/mstile-144x144.png" }
+%meta{ name: "msapplication-square150x150logo", content: "/mstile-150x150.png" }
+%meta{ name: "theme-color", content: "#ffffff" }
 
 // Twitter
-%meta{name: 'twitter:card',         content: 'summary'}
-%meta{name: "twitter:site",         content: data.site.twitter_handle}
-%meta{name: 'twitter:title',        content: data.site.title}
-%meta{name: 'twitter:description',  content: data.site.description}
-%meta{name: 'twitter:creator',      content: data.site.twitter_handle}
-%meta{name: 'twitter:image',        content: 'https://rrott.com/images/portfolio/website/rott-org-ua-main-336.jpg'}
+%meta{ name: 'twitter:card',         content: 'summary' }
+%meta{ name: "twitter:site",         content: data.site.twitter_handle }
+%meta{ name: 'twitter:title',        content: data.site.title }
+%meta{ name: 'twitter:description',  content: data.site.description }
+%meta{ name: 'twitter:creator',      content: data.site.twitter_handle }
+
 // Open Graph General (Facebook & Pinterest)
-%meta{property: 'og:url',           content: 'https://rrott.com'}
-%meta{property: 'og:title',         content: data.site.title}
-%meta{property: 'og:description',   content: data.site.description}
-%meta{property: 'og:site_name',     content: data.site.title}
-%meta{property: 'og:image',         content: 'https://rrott.com/images/rrott-ruby-logo.png'}
-%meta{property: 'fb:app_id',        content: '1714618322129281'}
-%meta{property: 'og:type',          content: 'website'}
-%meta{property: "og:locale",        content: "en_US"}
-%meta{property: "article:author",   content: "Roman Rott"}
-%meta{property: "fb:admins",        content: "1440136372"}
+%meta{ property: 'og:url',           content: 'https://rrott.com' }
+%meta{ property: 'og:title',         content: data.site.title }
+%meta{ property: 'og:description',   content: data.site.description }
+%meta{ property: 'og:site_name',     content: data.site.title }
+%meta{ property: 'og:image',         content: 'https://rrott.com/images/rrott-ruby-logo.png' }
+%meta{ property: 'fb:app_id',        content: '1714618322129281' }
+%meta{ property: 'og:type',          content: 'website' }
+%meta{ property: "og:locale",        content: "en_US" }
+%meta{ property: "article:author",   content: "Roman Rott" }
+%meta{ property: "fb:admins",        content: "1440136372" }
 // Google Plus
-%meta{itemprop: 'name',             content: data.site.title}
-%meta{itemprop: 'description',      content: data.site.description}
-%meta{itemprop: 'image',            content: data.site.image}
+%meta{ itemprop: 'name',             content: data.site.title }
+%meta{ itemprop: 'description',      content: data.site.description }
+%meta{ itemprop: 'image',            content: data.site.image }
 
-%meta{content:'Roman Rott', name:'author'}
-%link{href: 'https://plus.google.com/u/0/%2BRomanRott', rel: 'publisher'}
+%meta{ content:'Roman Rott', name:'author' }
+%link{ href: 'https://plus.google.com/u/0/%2BRomanRott', rel: 'publisher' }
 
-%link{type: "text/plain", rel:"author", href: "/humans.txt"}
+%link{ type: "text/plain", rel:"author", href: "/humans.txt" }
 
-%meta{name: 'robots',    content:'index,follow'}
-%meta{name: "subject",   content: data.site.title}
-%meta{name: "rating",    content: "General"}
-%meta{name: "url",       content: "https://rrott.com"}
-%meta{name: "directory", content: "submission"}
-%meta{name: "coverage",  content: "Worldwide"}
+%meta{ name: 'robots',    content:'index,follow' }
+%meta{ name: "subject",   content: data.site.title }
+%meta{ name: "rating",    content: "General" }
+%meta{ name: "url",       content: "https://rrott.com" }
+%meta{ name: "directory", content: "submission" }
+%meta{ name: "coverage",  content: "Worldwide" }

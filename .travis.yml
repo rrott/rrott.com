@@ -1,4 +1,7 @@
-language: rubyrvm: 2.3
+language: ruby
+rvm:
+  - 2.3.1
 install: bundle install
-before_script: bundle exec rspec
-script: bundle exec middleman build
+before_script: rubocop
+script: bundle exec rspec
+sudo: false

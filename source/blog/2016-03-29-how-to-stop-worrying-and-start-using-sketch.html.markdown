@@ -22,12 +22,12 @@ When I started working on my website, I've got an idea about creating a small lo
 ###I leave it up in Ukraine; I love my country,  and know what? I've got an idea that is a simple as that:  
 >**What if I put Ukrainian emblem into the ruby logo?**
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/logo-ideas.png" ></img>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/logo-ideas.png" ></img>
 
 #### And after several days of painting, I finished with the following result:
 
 
-|<img class='pure-img-responsive' title="Ruby-Logo-ukraine", alt="Ruby-Logo-ukraine", src="/images/rrott-ruby-logo-ukraine.svg"/>|<img class='pure-img-responsive' title="Ruby-Logo", alt="Ruby-Logo", src="/images/rrott-ruby-logo.svg"/>|
+|<img class='blog-image' title="Ruby-Logo-ukraine", alt="Ruby-Logo-ukraine", src="/images/rrott-ruby-logo-ukraine.svg"/>|<img class='blog-image' title="Ruby-Logo", alt="Ruby-Logo", src="/images/rrott-ruby-logo.svg"/>|
 |---|---|
 At the moment, my less hated editor was Gimp, so I started working with it but got stuck right away... I spent a day for nothing and have got an ugly not-scalable picture that looked like big red blot =(
 
@@ -36,15 +36,15 @@ I knew about Sketch and tried it a year ago, but it was too simple for its price
 Above is how it looked like:
 
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/sketch-with-grids.png"/>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/sketch-with-grids.png"/>
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/sketch-with-rulles.png"/>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/sketch-with-rulles.png"/>
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/transparent-emblem-of-ukraine.png"/>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/transparent-emblem-of-ukraine.png"/>
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/emblem-of-ukraine.png"/>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/emblem-of-ukraine.png"/>
 
-<img class='pure-img-responsive' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/collored-emblem-of-ukraine.png"/>
+<img class='blog-image' title="Ruby-Logo-Idea", alt="Ruby-Logo-Idea", src="/images/blog/sketch-svg-ruby-logo/collored-emblem-of-ukraine.png"/>
 
 It's smart and simple, is not it?
 

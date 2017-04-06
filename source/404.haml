@@ -3,39 +3,26 @@
 %html
   %head
     %title=data.site.not_found.title
-    %link{href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet'}
+    %link{ href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet' }
     = partial 'partials/meta'
 
-    %meta{name: 'keywords',    content: data.site.not_found.keywords}
-    %meta{name: 'description', content: data.site.not_found.description}
+    %meta{ name: 'keywords',    content: data.site.not_found.keywords }
+    %meta{ name: 'description', content: data.site.not_found.description }
   %body
-    %main
-      %section#contacts.content.is-center
-        %h1 404 Error Page
-        %h2.is-center.content-subhead
+    %main.center
+      %header#error
+        %h1.error-code 404 Error Page
+        %h3.error-message
           The page you are looking for was not found.
-        .is-center
-          %a{href: "/", title: 'Home of rrott.com'} Home
-          |
-          %a{href: "/sitemap/", title: 'Sitemap of rrott.com'} Site Map
-        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-4
-          .pure-img-responsive.logo
-            = partial('images/rrott-ruby-logo.svg').to_s
-        .pure-g.l-box-lrg.ribbon.l-box-lrg
+      %nav
+        %a{ href: "/", title: 'Home of rrott.com' } Home
+        |
+        %a{ href: "/sitemap/", title: 'Sitemap of rrott.com' } Site Map
+      %section.logo
+        = partial('images/rrott-ruby-logo.svg').to_s
+      %hr
+      = partial 'partials/contacts'
+      = partial 'partials/footer', locals: { title: nil }
 
-      %section#contacts.content
-        %header.pure-g
-          %h2.content-subhead.is-center.pure-u-1
-            Contact information
-          .pure-u-1.is-center
-            If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away.
-        = partial 'partials/contacts'
-        %h3.is-center.pure-u-1 Lets build something great!
-
-      %footer.footer.l-box.is-center
-        = partial 'partials/links'
-        %br
-        %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-          SiteMap
-    %link{href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet'}
-    %link{href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet'}
+    %link{ href: "/stylesheets/grids.css", rel: 'stylesheet', property: 'stylesheet' }
+    %link{ href: "/stylesheets/application.css", rel: 'stylesheet', property: 'stylesheet' }

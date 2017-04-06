@@ -1,70 +1,19 @@
-#preview
-  .bold#close X
-  .overlay
-    #prev.icon-left-open
-    .middle
-      %img.large-img.pure-img-responsive#preview-image{alt: "Roman Rott's web projects' screenshots preview", src: "/images/rrott-ruby-logo.svg"}
-      .preview-image-title  Roman Rott's web projects' screenshots preview
-    #next.icon-right-open
-#layout.pure-g
-  %section.sidebar.pure-u-1.pure-u-md-1-4
-    .header.portfolio-left-part
-      %header.brand-title Portfolio
-      %h1.brand-tagline Projects accomplished in 2015 and active in 2016
-      %br
-      %nav.nav
-        %ul.nav-list
-          %li.nav-item
-            %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
-          \/
-          %li.nav-item
-            %a.pure-button{href: "/blog/", title: "Roman Rott's blog"} Blog
-      .pure-img-responsive.logo-small
-        = partial('images/rrott-ruby-logo.svg').to_s
-      .portfolio-contacts
-        %br
-        = partial 'partials/links'
-        %br
-        Open for remote job opportunities
-      %br
-      .portfolio-categories
-        %nav.nav.tag-cloud
-          %ul.nav-list
-            - data.links.portfolio_sections.each do |section|
-              %li
-                %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
-      .share
-        Share:
-        .addthis_sharing_toolbox
-  .content.pure-u-1.pure-u-md-3-4
-    %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %a{href: "https://rrott.com", itemprop: "item", title: 'home page'}
-          %span.breadcrumb_el{itemprop: "name"}Home
-        %meta{itemprop: "position", content: "1"}
-      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %a{href: "/portfolio/", itemprop: "item", title: "Rott's portfolio"}
-          %span.breadcrumb_el{itemprop: "name"}Portfolio
-        %meta{itemprop: "position", content: "2"}
-      %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-        %h2.breadcrumb_el{itemprop: "name"} List of projects
-        %meta{itemprop: "position", content: "3"}
-    %section.projects-table.pure-g
-      %p.pure-u-1.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes CoffeeScript, Backbone.js, Sinatra, SCSS, a bit of Ember, Node.js and some other frameworks/libs.
-      - data.links.portfolio_list.each do |portfolio|
-        .pure-u-1.pure-u-md-1-3
-          %a{href: "#{portfolio.url}", title: portfolio.title }
-            %picture.large-img.pure-img-responsive
-              %source{media: "(max-width: 24em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x"}
-              %source{media: "(max-width: 48em)",  srcset: "#{portfolio.image}-768.jpg  1x, #{portfolio.image}-1024.jpg 2x"}
-              %source{media: "(max-width: 64em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x"}
-              %img.large-img.pure-img-responsive.project-img{:alt => portfolio.title, :title => portfolio.title, :src => "#{portfolio.image}-336.jpg", :srcset => "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", :sizes => "(max-width: 48em) 100vw, 33vw"}/
-            %h3.is_center
+%section.portfolio
+  = partial 'partials/portfolio/menu'
+  %section.portfolio-content.column
+    = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio'}] }
+
+    %section
+      %p.text-block I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
+      .portfolio-images.row.wrap
+        - data.links.portfolio_list.each do |portfolio|
+          %a{ href: "#{portfolio.url}", title: portfolio.title }
+            .center
               = portfolio.name
-    %footer.footer.l-box.is-center
-      = partial 'partials/links'
-      %br
-      Projects accomplished in 2015 and active in 2016
-      %br
-      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-        SiteMap
+            %picture.large-img.responsive
+              %source{ media: "(max-width: 24em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x" }
+              %source{ media: "(max-width: 48em)",  srcset: "#{portfolio.image}-768.jpg  1x, #{portfolio.image}-1024.jpg 2x" }
+              %source{ media: "(max-width: 64em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x" }
+              %img.large-img.responsive.project-img{ :alt => portfolio.title, :title => portfolio.title, :src => "#{portfolio.image}-336.jpg", :srcset => "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", :sizes => "(max-width: 48em) 100vw, 33vw" }/
+
+    = partial 'partials/footer', locals: { title: "Projects accomplished in 2016 and active in 2017" }

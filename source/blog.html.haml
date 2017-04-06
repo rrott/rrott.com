@@ -1,68 +1,41 @@
-#layout.pure-g
-  %section.sidebar.pure-u-1.pure-u-md-1-4
-    .header.portfolio-left-part
-      %header.brand-title Blog
-      %h1.brand-tagline Full-Stack web development and security researches
-      %br
-      %nav.nav
-        %ul.nav-list
-          %li.nav-item
-            %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
-          \/
-          %li.nav-item
-            %a.pure-button{href: "/portfolio/", title: "Roman Rott's Portfolio"} Portfolio
-      .pure-img-responsive.logo-small
-        = partial('images/rrott-ruby-logo.svg').to_s
-      .portfolio-contacts
-        %br
-        = partial 'partials/links'
-        %br
-        Open for remote job opportunities
-      %br
-      .search
-        %form#search{ role: "search" }
-          %input#search-field{type: "search", placeholder: "Ruby", required: "required", autocomplete: "on", results: 5, autosave: "rrott_search", tabindex: 1, spellcheck: true, autocapitalize: "off", autocorrect: "off", autofocus: true, 'x-webkit-speech': true, maxlength: 30 }
-          %input#search-submit{type: "submit", value: "Search", tabindex: 2}
-        %ul#results
-      .share
-        Share:
-        .addthis_sharing_toolbox
+%section.portfolio
+  = partial 'partials/blog/menu'
+  %section.portfolio-content.column
+    = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Blog', url: '/blog/'}, {title: "List of blog posts"}] }
 
-  .content.pure-u-1.pure-u-md-3-4
-    %article
-      %section
-        %h1.is-center.content-subhead
-          Blog about Full-Stack development and security researches.
-      %section
-        %p
-          Hello, my name is <strong>Roman Rott</strong> and I am a <strong>Ruby/JS developer</strong> with 10+ years of IT experience and about 4 years experience dedicated to web development and security auditing of web applications. I consider myself a <strong>Full-Stack developer</strong>, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes CoffeeScript, Backbone.js, a bit of Ember, Node,js and some other frameworks/libs. I like testing websites against security vulnerabilities and getting a lot of fun refactoring and optimizing existing apps/libs/sites.
-        %p
-          Before starting coding on Ruby to become a web developer, I worked on various positions in the Tech Support department of a US hosting company and all the knowledge and experience I got in tech support allowed me to easily switch into this cool sphere.
-        %div
-          In this blog I will cover 2 related spheres: <strong>Web development</strong> and <strong>Security researching</strong>, pin-testing, and everythin around it. I hope it will be useful and probably help people to solve their problems.
+    %article.justify-between
+      .text-block
+        %section
+          %h1.center
+            Blog about Full-Stack development and security researches.
+        %section
+          %p
+            Hello, my name is <strong>Roman Rott</strong> and I am a <strong>Ruby/JS developer</strong> with 10+ years of IT experience and about 5 years experience dedicated to web development and security auditing of web applications. I consider myself a <strong>Full-Stack developer</strong>, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, ES6, a bit of Node,js and some other frameworks/libs. I like testing websites against security vulnerabilities and getting a lot of fun refactoring and optimizing existing apps/libs/sites.
+          %p
+            In this blog I will cover 2 related spheres: <strong>Web development</strong> and <strong>Security researching</strong>, pin-testing, and everythin around it. I hope it will be useful and probably help people to solve their problems.
       %hr
-      %ul
-        - blog.articles.group_by {|a| a.date }.each do |date, articles|
-          %li
-            %strong= date.strftime('%b %e %Y')
-            %ul
-              - articles.each do |article|
-                %li
-                  %a{:href => article.url}= article.title
-            %br
-    -# %ul
-    -#   - blog.tags.each do |tag, articles|
-    -#     %li
-    -#       %h5= tag
-    -#       %ul
-    -#         - articles.each do |article|
-    -#           %li
-    -#             %a{:href => article.url}= article.title
-    -# %ul
-    -#   - blog.articles.each do |article|
-    -#     %article
-    -#       = article.summary
-    -#       %time{datetime: article.date} #{ article.date.strftime('%b %e %Y')}
-    -#       %br
-    -#       %br
-    -#       %a{:href => article.url} Read more...
+      %h3.center Cast
+      .blog-list
+        %ul
+          - blog.articles.each do |article|
+            %li
+              %a{ :href => article.url }= article.title
+
+      = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
+      -# %ul
+      -#   - blog.tags.each do |tag, articles|
+      -#     %li
+      -#       %h5= tag
+      -#       %ul
+      -#         - articles.each do |article|
+      -#           %li
+      -#             %a{:href => article.url}= article.title
+      -# %ul
+      -#   - blog.articles.each do |article|
+      -#     %article
+      -#       = article.summary
+      -#       %time{datetime: article.date} #{ article.date.strftime('%b %e %Y')}
+      -#       %br
+      -#       %br
+      -#       %a{:href => article.url} Read more...
+      -# = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }

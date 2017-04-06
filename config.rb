@@ -2,9 +2,9 @@ require "middleman-smusher"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
-
 set :url_root, 'https://rrott.com'
 
+activate :es6
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -115,6 +115,7 @@ end
 configure :development do
   set :debug_assets, true
 
+  activate :livereload
   activate :disqus do |d|
     d.shortname = nil
   end

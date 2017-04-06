@@ -1,18 +1,16 @@
 - image=  project.images.first
-%a{href: "#{image.url}.png", title: image.title }
-  %picture.large-img.pure-img-responsive{'data-index': 0}
-    %source{media: "(max-width: 24em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
-    %source{media: "(max-width: 48em)",  srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
-    %source{media: "(max-width: 64em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x"}
-    %source{media: "(max-width: 112em)", srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x"}
-    %source{media: "(min-width: 112em)", srcset: "#{image.url}-1024.jpg 1x, #{image.url}-2048.jpg 2x"}
-    %img.large-img.pure-img-responsive.project-img{'data-index': 0, alt: image.title, title: image.title, src: "#{image.url}-336.jpg", srcset: "#{image.url}-336.jpg 336w, #{image.url}-768.jpg 768w, #{image.url}-1024.jpg 1024w, #{image.url}-2048.jpg 2048w ", sizes: "(max-width: 48em) 100vw, 33vw"}/
+%a{ href: "#{image.url}.png", title: image.title }
+  %picture.large-img.-responsive{ 'data-index': 0 }
+    %source{ media: "(max-width: 24em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x" }
+    %source{ media: "(max-width: 48em)",  srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x" }
+    %source{ media: "(max-width: 64em)",  srcset: "#{image.url}-336.jpg  1x, #{image.url}-768.jpg 2x" }
+    %source{ media: "(max-width: 112em)", srcset: "#{image.url}-768.jpg  1x, #{image.url}-1024.jpg 2x" }
+    %source{ media: "(min-width: 112em)", srcset: "#{image.url}-1024.jpg 1x, #{image.url}-2048.jpg 2x" }
+    %img.large-img.responsive.project-img{ 'data-index': 0, alt: image.title, title: image.title, src: "#{image.url}-336.jpg", srcset: "#{image.url}-336.jpg 336w, #{image.url}-768.jpg 768w, #{image.url}-1024.jpg 1024w, #{image.url}-2048.jpg 2048w ", sizes: "(max-width: 48em) 100vw, 33vw" }/
+.center.thumbs.wrap.justify-center
+  - project.images.each_with_index do |img, index|
+    %a.thumb{ href: "#{img.url}.png", title: img.title }
+      %img{ src: "#{img.url}-thumb.jpg", title: img.title, alt: "Screenshot of #{img.title}", 'data-index': index }/
 - if project.info
   .post-image-meta
-    %br
     #{project.info}
-.pure-g.is-center.thumbs
-  - project.images.each_with_index do |img, index|
-    .pure-u-3
-      %a.thumb{href: "#{img.url}.png", title: img.title}
-        %img{src: "#{img.url}-thumb.jpg", title: img.title, alt: "Screenshot of #{img.title}", 'data-index': index}/

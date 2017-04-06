@@ -1,68 +1,16 @@
-#preview
-  .bold#close X
-  .overlay
-    #prev.icon-left-open
-    .middle
-      %img.large-img.pure-img-responsive#preview-image{alt: "Roman Rott's web projects' screenshots preview", src: "/images/rrott-ruby-logo.svg"}
-      .preview-image-title  Roman Rott's web projects' screenshots preview
-      #spinner Loading...
-    #next.icon-right-open
-#layout.pure-g
-  %section.sidebar.pure-u-1.pure-u-md-1-4
-    .header.portfolio-left-part
-      %header.brand-title Portfolio
-      %h1.brand-tagline #{type} Projects accomplished in 2015 and active in 2016
-      %br
-      %nav.nav
-        %ul.nav-list
-          %li.nav-item
-            %a.pure-button{href: "/", title: "Roman Rott's home page"} Home
-          \/
-          %li.nav-item
-            %a.pure-button{href: "/blog/", title: "Roman Rott's blog"} Blog
-      .pure-img-responsive.logo-small
-        = partial('images/rrott-ruby-logo.svg').to_s
-      .portfolio-contacts
-        %br
-        = partial 'partials/links'
-        %br
-        Open for remote job opportunities
-      %br
-      .portfolio-categories
-        %nav.nav.tag-cloud
-          %ul.nav-list
-            - data.links.portfolio_sections.each do |section|
-              %li
-                %a{href: section.url, title: "#{section.name} projects by Roman Rott"} #{section.name}
-      .share
-        Share:
-        .addthis_sharing_toolbox
+= partial 'partials/portfolio/image_preview'
+%section.portfolio
+  = partial 'partials/portfolio/menu'
+  %section.portfolio-content.column
+    = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio', url: '/portfolio/'}, {title: type }] }
 
-
-  .content.pure-u-1.pure-u-md-3-4
-    - unless multipart
-      %ol.breadcrumb{itemscope: true, itemtype: "http://schema.org/BreadcrumbList"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %a{:href => "https://rrott.com", itemprop: "item", title: 'home page'}
-            %span.breadcrumb_el{itemprop: "name"}Home
-          %meta{itemprop: "position", content: "1"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %a{:href => "/portfolio/", itemprop: "item", title: "Rott's portfolio"}
-            %span.breadcrumb_el{itemprop: "name"}Portfolio
-          %meta{itemprop: "position", content: "2"}
-        %li{itemprop: "itemListElement", itemscope: true, itemtype: "http://schema.org/ListItem"}
-          %h2.breadcrumb_el{itemprop: "name"} #{type}
-          %meta{itemprop: "position", content: "3"}
-    %section.pure-g
-      %p.pure-u-1.post-description
-        = message
-    %div
+    - if message
+      %section.portfolio-block
+        %p
+          = message
+    .portfolio-block
       - all_projects.each do |sections|
-        = partial 'partials/portfolio/section', locals: { projects: sections, multipart: multipart}
-    %footer.footer.l-box.is-center
-      = partial 'partials/links'
-      %br
-      #{type} Projects accomplished in 2015 and active in 2016
-      %br
-      %a{href: "/sitemap/", title: 'Sitemap of rrott.com'}
-        SiteMap
+        = partial 'partials/portfolio/section', locals: { projects: sections, multipart: multipart }
+
+    = partial 'partials/footer', locals: { title: "#{ type } Projects accomplished in 2016 and active in 2017" }
+
