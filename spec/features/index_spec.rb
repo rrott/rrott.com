@@ -98,7 +98,6 @@ describe 'index', type: :feature do
           text: "I like to test websites for security vulnerabilities (both white-box and black-box) at BugCrowd and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc")
       end
 
-
       it 'displays link to bugcrowd' do
         expect(page).to have_selector('.infosec-text a[href="https://bugcrowd.com/rrott"]', text: 'BugCrowd')
       end
@@ -187,7 +186,6 @@ describe 'index', type: :feature do
     end
 
     context 'Contributed to' do
-
       it 'displays link to gitlab-ce' do
         expect(page).to have_selector('a[href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658"]', text: 'gitlab-org/gitlab-ce')
       end

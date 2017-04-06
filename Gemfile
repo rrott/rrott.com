@@ -2,37 +2,39 @@ source 'https://rubygems.org'
 ruby "2.3.1"
 # ruby "2.3.1"
 
-gem "middleman"
-gem 'rake'
 gem 'builder'
-gem "middleman-blog"
-gem 'middleman-webp'
-gem 'middleman-imageoptim'
-gem 'middleman-autoprefixer'
-gem 'middleman-smusher'
-gem 'middleman-blog-similar'
-gem "redcarpet"
 gem 'kramdown'
-gem "sitemap_generator"
-gem 'middleman-minify-html'
+
+gem "middleman"
+gem 'middleman-autoprefixer'
+gem "middleman-blog"
+gem 'middleman-blog-similar'
 gem "middleman-disqus"
-gem "middleman-syntax"
-gem 'middleman-search'
-gem 'middleman-meta-tags'
-gem 'middleman-robots'
-gem 'middleman-livereload'
 gem "middleman-es6", github: "vast/middleman-es6"
+gem 'middleman-imageoptim'
+gem 'middleman-livereload'
+gem 'middleman-meta-tags'
+gem 'middleman-minify-html'
+gem 'middleman-robots'
+gem 'middleman-search'
+gem 'middleman-smusher'
+gem "middleman-syntax"
+gem 'middleman-webp'
+
+gem 'rake'
+gem "redcarpet"
+gem "sitemap_generator"
 
 group :development, :test do
-  gem 'pry'
-  gem 'middleman-pry'
   gem 'capistrano', '~> 3.4'
-  gem 'capistrano-deploy'
   gem 'capistrano-bundler'
-  gem 'rvm1-capistrano3', require: false
-  gem 'middleman-build-info'
-  gem 'rspec'
+  gem 'capistrano-deploy'
   gem 'capybara'
-  gem 'rubocop', require: false
+  gem 'middleman-build-info'
+  gem 'middleman-pry'
   gem 'overcommit', require: false
+  gem 'pry'
+  gem 'rspec'
+  gem 'rubocop', require: false
+  gem 'rvm1-capistrano3', require: false
 end

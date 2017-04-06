@@ -1,11 +1,15 @@
 ---
 AllCops:
+  DisplayCopNames: true
   Exclude:
   - 'config/**/*'
 
 Metrics/CyclomaticComplexity:
   Severity: refactor
   Max: 8
+
+Metrics/BlockLength:
+  Enabled: false
 
 Metrics/LineLength:
   Max: 100
@@ -33,7 +37,7 @@ Lint/Void:
   Exclude: ['**/*_spec.rb']
 
 Lint/EndAlignment:
-  AlignWith: variable
+  EnforcedStyleAlignWith: variable
 
 Lint/UselessAssignment:
   Severity: error
@@ -88,7 +92,7 @@ Style/SingleLineBlockParams:
   Enabled: false
 
 Style/CaseIndentation:
-  IndentWhenRelativeTo: end
+  EnforcedStyle: end
 
 Style/PredicateName:
   Severity: refactor
