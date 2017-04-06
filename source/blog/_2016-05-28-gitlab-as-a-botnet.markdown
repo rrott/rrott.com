@@ -1,12 +1,11 @@
 ---
 title: GitLab As A Botnet Service
 short: GitLab as a botnet service
-date:  2016-05-28 07:52 UTC
-tags:  security, GitLab, bot, botnet, telegram
+date: 2016-05-28 07:52 UTC
+tags: security, GitLab, bot, botnet, telegram
 category: security
 ---
 # GitLab As A botnet Service
-
 
 >
 ## Disclaimer:
@@ -19,7 +18,7 @@ I am writing this just to show how awesome [GitLab](https://gitlab.com) is and h
 I am not going to provide you step-by-step instruction on how to create botnets in this article: first of all if you are skilled enough to write your own botnet you do not need it; if you are not - google.
 
 ## The "botnet"
-You may probably miss recent updates in GitLab world, but [they partner with DigitalOcean](https://about.gitlab.com/2016/04/19/gitlab-partners-with-digitalocean-to-make-continuous-integration-faster-safer-and-more-affordable/) to make their Continuous Integration better. It is really cool and I prefer using GitLab's CI instead of Jenkins. The cool feature of it is that you may run any server build from docker image using their own servers. 
+You may probably miss recent updates in GitLab world, but [they partner with DigitalOcean](https://about.gitlab.com/2016/04/19/gitlab-partners-with-digitalocean-to-make-continuous-integration-faster-safer-and-more-affordable/) to make their Continuous Integration better. It is really cool and I prefer using GitLab's CI instead of Jenkins. The cool feature of it is that you may run any server build from docker image using their own servers.
 
 ### 1. Prepare CI
 Let's prepare our server. For this, we need to create a new `.gitlab-ci.yml` file and put it in the root of your project. e.g.:
@@ -111,11 +110,10 @@ end
 
 [Here](https://gitlab.com/rrott/gitlab-botnet) you can find the sources.
 
-**[Telegram](https://telegram.org/)** is a cloud-based instant messaging service with end-to-end encrypted messaging and easy to use bots integration. 
+**[Telegram](https://telegram.org/)** is a cloud-based instant messaging service with end-to-end encrypted messaging and easy to use bots integration.
 In above example, I use capybara to open `whatismyip.com` website, parse the answer and send a message to my own Telegram channel. This channel can be a point for several bots to talk each other and perform all the actions.
 
 ### 3. Results
-
 
 ### 4. Scenarios
 #### Scenario #1
@@ -168,7 +166,7 @@ Does it mean that GitLab doesn't care about security?
 
 - No, they do. They release patches and new security updates regularly and you may follow this [article](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/security/index.md) to find more info on how to protect your runners.
 
-I am not a hacker, I am a developer, so what I need all this information for? 
+I am not a hacker, I am a developer, so what I need all this information for?
 
 ## Read more about GitLab
 - [GitLab Continuous Integration](https://about.gitlab.com/gitlab-ci/)

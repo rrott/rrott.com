@@ -1,15 +1,15 @@
 .highlight {
+  background: #272822;
   border: .2em solid #272822;
   border-radius: .4em;
-  background: #272822;
 }
 
 
-.highlight .gl pre{color:#dcdccc; letter-spacing: 0.15em; border-right: 2px solid #dcdccc;}
-.highlight code, .highlight pre{color:#fdce93;background-color:#272822}
+.highlight .gl pre{border-right: 2px solid #dcdccc; color:#dcdccc; letter-spacing: 0.15em;}
+.highlight code, .highlight pre{background-color:#272822; color:#fdce93;}
 .highlight .hll{background-color:#222}
 .highlight .c{color:#7f9f7f}
-.highlight .err{color:#e37170;background-color:#3d3535}
+.highlight .err{background-color:#3d3535; color:#e37170;}
 .highlight .g{color:#7f9f7f}
 .highlight .k{color:#f0dfaf}
 .highlight .l{color:#ccc}

@@ -6,4 +6,3 @@ tags: performane, optimisation, speed
 category: SVG
 
 ---
-

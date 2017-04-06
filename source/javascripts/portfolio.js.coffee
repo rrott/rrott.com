@@ -32,7 +32,8 @@ class Portfolio
 
   _triggerEvent: (e) ->
     e.preventDefault()
-    @images.current_image_id = parseInt window.Helpers.getTarget(e).getAttribute('data-index')
+    index = window.Helpers.getTarget(e).getAttribute('data-index')
+    @images.current_image_id = parseInt(index)
     #TODO: refactor to not use ImagePreview
     ImagePreview.setImagesArray @images
     ImagePreview.changePreviewImage()

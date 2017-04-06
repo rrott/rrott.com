@@ -2,7 +2,7 @@
 AllCops:
   DisplayCopNames: true
   Exclude:
-  - 'config/**/*'
+    - 'config/**/*'
 
 Metrics/CyclomaticComplexity:
   Severity: refactor
@@ -15,7 +15,7 @@ Metrics/LineLength:
   Max: 100
   Severity: convention
   Exclude:
-  - 'spec/**/*'
+    - 'spec/**/*'
 
 Metrics/ClassLength:
   Max: 150

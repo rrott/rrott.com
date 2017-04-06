@@ -15,6 +15,6 @@ class Helpers
     target
 
   openLink: (url) ->
-    window.location.href = url;
+    window.location.href = url
 
 window.Helpers = new Helpers()

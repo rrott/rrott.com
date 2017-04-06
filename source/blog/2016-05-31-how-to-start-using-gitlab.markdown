@@ -1,8 +1,8 @@
 ---
 title: How to start using GitLab
 short: How to start using GitLab
-date:  2016-05-31 17:40 UTC
-tags:  git, gitlab, github, repo
+date: 2016-05-31 17:40 UTC
+tags: git, gitlab, github, repo
 category: git
 ---
 # How to start using GitLab as your additional Git remote server.
@@ -40,7 +40,6 @@ It means that your git client will fetch all the data from GitHub while pushes w
 
 If you want to set GitLab as the default one follow these steps, for example:
 
-
 1. delete origin:
 
     ```bash
@@ -64,7 +63,6 @@ If you want to set GitLab as the default one follow these steps, for example:
     $ git remote set-url --add origin  git@github.com:rrott/rrott.com.git
     ```
 
-
 And here is the result:
 
 ```bash
@@ -75,7 +73,6 @@ origin  git@github.com:rrott/rrott.com.git (push)
 ```
 
 ---
-
 
 <img class='blog-image' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
 <img class='blog-image' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>

@@ -1,6 +1,6 @@
 ---
 title: Rails 5 API with ActiveAdmin integration
-short: 
+short:
 date: 2016-02-28 15:44 UTC
 tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api, RoR, ror
 category: RoR
@@ -9,10 +9,9 @@ category: RoR
 
 #Setting Up Rails 5 API Only App with ActiveAdmin enabled
 
+A new version of [Rails 5.0 beta 3](http://weblog.rubyonrails.org/2016/2/27/Rails-5-0-beta3/) has been released several days ago, the RC1 version is to be shipped on March 1 and the final on March 16 and it means that we can start playing with it right now! Yay!!
 
-A new version of [Rails 5.0 beta 3](http://weblog.rubyonrails.org/2016/2/27/Rails-5-0-beta3/) has been released several days ago, the RC1 version is to be shipped on March 1 and the final on March 16 and it means that we can start playing with it right now! Yay!! 
-
-As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means that we can create beautiful API services using rails without any doubt =) 
+As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means that we can create beautiful API services using rails without any doubt =)
 
 **If you missed the announcement on what’s new in Rails 5, checkout the [rails 5.0.0 anounce](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/)**
 >Rails is ... a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We’ve made this even clearer now with the new –api mode. If you create a new Rails application using rails new backend --api, you’ll get a slimmed down skeleton and configuration that assumes you’ll be working with JSON, not HTML.
@@ -30,7 +29,7 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
            ruby-2.1.7 [ x86_64 ]
         *  ruby-2.2.4 [ x86_64 ]
         => ruby-2.3.0 [ x86_64 ]
-    
+
         # => - current
         # =* - current && default
         #  * - default
@@ -39,9 +38,9 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
 
     ```bash
       $ git clone git@github.com:rails/rails.git
-    ```  
+    ```
 
-3. Go into the newly cloned rails dir, and run the `bundle` command. 
+3. Go into the newly cloned rails dir, and run the `bundle` command.
 
     ```bash
       $ bundle install
@@ -52,7 +51,7 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
     ```bash
       $ bundle exec railties/exe/rails new ../new_api_app --api --edge
     ```
-  
+
     > I am running this command from the directory  where cloned version of rails is located. It means I have to put an additional param with the directory name started from `../` to put the newly generated application into a place above current wd. `../new_api_app` in this case.
 
 5. The next step is to cd into directory of your new rails API application and run `bundle` and `rake db:setup` to install all the necessary gems and setup the database:
@@ -66,7 +65,7 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
 
     Now we have a new tiny-tyne API only Rails application without tons of Front-end related stuff that is useless in case of API apps.
 
-6. The very next step would be: installing and setting up `RSpec`, adding tests, scaffolding resources, etc, etc, but this part is out of my theme. 
+6. The very next step would be: installing and setting up `RSpec`, adding tests, scaffolding resources, etc, etc, but this part is out of my theme.
 > You have probably noted that when an app is created with the `--api` flag, generator did not create views but only api-related resources were created, e.g.:
 
     ```bash
@@ -91,8 +90,6 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
           invoke      rspec
           create        spec/requests/users_spec.rb
     ```
-
-
 
 ---
 ## Adding ActiveAdmin to Rails 5 API app
@@ -192,6 +189,6 @@ Let's do it!
     **User:** admin@example.com
     **Password:** password
 
-  <img class='blog-image' title="Image of Rails 5 API application with ActiveAdmin enabled", alt="Image of Rails 5 API application with ActiveAdmin enabled", src="/images/blog/rails5-api-active-admin/active-admin-with-rails5.png"/> 
+  <img class='blog-image' title="Image of Rails 5 API application with ActiveAdmin enabled", alt="Image of Rails 5 API application with ActiveAdmin enabled", src="/images/blog/rails5-api-active-admin/active-admin-with-rails5.png"/>
 That's it. =)
 > Don't forget to isolate your admin page to protect it from attacks. You can, for example, filter out access to it so it is available from your internal IP address only.

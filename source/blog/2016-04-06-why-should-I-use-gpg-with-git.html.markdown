@@ -1,8 +1,8 @@
 ---
 title: Why should I use git with GPG?
 short: Why should I use git with GPG?
-date:  2016-04-06 10:49 UTC
-tags:  git, gpg, security, github
+date: 2016-04-06 10:49 UTC
+tags: git, gpg, security, github
 category: security
 ---
 # Why should I use git with GPG?
@@ -11,11 +11,11 @@ You probably missed this recent news from [GitHub](https://github.com/blog/2144-
 ## What's it about?
 ### In short:
 
-For example, one can scam his investors showing them that [Aaron Paterson](https://github.com/tenderlove) is one of the collaborators in the project and that's why they have to give more money =) 
+For example, one can scam his investors showing them that [Aaron Paterson](https://github.com/tenderlove) is one of the collaborators in the project and that's why they have to give more money =)
 
 Yes, it's just a funny example, but... you know.
 
-<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png"/> 
+<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png"/>
 
 ## A bit about GPG in Git and GitHub
 >When you're building software with people from around the world, sometimes it's important to validate that commits and tags are coming from an identified source. Git supports signing commits and tags with GPG and starting today GitHub will show you when commits and tags are signed.
@@ -27,11 +27,9 @@ Git is cryptographically secure, but it’s not foolproof. If you’re taking wo
 
 >[source](https://git-scm.com/book/uz/v2/Git-Tools-Signing-Your-Work)
 
-
 ## Proof of Concept
 
 You can set user name and email for any your repo using simple `git config` command and you can take any:
-
 
 ```bash
 $ git config user.name "Aaron Patterson"
@@ -55,7 +53,7 @@ To git@github.com:rrott/gpg_test.git
 
 And here is the result in GitHub:
 
-<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/> 
+<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/>
 
 Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank" rel="noopener noreferrer">rrott/gpg_test</a>
 
@@ -90,7 +88,7 @@ $ git commit -S -am "Committed with GPG"
 
  That's it:
 
-<img class='blog-image' title="Commit in GitHub signed by gpg", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/> 
+<img class='blog-image' title="Commit in GitHub signed by gpg", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/>
 
 ---
 ## How to set up git to use GPG with every commit
@@ -101,7 +99,7 @@ Just run 2 simple commands:
 $ git config --global user.signingkey key-name
 $ git config --global commit.gpgsign true
 ```
-where `key-name` - is the name of your GPG key. 
+where `key-name` - is the name of your GPG key.
 It's `roman.rott@gmail.com` in my case.
 
 Here is my <a href="https://keybase.io/rrott" target="_blank" rel="noopener noreferrer">GPG key</a> to contact me securelly ;)

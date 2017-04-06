@@ -4,7 +4,7 @@ short: Deploying middleman driven website using capistrano
 date:  2016-04-04 20:17 UTC
 tags:  capistrano, middleman, cap, deploy, devops
 category: devops
---- 
+---
 
 Step 1: add capistrano to your project following their official manuel:
 https://github.com/capistrano/capistrano

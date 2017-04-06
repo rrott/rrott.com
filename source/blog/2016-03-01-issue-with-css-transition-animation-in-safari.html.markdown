@@ -13,7 +13,6 @@ Recently I've been working on an interesting issue in [GitLab Community Edition
 
 ##The issue
 
-
 Assume we have SVG image inlined into a page where the following SCSS animates `.tanuki-shape` SVG on hover:
 
 ```scss
@@ -44,7 +43,6 @@ But Safari doesn't seem to respect the transition property, and we get no fade:
 > 3 using inline SVG.
 >
 > The only way to have CSS animation in SVG is inlining images into a page and I am describing this particular case.
-
 
 ---
 ##Investigation
@@ -100,4 +98,3 @@ Where `#logo` is a new div that has our `.tanuki-shape` SVG image inside.
 | SVG image in Safari before | and after the change |
 |:--------------------------:|:--------------------:|
 | <img class='blog-image' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_before_change.gif"/> | <img class='blog-image' title="SVG animation in Safari before chages", alt="SVG animation in Safari before chages", src="/images/blog/safari-svg-animation/logo_after_change.gif"/> |
-
