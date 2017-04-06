@@ -22,7 +22,7 @@ describe 'index', type: :feature do
     context 'who I am' do
       it 'displays who I am' do
         expect(page).to have_selector('div',
-          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5 years experience dedicated to web development and security audit of web applications.")
+          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5+ years experience dedicated to web development and security audit of web applications.")
       end
 
       it 'displays specialization' do
@@ -59,7 +59,12 @@ describe 'index', type: :feature do
 
     it 'displays my expirience in dev' do
       expect(page).to have_selector('div',
-        text: "During the last 5 years, I have been developing, supporting and maintaining web-projects for an US hosting company, consulting and finantial companies. Ecoommerce.com is the hosting company services high-level world-wide shared and cloud hosting products to its customers. There I grew up as a web-developer, as a manager, and as a person. Sphere inc is a consulting company, where I've got extended expirience in React and Redux.")
+        text: "Over the 9 years I was working on a various positions and different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.")
+    end
+
+    it 'displays my expirience in Sphere' do
+      expect(page).to have_selector('div p',
+        text: "Now I am an Engineer at Sphere Software, a consulting company, where I've got extended expirience in React, Redux and ES6.")
     end
 
     it 'displays my expirience in secure web dev' do
@@ -69,16 +74,16 @@ describe 'index', type: :feature do
 
     it 'displays languages' do
       expect(page).to have_selector('div p',
-        text: "All of these sites were developed using Ruby, CoffeeScript, JavaScript(EcmaScript), React, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
+        text: "All of these sites were developed using Ruby, CoffeeScript, JavaScript, ES6, React, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
     end
 
     it 'displays portfolio message' do
       expect(page).to have_selector('div p',
-        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished in 2015-2016.")
+        text: "My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished during last 2 years.")
     end
 
     it 'displays link to Portfolio' do
-      expect(page).to have_selector('h3 a[href="/portfolio/"]', text: 'Check out my portfolio')
+      expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'Check out my portfolio')
     end
   end
 
@@ -107,7 +112,7 @@ describe 'index', type: :feature do
 
       context 'UISGCon 11(2015)' do
         it 'displays link to UISGCon 11(2015)' do
-          expect(page).to have_selector('ul li.link a[href="https://uisgcon.org/en/about-uisgcon"]', text: 'UISGCon #10, #11, #12 (2014-2016) -')
+          expect(page).to have_selector('ul li.link a[href="https://uisgcon.org/en/about-uisgcon"]', text: 'UISGCon #10, #11, #12 (2014-2016)')
         end
 
         it 'displays info about UISGCon 11(2015)' do
@@ -147,7 +152,7 @@ describe 'index', type: :feature do
 
   context 'Community developmetn' do
     it 'displays Community development section' do
-      expect(page).to have_selector('h2', text: "Community development")
+      expect(page).to have_selector('h2', text: "Community Development")
     end
 
     it 'displays Open Source logo' do
@@ -155,26 +160,26 @@ describe 'index', type: :feature do
     end
 
     context 'OSS projects' do
-      it 'displays my oss' do
+      xit 'displays my oss' do
         expect(page).to have_selector('h5', text: "I have my own open source projects:")
       end
 
       context 'Grunt Coffee Chain' do
-        it 'displays link to Grunt Coffee Chain' do
+        xit 'displays link to Grunt Coffee Chain' do
           expect(page).to have_selector('ul li.link a[href="/portfolio/oss/"]', text: '«Grunt Coffee Chain» -')
         end
 
-        it 'displays what it is' do
+        xit 'displays what it is' do
           expect(page).to have_selector('ul li.link',
             text: "«Grunt Coffee Chain» - grunt plugin inspired by Sprockets to compile CoffeeScripts that has sprockets-style comments to indicate dependencies.")
         end
       end
 
       context '«Asana God Contact»' do
-        it 'displays link to «Asana God Contact»' do
+        xit 'displays link to «Asana God Contact»' do
           expect(page).to have_selector('ul li.link a[href="/portfolio/oss/"]', text: '«Asana God Contact» -')
         end
-        it 'displays what it is' do
+        xit 'displays what it is' do
           expect(page).to have_selector('ul li.link',
             text: "«Asana God Contact» - A God::Contacts class for sending notifications to Asana. God is an monitoring framework written in Ruby.")
         end
@@ -184,41 +189,54 @@ describe 'index', type: :feature do
     context 'Contributed to' do
 
       it 'displays link to gitlab-ce' do
-        expect(page).to have_selector('ul li.link a[href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658"]', text: 'gitlab-org/gitlab-ce')
+        expect(page).to have_selector('a[href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658"]', text: 'gitlab-org/gitlab-ce')
       end
 
       it 'displays link to floere/phony' do
-        expect(page).to have_selector('ul li.link a[href="https://github.com/floere/phony/pull/180"]', text: 'floere/phony')
+        expect(page).to have_selector('a[href="https://github.com/floere/phony/pull/180"]', text: 'floere/phony')
       end
 
       it 'displays link to site_prism.vcr' do
-        expect(page).to have_selector('ul li.link a[href="https://github.com/dnesteryuk/site_prism.vcr/pull/3"]', text: 'dnesteryuk/site_prism.vcr')
+        expect(page).to have_selector('a[href="https://github.com/dnesteryuk/site_prism.vcr/pull/3"]', text: 'dnesteryuk/site_prism.vcr')
       end
     end
 
     context 'Developed local community' do
-      it 'displays ' do
-        expect(page).to have_selector('h5',
-          text: "Developing local community:")
-      end
-
       context 'Hackathon' do
-        it 'displays ' do
-          expect(page).to have_selector('ul li.link',
-            text: "Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first")
+        it 'displays local comunity' do
+          expect(page).to have_selector('h5',
+            text: "Developing local community:")
         end
 
-        it 'displays link to «Asana God Contact»' do
-          expect(page).to have_selector('ul li.link a[href="https://en.wikipedia.org/wiki/Hackathon"]', text: 'Hackathon')
+        context 'Hackathon' do
+          it 'displays Hackathon' do
+            expect(page).to have_selector('ul li.link',
+              text: "Partnered with 4 friends of mine to plan and execute several frontend Meetups and the very first")
+          end
+
+          it 'displays link to Hackathon' do
+            expect(page).to have_selector('ul li.link a[href="https://en.wikipedia.org/wiki/Hackathon"]', text: 'Hackathon')
+          end
+
+          it 'displays zp' do
+            expect(page).to have_selector('ul li.link',
+              text: "in Zaporizhzhya city")
+          end
+
+          it 'displays link to info about the Hackathon' do
+            expect(page).to have_selector('ul li.link a[href="http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785"]', text: '«24Hack»')
+          end
         end
 
-        it 'displays ' do
-          expect(page).to have_selector('ul li.link',
-            text: "in Zaporizhzhya city -")
-        end
+        context 'Ruby Meditation' do
+          it 'displays Ruby Meditation' do
+            expect(page).to have_selector('ul li.link',
+              text: "Had a talk on the")
+          end
 
-        it 'displays link to «Asana God Contact»' do
-          expect(page).to have_selector('ul li.link a[href="http://www.vr-online.ru/blog/24hack-khakaton-v-zaporozhe-8785"]', text: '«24Hack»')
+          it 'displays link to Ruby Meditation' do
+            expect(page).to have_selector('ul li.link a[href="https://www.facebook.com/RubyMeditation/posts/1122062657874189"]', text: '11th Ruby Meditation')
+          end
         end
       end
 
@@ -363,6 +381,7 @@ describe 'index', type: :feature do
         it 'displays github' do
           expect(page).to have_selector('.contacts', text: "GitHub:")
         end
+
         it 'displays link to github' do
           expect(page).to have_selector('.link a[href="https://github.com/rrott"]', text: 'rrott')
         end
@@ -370,6 +389,7 @@ describe 'index', type: :feature do
         it 'displays gitlab' do
           expect(page).to have_selector('.contacts', text: "GitLab:")
         end
+
         it 'displays link to gitlab' do
           expect(page).to have_selector('.link a[href="https://gitlab.com/u/rrott"]', text: 'rrott')
         end
@@ -392,27 +412,27 @@ describe 'index', type: :feature do
   describe 'footer' do
     it 'displays linkedin icon' do
       expect(page).to have_selector('a[href="https://www.linkedin.com/in/rrott"]', count: 3)
-      expect(page).to have_selector('em.icon-linkedin', count: 2)
+      expect(page).to have_selector('.icon.linkedin', count: 2)
     end
 
     it 'displays github icon' do
       expect(page).to have_selector('a[href="https://github.com/rrott"]', count: 3)
-      expect(page).to have_selector('em.icon-github-circled', count: 2)
+      expect(page).to have_selector('.icon.github', count: 2)
     end
 
     it 'displays twitter icon' do
       expect(page).to have_selector('a[href="https://twitter.com/roman_rott"]', count: 3)
-      expect(page).to have_selector('em.icon-twitter', count: 2)
+      expect(page).to have_selector('.icon.twitter', count: 2)
     end
 
     it 'displays skype icon' do
       expect(page).to have_selector('a[href="skype:roman.rott?chat"]', count: 3)
-      expect(page).to have_selector('em.icon-skype', count: 2)
+      expect(page).to have_selector('.icon.skype', count: 2)
     end
 
     it 'displays mail icon' do
       expect(page).to have_selector('a[href="mailto:roman@rrott.com"]', count: 3)
-      expect(page).to have_selector('em.icon-mail-alt', count: 2)
+      expect(page).to have_selector('.icon.email', count: 2)
     end
 
     it 'displays sitemap' do
