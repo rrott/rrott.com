@@ -1,10 +1,10 @@
-%section.portfolio.row
+%section.portfolio
   = partial 'partials/portfolio/menu'
   %section.portfolio-content.column
     = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio'}] }
 
-    %section.text-block
-      %p.text-block.post-description I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
+    %section
+      %p.text-block I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
       .portfolio-images.row.wrap
         - data.links.portfolio_list.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: portfolio.title }

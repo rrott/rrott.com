@@ -1,7 +1,7 @@
 title: "rrott.com - current website-portfolio"
 by:
   name: "Roman Rott"
-  url: "/"
+  url: "https://rrott.com"
 tags:
   - "Ruby"
   - "MiddleMan"
@@ -30,7 +30,7 @@ status:
     -
       link:  "/"
       pre: "Website:"
-      short: "/"
+      short: "rrott.com"
       description: "rrott.com - web developer portfolio and blog about ethical hacking"
       nofollow: false
     -
@@ -41,14 +41,7 @@ status:
       nofollow: false
     -
       link:  "/blog/"
-      pre: "Blog about how to hack and web application security by Full-Stack developer Roman Rott"
+      pre: "Blog:"
       short: "/blog"
       description: "Blog:"
       nofollow: false
-    -
-      link:  "https://github.com/rrott/rrott.com"
-      pre: 'GitHub:'
-      short: "https://github.com/rrott"
-      description: "Blog"
-      nofollow: false
-

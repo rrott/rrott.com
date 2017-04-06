@@ -33,7 +33,7 @@
     position: absolute
     right: 0px
     z-index: 13
-    font-size: 150%
+    font-size: 2rem
     &:hover
       color: $color-grey
       cursor: pointer
@@ -59,19 +59,20 @@
     display: table-cell
     color: $color-white
     width: 4rem
-    height:  4rem
     top: 50%
-    transform: translateY(-50%)
+    font-weight: bold
+    font-size: 2rem
+    transform: translateY(-30%)
     &:hover
       color: $color-grey
       cursor: pointer
 
+  .middle
+    padding-top: 10vh
+
 .thumbs
   margin: 0
-  padding-bottom: 10px
-  text-align: center
-  width: 100%
-  display: inline-block !important
+  padding-top: 1rem
   a
     padding: 3px
     margin: 2px
@@ -83,6 +84,8 @@
 .portfolio
   justify-content: space-between
   background: $color-white
+  display: flex
+  flex-direction: row
 
 .portfolio-menu
   padding: 0
@@ -118,10 +121,18 @@
   font-weight: 300
   font-size:  1.5em
   color: $color-grey
+  padding: 1rem
+
+.portfolio-block
+  padding: 0 7% 0 7%
+
+.image
+  max-width: 50%
+  padding-right: 1rem
 
 .nav-list
   margin: 0
-  padding: 0
+  padding: 1rem
   list-style: none
 
 .nav-item
@@ -156,6 +167,7 @@
 
 .post-description
   line-height: 1.8em
+  width: 50%
 
 .portfolio-images
   padding-bottom: 10rem
@@ -174,7 +186,7 @@
 .post-category
   margin: 0 0.1em
   cursor: pointer
-  padding: 0.3em 1em
+  padding: 0.2em 1em
   color: $color-white
   background: $color-light-blue
   font-size: 80%
@@ -184,10 +196,11 @@
 
 .post-images
   margin: 1em 0
+  display: flex
+  flex-direction: row
 
 .post-image-meta
-  margin-top: -3.5em
-  margin-left: 1em
+  margin: 0 1.5rem 0 3rem
 
 .projects-table
   max-width: 980px
@@ -270,3 +283,30 @@ blockquote
 @media (max-width: 48em)
   .share
     display: none
+
+@media (max-width: 72em)
+  .portfolio
+    display: flex
+    flex-direction: column
+
+  .portfolio-menu
+    padding: 0
+    background: $color-light-grey
+    max-width: 100vw
+    width: 100%
+
+  .portfolio-content
+    max-height: 100%
+
+  .portfolio-images
+    padding-bottom: 0
+
+  .post-images
+    margin: 1em 0
+    display: flex
+    flex-direction: column
+    .post-description
+      width: 100%
+    .image
+      width: 100%
+      max-width: 100%

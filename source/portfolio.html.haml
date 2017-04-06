@@ -1,14 +1,14 @@
 = partial 'partials/portfolio/image_preview'
-%section.portfolio.row
+%section.portfolio
   = partial 'partials/portfolio/menu'
   %section.portfolio-content.column
     = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio', url: '/portfolio/'}, {title: type }] }
 
     - if message
-      %section.text-block
-        %p.post-description
+      %section.portfolio-block
+        %p
           = message
-    .text-block
+    .portfolio-block
       - all_projects.each do |sections|
         = partial 'partials/portfolio/section', locals: { projects: sections, multipart: multipart }
 

@@ -3,7 +3,7 @@ type: "Front-end"
 keywords: 'Front-end web developer portfolio, full stack, front-end, ruby on rails, coffeescript, javascript'
 description: "Front-end Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
 title: "Roman Rott's Web developer portfolio. Front-end projects"
-message: "Before starting coding on Ruby to become a web developer, I worked on various positions in customer support service of a US Cloud Hosting company and all the knowledge and experience I got in tech support allowed me to easily switch into IT department. <br>As a part of the team I was responsible for creating UI that integrates control panel with CloudStack, supporting released features, updating functionality as it was required by MVP and Agile methodologies.<br> I am equally comfortable developing Ruby/Rails backends as working with JavaScript/CoffeeScript in the Front-end. I have experience developing Single Page Applications on Backbone.js and Maronette.js"
+message: "I am equally comfortable developing Ruby/Rails backends as working with JavaScript/CoffeeScript in the Front-end. I have experience developing Single Page Applications on Backbone.js and Maronette.js"
 projects_list:
   -
     title: "Front-End projects"
