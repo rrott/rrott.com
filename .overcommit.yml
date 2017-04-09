@@ -21,11 +21,11 @@ PreCommit:
     on_warn: fail # Treat all warnings as failures
 
   BundleAudit:
-    enabled: true
+    enabled: false
   BundleCheck:
-    enabled: true
+    enabled: false
   BundleOutdated:
-    enabled: true
+    enabled: false
   CoffeeLint:
     enabled: true
   CssLint:
