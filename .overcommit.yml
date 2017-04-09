@@ -20,12 +20,6 @@ PreCommit:
     enabled: true
     on_warn: fail # Treat all warnings as failures
 
-  BundleAudit:
-    enabled: false
-  BundleCheck:
-    enabled: false
-  BundleOutdated:
-    enabled: false
   CoffeeLint:
     enabled: true
   CssLint:
@@ -50,7 +44,12 @@ PreCommit:
 PostCommit:
   BundleInstall:
     enabled: true
-
+  BundleAudit:
+    enabled: true
+  BundleCheck:
+    enabled: true
+  BundleOutdated:
+    enabled: true
 PrePush:
   RSpec:
     enabled: true
