@@ -19,16 +19,16 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
 
 ##Setting Up Rails Api
 
-1. Make sure you have installed Ruby 2.2.2 or newer as it is required by Rails 5. I usually use Ruby 2.3.1 by default.
+1. Make sure you have installed any latest stable Ruby version as 2.2.2 or newer is required by Rails 5. I usually use Ruby 2.3.4.
 
     ```bash
       $ rvm list
         rvm rubies
-          ruby-1.9.3-p551 [ x86_64 ]
-          ruby-2.1.7 [ x86_64 ]
-          ruby-2.2.4 [ x86_64 ]
-    =*  ruby-2.3.1 [ x86_64 ]
-          ruby-2.3.3 [ x86_64 ]
+            ruby-1.9.3-p551 [ x86_64 ]
+            ruby-2.2.7 [ x86_64 ]
+      => ruby-2.3.4 [ x86_64 ]
+      *     ruby-2.4.1 [ x86_64 ]
+
     ```
 
     You also need to have rails 5 installed on your machine:
