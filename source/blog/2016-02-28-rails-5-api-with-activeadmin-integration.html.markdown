@@ -9,7 +9,12 @@ category: RoR
 
 #Setting Up Rails 5 API Only App with ActiveAdmin enabled
 
-A new version of [Rails 5.0 beta 3](http://weblog.rubyonrails.org/2016/2/27/Rails-5-0-beta3/) has been released several days ago, the RC1 version is to be shipped on March 1 and the final on March 16 and it means that we can start playing with it right now! Yay!!
+> Note: This article is out of date since Rails 5 has been already released.
+> [Here is](/blog/ror/new-rails-5-api-with-activeadmin-integration.html) an updated version of this article.
+
+---
+
+A new version of [Rails 5.0 beta 3](http://weblog.rubyonrails.org/2016/2/27/Rails-5-0-beta3/) was published several days ago while the final version is to be released on March 16. It means we can start playing with it right now! Yay!!
 
 As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means that we can create beautiful API services using rails without any doubt =)
 
