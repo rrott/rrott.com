@@ -20,9 +20,9 @@
             %time{ datetime: current_article.date} #{ current_article.date.strftime('%b %e %Y') }
             = yield
             %h3 Keep having a good day!
-          %br
-          = disqus
-          = disqus_count
+            %br
+            = disqus
+            = disqus_count
           = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
 
     = stylesheet_link_tag 'application', property: 'stylesheet'
