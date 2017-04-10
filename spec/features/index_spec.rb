@@ -329,29 +329,33 @@ describe 'index', type: :feature do
         end
 
         it 'displays link to pdf' do
-          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.pdf"]', text: 'open/download')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.Resume.2017.pdf"]', text: 'resume')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.CV.2017.pdf"]', text: 'CV')
         end
 
         it 'displays odt' do
           expect(page).to have_selector('.contacts', text: "odt:")
         end
         it 'displays link to odt' do
-          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.odt"]', text: 'download')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.Resume.2017.odt"]', text: 'resume')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.CV.2017.odt"]', text: 'CV')
         end
 
         it 'displays docx' do
           expect(page).to have_selector('.contacts', text: "docx:")
         end
         it 'displays link to docx' do
-          expect(page).to have_selector('.link a[href="/cv/roman.rott.cv.2016.docx"]', text: 'download')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.Resume.2017.docx"]', text: 'resume')
+          expect(page).to have_selector('.link a[href="/cv/Roman.Rott.CV.2017.docx"]', text: 'CV')
         end
 
         it 'displays Google Docs' do
           expect(page).to have_selector('.contacts', text: "google docs")
         end
 
-        xit 'displays link to Google Docs' do
-          expect(page).to have_selector('.link a[href="https://docs.google.com/document/d"]', text: 'download')
+        it 'displays link to Google Docs' do
+          expect(page).to have_selector('.link a[href="https://drive.google.com/open?id=1kE46bBi3kK8m6fO-bnBMEsLja-W2tmHPhHLe_MDhmPc"]', text: 'resume')
+          expect(page).to have_selector('.link a[href="https://drive.google.com/open?id=1HcFTcpI1RKlSVDF8WP0AhBAQn9n68VZaCjWIMOrdbRA"]', text: 'CV')
         end
       end
 
