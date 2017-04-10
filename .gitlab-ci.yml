@@ -17,4 +17,3 @@ rspec:
     - master
   script:
     - bundle exec rspec
-    - rubocop
