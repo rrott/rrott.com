@@ -3,15 +3,15 @@
 %html{ itemscope: true, itemtype: "http://schema.org/BlogPosting", lang: 'en' }
   %head
     %title= data.site.blog.title
-    = stylesheet_link_tag  'portfolio', property: 'stylesheet'
     = partial 'partials/meta'
     %meta{ name: 'keywords',      content: data.site.blog.keywords }
     %meta{ name: 'description',   content: data.site.blog.description }
     %meta{ name: 'twitter:image', content: data.site.blog.preview }
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
 
   %body
     = yield
 
-    = stylesheet_link_tag 'application', property: 'stylesheet'
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: true, async: true
     = javascript_include_tag 'lunar-search'
     = partial 'partials/production_code'

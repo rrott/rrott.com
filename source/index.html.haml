@@ -27,14 +27,14 @@
     %h2.center Web Developer
     .stickers
       .logo.responsive.wrap.justify-center
-        %img.sticker.responsive{ title: "React sticker",      alt: "React sticker",      src: "images/react.png"  }
-        %img.sticker.responsive{ title: "Redux sticker",      alt: "Redux sticker",      src: "images/redux.png"  }
-        %img.sticker.responsive{ title: "Ruby sticker",       alt: "Ruby sticker",       src: "images/ruby.png"   }
-        %img.sticker.responsive{ title: "Rails sticker",      alt: "Rails sticker",      src: "images/rails.png"  }
-        %img.sticker.responsive{ title: "JavaScript sticker", alt: "JavaScript sticker", src: "images/js.png"     }
-        %img.sticker.responsive{ title: "EcmaScript sticker", alt: "EcmaScript sticker", src: "images/es6.png"    }
-        %img.sticker.responsive{ title: "html5 sticker",      alt: "html sticker",       src: "images/html5.png"  }
-        %img.sticker.responsive{ title: "css3 sticker",       alt: "css sticker",        src: "images/css.png"    }
+        .sticker.react
+        .sticker.redux
+        .sticker.ruby
+        .sticker.rails
+        .sticker.js
+        .sticker.es
+        .sticker.html5
+        .sticker.css3
 
       .text-block.vw70
         %p Over the 9 years I was working on a various positions and different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.
@@ -46,7 +46,7 @@
         %p
           All of these sites were developed using
           %strong
-            Ruby, CoffeeScript, JavaScript, ES6, React, Backbone, Sinatra, Padrino, and Ruby on Rails
+            Ruby, CoffeeScript, JS, ES6, React, Backbone, Sinatra, Padrino and RoR
           frameworks. Some of them handles large amounts of traffic on daily basis.
 
         %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished during last 2 years.
@@ -75,9 +75,7 @@
               The Cybersecurity Olympiad
               %strong «HackIT-2015»
             %li.link
-              International forum
-              %a{ href: "http://cybersecurity.pp.ua/en/Home", target: '_blank', rel: 'noopener noreferrer' }<
-                «Cybersecurity: Ukraine and the world»
+              International forum «Cybersecurity: Ukraine and the world»
 
   %section.logo-place
     .logo.responsive
@@ -120,7 +118,7 @@
                 %a{ href: "#{article.url}", title: "#{article.title}" }
                   %time="#{article.date.strftime('%b %e %Y')} - #{article.title}"
           %li.link
-            %a{ href: "/blog", title: "link to my blog" }
+            %a{ href: "/blog/", title: "link to my blog" }
               Read more...
 = partial 'partials/contacts'
 = partial 'partials/footer', locals: { title: nil }

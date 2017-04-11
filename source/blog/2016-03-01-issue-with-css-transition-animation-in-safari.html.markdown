@@ -1,5 +1,5 @@
 ---
-title: Bug with CSS transition animation for SVG in Safari
+title: CSS transition animation for SVG bug in Safari
 short: Bug with CSS transition animation for SVG in Safari
 date: 2016-03-01 13:30 UTC
 tags: CSS, SVG, Web-Design, Front-End, Animation, Safari, Bugs

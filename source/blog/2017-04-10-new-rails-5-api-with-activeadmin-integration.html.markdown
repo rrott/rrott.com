@@ -1,5 +1,5 @@
 ---
-title: Rails 5 API with ActiveAdmin integration(Updated manual)
+title: Rails 5 API with ActiveAdmin(updated manual)
 short:
 date: 2017-04-10 12:44 UTC
 tags: rails, rails5, ActiveAdmin, api, Admin panel, rails-api, RoR, ror
@@ -12,7 +12,7 @@ category: RoR
 
 As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means we can create beautiful API services using rails without any doubt =)
 
-**If you missed the announcement on what’s new in Rails 5, checkout the [rails 5.0.0 anounce:](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/)**
+If you missed the announcement on **what’s new in Rails 5**, checkout the [rails 5.0.0 anounce:](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/)**
 >Rails is ... a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We’ve made this even clearer now with the new –api mode. If you create a new Rails application using rails new backend --api, you’ll get a slimmed down skeleton and configuration that assumes you’ll be working with JSON, not HTML.
 
 Generating an API application stripes down Rails a lot, disabling views, flash messages, cookies, and more more, but `ActiveAdmin` can still be plugged into it with a bit of tweaking. So here is the steps on how to create a new Rails-5 API application with ActiveAdmin integration:

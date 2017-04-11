@@ -3,7 +3,6 @@
 %html
   %head
     %title=data.site.sitemap.title
-    = stylesheet_link_tag  'index', property: 'stylesheet'
     = partial 'partials/meta'
 
     %meta{ name: 'keywords',    content: data.site.sitemap.keywords }
@@ -70,4 +69,5 @@
 
       %footer.footer.center
         = partial 'partials/links'
+    = stylesheet_link_tag  'index', property: 'stylesheet'
     = stylesheet_link_tag  'application', property: 'stylesheet'

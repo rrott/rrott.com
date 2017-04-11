@@ -102,7 +102,7 @@ To git@github.com:rrott/rrott.com.git
 
 ## Using GitLab's mirrors
 
-Above looks like a **mirror** but it's technically not a mirror. It's just an additional remote server, and if your collaborators push something to GitHub you will not see these changes in GitLab
+Above looks like a --mirror-- but it's technically not a mirror. It's just an additional remote server, and if your collaborators push something to GitHub you will not see these changes in GitLab
 > To "fix" this, your collaborators have to configure their git clients the same way as you did.
 
 It may be good if:

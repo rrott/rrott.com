@@ -74,7 +74,7 @@ describe 'index', type: :feature do
 
     it 'displays languages' do
       expect(page).to have_selector('div p',
-        text: "All of these sites were developed using Ruby, CoffeeScript, JavaScript, ES6, React, Backbone, Sinatra, Padrino, and Ruby on Rails frameworks. Some of them handles large amounts of traffic on daily basis.")
+        text: "All of these sites were developed using Ruby, CoffeeScript, JS, ES6, React, Backbone, Sinatra, Padrino and RoR frameworks. Some of them handles large amounts of traffic on daily basis.")
     end
 
     it 'displays portfolio message' do
@@ -133,8 +133,7 @@ describe 'index', type: :feature do
 
       context '«Cybersecurity: Ukraine and the world»' do
         it 'displays link to «Cybersecurity: Ukraine and the world»' do
-          expect(page).to have_selector('ul li.link a[href="http://cybersecurity.pp.ua/en/Home"]',
-            text: '«Cybersecurity: Ukraine and the world»')
+          expect(page).to have_selector('div', text: '«Cybersecurity: Ukraine and the world»')
         end
 
         it 'displays The Cybersecurity Olympiad' do
@@ -152,10 +151,6 @@ describe 'index', type: :feature do
   context 'Community developmetn' do
     it 'displays Community development section' do
       expect(page).to have_selector('h2', text: "Community Development")
-    end
-
-    it 'displays Open Source logo' do
-      expect(page).to have_selector('img.responsive')
     end
 
     context 'OSS projects' do
@@ -259,7 +254,7 @@ describe 'index', type: :feature do
       end
 
       it 'displays link to blog' do
-        expect(page).to have_selector('ul li.link a[href="/blog"]', text: 'Read more...')
+        expect(page).to have_selector('ul li.link a[href="/blog/"]', text: 'Read more...')
       end
     end
 

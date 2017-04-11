@@ -18,7 +18,7 @@ A new version of [Rails 5.0 beta 3](http://weblog.rubyonrails.org/2016/2/27/Rail
 
 As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means that we can create beautiful API services using rails without any doubt =)
 
-**If you missed the announcement on what’s new in Rails 5, checkout the [rails 5.0.0 anounce](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/)**
+If you missed the announcement on **what’s new in Rails 5**, checkout the [rails 5.0.0 anounce](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/)
 >Rails is ... a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We’ve made this even clearer now with the new –api mode. If you create a new Rails application using rails new backend --api, you’ll get a slimmed down skeleton and configuration that assumes you’ll be working with JSON, not HTML.
 
 Generating an API application stripes down Rails a lot, disabling views, flash messages, cookies, and more more, but `ActiveAdmin` can still be plugged into it with a bit of tweaking. So here is the steps on how to create a new Rails-5 API application with ActiveAdmin integration:
