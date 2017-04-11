@@ -1,17 +1,19 @@
 !!! 5
 
 %html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
-  = stylesheet_link_tag 'index', property: 'stylesheet', defer: true, async: true
   %head
     %title=data.site.title
     = partial 'partials/meta'
     %meta{ name: 'keywords',      content: data.site.keywords }
     %meta{ name: 'description',   content: data.site.description }
     %meta{ name: 'twitter:image', content: data.site.blog.preview }
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
 
   %body
     = yield
+
+    = stylesheet_link_tag 'index', property: 'stylesheet', defer: true, async: true
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
+    %link{ href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet' }
 
     %script{ type: "application/ld+json" }
       :plain

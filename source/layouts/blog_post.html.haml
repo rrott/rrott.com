@@ -6,7 +6,6 @@
     = partial 'partials/meta'
     %meta{ name: 'keywords',    content: current_article.tags.join(', ') }
     %meta{ name: 'description', content: current_article.title }
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
 
   %body
     %section.portfolio
@@ -24,6 +23,7 @@
             = disqus_count
           = partial 'partials/footer', locals: { title: "Roman Rott's Blog" }
 
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
     = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: true, async: true
     = stylesheet_link_tag 'syntax', property: 'stylesheet', defer: true, async: true
     = javascript_include_tag 'lunar-search'

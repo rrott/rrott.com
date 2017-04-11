@@ -9,11 +9,11 @@
     %meta{ name: "robots",        content: "noindex, follow" }
     %meta{ name: 'twitter:image', content: data.site.blog.preview }
     %link{ href: "https://rrott.com/blog/", rel: "canonical" }
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
 
   %body
     = yield
 
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
     = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: true, async: true
     = javascript_include_tag 'lunar-search'
     = partial 'partials/production_code'
