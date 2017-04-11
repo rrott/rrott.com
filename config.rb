@@ -85,7 +85,7 @@ end
 
 # activate :i18n
 activate :syntax, line_numbers: true
-
+activate :asset_hash
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
