@@ -7,6 +7,9 @@
 
     %meta{ name: 'keywords',    content: data.site.sitemap.keywords }
     %meta{ name: 'description', content: data.site.sitemap.description }
+    = stylesheet_link_tag 'index', property: 'stylesheet', defer: :defer, async: :async
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
+
   %body
     %main
       %section.content.center
@@ -69,5 +72,3 @@
 
       %footer.footer.center
         = partial 'partials/links'
-    = stylesheet_link_tag  'index', property: 'stylesheet'
-    = stylesheet_link_tag  'application', property: 'stylesheet'

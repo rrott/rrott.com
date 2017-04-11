@@ -28,7 +28,6 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
             ruby-2.2.7 [ x86_64 ]
       => ruby-2.3.4 [ x86_64 ]
       *     ruby-2.4.1 [ x86_64 ]
-
     ```
 
     You also need to have rails 5 installed on your machine:
@@ -69,7 +68,7 @@ Generating an API application stripes down Rails a lot, disabling views, flash m
               create    test/models/user_test.rb
               create    test/fixtures/users.yml
               invoke    resource_route
-              route     resources :users
+              route      resources :users
               invoke    scaffold_controller
               create    app/controllers/users_controller.rb
               invoke    test_unit

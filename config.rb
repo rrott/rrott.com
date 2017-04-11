@@ -116,7 +116,7 @@ end
 
 configure :development do
   set :debug_assets, true
-
+  activate :pry
   activate :livereload
   activate :disqus do |d|
     d.shortname = nil

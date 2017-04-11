@@ -10,15 +10,14 @@
     -if defined? canonical and canonical != nil
       %meta{ name: "robots", content: "noindex, follow" }
       %link{ href: canonical, rel: "canonical" }
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: :defer, async: :async
 
   %body
     = yield
 
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
-    = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: true, async: true
-    = javascript_include_tag 'image-preview'
+    = javascript_include_tag 'image-preview', defer: :defer, async: :async
     = partial 'partials/production_code'
 
     :javascript
       window.Helpers.disableLinks()
-

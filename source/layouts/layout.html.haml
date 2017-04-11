@@ -7,17 +7,14 @@
     %meta{ name: 'keywords',      content: data.site.keywords }
     %meta{ name: 'description',   content: data.site.description }
     %meta{ name: 'twitter:image', content: data.site.blog.preview }
+    = stylesheet_link_tag 'index', property: 'stylesheet', defer: :defer, async: :async
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
 
   %body
     = yield
-
-    = stylesheet_link_tag 'index', property: 'stylesheet', defer: true, async: true
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
-    %link{ href: "/stylesheets/index.css", rel: 'stylesheet', property: 'stylesheet' }
 
     %script{ type: "application/ld+json" }
       :plain
         {"@context":"http://schema.org","@type":"Person","email":"roman@rrott.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
 
     = partial 'partials/ga'
-

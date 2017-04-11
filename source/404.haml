@@ -7,6 +7,9 @@
 
     %meta{ name: 'keywords',    content: data.site.not_found.keywords }
     %meta{ name: 'description', content: data.site.not_found.description }
+    = stylesheet_link_tag 'index', property: 'stylesheet', defer: :defer, async: :async
+    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
+
   %body
     %main.center
       %header#error
@@ -22,6 +25,3 @@
       %hr
       = partial 'partials/contacts'
       = partial 'partials/footer', locals: { title: nil }
-
-    = stylesheet_link_tag 'index', property: 'stylesheet'
-    = stylesheet_link_tag 'application', property: 'stylesheet'
