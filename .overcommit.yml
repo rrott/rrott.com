@@ -41,23 +41,24 @@ PreCommit:
   TrailingWhitespace:
     enabled: true
 
-PostCommit:
-  BundleInstall:
-    enabled: true
-  BundleAudit:
-    enabled: true
-  BundleCheck:
-    enabled: true
-  BundleOutdated:
-    enabled: true
-PrePush:
-  RSpec:
-    enabled: true
+# PostCommit:
+#   BundleInstall:
+#     enabled: true
+#   BundleAudit:
+#     enabled: true
+#   BundleCheck:
+#     enabled: true
+#   BundleOutdated:
+#     enabled: true
+# PrePush:
+#   RSpec:
+#     enabled: true
 
 PostMerge:
   BundleInstall:
     enabled: true
-
+  RSpec:
+    enabled: true
 PostCheckout:
   ALL: # Special hook name that customizes all hooks of this type
     quiet: true # Change all post-checkout hooks to only display output on failure
