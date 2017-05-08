@@ -244,24 +244,28 @@ section.dark
   display: flex
   position: realtive
   margin: 0 auto
-  width: 80%
+  flex-wrap: wrap
   resize: none
-
-#search input[type=search], #search button
-  display: block
 
 #search input[type=search]
   flex: 1
   padding: 0.6em
   border: 0.2em
+  width: 70%
+  flex-grow: 8
 
-#search-submit
+#search input[type=submit]
+  width: 25%
+  flex-grow: 1
   padding: 0.6em 0.8em
   background-color: $color-grey
   color: $color-white
   border: none
   &:hover, &:focus
     cursor: pointer
+
+#results
+  list-style-type: none
 
 .rouge-gutter
   max-width: 2rem
