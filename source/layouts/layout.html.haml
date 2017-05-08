@@ -6,9 +6,9 @@
     = partial 'partials/meta'
     %meta{ name: 'keywords',      content: data.site.keywords }
     %meta{ name: 'description',   content: data.site.description }
-    %meta{ name: 'twitter:image', content: data.site.blog.preview }
-    = stylesheet_link_tag 'index', property: 'stylesheet', defer: :defer, async: :async
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
+    %meta{ name: 'twitter:image', content: data.site.blog.preview || 'https://rrott.com/images/rrott-ruby-logo.png'}
+    = stylesheet_link_tag 'index', property: 'stylesheet'
+    = stylesheet_link_tag 'application', property: 'stylesheet'
 
   %body
     = yield

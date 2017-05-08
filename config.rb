@@ -115,8 +115,7 @@ activate :blog do |blog|
 end
 
 configure :development do
-  set :debug_assets, true
-  activate :pry
+  set :debug_assets, false
   activate :livereload
   activate :disqus do |d|
     d.shortname = nil

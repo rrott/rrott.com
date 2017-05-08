@@ -5,7 +5,7 @@
 %main
   %section.links-block.column.justify-center
     = partial 'partials/links'
-    .center Open for remote job opportunities. Contact me if you're interested.
+    %h6.center Open for remote job opportunities. Contact me if you're interested.
   %section.content.about-me
     %h1.center
       Hello, my name is
@@ -65,19 +65,20 @@
           and other private bug bounty services. The result of my interest in ethical hacking has resulted in dozens of found and reported security issues in such services as: rubygems.org, ZeroMail, tagged.com, etc
         %p
           Last year I took part in a CTF(Capture The Flag security game) as a Game Master and designed several vulnerable web applications for CTF hacking games organized by «Berezha Security» for:
-          %ul
-            %li.link
-              %a{ href: "https://uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }<
-                UISGCon #10, #11, #12 (2014-2016)
-              &mdash; Ukrainian InfoSec conference held by Non Government Organisation
-              %strong «Ukrainian Information Security Group»
-            %li.link
-              The Cybersecurity Olympiad
-              %strong «HackIT-2015»
-            %li.link
-              International forum «Cybersecurity: Ukraine and the world»
+        %ul
+          %li.link
+            %a{ href: "https://uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }<
+              %strong UISGCon
+            \#10, #11, #12 (2014-2016) &mdash; Ukrainian InfoSec conference held by Non Government Organisation
+            %strong «Ukrainian Information Security Group»
+          %li.link
+            The Cybersecurity Olympiad
+            %strong «HackIT-2015»
+          %li.link
+            International forum
+            %strong «Cybersecurity: Ukraine and the world»
 
-  %section.logo-place
+  .logo-place
     .logo.responsive
       = partial('images/rrott-ruby-logo.svg').to_s
   %section.content.oss.dark
@@ -86,15 +87,14 @@
       .center.vw30
       .text-block.vw70
         %h5 Contributing to open source projects:
-        %ul
-          %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-            react-toolbox
-          %a.link{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-            gitlab-org/gitlab-ce
-          %a.link{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-            floere/phony
-          %a.link{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-            dnesteryuk/site_prism.vcr
+        %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+          react-toolbox
+        %a.link{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+          gitlab-org/gitlab-ce
+        %a.link{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+          floere/phony
+        %a.link{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+          dnesteryuk/site_prism.vcr
 
         %h5.padding2 Developing local community:
         %ul
@@ -114,9 +114,9 @@
         %ul
           - blog.articles[0...3].each do |article|
             %li.link
-              %article
-                %a{ href: "#{article.url}", title: "#{article.title}" }
-                  %time="#{article.date.strftime('%b %e %Y')} - #{article.title}"
+              %a{ href: "#{article.url}", title: "#{article.title}" }
+                %time{ datetime: article.date}="#{article.date.strftime('%b %e %Y')}"
+                &mdash; #{article.title}
           %li.link
             %a{ href: "/blog/", title: "link to my blog" }
               Read more...

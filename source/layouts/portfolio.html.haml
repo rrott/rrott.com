@@ -10,8 +10,8 @@
     -if defined? canonical and canonical != nil
       %meta{ name: "robots", content: "noindex, follow" }
       %link{ href: canonical, rel: "canonical" }
-    = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: :async
-    = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: :defer, async: :async
+    = stylesheet_link_tag 'application', property: 'stylesheet'
+    = stylesheet_link_tag 'portfolio', property: 'stylesheet'
 
   %body
     = yield
