@@ -9,6 +9,18 @@ projects_list:
     id_name: "back-end"
     projects:
       -
+        name: "groupon"
+        noindex: false
+      -
+        name: "enova"
+        noindex: false
+      -
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
         name: "securevpn"
         noindex: true
       -

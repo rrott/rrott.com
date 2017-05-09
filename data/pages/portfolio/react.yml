@@ -11,5 +11,11 @@ projects_list:
     id_name: "react"
     projects:
       -
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
         name: "mobile_findmegetme"
         noindex: true

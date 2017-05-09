@@ -9,6 +9,21 @@ projects_list:
     id_name: "rails"
     projects:
       -
+        name: "groupon"
+        noindex: true
+      -
+        name: "enova"
+        noindex: false
+      -
+        name: "dabble"
+        noindex: false
+      -
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
         name: "ix_cloudui"
         noindex: false
       -

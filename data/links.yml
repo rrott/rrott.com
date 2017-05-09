@@ -11,7 +11,12 @@ portfolio_sections:
   -
     url: "/portfolio/oss/"
     name: "Open Source"
-
+  -
+    url: "/portfolio/groupon/"
+    name: "Groupon"
+  -
+    url: "/portfolio/irarott/"
+    name: "IraRott Inc"
 blog_sections:
   -
     url: "/blog/ror/"

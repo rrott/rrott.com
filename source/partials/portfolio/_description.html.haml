@@ -7,7 +7,9 @@
   .inline #{project.role}
 %div
   .bold.inline Responsibilities:
-  .inline #{project.responsibilities}
+  - if project.responsibilities
+    - project.responsibilities.each do |responsibility|
+      .inline #{responsibility}
 %div
   .bold.inline Languages:
   .inline #{project.languages}

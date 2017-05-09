@@ -18,6 +18,7 @@ page "/404.html",     layout: false
 page "/sitemap.html", layout: false
 page "/blog.html",    layout: :blog
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
+
 ignore "/portfolios.html"
 ignore "/portfolio.html"
 ignore "/stylesheets/syntax.css.erb"

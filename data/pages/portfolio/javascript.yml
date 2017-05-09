@@ -10,6 +10,15 @@ projects_list:
     id_name: "javascript"
     projects:
       -
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
+        name: "enova"
+        noindex: false
+      -
         name: "shlyapa"
         noindex: true
       -

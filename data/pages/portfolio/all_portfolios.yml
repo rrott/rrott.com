@@ -7,11 +7,30 @@ multipart: true
 canonical: 'https://rrott.com/portfolio/full-stack/'
 projects_list:
   -
+    title: "Current On-going projects"
+    id_name: "full-stack"
+    projects:
+      -
+        name: "groupon"
+        noindex: false
+      -
+        name: "irarott"
+        noindex: false
+  -
     title: "Full-Stack projects"
     id_name: "full-stack"
     projects:
       -
-        name: "irarott"
+        name: "dabble"
+        noindex: false
+      -
+        name: "enova"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
+        name: "chairlift_expenses"
         noindex: false
       -
         name: "ix_cloudui"
@@ -51,7 +70,7 @@ projects_list:
     projects:
       -
         name: "mobile_findmegetme"
-        noindex: 'true'
+        noindex: true
   -
     title: "Open Source Plugins and Libs"
     id_name: "oss"

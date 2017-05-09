@@ -9,6 +9,9 @@ projects_list:
     id_name: "coffeescript"
     projects:
       -
+        name: "dabble"
+        noindex: false
+      -
         name: "irarott"
         noindex: true
       -

@@ -10,6 +10,21 @@ projects_list:
     id_name: "full-stack"
     projects:
       -
+        name: "groupon"
+        noindex: false
+      -
+        name: "enova"
+        noindex: false
+      -
+        name: "dabble"
+        noindex: false
+      -
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "chairlift"
+        noindex: false
+      -
         name: "irarott"
         noindex: false
       -

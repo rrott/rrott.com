@@ -10,6 +10,12 @@ projects_list:
     id_name: "jquery"
     projects:
       -
+        name: "dabble"
+        noindex: false
+      -
+        name: "enova"
+        noindex: false
+      -
         name: "irarott"
         noindex: true
       -

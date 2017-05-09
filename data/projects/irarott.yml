@@ -9,6 +9,7 @@ tags:
   - "Jquery"
   - "CoffeeScript"
   - "DigitalOcean"
+year: 2016
 images:
   -
     url:   "/images/portfolio/ira-rott-com/irarott-com"
@@ -33,7 +34,10 @@ about:
   - "There are hundreds paid and dozens free pdf patterns on the site, that can be downloaded and used by masters around the world. Additionally, it has Ira's portfolio and integration with Etsy system."
   - "Website is a kind of CMS that has almost everything customizable using admin page, beginning with adding new patterns, portfolios, creating standalone pages, categories etc and ending with changing all SEO-related parameters of this website."
 role: "Full-Stack developer. Remote developer"
-responsibilities: "Creating back-end and front-end, admin page, design, SEO-optimisation, configuring and optimization of the web, SQL servers, site migration, support current features and monitoring website's state."
+responsibilities:
+  - "Creating back-end and front-end, admin page"
+  - "design, SEO-optimisation"
+  - "configuring and optimization of the web, SQL servers, site migration, support current features and monitoring website's state."
 languages: "Ruby 2.1, JavaScript, CoffeeScript"
 libs: "Padrino, Jquery"
 other: "SASS, Haml, ActiveRecord, Carrierwave, Poltergeist, Selenium, JSON, Newrelic, Sprockets, Nginx, PostgreSQL, Capistrano"
