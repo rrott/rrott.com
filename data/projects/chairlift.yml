@@ -1,0 +1,42 @@
+title: "Chairlift(Better Feedback)"
+by:
+  name: "Sphere Inc"
+  url: "https://sphereinc.com/"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "React"
+  - "JavaScript"
+
+year: 2016
+images:
+  -
+    url: "/images/portfolio/chairlift/chairlift-dashboard"
+    title: "Chairlift(Better Feedback)"
+  -
+    url: "/images/portfolio/chairlift/chairlift-company"
+    title: "Chairlift(Better Feedback)"
+  -
+    url: "/images/portfolio/chairlift/index-page"
+    title: "Chairlift(Better Feedback)"
+  -
+    url: "/images/portfolio/chairlift/chairlift-page"
+    title: "Chairlift(Better Feedback)"
+about:
+  - "Chairlift is a modern, cloud based HR solution that elevates employee performance and provides HR professionals with the insight to nourish workplace culture. It is an internal Sphere project I worked as a part of remote team."
+responsibilities:
+  - "Front-end, Back-end developer"
+  - "Implemented several UI parts/features of the application using React, Redux and ES6. Worked on back-end entities."
+
+languages: "Ruby 2.3, ES6"
+libs: "Ruby on Rails 4.2, React+Redux"
+testing: "Rspec, Factory Girl"
+other: "JSON, postgreSQL"
+status:
+  message: "Online."
+  urls:
+    -
+      link:  "https://chairlift.io"
+      short: "https://chairlift.io"
+      description: "Chairlift(Better Feedback)"
+      nofollow: true

@@ -1,0 +1,37 @@
+title: "Dabble"
+by:
+  name: "Dabble.co"
+  url: "https://dabble.co/"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "Jquery"
+  - "CoffeeScript"
+
+year: 2017
+images:
+  -
+    url: "/images/portfolio/dabble/main-page"
+    title: "Dabble.co main page"
+  -
+    url: "/images/portfolio/dabble/host-a-class"
+    title: "Dabble.co main page"
+  -
+    url: "/images/portfolio/dabble/class-page"
+    title: "Dabble.co main page"
+about:
+  - "Dabble is an online community marketplace for people to discover, teach and host unique and affordable one-time classes. Was working mostly on UI parts of the app using JS and CoffeeScript."
+  - "I was working on migrating from old SSO to a new one, refactored and removed legacy code, optimizing and  performance enhancement. Was implementing new features and products."
+responsibilities:
+  - "Front-end, Back-end developer"
+languages: "Ruby, CoffeeScript"
+libs: "Ruby on Rails 4.2, Trailblazer, Cells, Roar, ActiveAdmin, jQuery"
+testing: "Rspec"
+status:
+  message: "Online."
+  urls:
+    -
+      link:  "https://dabble.co/"
+      short: "https://dabble.co"
+      description: "Dabble.co - online community marketplace."
+      nofollow: true

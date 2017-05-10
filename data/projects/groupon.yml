@@ -1,0 +1,28 @@
+title: "Notification Engine"
+by:
+  name: "Groupon"
+  url: "https://www.groupon.com/"
+tags:
+  - "Ruby"
+  - "Rails"
+
+year: 2017
+images:
+  -
+    url: "/images/portfolio/groupon/groupon-logo"
+    title: "Groupon logo"
+about:
+  - Groupon is an US e-commerce marketplace. I am working on their notification engine that handles reservation related notifications for Online Booking. It consists of a web server and a set of background workers. The web server exposes endpoints to configure notification profiles and settings as well as callbacks received from the SMS/Calls service.
+responsibilities:
+  - "Back-end developer"
+languages: "Ruby 2.2.3"
+libs: "Ruby on Rails 4, Resque, Redis, Groupon-specific services/APIs"
+testing: "Rspec"
+status:
+  message: "Internal project. Is online and work as a part of Groupon products."
+  urls:
+    -
+      link:  "https://www.groupon.com/"
+      short: "https://www.groupon.com/"
+      description: "Groupon main page"
+      nofollow: true

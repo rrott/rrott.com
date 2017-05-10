@@ -1,0 +1,14 @@
+url: "/portfolio/irarott"
+type: "IraRott"
+keywords: 'backend developer portfolio, ruby language, back-end, open source, ruby gems'
+description: "Full-Stack web developer portfolio of Roman Rott. IraRott.com"
+title: "Roman Rott's Full-Stack developer portfolio. IraRott.com"
+canonical: 'https://rrott.com/portfolio/full-stack/'
+projects_list:
+  -
+    title: "On-going projects: IraRott.com"
+    id_name: "irarott"
+    projects:
+      -
+        name: "irarott"
+        noindex: false
