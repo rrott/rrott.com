@@ -10,10 +10,10 @@ projects_list:
     id_name: "front-end"
     projects:
       -
-        name: "chairlift_expenses"
+        name: "chairlift"
         noindex: false
       -
-        name: "chairlift"
+        name: "chairlift_expenses"
         noindex: false
       -
         name: "ix_ow"

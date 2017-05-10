@@ -15,10 +15,10 @@ projects_list:
         name: "enova"
         noindex: false
       -
-        name: "chairlift_expenses"
+        name: "chairlift"
         noindex: false
       -
-        name: "chairlift"
+        name: "chairlift_expenses"
         noindex: false
       -
         name: "securevpn"
