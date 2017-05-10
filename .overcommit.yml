@@ -15,6 +15,7 @@
 #
 # Uncomment the following lines to make the configuration take effect.
 ---
+verify_signatures: false
 PreCommit:
   RuboCop:
     enabled: true
