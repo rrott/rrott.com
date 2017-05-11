@@ -18,10 +18,10 @@
   url: "http://www.ixwebhosting.com/"
   title: "IxWebHosting"
   img: '/images/brands/ixwebhosting.png'
--
-  url: "http://www.hostexcellence.com/"
-  title: "HostExcellence"
-  img: '/images/brands/hostexcellence.png'
+# -
+#   url: "http://www.hostexcellence.com/"
+#   title: "HostExcellence"
+#   img: '/images/brands/hostexcellence.png'
 -
   url: "https://irarott.com/"
   title: "IraRott Inc"
