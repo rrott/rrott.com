@@ -2,21 +2,27 @@ portfolio_sections:
   -
     url: "/portfolio/full-stack/"
     name: "Full-Stack"
+    show_in_menu: true
   -
     url: "/portfolio/front-end/"
     name: "Front-end"
+    show_in_menu: true
   -
     url: "/portfolio/back-end/"
     name: "Back-end"
+    show_in_menu: true
   -
     url: "/portfolio/oss/"
     name: "Open Source"
+    show_in_menu: true
   -
     url: "/portfolio/groupon/"
     name: "Groupon"
+    show_in_menu: false
   -
     url: "/portfolio/irarott/"
     name: "IraRott Inc"
+    show_in_menu: false
 blog_sections:
   -
     url: "/blog/ror/"

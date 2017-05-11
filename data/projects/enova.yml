@@ -8,7 +8,7 @@ tags:
   - "Rails"
   - "Jquery"
   - "CoffeeScript"
-
+info: "* Internal project. Screenshots can't be shown."
 year: 2016
 images:
   -
@@ -28,7 +28,7 @@ libs: "Ruby on Rails 2.1, Ruby on Rails 4.2, Ember.js"
 testing: "Cucumber, Rspec, Capybara, VCR"
 other: "Python, JWT, SOAP, JSON, Devise, postgreSQL/jsonb"
 status:
-  message: "Internal project. Is online and work as a part of Enova products."
+  message: "Internal project. Is online and works as a part of Enova's products."
   urls:
     -
       link:  "https://www.enova.com/"

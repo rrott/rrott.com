@@ -5,6 +5,7 @@ by:
 tags:
   - "Ruby"
   - "Rails"
+info: "* Internal project. Screenshots can't be shown."
 
 year: 2017
 images:
@@ -19,7 +20,7 @@ languages: "Ruby 2.2.3"
 libs: "Ruby on Rails 4, Resque, Redis, Groupon-specific services/APIs"
 testing: "Rspec"
 status:
-  message: "Internal project. Is online and work as a part of Groupon products."
+  message: "Internal project. Is online and work as a part of Groupon's products."
   urls:
     -
       link:  "https://www.groupon.com/"

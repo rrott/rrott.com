@@ -7,7 +7,7 @@ tags:
   - "Rails"
   - "React"
   - "JavaScript"
-
+info: "* Work is in progres... Screenshots can't be shown."
 year: 2016
 images:
   -
@@ -27,7 +27,7 @@ status:
   message: "Work in progres..."
   urls:
     -
-      link:  "https://chairlift.io"
-      short: "https://chairlift.io"
+      link:  "https://sphereinc.com/"
+      short: "https://sphereinc.com/"
       description: "Chairlift Expenses"
       nofollow: true
