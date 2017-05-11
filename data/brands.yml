@@ -34,10 +34,10 @@
   url: "https://uisgcon.org/en/"
   title: "UISGCON"
   img: '/images/brands/uisgcon.png'
--
-  url: "https://syftapp.com/"
-  title: "Syft"
-  img: '/images/brands/syft.png'
+# -
+#   url: "https://syftapp.com/"
+#   title: "Syft"
+#   img: '/images/brands/syft.png'
 -
   url: "http://www.ecommerce.com/"
   title: "Ecommerce"

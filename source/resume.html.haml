@@ -49,15 +49,16 @@
               \/
               %a{ href: "https://drive.google.com/open?id=1HcFTcpI1RKlSVDF8WP0AhBAQn9n68VZaCjWIMOrdbRA", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's CV in google docs" }
                 CV
+      %hr
+      %section.resume
+        %a{ href: "/portfolio/", title: "web developer portfolio" }
+          %h3 portfolio
         .worked-with
           %h3 worked with:
           .flex.row.justify-around.wrap
             - data.brands.each do |brand|
               %a{ href: "#{brand.url}", title: brand.title }
                 %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
-
-        %a{ href: "/portfolio/", title: "web developer portfolio" }
-          %h3 check out my portfolio
     %hr
     %section
       %h2.contacts-message.center

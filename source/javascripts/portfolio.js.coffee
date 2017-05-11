@@ -12,10 +12,10 @@ class Portfolio
   constructor:(portfolio) ->
     @preview = portfolio.querySelector(".project-img")
     @thumbs  = portfolio.getElementsByClassName('thumb')
-    @images  =
+    @preview_object  =
       current_image_id: 1
       images: this._collectImagesList()
-    this.init()
+    this.init() if @preview_object.images.length
 
   init: ->
     this._setUpPreviewEvents()
@@ -33,9 +33,9 @@ class Portfolio
   _triggerEvent: (e) ->
     e.preventDefault()
     index = window.Helpers.getTarget(e).getAttribute('data-index')
-    @images.current_image_id = parseInt(index)
+    @preview_object.current_image_id = parseInt(index)
     #TODO: refactor to not use ImagePreview
-    ImagePreview.setImagesArray @images
+    ImagePreview.setImagesArray @preview_object
     ImagePreview.changePreviewImage()
     ImagePreview.togglePreview()
 

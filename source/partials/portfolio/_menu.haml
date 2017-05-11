@@ -4,11 +4,12 @@
     %h1.brand-tagline Projects accomplished in 2016 and active in 2017
     %nav.nav
       %ul.nav-list
-        %li.nav-item
+        %li.nav-item.slash
           %a{ href: "/", title: "Roman Rott's home page" } Home
-        \/
-        %li.nav-item
+        %li.nav-item.slash
           %a{ href: "/blog/", title: "Roman Rott's blog" } Blog
+        %li.nav-item
+          %a{ href: "/resume/", title: "Roman Rott's Resume download page" } CV
     .responsive.logo-small
       = partial('images/rrott-ruby-logo.svg').to_s
     .portfolio-contacts.dark
