@@ -27,14 +27,14 @@ describe 'index', type: :feature do
 
       it 'displays specialization' do
         expect(page).to have_selector('div',
-          text: "I specialize in developing secure and optimised websites as well as in testing websites for security vulnerabilities.")
+          text: "I specialize in developing secure and optimised apps as well as in testing websites for security vulnerabilities.")
       end
     end
 
     context 'languages' do
       it 'displays languages' do
         expect(page).to have_selector('div',
-          text: "Ruby is my favorites when it comes to following TDD and OOP best practices, while JavaScript is the best one for front-end and functional programming.")
+          text: "is my favorite when it comes to following TDD and OOP best practices, while JavaScript is the best one for front-end and functional programming.")
       end
 
       it 'displays ' do
@@ -59,7 +59,7 @@ describe 'index', type: :feature do
 
     it 'displays my expirience in dev' do
       expect(page).to have_selector('div',
-        text: "Over the 9 years I was working on a various positions and different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.")
+        text: "Over the 9 years I was working on various positions and at different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.")
     end
 
     it 'displays my expirience in Sphere' do
@@ -111,12 +111,12 @@ describe 'index', type: :feature do
 
       context 'UISGCon 11(2015)' do
         it 'displays link to UISGCon 11(2015)' do
-          expect(page).to have_selector('ul li.link a[href="https://uisgcon.org/en/about-uisgcon"]', text: 'UISGCon #10, #11, #12 (2014-2016)')
+          expect(page).to have_selector('ul li.link a[href="https://uisgcon.org/en/about-uisgcon"]', text: 'UISGCon')
         end
 
         it 'displays info about UISGCon 11(2015)' do
           expect(page).to have_selector('ul li.link',
-            text: "Ukrainian InfoSec conference held by Non Government Organisation «Ukrainian Information Security Group»")
+            text: "#10, #11, #12 (2014-2016) — Ukrainian InfoSec conference held by Non Government Organisation «Ukrainian Information Security Group»")
         end
       end
 
@@ -246,7 +246,7 @@ describe 'index', type: :feature do
 
           application.blog.articles[0...3].each do |article|
             it 'displays last 3 blog articles' do
-              expect(page).to have_selector("ul li.link article a[href='#{article.url}']",
+              expect(page).to have_selector("ul li.link a[href='#{article.url}']",
                 text: article.title.to_s)
             end
           end
