@@ -22,32 +22,25 @@
           .div
             %h3 Blog Posts
             - blog.articles.each do |page|
-              %a{ href: page_url(page), title: "Blog's #{page_url(page)} page" }
-                = page_url(page)
+              %a{ href: page_url(page), title: "Blog's #{page.url} page" }= page.url
               %br
 
           .div
             %h3 Portfolio
             - sitemap.resources.select { |page| page.path =~ /portfolio.*\.html/ }.each do |page|
-              %a{ href: page_url(page), title: "Portfolio #{page_url(page)} page" }
-                = page_url(page)
+              %a{ href: page_url(page), title: "Portfolio #{page.url} page" }= page.url
               %br
           .div
             %h3 Other pages on website
-            %a{ href: '/', title: 'Home Page' }
-              Home Page
+            %a{ href: '/', title: 'Home Page' } home page
             %br
-            %a{ href: '/sitemap/', title: 'Site Map' }
-              SiteMap
+            %a{ href: '/sitemap/', title: 'Site Map' } SiteMap
             %br
-            %a{ href: '/resume/', title: 'Download CV and resume' }
-              resume and CV
+            %a{ href: '/resume/', title: 'Download CV and resume' } resume and CV
             %br
-            %a{ href: '/sitemap.xml', title: 'sitemap.xml' }
-              sitemap.xml
+            %a{ href: '/sitemap.xml', title: 'sitemap.xml' } sitemap.xml
             %br
-            %a{ download: "rrott-ruby-logo.svg", href: "/images/rrott-ruby-logo.svg", title: "rrott logo"}
-              logo
+            %a{ download: "rrott-ruby-logo.svg", href: "/images/rrott-ruby-logo.svg", title: "rrott logo"} logo
             %br
 
               -# %aside.pure-g
