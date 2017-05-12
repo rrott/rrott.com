@@ -14,10 +14,6 @@
   url: "https://www.cloudbyix.com/"
   title: "CloudByIX"
   img: '/images/brands/cloudbyix.png'
--
-  url: "http://www.ixwebhosting.com/"
-  title: "IxWebHosting"
-  img: '/images/brands/ixwebhosting.png'
 # -
 #   url: "http://www.hostexcellence.com/"
 #   title: "HostExcellence"
@@ -30,6 +26,10 @@
   url: "https://dabble.co/"
   title: "Dabble"
   img: '/images/brands/dabble.png'
+-
+  url: "http://www.ixwebhosting.com/"
+  title: "IxWebHosting"
+  img: '/images/brands/ixwebhosting.png'
 -
   url: "https://uisgcon.org/en/"
   title: "UISGCON"
