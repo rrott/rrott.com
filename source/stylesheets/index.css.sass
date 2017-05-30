@@ -66,17 +66,21 @@
 .rails
   background-image: url(../images/rails.png)
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+  .splash-container
+    height: 550px
+    min-height: 550px
+
 @media (max-width: 72em)
   .splash
-    padding: 2rem
-    margin: 5% auto auto auto
+    padding: 2rem 2.2rem
+    margin:  10%  auto auto 10%
 
   .splash-container
-    background: url(../images/roman-rott-background-small.jpg)
-    min-height: 88vh
+    will-change: transform
     background-attachment: fixed
     background-repeat: no-repeat
-    background-size: cover
+    background-attachment: scroll
 
   .content.infosec, .content.dev-skills, .content.oss, .contacts
     padding: 0
@@ -92,14 +96,18 @@
         order: 1
       .text-block
         order: 0
+  .logo-place
+    display: none
 
 @media (max-width: 48em)
   .splash-container
     background: $color-blue
     min-height: 50vh
+    min-width: 1px
 
   .logo-place
     display: none
 
   .splash
     border: 0
+    margin: 10% auto auto auto
