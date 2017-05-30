@@ -79,7 +79,7 @@ configure :build do
 
   # activate :imageoptim
   activate :webp do |webp|
-    webp.ignore = 'images/roman-rott-*.*'
+    webp.ignore = 'build/images/roman*.jpg'
     webp.append_extension = true
   end
 
