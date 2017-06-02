@@ -9,6 +9,7 @@
     %meta{ name: 'twitter:image', content: data.site.blog.preview }
     = stylesheet_link_tag 'application', property: 'stylesheet', defer: :defer, async: true
     = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: :defer, async: true
+    = stylesheet_link_tag 'print', media: 'print'
 
   %body
     = yield

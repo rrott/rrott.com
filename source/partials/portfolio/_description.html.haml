@@ -31,5 +31,5 @@
   - if project.status.urls
     - project.status.urls.each do |url|
       #{url.pre}
-      %a{ href: url.link, target: '_blank', rel: nofollow(url.nofollow), title: url.description } #{url.short}
+      %a.print{ href: url.link, target: '_blank', rel: nofollow(url.nofollow), title: url.description } #{url.short}
       %br
