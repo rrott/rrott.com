@@ -12,7 +12,7 @@ year: 2015
 images:
   -
     url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-new"
-    title: "Fake payment system created to help researches to increase their web application security skills"
+    title: "Fake payment system for CTF security game"
   -
     url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-website"
     title: "Main website of the hacking game's payment system"

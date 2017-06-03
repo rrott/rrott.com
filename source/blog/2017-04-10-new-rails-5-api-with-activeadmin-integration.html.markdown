@@ -8,7 +8,7 @@ category: RoR
 ---
 
 #Setting Up Rails 5 API Only App with ActiveAdmin(updated manual).
-*Old version for Rails 5.0 beta 3 can be also found [here](/blog/ror/rails-5-api-with-activeadmin-integration.html).
+*You can also find [my outdated post about using ActiveAdmin with Rails 5.0 beta 3](/blog/ror/rails-5-api-with-activeadmin-integration.html).
 
 As you may probably know **rails-api** gem is now shipped with rails 5 by default. It means we can create beautiful API services using rails without any doubt =)
 

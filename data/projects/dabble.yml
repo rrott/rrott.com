@@ -15,10 +15,10 @@ images:
     title: "Dabble.co main page"
   -
     url: "/images/portfolio/dabble/host-a-class"
-    title: "Dabble.co main page"
+    title: "Dabble.co host a class page"
   -
     url: "/images/portfolio/dabble/class-page"
-    title: "Dabble.co main page"
+    title: "Dabble.co class page"
 about:
   - "Dabble is an online community marketplace for people to discover, teach and host unique and affordable one-time classes. Was working mostly on UI parts of the app using JS and CoffeeScript."
   - "I was working on migrating from old SSO to a new one, refactored and removed legacy code, optimizing and  performance enhancement. Was implementing new features and products."
