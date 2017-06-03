@@ -16,6 +16,8 @@ body
   background: none
   font-size: 14pt
   overflow:visible
+  display: block
+
 h1, h2, h3, h4, h5, h6
   page-break-after: avoid
 
@@ -31,9 +33,10 @@ h3
 h4, h5, h6
   font-size: 14pt
 
-p, h2, h3, divs
-  orphans: 3
-  widows: 3
+p, h2, h3, div
+  display: block
+  orphans: 5
+  widows: 5
 
 code
   font: 12pt Courier, monospace
@@ -84,11 +87,29 @@ caption
 thead
   display: table-header-group
 
-img, tr
+img
   page-break-inside: avoid
+  width: 100%
 
-.social-icon, .logo, .logo-place, .portfolio-link, .splash-container, .recent-blogposts, .footer, .linkedin-links, .vc-card, .resume-block, .portfolio-link, .blog-subscribe-link, .social-connections, .open-block, .nav, .portfolio-categories, .share, .breadcrumb, .thumbs, .logo-small, #preview, .search, .lineno
+.print-break
+  page-break-before: always !important
+  page-break: always !important
+
+.post
+  border-bottom: 1px solid #1D4A99
+
+.content-subhead
+  text-align:  center
+
+main, .flex, .wrap, .row-reverse, .column, .justify-center, .justify-around, .justify-between
+  display: block
+
+hr, .social-icon, .logo, .logo-place, .portfolio-link, .splash-container, .recent-blogposts, .footer, .linkedin-links, .vc-card, .resume-block, .portfolio-link, .blog-subscribe-link, .social-connections, .open-block, .nav, .portfolio-categories, .share, .breadcrumb, .thumbs, .logo-small, #preview, .search, .lineno, .social-links div, .blog-intro, .portfolio-images
   display: none !important
+
+.portfolio-content
+  max-height: 0
+  min-height: 0
 
 .content.infosec, .content.dev-skills, .content.oss, .contacts
   page-break-inside: avoid
@@ -96,11 +117,6 @@ img, tr
   padding-bottom: 0
   padding-top: 0.5cm
   padding-right: 0
-
-.contacts
-  page-break-before: always
-  break-before: always
-  page-break-inside: avoid
 
 section.dark
   background: #fff

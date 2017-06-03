@@ -5,7 +5,7 @@
 
     %article.justify-between
       .text-block
-        %section
+        %section.blog-intro
           %h2.center
             Blog about Full-Stack development and security researches.
         %section
@@ -14,7 +14,7 @@
           %p
             In this blog I will cover 2 related spheres: <strong>Web development</strong> and <strong>Security researching</strong>, pin-testing, and everythin around it. I hope it will be useful and probably help people to solve their problems.
       %hr
-      %h3.center Cast
+      %h3.center.print-break Cast
       .blog-list
         %ul
           - blog.articles.each do |article|
