@@ -27,14 +27,8 @@
     %h2.center Web Developer
     .stickers
       .logo.responsive.wrap.justify-center
-        .sticker.react
-        .sticker.redux
-        .sticker.ruby
-        .sticker.rails
-        .sticker.js
-        .sticker.es
-        .sticker.html5
-        .sticker.css
+        - ['react', 'redux', 'ruby', 'rails', 'js', 'es', 'html5', 'css'].each do |sticker|
+          .sticker{ class: sticker }
 
       .text-block.vw70
         %p Over the 9 years I was working on various positions and at different departments in a big Cloud and Shared Hosting company, Ecommerce.com. 6 of them were in Tech Support(Customer Relation) department and 4 in IT as a Ruby/Rails developer. There I grew up as a web-developer, as a manager, and as a person.

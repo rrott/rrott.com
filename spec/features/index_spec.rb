@@ -224,11 +224,11 @@ describe 'index', type: :feature do
         context 'OWASP Kyiv' do
           it 'displays OWASP Kyiv' do
             expect(page).to have_selector('ul li.link',
-              text: "Held presentation on the")
+              text: 'Held "Ruby for Pentesters" presentation on the')
           end
 
           it 'displays link to Ruby Meditation' do
-            expect(page).to have_selector('ul li.link a[href="https://www.owasp.org/index.php/Kyiv"]', text: 'OWASP Kyiv Chapter')
+            expect(page).to have_selector('ul li.link a.print[href="https://www.owasp.org/index.php/Kyiv"]', text: 'OWASP Kyiv')
           end
         end
 
