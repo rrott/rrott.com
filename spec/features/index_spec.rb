@@ -83,7 +83,7 @@ describe 'index', type: :feature do
     end
 
     it 'displays link to Portfolio' do
-      expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'Check out my portfolio')
+      expect(page).to have_selector('h3 a[href="/portfolio/"]', text: 'Check out my portfolio')
     end
   end
 
@@ -197,7 +197,7 @@ describe 'index', type: :feature do
     context 'Developed local community' do
       context 'Hackathon' do
         it 'displays local comunity' do
-          expect(page).to have_selector('h5',
+          expect(page).to have_selector('h3',
             text: "Developing local community:")
         end
 
@@ -246,7 +246,7 @@ describe 'index', type: :feature do
 
       context 'blog' do
         it 'displays ' do
-          expect(page).to have_selector('h5',
+          expect(page).to have_selector('h3',
             text: "Recent posts from my blog:")
         end
 
@@ -289,7 +289,7 @@ describe 'index', type: :feature do
     context 'contacts links' do
       context 'Contact Me:' do
         it 'displays contact me links' do
-          expect(page).to have_selector('h4', text: "contact me:")
+          expect(page).to have_selector('h3', text: "contact me:")
         end
 
         it 'displays LinkedIn' do
@@ -327,7 +327,7 @@ describe 'index', type: :feature do
 
       context 'My Resume:' do
         it 'displays resume links' do
-          expect(page).to have_selector('h4', text: "my resume:")
+          expect(page).to have_selector('h3', text: "my resume:")
         end
 
         it 'displays Pdf' do
@@ -367,7 +367,7 @@ describe 'index', type: :feature do
 
       context 'Social Connections:' do
         it 'displays social links' do
-          expect(page).to have_selector('h4', text: "social connections:")
+          expect(page).to have_selector('h3', text: "social connections:")
         end
 
         it 'displays blog' do
@@ -404,15 +404,15 @@ describe 'index', type: :feature do
       end
 
       it 'displays link to Vcard' do
-        expect(page).to have_selector('h4 a[href="/roman.rott.vcf"]', text: 'download my VCard')
+        expect(page).to have_selector('h3 a[href="/roman.rott.vcf"]', text: 'download my VCard')
       end
 
       it 'displays link to portfolio' do
-        expect(page).to have_selector('h4 a[href="/portfolio/"]', text: 'check out my portfolio')
+        expect(page).to have_selector('h3 a[href="/portfolio/"]', text: 'check out my portfolio')
       end
 
       it 'displays link to RSS' do
-        expect(page).to have_selector('h4 a[href="/feed.xml"]', text: 'subscribe to my blog')
+        expect(page).to have_selector('h3 a[href="/feed.xml"]', text: 'subscribe to my blog')
       end
     end
   end

@@ -6,7 +6,7 @@
 
 **This is a JQuery-less website**
 
-**Languages:** Ruby 2.2, CoffeeScript
+**Languages:** Ruby 2.4.1, CoffeeScript
 
 **Libs:** MiddleMan - static site generator.
 
