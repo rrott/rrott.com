@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:4.0
+CLASS:PUBLIC
+REV:2016-04-10
+N:Rott;Roman;;;
+FN:Roman Rott
+NICKNAME:rrott
+TZ:+02:00
+TITLE:Full-Stack Ruby Developer
+ORG:rrott.com
+CATEGORIES:INTERNET,INFORMATION TECHNOLOGY,WEB DEVELOPMENT,SECURITY
+LOGO;VALUE=uri:https://rrott.com/images/rrott-ruby-logo.svg
+EMAIL;TYPE=work;PREF=1:roman@rrott.com
+EMAIL;TYPE=home;PREF=1:roman.rott@gmail.com
+ADR;TYPE=home;PREF=1:;;;Kyiv;;;Ukraine
+URL;TYPE=work;PREF=1:https://rrott.com
+IMPP;TYPE=work;PREF=1:skype:roman.rott
+X-SOCIALPROFILE;TYPE=work;PREF=1:twitter:https://twitter.com/roman_rott
+X-EVOLUTION-BLOG-URL:https://rrott.com/blog/
+END:VCARD
