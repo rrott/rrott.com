@@ -17,3 +17,10 @@ rspec:
     - master
   script:
     - bundle exec rspec
+
+# deploy:
+#   stage: deploy
+#   only:
+#     - master
+#   script:
+#     - bundle exec cap production deploy

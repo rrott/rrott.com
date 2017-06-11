@@ -17,6 +17,11 @@
 ---
 verify_signatures: false
 PreCommit:
+  ALL:
+    exclude: &default_excludes
+      - 'cobfig/**/*'
+      - 'build/**/*'
+
   RuboCop:
     enabled: true
     on_warn: fail # Treat all warnings as failures
