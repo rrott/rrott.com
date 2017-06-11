@@ -3,6 +3,7 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - 'config/**/*'
+    - 'build/**/*'
 
 Metrics/CyclomaticComplexity:
   Severity: refactor
