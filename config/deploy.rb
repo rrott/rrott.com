@@ -25,8 +25,8 @@ namespace :deploy do
     on roles(:all) do
       wd = fetch(:release_path)
       within "#{wd}" do
-        # execute "tar -xjvf build.tar.gz"
         execute "mv #{wd}/build #{wd}/public"
+        execute "cp #{wd}/source/favicon/* #{wd}/public"
       end
     end
   end
