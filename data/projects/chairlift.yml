@@ -24,8 +24,8 @@ images:
     title: "Chairlift(Better Feedback)"
 about:
   - "Chairlift is a modern, cloud based HR solution that elevates employee performance and provides HR professionals with the insight to nourish workplace culture. It is an internal Sphere project I worked as a part of remote team."
+role: "Front-end, Back-end developer"
 responsibilities:
-  - "Front-end, Back-end developer"
   - "Implemented several UI parts/features of the application using React, Redux and ES6. Worked on back-end entities."
 
 languages: "Ruby 2.3, ES6"

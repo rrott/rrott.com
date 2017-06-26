@@ -4,10 +4,9 @@ by:
   url: "https://www.enova.com/"
 tags:
   - "Ruby"
-  - "JavaScript"
   - "Rails"
+  - "JavaScript"
   - "Jquery"
-  - "CoffeeScript"
 info: "* Internal project. Screenshots can't be shown."
 year: 2016
 images:
@@ -16,17 +15,17 @@ images:
     title: "Enova logo"
 
 about:
-  - "Large enterprise project in financial sphere intended to optimize business processes of the loan company. Project consists of two main parts: Core application based on Ruby on Rails 2.1, Ember and brand-new service wrote from scratch using Rails 4.2. Project is based on third party SOAP API and bunch of internal services and APIs."
+  - "Large enterprise project in financial sphere intended to optimize business processes of the loan company."
+role: "Team Lead."
 responsibilities:
-  - "Team Lead."
   - "Code reviews, estimating and allocating resources."
   - "Decision-making and negotiating."
   - "Writing new and refactoring legacy code."
 
 languages: "Ruby, JavaScript"
-libs: "Ruby on Rails 2.1, Ruby on Rails 4.2, Ember.js"
-testing: "Cucumber, Rspec, Capybara, VCR"
-other: "Python, JWT, SOAP, JSON, Devise, postgreSQL/jsonb"
+libs: "Ruby on Rails, Ember.js"
+testing: ""
+other: "JWT, JSON"
 status:
   message: "Internal project. Is online and works as a part of Enova's products."
   urls:

@@ -16,8 +16,8 @@ images:
 
 about:
   - "Chairlift Expenses is an internal Sphere’s project for handling company's expenses. It runs  Ruby on Rails 5 API-only application on back-end(JSON API + JWT) and React+Redux Single Page Application on front-end. I was working on it starting from the initial proposing, planning and designing architecture and finishing implementing both front and back-ends of the project."
+role: "Team Lead"
 responsibilities:
-  - "Team Lead."
   - "Code reviews, estimating and allocating resources, writing stories. Decision-making and negotiating, communicating with the project owner."
   - "Writing code, making architectural decisions."
 languages: "Ruby 2.3, ES2016"
