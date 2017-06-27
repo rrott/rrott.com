@@ -2,235 +2,235 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rrott.com/blog/ror/rails-5-api-with-activeadmin-integration.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/svg/issue-with-css-transition-animation-in-safari.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/svg/how-to-stop-worrying-and-start-using-sketch.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/security/why-should-I-use-gpg-with-git.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/git/how-to-start-using-gitlab.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/ror/new-rails-5-api-with-activeadmin-integration.html</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/resume/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/sitemap/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/all/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/back-end/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/backbone/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/coffeescript/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/digitalocean/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/front-end/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/full-stack/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/gems/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/groupon/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/grunt/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/irarott/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/javascript/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/jquery/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/marionette/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/middleman/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/mobile/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/node/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/online-projects/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/oss/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/padrino/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/rails/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/react/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/ruby/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/portfolio/sinatra/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/ror/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/git/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/security/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rrott.com/blog/svg/</loc>
-    <lastmod>2017-06-13T00:00:00+03:00</lastmod>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
