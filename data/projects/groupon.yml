@@ -13,11 +13,10 @@ images:
     url: "/images/portfolio/groupon/groupon-logo"
     title: "Groupon logo"
 about:
-  - Groupon is an US e-commerce marketplace. I am working on their notification engine that handles reservation related notifications for Online Booking. It consists of a web server and a set of background workers. The web server exposes endpoints to configure notification profiles and settings as well as callbacks received from the SMS/Calls service.
+  - Groupon is an US e-commerce marketplace. I am working on their notification engine that handles reservation related notifications for Online Booking. It consists of a web server and a set of background workers to send messages and receive callbacks from the SMS/Calls service.
 role: "Back-end developer"
-languages: "Ruby 2.2.3"
-libs: "Ruby on Rails 4, Resque, Redis, Groupon-specific services/APIs"
-testing: "Rspec"
+languages: "Ruby 2"
+libs: "Ruby on Rails, Resque, Redis, Groupon-specific services/APIs"
 status:
   message: "Internal project. Is online and work as a part of Groupon's products."
   urls:

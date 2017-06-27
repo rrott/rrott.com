@@ -24,7 +24,7 @@ about:
   - "I was working on migrating from old SSO to a new one, refactored and removed legacy code, optimizing and  performance enhancement. Was implementing new features and products."
 role: "Front-end, Back-end developer"
 languages: "Ruby, CoffeeScript"
-libs: "Ruby on Rails 4.2, Trailblazer, Cells, Roar, ActiveAdmin, jQuery"
+libs: "Ruby on Rails, Trailblazer, Cells, Roar, ActiveAdmin, jQuery"
 testing: "Rspec"
 status:
   message: "Online."

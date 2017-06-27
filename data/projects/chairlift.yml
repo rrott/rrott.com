@@ -28,7 +28,7 @@ role: "Front-end, Back-end developer"
 responsibilities:
   - "Implemented several UI parts/features of the application using React, Redux and ES6. Worked on back-end entities."
 
-languages: "Ruby 2.3, ES6"
+languages: "Ruby 2, ES6"
 libs: "Ruby on Rails 4.2, React+Redux"
 testing: "Rspec, Factory Girl"
 other: "JSON, postgreSQL"

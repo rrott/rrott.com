@@ -2,20 +2,23 @@
   %p
     #{about}
 
-%div
-  .bold.inline Role:
-  .inline #{project.role}
+- if project.role
+  %div
+    .bold.inline Role:
+    .inline #{project.role}
 %div
   .bold.inline Responsibilities:
   - if project.responsibilities
     - project.responsibilities.each do |responsibility|
       .inline #{responsibility}
-%div
-  .bold.inline Languages:
-  .inline #{project.languages}
-%div
-  .bold.inline Frameworks/Libs:
-  .inline #{project.libs}
+- if project.languages
+  %div
+    .bold.inline Languages:
+    .inline #{project.languages}
+- if project.libs
+  %div
+    .bold.inline Frameworks/Libs:
+    .inline #{project.libs}
 - if project.testing
   %div
     .bold.inline Testing Frameworks:

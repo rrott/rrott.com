@@ -23,9 +23,6 @@ responsibilities:
   - "Writing new and refactoring legacy code."
 
 languages: "Ruby, JavaScript"
-libs: "Ruby on Rails, Ember.js"
-testing: ""
-other: "JWT, JSON"
 status:
   message: "Internal project. Is online and works as a part of Enova's products."
   urls:
