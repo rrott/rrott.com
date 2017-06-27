@@ -37,6 +37,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://rrott.com/blog/security/ruby-for-pentesters.html</loc>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://rrott.com/blog/</loc>
     <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -211,6 +217,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://rrott.com/blog/security/</loc>
+    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://rrott.com/blog/ror/</loc>
     <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,12 +230,6 @@
   </url>
   <url>
     <loc>https://rrott.com/blog/git/</loc>
-    <lastmod>2017-06-27T00:00:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://rrott.com/blog/security/</loc>
     <lastmod>2017-06-27T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

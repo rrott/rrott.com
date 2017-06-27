@@ -5,10 +5,23 @@
   <id>https://rrott.com/blog/</id>
   <link href="https://rrott.com/blog/"/>
   <link href="https://rrott.com/feed.xml" rel="self"/>
-  <updated>2017-04-10T15:44:00+03:00</updated>
+  <updated>2017-06-27T14:55:00+03:00</updated>
   <author>
     <name>rrott blog</name>
   </author>
+  <entry>
+    <title>Ruby for pentesters</title>
+    <link rel="alternate" href="/blog/security/ruby-for-pentesters.html"/>
+    <id>/blog/security/ruby-for-pentesters.html</id>
+    <published>2017-06-27T14:55:00+03:00</published>
+    <updated>2017-06-27T14:55:00+03:00</updated>
+    <author>
+      <name>rrott blog</name>
+    </author>
+    <summary type="html">&lt;h1&gt;Ruby for Pentesters(or Pentesting for Rubyists)&lt;/h1&gt;
+
+&lt;p&gt;Hello all =) Couple weeks ago I had a talk on the very first &lt;a href="https://www.owasp.org/index.php/Kyiv"&gt;OWASP Kyiv Chapter&lt;/a&gt; meetup and this particular article is a short overview of my presentation. Here you can find a brief list of tools, services...&lt;/p&gt;</summary>
+  </entry>
   <entry>
     <title>Rails 5 API with ActiveAdmin(updated manual)</title>
     <link rel="alternate" href="/blog/ror/new-rails-5-api-with-activeadmin-integration.html"/>
