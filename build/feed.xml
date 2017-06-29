@@ -20,7 +20,7 @@
     </author>
     <summary type="html">&lt;h1&gt;Ruby for Pentesters(or Pentesting for Rubyists)&lt;/h1&gt;
 
-&lt;p&gt;Hello all =) Couple weeks ago I had a talk on the very first &lt;a href="https://www.owasp.org/index.php/Kyiv"&gt;OWASP Kyiv Chapter&lt;/a&gt; meetup and this particular article is a short overview of my presentation. Here you can find a brief list of tools, services...&lt;/p&gt;</summary>
+&lt;p&gt;Hello all =) Couple weeks ago I had a talk on the very first &lt;a href="https://www.owasp.org/index.php/Kyiv"&gt;&lt;strong&gt;OWASP Kyiv Chapter&lt;/strong&gt;&lt;/a&gt; meetup and this particular article is an overview of my presentation. Here you can find a brief list of tools, services...&lt;/p&gt;</summary>
   </entry>
   <entry>
     <title>Rails 5 API with ActiveAdmin(updated manual)</title>
