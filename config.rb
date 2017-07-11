@@ -4,7 +4,6 @@ require "middleman-smusher"
 activate :automatic_image_sizes
 set :url_root, 'https://rrott.com'
 
-activate :es6
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

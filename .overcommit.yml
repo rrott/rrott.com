@@ -31,11 +31,11 @@ PreCommit:
   CssLint:
     enabled: true
   EsLint:
-    enabled: true
+    enabled: false
   ImageOptim:
     enabled: false
   JsonSyntax:
-    enabled: true
+    enabled: false
   RubyLint:
     enabled: false
   YamlLint:
