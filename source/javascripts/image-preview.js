@@ -1,10 +1,27 @@
 class ImagePreview {
   constructor(images=[], image_id=0) {
-    this.state = {images: images, current: images[image_id]}
+    this.state = { images: images, current: images[image_id], step: 0 }
     this.previewBlock = document.getElementById('preview');
     this.previewImg = preview.querySelector("#preview-image");
-    this.previewTitle = document.getElementById('preview-image-title');
+    this.registerEvents();
     this.initPreview();
+  }
+
+  registerEvents() {
+    document.onkeydown = event => {
+      event = event || window.event;
+      event.preventDefault()
+      switch (event.keyCode) {
+        case 32:
+          this.nextImage();
+          break;
+        case 8:
+          this.prevImage();
+          break;
+        case 27:
+          this.hidePreview()
+      }
+    };
   }
 
   initPreview() {
@@ -12,25 +29,49 @@ class ImagePreview {
       const action = window.Helpers.getTarget(e).id;
       switch (action) {
         case "next":
-          this.state.current = this.state.images[this.nextImageId(+1)];
-          this.showImage();
+        case "preview-image":
+          this.nextImage();
           break;
         case "prev":
-          this.state.current = this.state.images[this.nextImageId(-1)];
-          this.showImage();
+          this.prevImage();
           break;
         default:
-          this.previewBlock.style.display = 'none';
-        }
+          this.hidePreview()
+      }
     };
   }
 
+  hidePreview() {
+    this.previewBlock.style.display = 'none';
+  }
+
+  nextImage() {
+    this.state.step += 1;
+    this.switchImage();
+  }
+
+  prevImage() {
+    this.state.step -= 1;
+    this.switchImage();
+  }
+
+  switchImage() {
+    this.state.current = this.state.images[this.nextImageId()];
+    this.canShowImage() && this.showImage();
+  }
+
+  canShowImage() {
+    return this.previewBlock.style.display === 'block';
+  }
+
   showImage() {
-    this.previewTitle.innerHTML = this.state.current.title;
-    this.previewImg.src = '';
-    this.previewImg.src = this.state.current.src;
-    this.previewBlock.style.display = 'block';
-    this.showSpinner();
+    if (this.state.current.src) {
+      let previewTitle = document.getElementById('preview-image-title')
+      previewTitle.innerHTML = this.state.current.title;
+      this.previewImg.src = this.state.current.src;
+      this.previewBlock.style.display = 'block';
+      this.showSpinner();
+    }
   }
 
   showSpinner() {
@@ -54,14 +95,7 @@ class ImagePreview {
     spinner.textContent = (message === 'Loading...') ? 'Loading' : message + '.';
   }
 
-  nextImageId(increment) {
-    const max     = this.state.images.length - 1; const min = 0;
-    const next    = this.state.current.id + increment;
-
-    if (next > max) { return min; }
-    if (next < min) { return max; }
-    return next;
+  nextImageId() {
+    return Math.abs(this.state.step % max);
   }
 }
-
-// window.ImagePreview = new ImagePreview([]);

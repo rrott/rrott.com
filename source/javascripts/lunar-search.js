@@ -28,10 +28,12 @@ class LunarSearch {
   renderResults(result) {
     this.resultsPlace.innerHTML = "";
 
-    result.map(res => {
-      let link = this.createElement(res);
-      this.resultsPlace.appendChild(link);
-    });
+    if (this.searchFiled.value) {
+      result.map(res => {
+        let link = this.createElement(res);
+        this.resultsPlace.appendChild(link);
+      });
+    }
   }
 
   createElement(data) {
