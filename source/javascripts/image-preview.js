@@ -1,18 +1,27 @@
 class ImagePreview {
-  constructor(images=[], image_id=0) {
-    this.state = { images: images, current: images[image_id], step: 0 }
+  constructor(images=[], imageId=0) {
     this.previewBlock = document.getElementById('preview');
     this.previewImg = this.previewBlock.querySelector("#preview-image");
+    this.initState(images, imageId) ;
     this.registerEvents();
     this.initPreview();
+  }
+
+  initState(images, imageId) {
+    this.state = {
+      isShown: this.previewBlock.style.display === 'block',
+      images:  images,
+      current: images[imageId],
+      step: 0
+    }
   }
 
   registerEvents() {
     document.onkeydown = event => {
       event = event || window.event;
-      event.preventDefault()
       switch (event.keyCode) {
         case 32:
+          this.state.isShown && event.preventDefault();
           this.nextImage();
           break;
         case 8:
@@ -43,6 +52,7 @@ class ImagePreview {
 
   hidePreview() {
     this.previewBlock.style.display = 'none';
+    this.state.isShown = false;
   }
 
   nextImage() {
@@ -57,11 +67,7 @@ class ImagePreview {
 
   switchImage() {
     this.state.current = this.state.images[this.nextImageId()];
-    this.canShowImage() && this.showImage();
-  }
-
-  canShowImage() {
-    return this.previewBlock.style.display === 'block';
+    this.state.isShown && this.showImage();
   }
 
   showImage() {
@@ -70,6 +76,7 @@ class ImagePreview {
       previewTitle.innerHTML = this.state.current.title;
       this.previewImg.src = this.state.current.src;
       this.previewBlock.style.display = 'block';
+      this.state.isShown = true;
       this.showSpinner();
     }
   }
