@@ -2,7 +2,7 @@ class ImagePreview {
   constructor(images=[], image_id=0) {
     this.state = { images: images, current: images[image_id], step: 0 }
     this.previewBlock = document.getElementById('preview');
-    this.previewImg = preview.querySelector("#preview-image");
+    this.previewImg = this.previewBlock.querySelector("#preview-image");
     this.registerEvents();
     this.initPreview();
   }
@@ -96,6 +96,8 @@ class ImagePreview {
   }
 
   nextImageId() {
-    return Math.abs(this.state.step % max);
+    const max = this.state.images.length;
+    if (this.state.step === 0) { this.state.step = max };
+    return this.state.step % max;
   }
 }

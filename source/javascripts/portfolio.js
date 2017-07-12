@@ -10,11 +10,15 @@ class Portfolios {
 class Portfolio {
   constructor(portfolio) {
     this.portfolio = portfolio;
+    this.thumbs = this.portfolio.getElementsByClassName('thumb');
     this.registerEvents();
   }
 
   registerEvents() {
     this.portfolio.querySelector(".project-img").onclick = e => { this.showImage(e); };
+    [...this.thumbs].map((thumb,index) => (
+      thumb.onclick = e => (this.showImage(e))
+    ));
   }
 
   showImage(e) {
@@ -25,13 +29,11 @@ class Portfolio {
   }
 
   imagesList() {
-    const thumbs = this.portfolio.getElementsByClassName('thumb');
-    if (!thumbs.length) {return [{src: null, title: 'No image', id: 0}];}
+    if (!this.thumbs.length) {return [{src: null, title: 'No image', id: 0}];}
 
-    return [...thumbs].map((thumb,index) => {
-      thumb.onclick = e => (this.showImage(e));
-      return { src: thumb.href, title: thumb.title, id: index };
-    });
+    return [...this.thumbs].map((thumb,index) => (
+      { src: thumb.href, title: thumb.title, id: index }
+    ));
   }
 }
 

@@ -15,7 +15,10 @@ For example, one can scam his investors showing them that [Aaron Paterson](https
 
 Yes, it's just a funny example, but... you know.
 
-<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png"/>
+
+<a href="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png", title="Aaron Patterson Commitst to my git">
+  <img class='blog-image', data-index="0", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/Aaron-Patterson-Commitst-to-my-git.png"/>
+</a>
 
 ## A bit about GPG in Git and GitHub
 >When you're building software with people from around the world, sometimes it's important to validate that commits and tags are coming from an identified source. Git supports signing commits and tags with GPG and starting today GitHub will show you when commits and tags are signed.
@@ -53,7 +56,9 @@ To git@github.com:rrott/gpg_test.git
 
 And here is the result in GitHub:
 
-<img class='blog-image' title="Aaron Patterson Commitst to my git", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/>
+<a href="/images/blog/gpg-and-github/tender-love-commits-poc.png", title="Aaron Patterson Commitst to my git">
+  <img class='blog-image', data-index="1", alt="Aaron Patterson Commitst to my git", src="/images/blog/gpg-and-github/tender-love-commits-poc.gif"/>
+</a>
 
 Repo: <a href="https://github.com/rrott/gpg_test/commits/master/README.md" target="_blank" rel="noopener noreferrer">rrott/gpg_test</a>
 
@@ -88,7 +93,9 @@ $ git commit -S -am "Committed with GPG"
 
  That's it:
 
-<img class='blog-image' title="Commit in GitHub signed by gpg", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/>
+<a href="/images/blog/gpg-and-github/github-gpg.png", title="Commit in GitHub signed by gpg">
+  <img class='blog-image', data-index="2", alt="Commit in GitHub signed by gpg", src="/images/blog/gpg-and-github/github-gpg.png"/>
+</a>
 
 ---
 ## How to set up git to use GPG with every commit

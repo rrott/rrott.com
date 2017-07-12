@@ -7,8 +7,9 @@ category: git
 ---
 # How to start using GitLab as your additional Git remote server.
 
+
 <p class='flex wrap'>
-  <img class='responsive' title="GitHub logo", alt="GitHub logo", src="/images/blog/start-using-gitlab/git.png"/>
+  <img class='responsive', alt="GitHub logo", src="/images/blog/start-using-gitlab/git.png"/>
 </p>
 
 Introducing GitLab to my friends/colleagues is causing me some concern because I have heard phrases like **"This will void all my logs in GitHub Issues"** or **"I'll loose all my PRs' history, that's not ok!..."**, but you know, it is not really true!
@@ -74,8 +75,16 @@ origin  git@github.com:rrott/rrott.com.git (push)
 
 ---
 
-<img class='blog-image' title="Commits in GitLab", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
-<img class='blog-image' title="Commits in GitHub", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>
+
+
+<a href="/images/blog/start-using-gitlab/gitlab-commits.png", title="Commits in GitLab">
+  <img class='blog-image', data-index="0", alt="Commits in GitLab", src="/images/blog/start-using-gitlab/gitlab-commits.png"/>
+</a>
+
+<a href="/images/blog/start-using-gitlab/github-commits.png", title="Commits in GitHub",>
+  <img class='blog-image', data-index="1", alt="Commits in GitHub", src="/images/blog/start-using-gitlab/github-commits.png"/>
+</a>
+
 
 > Notice how perfectly responsive designs work on both websites ;)
 
@@ -117,11 +126,15 @@ Let's do that:
 
  1. Open your project on GitLab
  2. Go to Settings Page.
- <img class='blog-image' title="GitLab project settings page", alt="GitLab project settings page", src="/images/blog/start-using-gitlab/gitlab-project-settings.png"/>
+  <a href="/images/blog/start-using-gitlab/gitlab-project-settings.png", title="GitLab project settings page">
+    <img class='blog-image', data-index="2", alt="GitLab project settings page", src="/images/blog/start-using-gitlab/gitlab-project-settings.png"/>
+  </a>
 
  3. Click on `Mirror Repository` menu item.
  4. Configure it to be a mirror or to use another server as a mirror as described on the page.
-  <img class='blog-image' title="GitLab project mirror settings page", alt="GitLab project mirror settings page", src="/images/blog/start-using-gitlab/gitlab-project-mirror.png"/>
+  <a href="/images/blog/start-using-gitlab/gitlab-project-mirror.png", title="GitLab project mirror settings page">
+    <img class='blog-image', data-index="3", alt="GitLab project mirror settings page", src="/images/blog/start-using-gitlab/gitlab-project-mirror.png"/>
+  </a>
 
 Is it the same? No. It is *almost* the same, the only problem is that you will have to use your login/password here.
 
