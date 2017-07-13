@@ -87,6 +87,7 @@ end
 
 # activate :i18n
 activate :syntax, line_numbers: true
+activate :es6
 # activate :asset_hash
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet

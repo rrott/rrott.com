@@ -10,6 +10,7 @@ gem 'middleman-autoprefixer'
 gem "middleman-blog"
 gem 'middleman-blog-similar'
 gem "middleman-disqus"
+gem "middleman-es6", github: "vast/middleman-es6"
 gem 'middleman-imageoptim'
 gem 'middleman-livereload'
 gem 'middleman-meta-tags'
