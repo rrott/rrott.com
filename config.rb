@@ -1,4 +1,5 @@
 # require "middleman-smusher"
+require "middleman-deploy"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -38,7 +39,7 @@ data.pages.portfolio.each do |page|
 end
 
 activate :deploy do |deploy|
-  deploy.deploy_method = :git
+  deploy.method = :git
   deploy.branch = 'build'
 end
 

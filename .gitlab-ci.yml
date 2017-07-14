@@ -15,10 +15,10 @@ build:
     - middleman build
     - cp source/favicon/* public
     - middleman deploy
-  artifacts:
-    paths:
-      - public
-    expire_in: 60 minutes
+  # artifacts:
+  #   paths:
+  #     - public
+  #   expire_in: 60 minutes
 
 rspec:
   stage: test
@@ -52,22 +52,13 @@ pages:
     - build
 
 deploy:
+  environment: production
   stage: deploy
   only:
     - master
+#     - tags
+#     - /^production.*$/
   before_script:
     - bundle install --jobs=4 --path vendor --without development test
   script:
     - bundle exec cap production deploy
-
-# deploy:
-#   environment: production
-#   stage: deploy
-#   only:
-#     - build
-#     - tags
-#     - /^production.*$/
-#   before_script:
-#     - bundle install  --jobs=4 --path vendor --without development test
-#   script:
-#     - bundle exec cap production deploy

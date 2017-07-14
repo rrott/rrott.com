@@ -6,6 +6,7 @@ gem 'builder'
 gem "middleman"
 gem "middleman-blog"
 gem 'middleman-blog-similar'
+gem 'middleman-deploy', '~> 1.0'
 gem "middleman-disqus"
 gem "middleman-es6", git: "https://github.com/vast/middleman-es6.git"
 gem 'middleman-meta-tags'
@@ -34,7 +35,6 @@ group :deploy do
   gem 'capistrano', '~> 3.4'
   gem 'capistrano-bundler'
   gem 'capistrano-deploy'
-  gem 'middleman-deploy', '~> 1.0'
   # gem 'rvm1-capistrano3', require: false
 end
 
