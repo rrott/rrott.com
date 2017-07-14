@@ -43,6 +43,8 @@ pages:
   stage: deploy
   image: alpine:latest
   environment: staging
+  script:
+    - ls
   artifacts:
     paths:
       - public
@@ -51,11 +53,13 @@ pages:
     - build
 
 deploy:
-  only: master
+  stage: deploy
+  only:
+    - master
   before_script:
-    - bundle install  --jobs=4 --path vendor --without development test
+    - bundle install --jobs=4 --path vendor --without development test
   script:
-    - middleman deploy
+    - bundle exec cap production deploy
 
 # deploy:
 #   environment: production
