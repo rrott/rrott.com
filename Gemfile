@@ -34,6 +34,7 @@ group :deploy do
   gem 'capistrano', '~> 3.4'
   gem 'capistrano-bundler'
   gem 'capistrano-deploy'
+  gem 'middleman-deploy', '~> 1.0'
   # gem 'rvm1-capistrano3', require: false
 end
 
