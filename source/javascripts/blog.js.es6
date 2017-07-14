@@ -23,9 +23,9 @@ class Blog {
   imagesList() {
     if (!this.thumbs.length) {return [{src: null, title: 'No image', id: 0}];}
 
-    return [...this.thumbs].map((thumb,index) => {
-      return { src: thumb.src, title: thumb.alt, id: index }
-    });
+    return [...this.thumbs].map((thumb,index) => ({
+      src: thumb.src, title: thumb.alt, id: index
+    }));
   }
 }
 

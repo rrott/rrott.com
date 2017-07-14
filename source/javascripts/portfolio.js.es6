@@ -31,9 +31,9 @@ class Portfolio {
   imagesList() {
     if (!this.thumbs.length) {return [{src: null, title: 'No image', id: 0}];}
 
-    return [...this.thumbs].map((thumb,index) => (
-      { src: thumb.href, title: thumb.title, id: index }
-    ));
+    return [...this.thumbs].map((thumb,index) => ({
+      src: thumb.href, title: thumb.title, id: index
+    }));
   }
 }
 

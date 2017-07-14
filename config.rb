@@ -1,4 +1,4 @@
-require "middleman-smusher"
+# require "middleman-smusher"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -48,6 +48,8 @@ end
 
 # activate :autoprefixer
 activate :directory_indexes
+activate :es6
+
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'
@@ -67,6 +69,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
+
   # activate :cache_buster
   activate :relative_assets
   # activate :smusher
@@ -87,12 +90,11 @@ end
 
 # activate :i18n
 activate :syntax, line_numbers: true
-activate :es6
 # activate :asset_hash
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
-set :haml, ugly: true
+# set :haml, ugly: true
 
 page "blog/*/index.html", layout: :blog_category
 activate :blog do |blog|

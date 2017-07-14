@@ -26,7 +26,7 @@ namespace :deploy do
       wd = fetch(:release_path)
       within "#{wd}" do
         execute "mv #{wd}/build #{wd}/public"
-        execute "cp #{wd}/source/favicon/* #{wd}/public"
+        # execute "cp #{wd}/source/favicon/* #{wd}/public"
         execute "docker stop rrott.com && docker rm rrott.com"
         execute "docker run --name rrott.com -p 80:80 -p 443:443 -v ~/rrott.com/current/public:/var/www/rrott.com:ro -d rrott.com"
       end
