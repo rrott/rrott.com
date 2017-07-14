@@ -3,6 +3,7 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - 'config/**/*'
+    - 'public/**/*'
     - 'build/**/*'
 
 Metrics/CyclomaticComplexity:

@@ -21,6 +21,7 @@ PreCommit:
     exclude: &default_excludes
       - 'config/**/*'
       - 'build/**/*'
+      - 'public/**/*'
       - 'source/blog/*'
   RuboCop:
     enabled: true

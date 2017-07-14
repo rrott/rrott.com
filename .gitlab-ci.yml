@@ -1,63 +1,75 @@
 image: "ruby:2.4.1"
 
-cache:
-  paths:
-    - vendor
-
 stages:
   - build
   - test
   - deploy
 
+cache:
+  paths:
+    - vendor
+
 build:
   stage: build
   only:
     - master
-    - build
   before_script:
     - bundle install --jobs=4 --path vendor --without development deploy test
   script:
-    # - git branch
     - middleman build
-    - cp source/favicon/* build
-    # - git checkout build
-    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+    - cp source/favicon/* public
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-    - git checkout -b ci_processing
+    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
     - git config --global user.name "GitLab Runner"
     - git config --global user.email "gitlab@rrott.com"
     - git remote set-url --push origin "${CI_PUSH_REPO}"
-    - git add .
-    - git commit --message "Automated build at $(date +"%Y-%m-%d %H:%M:%S %Z")"
-    - git push origin ci_processing:${CI_BUILD_REF_NAME}
-
+    - middleman deploy
 
 rspec:
   stage: test
   only:
     - master
-  script:
-    - bundle exec rspec
   before_script:
     - bundle install --jobs=4 --path vendor --without development deploy build
+  script:
+    - bundle exec rspec
 
 integration:
   stage: test
   only:
     - master
-  script:
-    - bundle exec rspec
   before_script:
     - bundle install --jobs=4 --path vendor --without development deploy build
+  script:
+    - bundle exec rspec
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  environment: staging
+  script:
+    - ls
+  artifacts:
+    paths:
+      - public
+    expire_in: 60 minutes
+  only:
+    - production
 
 deploy:
-  environment:
-    name: production
+  environment: production
   stage: deploy
   only:
-    - tags
-    - /^production.*$/
-  script:
-    - bundle exec cap production deploy
+    - master
+#     - tags
+#     - /^production.*$/
   before_script:
-    - bundle install  --jobs=4 --path vendor --without development test
+    - bundle install --jobs=4 --path vendor --without development test
+  script:
+    - ls -alh
+    # - bundle exec cap production deploy

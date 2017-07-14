@@ -1,4 +1,5 @@
 # require "middleman-smusher"
+require "middleman-deploy"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -8,6 +9,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :relative_links, true
+set :build_dir, 'public'
 
 page 'sitemap.xml',   layout: false
 page 'feed.xml',      layout: false
@@ -34,6 +36,11 @@ data.pages.portfolio.each do |page|
     multipart:    project_page.multipart,
     message:      project_page.message
   }
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'production'
 end
 
 activate :search do |search|

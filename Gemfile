@@ -6,6 +6,7 @@ gem 'builder'
 gem "middleman"
 gem "middleman-blog"
 gem 'middleman-blog-similar'
+gem 'middleman-deploy', '~> 1.0'
 gem "middleman-disqus"
 gem "middleman-es6", git: "https://github.com/vast/middleman-es6.git"
 gem 'middleman-meta-tags'
