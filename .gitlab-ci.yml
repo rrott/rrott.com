@@ -3,7 +3,6 @@ image: "ruby:2.4.1"
 stages:
   - build
   - test
-  - package
   - deploy
 
 build:
@@ -14,7 +13,7 @@ build:
     - bundle install --jobs=4 --path vendor --without development deploy test
   script:
     - middleman build
-    - cp source/favicon/* build
+    - cp source/favicon/* public
     - middleman deploy
   artifacts:
     paths:
