@@ -14,11 +14,11 @@ build:
   script:
     - middleman build
     - cp source/favicon/* public
+    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+    - git config --global user.name "GitLab Runner"
+    - git config --global user.email "roman.rott@gmail.com"
+    - git remote set-url --push origin "${CI_PUSH_REPO}"
     - middleman deploy
-  # artifacts:
-  #   paths:
-  #     - public
-  #   expire_in: 60 minutes
 
 rspec:
   stage: test
