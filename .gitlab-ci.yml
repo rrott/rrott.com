@@ -20,8 +20,8 @@ build:
     # - ssh-add <(echo "$SSH_PRIVATE_KEY")
     # - mkdir -p ~/.ssh
     # - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    # - git config --global user.name "Roman Rott"
-    # - git config --global user.email "gitlab@rrott.com"
+    - git config --global user.name "Roman Rott"
+    - git config --global user.email "roman@rrott.com"
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
