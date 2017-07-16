@@ -8,7 +8,8 @@
 /.bundle
 /log
 # Ignore the build directory
-#/build
+/build
+/public
 build.zip
 
 # Ignore Sass' cache
