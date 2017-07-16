@@ -32,7 +32,7 @@ build:
   script:
     - middleman build
     - cp source/favicon/* public
-    - git checkout production
+    # - git checkout production
     - git add .
     - git push origin HEAD:production
 
