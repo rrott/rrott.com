@@ -24,10 +24,10 @@ build:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+    # - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
     - git config --global user.name "GitLab Runner"
     - git config --global user.email "gitlab@rrott.com"
-    - git remote set-url --push origin "${CI_PUSH_REPO}"
+    # - git remote set-url --push origin "${CI_PUSH_REPO}"
     - middleman deploy
 
 rspec:
