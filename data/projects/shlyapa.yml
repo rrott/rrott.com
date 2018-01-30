@@ -20,9 +20,6 @@ images:
     url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-payment"
     title: "List of plans of the payment system for hacking games"
   -
-    url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-merchant"
-    title: "Merchant system of the web application security hacking game"
-  -
     url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-captcha"
     title: "Captcha with security issues to allow researchers to hack into the system"
   -

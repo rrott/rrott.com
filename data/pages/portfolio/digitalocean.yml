@@ -23,8 +23,5 @@ projects_list:
         name: "my_best_dates"
         noindex: true
       -
-        name: "securevpn"
-        noindex: true
-      -
         name: "findmegetme"
         noindex: true

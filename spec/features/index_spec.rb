@@ -15,14 +15,14 @@ describe 'index', type: :feature do
     end
 
     it 'display message that I am open for job' do
-      expect(page).to have_selector('.center',
+      expect(page).to_not have_selector('.center',
         text: "Open for remote job opportunities. Contact me if you're interested")
     end
 
     context 'who I am' do
       it 'displays who I am' do
         expect(page).to have_selector('div',
-          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5+ years experience dedicated to web development and security audit of web applications.")
+          text: "I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5 years experience dedicated to web development and security audit of web applications.")
       end
 
       it 'displays specialization' do

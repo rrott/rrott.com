@@ -19,6 +19,10 @@ portfolio_sections:
     url: "/portfolio/groupon/"
     name: "Groupon"
     show_in_menu: false
+  # -
+  #   url: "/portfolio/cater2me/"
+  #   name: "Cater2.me"
+  #   show_in_menu: false
   -
     url: "/portfolio/irarott/"
     name: "IraRott Inc"

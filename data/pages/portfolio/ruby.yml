@@ -45,8 +45,5 @@ projects_list:
         name: "ix_landing"
         noindex: true
       -
-        name: "securevpn"
-        noindex: false
-      -
         name: "findmegetme"
         noindex: false

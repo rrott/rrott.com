@@ -15,10 +15,14 @@ class Portfolio {
   }
 
   registerEvents() {
-    this.portfolio.querySelector(".project-img").onclick = e => { this.showImage(e); };
-    [...this.thumbs].map((thumb,index) => (
-      thumb.onclick = e => (this.showImage(e))
-    ));
+    const projectImg = this.portfolio.querySelector(".project-img");
+    projectImg.onclick = e => e.preventDefault();
+    projectImg.onmouseup = e => this.showImage(e);
+
+    [...this.thumbs].map((thumb,index) => {
+      thumb.onclick = e => e.preventDefault();
+      thumb.onmouseup = e => this.showImage(e);
+    });
   }
 
   showImage(e) {

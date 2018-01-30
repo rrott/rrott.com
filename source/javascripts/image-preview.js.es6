@@ -34,7 +34,7 @@ class ImagePreview {
   }
 
   initPreview() {
-    this.previewBlock.onclick = e => {
+    this.previewBlock.onmouseup = e => {
       const action = window.Helpers.getTarget(e).id;
       switch (action) {
         case "next":
@@ -45,7 +45,7 @@ class ImagePreview {
           this.prevImage();
           break;
         default:
-          this.hidePreview()
+          this.hidePreview();
       }
     };
   }

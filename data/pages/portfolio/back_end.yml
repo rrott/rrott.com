@@ -21,8 +21,5 @@ projects_list:
         name: "chairlift_expenses"
         noindex: false
       -
-        name: "securevpn"
-        noindex: true
-      -
         name: 'findmegetme'
         noindex: true

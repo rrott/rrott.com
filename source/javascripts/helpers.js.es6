@@ -2,7 +2,7 @@ class Helpers {
   disableLinks() {
     let links = [...document.getElementsByClassName('internal-link')];
     links.map(link =>
-      (link.onclick = e => {
+      (link.onmouseup = e => {
         window.location.href = this.getTarget(e).getAttribute('data-href');
       })
     );
