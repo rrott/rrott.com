@@ -10,4 +10,8 @@ module TemplateHelpers
   def nofollow(param)
     param ? 'nofollow' : 'prefetch'
   end
+
+  def open_for_remote
+    data.settings.open_for_remote
+  end
 end

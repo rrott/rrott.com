@@ -14,7 +14,8 @@
       = partial('images/rrott-ruby-logo.svg').to_s
     .portfolio-contacts.dark.portfolio-qr
       = partial 'partials/links'
-      Open for remote job opportunities
+      - if open_for_remote
+        .open-for-remote Open for remote job opportunities
 
     .search
       %form#search{  role: "search" }

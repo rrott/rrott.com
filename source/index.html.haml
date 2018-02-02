@@ -5,14 +5,16 @@
 %main
   %section.links-block.column.justify-center.open-block
     = partial 'partials/links'
-    %h6.center Open for remote job opportunities. Contact me if you're interested.
+    - if open_for_remote
+      %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
+
   %section.content.about-me
     %h1.center
       Hello, my name is
       %span Roman Rott!
     .text-block
       %p
-        I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5+ years experience dedicated to web development and security audit of web applications.
+        I'm a Ukrainian front-end/back-end developer with 10+ years of IT experience and 5 years experience dedicated to web development and security audit of web applications.
         I specialize in developing secure and optimised apps as well as in testing websites for security vulnerabilities.
       %p
         %strong Ruby
