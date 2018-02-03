@@ -1,1 +1,15 @@
 open_for_remote: false
+
+language: 'en-us'
+name: 'rrott'
+url: 'https://rrott.com/'
+
+email:   'roman@rrott.com'
+twitter: '@Roman_Rott'
+skype:   'RomanRott'
+
+logo_img: 'rrott-ruby-logo.png'
+logo_svg: 'https://rrott.com/images/rrott-ruby-logo.svg'
+logo_png: 'https://rrott.com/images/rrott-ruby-logo.png'
+
+preview:  'https://rrott.com/images/portfolio/website/rrott-com-main-336.jpg'

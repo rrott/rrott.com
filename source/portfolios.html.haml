@@ -12,7 +12,7 @@
         %a.mr2{ href: "/portfolio/irarott",   title: "More info about the IraRott.com project"} IraRott.com
 
       .portfolio-images.row.wrap
-        - data.links.portfolio_list.each do |portfolio|
+        - links.portfolio_list.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
             .center
               = portfolio.name

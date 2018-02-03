@@ -4,13 +4,13 @@
   %head
     %title= "Roman Rott - #{category} category on the blog"
     = partial 'partials/meta'
-    %meta{ name: 'keywords',      content: "#{category}, #{data.site.blog.keywords}" }
+    %meta{ name: 'keywords',      content: "#{category}, #{site.blog.keywords}" }
     %meta{ name: 'description',   content: "#{category} category on the blog" }
     %meta{ name: "robots",        content: "noindex, follow" }
-    %meta{ name: 'twitter:image', content: data.site.blog.preview }
+    %meta{ name: 'twitter:image', content: site.blog.preview }
     %link{ href: "https://rrott.com/blog/", rel: "canonical" }
     = stylesheet_link_tag 'application', property: 'stylesheet', defer: true, async: true
-    = stylesheet_link_tag 'portfolio', property: 'stylesheet', defer: true, async: true
+    = stylesheet_link_tag 'portfolio',   property: 'stylesheet', defer: true, async: true
     = stylesheet_link_tag 'print', media: 'print'
 
   %body

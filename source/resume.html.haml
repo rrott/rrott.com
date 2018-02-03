@@ -2,11 +2,11 @@
 
 %html
   %head
-    %title=data.site.not_found.title
+    %title=site.not_found.title
     = partial 'partials/meta'
 
-    %meta{ name: 'keywords',    content: data.site.not_found.keywords }
-    %meta{ name: 'description', content: data.site.not_found.description }
+    %meta{ name: 'keywords',    content: site.not_found.keywords }
+    %meta{ name: 'description', content: site.not_found.description }
     = stylesheet_link_tag 'index', property: 'stylesheet'
     = stylesheet_link_tag 'application', property: 'stylesheet'
 
@@ -56,7 +56,7 @@
         .worked-with
           %h3 worked with:
           .flex.row.justify-around.wrap
-            - data.brands.each do |brand|
+            - brands.each do |brand|
               %a{ href: "#{brand.url}", title: brand.title }
                 %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
     %hr

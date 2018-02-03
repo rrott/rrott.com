@@ -1,9 +1,9 @@
 url: "/portfolio/front-end"
 type: "Front-end"
-keywords: 'Front-end web developer portfolio, full stack, front-end, ruby on rails, coffeescript, javascript'
+keywords: 'Front-end web developer portfolio, full stack, front-end, ruby on rails, ecmascript, es6, javascript'
 description: "Front-end Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
 title: "Roman Rott's Web developer portfolio. Front-end projects"
-message: "I am equally comfortable developing Ruby/Rails backends as working with JavaScript/CoffeeScript in the Front-end. I have experience developing Single Page Applications using React/Redux, Backbone/Maronette, jQuery and pure JavaScript/ES6"
+message: "I am equally comfortable developing Ruby/Rails backends as working with JavaScript/EcmaScript in the Front-end. I have experience developing Single Page Applications using React/Redux, Backbone/Maronette, jQuery and pure JavaScript/ES6"
 projects_list:
   -
     title: "Front-End projects"

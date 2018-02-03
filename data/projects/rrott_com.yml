@@ -24,7 +24,7 @@ role: "Full-Stack developer. Security researcher"
 responsibilities:
   - "Creating back-end, front-end, design, SEO-optimization, performance optimization, configuring web server."
 languages: "Ruby 2.2, CoffeeScript"
-libs: "MiddleMan - static site generator. This is a JQuery-less website"
+libs: "MiddleMan - static site generator."
 other: "HTML5, Haml, Pure, Nginx, HTTP/2, WebP"
 status:
   message: "Online"

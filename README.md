@@ -4,8 +4,6 @@
 
 <center> ![rrott Logo](https://rrott.com/images/rrott-ruby-logo.svg) </center>
 
-**This is a JQuery-less website**
-
 **Languages:** Ruby 2.4.1, CoffeeScript
 
 **Libs:** MiddleMan - static site generator.

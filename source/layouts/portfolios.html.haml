@@ -2,11 +2,11 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
-    %title= data.site.portfolio.title
+    %title= site.portfolio.title
     = partial 'partials/meta'
-    %meta{ name: 'keywords',      content: data.site.portfolio.keywords }
-    %meta{ name: 'description',   content: data.site.portfolio.description }
-    %meta{ name: 'twitter:image', content: data.site.blog.preview }
+    %meta{ name: 'keywords',      content: site.portfolio.keywords }
+    %meta{ name: 'description',   content: site.portfolio.description }
+    %meta{ name: 'twitter:image', content: site.blog.preview }
     = stylesheet_link_tag 'application', property: 'stylesheet'
     = stylesheet_link_tag 'portfolio', property: 'stylesheet'
     = stylesheet_link_tag 'print', media: 'print'

@@ -2,12 +2,12 @@
 
 %html{ itemscope: true, itemtype: "http://schema.org/WebPage", lang: 'en' }
   %head
-    %title=data.site.title
+    %title=site.main.title
     = partial 'partials/meta'
-    %meta{ name: 'keywords',      content: data.site.keywords }
-    %meta{ name: 'description',   content: data.site.description }
-    %meta{ name: 'twitter:image', content: data.site.blog.preview || 'https://rrott.com/images/rrott-ruby-logo.png'}
-    = stylesheet_link_tag 'index', property: 'stylesheet'
+    %meta{ name: 'keywords',      content: site.main.keywords }
+    %meta{ name: 'description',   content: site.main.description }
+    %meta{ name: 'twitter:image', content: site.blog.preview || site_config.logo_preview }
+    = stylesheet_link_tag 'index',       property: 'stylesheet'
     = stylesheet_link_tag 'application', property: 'stylesheet'
     = stylesheet_link_tag 'print', media: 'print'
 
@@ -15,7 +15,6 @@
     = yield
 
     %script{ type: "application/ld+json" }
-      :plain
-        {"@context":"http://schema.org","@type":"Person","email":"roman@rrott.com","image":"https://rrott.com/images/rrott-ruby-logo.png","jobTitle": "Full-Stack ruby developer","name": "Roman Rott","familyName": "Rott","givenName":"Roman","brand":"rrott","url":"https://rrott.com","nationality":"Ukraine"}
+      = schema
 
     = partial 'partials/ga'

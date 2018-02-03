@@ -1,10 +1,10 @@
 module TemplateHelpers
   def current_page_url
-    "#{data.site.url}#{current_page.url}"
+    "#{site.url}#{current_page.url}"
   end
 
   def page_url(page)
-    "#{data.site.url}#{page.url}"
+    "#{site.url}#{page.url}"
   end
 
   def nofollow(param)
@@ -12,6 +12,6 @@ module TemplateHelpers
   end
 
   def open_for_remote
-    data.settings.open_for_remote
+    site_config.open_for_remote
   end
 end

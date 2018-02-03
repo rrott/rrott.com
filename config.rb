@@ -84,7 +84,7 @@ configure :build do
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
   ],
-  sitemap: "#{data.site.url}/sitemap.xml"
+  sitemap: "#{site.url}/sitemap.xml"
 
   # activate :imageoptim
   activate :webp do |webp|
