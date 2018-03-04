@@ -54,16 +54,13 @@ Style/Documentation:
   Enabled: false
   Severity: refactor
 
-Style/IfUnlessModifier:
-  MaxLineLength: 80
-
 Style/GuardClause:
   MinBodyLength: 3
 
 Style/Lambda:
   Enabled: false
 
-Style/EmptyLineBetweenDefs:
+Layout/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
 
 Style/ClassAndModuleChildren:
@@ -76,16 +73,15 @@ Style/AndOr:
 Style/TrivialAccessors:
   AllowDSLWriters: true
 
-Style/AlignParameters:
+Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
-Style/AlignHash:
+Layout/AlignHash:
   EnforcedHashRocketStyle: key
   EnforcedLastArgumentHashStyle: always_ignore
 
 Style/ModuleFunction:
   Enabled: false
-
 
 Style/FormatString:
   Enabled: false
@@ -93,13 +89,13 @@ Style/FormatString:
 Style/SingleLineBlockParams:
   Enabled: false
 
-Style/CaseIndentation:
+Layout/CaseIndentation:
   EnforcedStyle: end
 
-Style/PredicateName:
+Naming/PredicateName:
   Severity: refactor
 
-Style/IndentHash:
+layout/IndentHash:
   EnforcedStyle: consistent
 
 Style/MultilineBlockChain:
@@ -114,7 +110,7 @@ Style/Alias:
 Style/StringLiterals:
   Enabled: false
 
-Style/SpaceInsideBlockBraces:
+Layout/SpaceInsideBlockBraces:
   SpaceBeforeBlockParameters: true
 
 Style/PercentLiteralDelimiters:
@@ -140,14 +136,14 @@ Style/DoubleNegation:
 Style/SignalException:
   EnforcedStyle: only_raise
 
-Style/DotPosition:
+Layout/DotPosition:
   EnforcedStyle: trailing
 
 Style/SingleLineMethods:
   AllowIfMethodIsEmpty: true
 
 # It doesnt handle cases when we want to align multiple methods call into a table like
-Style/SpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 
 # replaces $1 x Regexp.last_match[1]
