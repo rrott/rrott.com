@@ -14,40 +14,40 @@
     %main.center
       %section.dark
         %h1.error-code Roman Rott
-        %h2.error-code resume and CV download page
+        %h2.error-code Resume and CV download page
       %section.resume
         .contact.flex.row.justify-around.wrap
           .flex.column
             %h3.link-title pdf:
             .link
-              %a{ href: "/cv/Roman.Rott.Resume.2017.pdf", target: '_blank', rel: 'nofollow', title: "Roman's resume in pdf formt" }
+              %a{ href: "/cv/Roman.Rott.Resume.2021.pdf", target: '_blank', rel: 'nofollow', title: "Roman's resume in pdf formt" }
                 resume
               \/
-              %a{ href: "/cv/Roman.Rott.CV.2017.pdf", target: '_blank', rel: 'nofollow', title: "Roman's CV in pdf formt" }
+              %a{ href: "/cv/Roman.Rott.CV.2021.pdf", target: '_blank', rel: 'nofollow', title: "Roman's CV in pdf formt" }
                 CV
           .flex.column
             %h3.link-title odt:
             .link
-              %a{ href: "/cv/Roman.Rott.Resume.2017.odt", target: '_blank', rel: 'nofollow', title: "Roman's resume in odt formt" }
+              %a{ href: "/cv/Roman.Rott.Resume.2021.odt", target: '_blank', rel: 'nofollow', title: "Roman's resume in odt formt" }
                 resume
               \/
-              %a{ href: "/cv/Roman.Rott.CV.2017.odt", target: '_blank', rel: 'nofollow', title: "Roman's CV in odt formt" }
+              %a{ href: "/cv/Roman.Rott.CV.2021.odt", target: '_blank', rel: 'nofollow', title: "Roman's CV in odt formt" }
                 CV
           .flex.column
             %h3.link-title docx:
             .link
-              %a{ href: "/cv/Roman.Rott.Resume.2017.docx", target: '_blank', rel: 'nofollow', title: "Roman's resume in docx formt" }
+              %a{ href: "/cv/Roman.Rott.Resume.2021.docx", target: '_blank', rel: 'nofollow', title: "Roman's resume in docx formt" }
                 resume
               \/
-              %a{ href: "/cv/Roman.Rott.CV.2017.docx", target: '_blank', rel: 'nofollow', title: "Roman's CV in docx formt" }
+              %a{ href: "/cv/Roman.Rott.CV.2021.docx", target: '_blank', rel: 'nofollow', title: "Roman's CV in docx formt" }
                 CV
           .flex.column
             %h3.link-title google docs:
             .link
-              %a{ href: "https://drive.google.com/open?id=1kE46bBi3kK8m6fO-bnBMEsLja-W2tmHPhHLe_MDhmPc", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's resume in google docs" }
+              %a{ href: "https://docs.google.com/document/d/1nVnBvj_vwfYadlgxftUj_JAe3u_c3_HQL3ivyjTPRb0", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's resume in google docs" }
                 resume
               \/
-              %a{ href: "https://drive.google.com/open?id=1HcFTcpI1RKlSVDF8WP0AhBAQn9n68VZaCjWIMOrdbRA", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's CV in google docs" }
+              %a{ href: "https://docs.google.com/document/d/1DBFKyVl8DgQqEAiFeWyX-P7ij6QjA7d8zdbwIT1fn7E", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's CV in google docs" }
                 CV
       %hr
       %section.resume
@@ -56,12 +56,15 @@
         .worked-with
           %h3 worked with:
           .flex.row.justify-around.wrap
-            - brands.each do |brand|
-              %a{ href: "#{brand.url}", title: brand.title }
-                %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
+            - brands.dev.each do |brand|
+              %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
+          .flex.row.justify-around.wrap
+            - brands.security.each do |brand|
+              %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
     %hr
     %section
       %h2.contacts-message.center
+        %br
         Contact information
       .contacts-description.center.mr2.text-block
         If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away!
@@ -69,35 +72,35 @@
         .contact.column
           %h4 contact me:
           .link-block
-            .link-title linkedin:
+            .link-title gpg:
             .link
-              %a{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'noopener noreferrer' }
-                Roman Rott
+              %a{ href: "https://keybase.io/rrott", target: '_blank', rel: 'noopener noreferrer', title: "rrott's public keys" }
+                keybase.io/rrott
           .link-block
             .link-title mail:
             .link
               %a{ href: "mailto:roman@rrott.com", title: 'mail address' }
                 roman@rrott.com
           .link-block
-            .link-title mail:
+            .link-title
             .link
               %a{ href: "mailto:roman.rott@owasp.org", title: 'owasp mail address' }
                 roman.rott@owasp.org
           .link-block
-            .link-title gpg:
+            .link-title
             .link
-              %a{ href: "https://keybase.io/rrott", target: '_blank', rel: 'noopener noreferrer', title: "rrott's public keys" }
-                keybase.io/rrott
+              %a{ href: "mailto:rott.roman@protonmail.com", title: 'owasp mail address' }
+                rott.roman@protonmail.com
           %h4
             %a{ href: "/roman.rott.vcf", itemprop:"url", title: "Rott's Vcard" }
               download my VCard
         .contact
           %h4 social connections:
           .link-block
-            .link-title blog:
+            .link-title linkedin:
             .link
-              %a{ href: '/blog/' }
-                rrott.com/blog
+              %a{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'noopener noreferrer' }
+                Roman Rott
           .link-block
             .link-title  twitter:
             .link
@@ -117,5 +120,6 @@
             %a{ href: "/feed.xml", itemprop:"url", title: "Rss feed of rrott.com" }
               subscribe to my blog
       %h3.contacts-message.center.padding2 Lets build something great!
+      %br
 
       = partial 'partials/footer', locals: { title: nil }

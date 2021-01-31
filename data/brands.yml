@@ -1,48 +1,54 @@
- -
-   url: "https://cater2.me/"
-   title: "Cater2.me"
-   img: '/images/brands/cater2me.png'
--
-  url: "https://sphereinc.com/"
-  title: "Sphere Inc"
-  img: '/images/brands/sphereinc.png'
--
-  url: "https://www.enova.com/"
-  title: "Enova"
-  img: '/images/brands/enova.png'
--
-  url: "https://www.groupon.com/"
-  title: "Groupon"
-  img: '/images/brands/groupon.png'
--
-  url: "https://www.cloudbyix.com/"
-  title: "CloudByIX"
-  img: '/images/brands/cloudbyix.png'
- -
-   url: "https://owaspukraine.org/"
-   title: "OWASP Ukraine"
-   img: '/images/brands/hostexcellence.png'
--
-  url: "https://irarott.com/"
-  title: "IraRott Inc"
-  img: '/images/brands/irarott.png'
--
-  url: "https://dabble.co/"
-  title: "Dabble"
-  img: '/images/brands/dabble.png'
--
-  url: "http://www.ixwebhosting.com/"
-  title: "IxWebHosting"
-  img: '/images/brands/ixwebhosting.png'
--
-  url: "https://uisgcon.org/en/"
-  title: "UISGCON"
-  img: '/images/brands/uisgcon.png'
- -
-   url: "https://nonamecon.org/"
-   title: "NoNameCon"
-   img: '/images/brands/nnc2.png'
--
-  url: "http://www.ecommerce.com/"
-  title: "Ecommerce"
-  img: '/images/brands/ecommerce2.png'
+dev:
+  -
+    url: "https://sphereinc.com/"
+    title: "Sphere Inc"
+    img: '/images/brands/sphereinc.png'
+  -
+    url: "https://www.enova.com/"
+    title: "Enova"
+    img: '/images/brands/enova.png'
+  -
+    url: "https://cater2.me/"
+    title: "Cater2.me"
+    img: '/images/brands/c2me.svg'
+  -
+    url: "https://www.groupon.com/"
+    title: "Groupon"
+    img: '/images/brands/groupon.png'
+  -
+    url: "https://www.cloudbyix.com/"
+    title: "CloudByIX"
+    img: '/images/brands/cloudbyix.png'
+  -
+    url: "https://irarott.com/"
+    title: "IraRott Inc"
+    img: '/images/brands/irarott.png'
+  -
+    url: "https://dabble.co/"
+    title: "Dabble"
+    img: '/images/brands/dabble.png'
+  -
+    url: "http://www.ecommerce.com/"
+    title: "Ecommerce"
+    img: '/images/brands/ecommerce2.png'
+security:
+  -
+    url: "https://uisgcon.org/en/"
+    title: "UISGCON"
+    img: '/images/brands/uisgcon.png'
+  -
+    url: "https://owasp.org/www-chapter-kyiv/"
+    title: "OWASP Kyiv"
+    img: '/images/brands/owasp_kyiv.png'
+  -
+    url: "https://owasp.org/www-chapter-lviv/"
+    title: "OWASP Lviv"
+    img: '/images/brands/owasplviv.jpg'
+  -
+    url: "https://berezhasecurity.com"
+    title: "Berezha Security Group"
+    img: '/images/brands/berezha.png'
+  -
+    url: "https://nonamecon.org/"
+    title: "NoNameCon"
+    img: '/images/brands/unnamed.jpg'

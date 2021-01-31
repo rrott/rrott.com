@@ -6,11 +6,6 @@
     %section
       %p.text-block I consider myself a full-stack developer, and I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
 
-      .text-block.flex.row.wrap
-        %h2.ongoing-projects Current ongoing projects: &nbsp;
-        %a{ href: "/portfolio/groupon",   title: "More info about the Groupon project"} Groupon
-        %a.mr2{ href: "/portfolio/irarott",   title: "More info about the IraRott.com project"} IraRott.com
-
       .portfolio-images.row.wrap
         - links.portfolio_list.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
@@ -23,4 +18,4 @@
               %img.large-img.responsive.project-img{ alt: "Image that ilustrates #{portfolio.title}", src: "#{portfolio.image}-336.jpg", srcset: "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", sizes: "(max-width: 48em) 100vw, 33vw" }/
 
 
-    = partial 'partials/footer', locals: { title: "Projects accomplished in 2016 and active in 2017" }
+    = partial 'partials/footer', locals: { title: "" }

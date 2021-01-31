@@ -360,8 +360,8 @@ describe 'index', type: :feature do
         end
 
         it 'displays link to Google Docs' do
-          expect(page).to have_selector('.link a[href="https://drive.google.com/open?id=1kE46bBi3kK8m6fO-bnBMEsLja-W2tmHPhHLe_MDhmPc"]', text: 'resume')
-          expect(page).to have_selector('.link a[href="https://drive.google.com/open?id=1HcFTcpI1RKlSVDF8WP0AhBAQn9n68VZaCjWIMOrdbRA"]', text: 'CV')
+          expect(page).to have_selector('.link a[href="https://docs.google.com/document/d/1nVnBvj_vwfYadlgxftUj_JAe3u_c3_HQL3ivyjTPRb0"]', text: 'resume')
+          expect(page).to have_selector('.link a[href="https://docs.google.com/document/d/1DBFKyVl8DgQqEAiFeWyX-P7ij6QjA7d8zdbwIT1fn7E"]', text: 'CV')
         end
       end
 
