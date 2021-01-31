@@ -1,19 +1,21 @@
 .social-links.wrap.justify-center
   %div
-    %a.social{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman Rott's linkedin" }
-      %em.social-icon
-        = partial('/images/icons/linkedin.svg').to_s
     %a.social{ href: 'https://github.com/rrott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "rrott GitHub account" }
       %em.social-icon
         = partial('/images/icons/github.svg').to_s
+  %div
+    %a.social{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman Rott's linkedin" }
+      %em.social-icon
+        = partial('/images/icons/linkedin.svg').to_s
+  %div.keybase-icon
+    %a.social{ href: 'https://keybase.io/rrott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman Rott's keybase" }
+      %em.social-icon
+        = partial('/images/icons/keybase.svg').to_s
   %div
     %a.social{ href: 'https://twitter.com/roman_rott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "Twitter acc of Roman Rott" }
       %em.social-icon
         = partial('/images/icons/twitter.svg').to_s
   %div
-    %a.social{ href: "skype:roman.rott?chat", title: "Roman Rott's Skype: roman.rott" }
-      %em.social-icon
-        = partial('/images/icons/skype.svg').to_s
     %a.social{ href: "mailto:roman@rrott.com", title: "Roman Rott's email" }
       %em.social-icon
         = partial('/images/icons/email.svg').to_s

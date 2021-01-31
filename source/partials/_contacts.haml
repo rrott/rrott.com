@@ -1,34 +1,32 @@
 %section.contacts.print-break
   %h2.contacts-message.center
     Contact information
-  .contacts-description.center.mr2.text-block
-    If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away!
   .contacts-box.wrap
     .contact.column
       %h3 contact me:
-      .link-block.linkedin-links
-        .link-title linkedin:
-        .link
-          %a{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'noopener noreferrer' }
-            Roman Rott
       .link-block
-        .link-title skype:
+        .link-title gpg:
         .link
-          %a{ href: "skype:roman.rott?chat", title: 'skype contact', rel: 'nofollow' }
-            roman.rott
+          %a{ href: "https://keybase.io/rrott", target: '_blank', rel: 'noopener noreferrer', title: "rrott's public keys" }
+            keybase.io/rrott
       .link-block
         .link-title mail:
         .link
           %a{ href: "mailto:roman@rrott.com", title: 'mail address' }
             roman@rrott.com
       .link-block
-        .link-title gpg:
+        .link-title
         .link
-          %a{ href: "https://keybase.io/rrott", target: '_blank', rel: 'noopener noreferrer', title: "rrott's public keys" }
-            keybase.io/rrott
+          %a{ href: "mailto:roman.rrott@owasp.org", title: 'owasp mail address' }
+            roman.rrott@owasp.org
+      .link-block
+        .link-title
+        .link
+          %a{ href: "mailto:rott.roman@protonmail.com", title: 'mail address' }
+            rott.roman@protonmail.com
       %h3.vc-card
         %a{ href: "/roman.rott.vcf", itemprop:"url", title: "Rott's Vcard" }
-          download my VCard
+          my VCard
     .contact.resume-block
       %h3 my resume:
       .link-block
@@ -69,15 +67,15 @@
     .contact
       %h3.social-connections social connections:
       .link-block
-        .link-title blog:
-        .link
-          %a{ href: '/blog/' }
-            rrott.com/blog
-      .link-block
         .link-title  twitter:
         .link
           %a{ href: 'https://twitter.com/roman_rott', target: '_blank', rel: 'nofollow noopener noreferrer', title: "twitter @Roman_Rott" }
             roman_rott
+      .link-block.linkedin-links
+        .link-title linkedin:
+        .link
+          %a{ href: 'https://www.linkedin.com/in/rrott', target: '_blank', rel: 'noopener noreferrer' }
+            rrott
       .link-block
         .link-title  GitHub:
         .link
