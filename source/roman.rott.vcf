@@ -11,6 +11,7 @@ ORG:rrott.com
 CATEGORIES:INTERNET,INFORMATION TECHNOLOGY,WEB DEVELOPMENT,SECURITY
 LOGO;VALUE=uri:https://rrott.com/images/rrott-ruby-logo.svg
 EMAIL;TYPE=work;PREF=1:roman@rrott.com
+EMAIL;TYPE=work;PREF=2:roman.rott@owasp.org
 EMAIL;TYPE=home;PREF=1:roman.rott@gmail.com
 ADR;TYPE=home;PREF=1:;;;Kyiv;;;Ukraine
 URL;TYPE=work;PREF=1:https://rrott.com

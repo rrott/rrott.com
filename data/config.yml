@@ -5,7 +5,8 @@ name: 'rrott'
 url: 'https://rrott.com/'
 
 email:   'roman@rrott.com'
-twitter: '@Roman_Rott'
+email2:  'roman.rott@owasp.org'
+twitter: '@roman_rott'
 skype:   'RomanRott'
 
 logo_img: 'rrott-ruby-logo.png'

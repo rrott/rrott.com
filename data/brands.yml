@@ -1,7 +1,7 @@
-# -
-#   url: "https://cater2.me/"
-#   title: "Cater2.me"
-#   img: '/images/brands/cater2me.png'
+ -
+   url: "https://cater2.me/"
+   title: "Cater2.me"
+   img: '/images/brands/cater2me.png'
 -
   url: "https://sphereinc.com/"
   title: "Sphere Inc"
@@ -18,10 +18,10 @@
   url: "https://www.cloudbyix.com/"
   title: "CloudByIX"
   img: '/images/brands/cloudbyix.png'
-# -
-#   url: "http://www.hostexcellence.com/"
-#   title: "HostExcellence"
-#   img: '/images/brands/hostexcellence.png'
+ -
+   url: "https://owaspukraine.org/"
+   title: "OWASP Ukraine"
+   img: '/images/brands/hostexcellence.png'
 -
   url: "https://irarott.com/"
   title: "IraRott Inc"
@@ -38,10 +38,10 @@
   url: "https://uisgcon.org/en/"
   title: "UISGCON"
   img: '/images/brands/uisgcon.png'
-# -
-#   url: "https://syftapp.com/"
-#   title: "Syft"
-#   img: '/images/brands/syft.png'
+ -
+   url: "https://nonamecon.org/"
+   title: "NoNameCon"
+   img: '/images/brands/nnc2.png'
 -
   url: "http://www.ecommerce.com/"
   title: "Ecommerce"

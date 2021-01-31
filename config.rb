@@ -1,5 +1,5 @@
 # require "middleman-smusher"
-require "middleman-deploy"
+# require "middleman-deploy"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -38,24 +38,24 @@ data.pages.portfolio.each do |page|
   }
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'production'
-end
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.branch = 'production'
+# end
 
-activate :search do |search|
-  search.resources = ['blog/']
-  search.index_path = 'search.json' # defaults to `search.json`
-  search.fields = {
-    title:   { boost: 100, store: true, required: true },
-    content: { boost: 50 },
-    url:     { index: true, store: true }
-  }
-end
+# activate :search do |search|
+#   search.resources = ['blog/']
+#   search.index_path = 'search.json' # defaults to `search.json`
+#   search.fields = {
+#     title:   { boost: 100, store: true, required: true },
+#     content: { boost: 50 },
+#     url:     { index: true, store: true }
+#   }
+# end
 
 # activate :autoprefixer
 activate :directory_indexes
-activate :es6
+# activate :es6
 
 # Build-specific configuration
 configure :build do
@@ -70,11 +70,11 @@ configure :build do
   ignore 'favicon/*'
 
   activate :gzip
-  activate :disqus do |d|
-    d.shortname = "rrott-blog"
-  end
-  activate :minify_css
-  activate :minify_javascript
+  # activate :disqus do |d|
+  #   d.shortname = "rrott-blog"
+  # end
+  # activate :minify_css
+  # activate :minify_javascript
   activate :minify_html
 
   # activate :cache_buster
@@ -126,8 +126,8 @@ end
 
 configure :development do
   set :debug_assets, false
-  activate :livereload
-  activate :disqus do |d|
-    d.shortname = nil
-  end
+  # activate :livereload
+  # activate :disqus do |d|
+  #   d.shortname = nil
+  # end
 end

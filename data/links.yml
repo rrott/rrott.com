@@ -19,10 +19,10 @@ portfolio_sections:
     url: "/portfolio/groupon/"
     name: "Groupon"
     show_in_menu: false
-  # -
-  #   url: "/portfolio/cater2me/"
-  #   name: "Cater2.me"
-  #   show_in_menu: false
+   -
+     url: "/portfolio/cater2me/"
+     name: "Cater2.me"
+     show_in_menu: false
   -
     url: "/portfolio/irarott/"
     name: "IraRott Inc"
@@ -35,6 +35,10 @@ blog_sections:
     url: "/blog/"
     name: "All"
 portfolio_list:
+#  - url: "/portfolio/infosec/"
+#    name: "Security"
+#    title: 'Project related to InfoSec'
+#    image: '/images/portfolio/ira-rott-com/irarott-com'
   -
     url: "/portfolio/full-stack/"
     name: "Full-Stack"

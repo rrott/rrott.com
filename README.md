@@ -4,11 +4,11 @@
 
 <center> ![rrott Logo](https://rrott.com/images/rrott-ruby-logo.svg) </center>
 
-**Languages:** Ruby 2.4.1, CoffeeScript
+**Languages:** Ruby 2.7.2, CoffeeScript
 
 **Libs:** MiddleMan - static site generator.
 
-**Deployment** Capistrano
+**Deployment** AWS Beanstalk
 
 **Tests** Rspec, Capybara
 
@@ -22,5 +22,3 @@
 - [SiteMap](https://rrott.com/sitemap/)
 - [My Resume](https://rrott.com/cv/roman.rott.cv.2016.pdf)
 
-
-[![Build Status](https://travis-ci.org/rrott/rrott.com.svg?branch=master)](https://travis-ci.org/rrott/rrott.com)
