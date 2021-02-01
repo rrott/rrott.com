@@ -75,24 +75,24 @@ configure :build do
   # end
   # activate :minify_css
   # activate :minify_javascript
-  activate :minify_html
+  # activate :minify_html
 
   # activate :cache_buster
   activate :relative_assets
   # activate :smusher
   # activate :asset_hash
-  activate :robots, rules: [
-    { user_agent: '*', allow: ['/'] }
-  ],
-  sitemap: "#{site.url}/sitemap.xml"
+  # activate :robots, rules: [
+  #   { user_agent: '*', allow: ['/'] }
+  # ],
+  # sitemap: "#{site.url}/sitemap.xml"
 
   # activate :imageoptim
-  activate :webp do |webp|
-    webp.ignore = 'build/images/roman*.jpg'
-    webp.append_extension = true
-  end
+  # activate :webp do |webp|
+  #   webp.ignore = 'build/images/roman*.jpg'
+  #   webp.append_extension = true
+  # end
 
-  activate :build_info
+  # activate :build_info
 end
 
 # activate :i18n
