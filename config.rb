@@ -117,6 +117,6 @@ configure :development do
   # end
 end
 
-after_build do |builder|
-  FileUtils.cp_r 'images/favicon/.', 'build'
-end
+# after_build do |builder|
+#   FileUtils.cp_r 'images/favicon/.', 'build'
+# end
