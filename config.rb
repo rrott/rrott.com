@@ -67,7 +67,7 @@ configure :build do
   ignore 'images/portfolio/*/origin/*'
   ignore 'images/portfolio/*/jpegs/*'
   ignore 'images/portfolio/*/small/*'
-  ignore 'favicon/*'
+  # ignore 'favicon/*'
 
   activate :gzip
   # activate :disqus do |d|
