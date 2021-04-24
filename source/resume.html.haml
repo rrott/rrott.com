@@ -13,8 +13,8 @@
   %body
     %main.center
       %section.dark
-        %h1.error-code Roman Rott
-        %h2.error-code Resume and CV download page
+        %h1 Roman Rott
+        %h2 Resume and CV download page
       %section.resume
         .contact.flex.row.justify-around.wrap
           .flex.column
@@ -56,11 +56,12 @@
         .worked-with
           %h3 worked with:
           .flex.row.justify-around.wrap
-            - brands.dev.each do |brand|
-              %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
-          .flex.row.justify-around.wrap
             - brands.security.each do |brand|
               %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
+          .flex.row.justify-around.wrap
+            - brands.dev.each do |brand|
+              %img.brand{ src: "#{brand.img}", title: brand.title, alt: "logo of #{brand.title}" }/
+
     %hr
     %section
       %h2.contacts-message.center

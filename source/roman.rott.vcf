@@ -1,12 +1,12 @@
 BEGIN:VCARD
 VERSION:4.0
 CLASS:PUBLIC
-REV:2016-04-10
+REV:2021-04-24
 N:Rott;Roman;;;
 FN:Roman Rott
 NICKNAME:rrott
 TZ:+02:00
-TITLE:Full-Stack Ruby Developer
+TITLE:Ruby/JS Full-Stack developer, Cybersecurity Enthusiast
 ORG:rrott.com
 CATEGORIES:INTERNET,INFORMATION TECHNOLOGY,WEB DEVELOPMENT,SECURITY
 LOGO;VALUE=uri:https://rrott.com/images/rrott-ruby-logo.svg
