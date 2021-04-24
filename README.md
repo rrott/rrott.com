@@ -1,5 +1,7 @@
 #It's source code of [rrott.com](http://rrott.com) website.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a471fa6-69f4-4547-8732-913da5f25d6a/deploy-status)](https://app.netlify.com/sites/rrott/deploys)
+
 **rrott.com** - is my own blog and portfolio. The Website includes basic information about myself, my projects, contact information and blog posts related to web-development and security researches.
 
 <center> ![rrott Logo](https://rrott.com/images/rrott-ruby-logo.svg) </center>
@@ -8,7 +10,7 @@
 
 **Libs:** MiddleMan - static site generator.
 
-**Deployment** AWS Beanstalk
+**Deployment** Netlify
 
 **Tests** Rspec, Capybara
 

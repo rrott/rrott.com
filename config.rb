@@ -15,7 +15,7 @@ page 'sitemap.xml',   layout: false
 page 'feed.xml',      layout: false
 page "robots.txt",    layout: false
 page "humans.txt",    layout: false
-page "/404.html",     layout: false
+page "/404.html",     layout: :layout
 page "/sitemap.html", layout: false
 page "/blog.html",    layout: :blog
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
@@ -37,21 +37,6 @@ data.pages.portfolio.each do |page|
     message:      project_page.message
   }
 end
-
-# activate :deploy do |deploy|
-#   deploy.method = :git
-#   deploy.branch = 'production'
-# end
-
-# activate :search do |search|
-#   search.resources = ['blog/']
-#   search.index_path = 'search.json' # defaults to `search.json`
-#   search.fields = {
-#     title:   { boost: 100, store: true, required: true },
-#     content: { boost: 50 },
-#     url:     { index: true, store: true }
-#   }
-# end
 
 # activate :autoprefixer
 activate :directory_indexes
@@ -130,4 +115,8 @@ configure :development do
   # activate :disqus do |d|
   #   d.shortname = nil
   # end
+end
+
+after_build do |builder|
+  FileUtils.cp_r 'images/favicon/.', 'build'
 end
