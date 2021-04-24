@@ -15,7 +15,7 @@ page 'sitemap.xml',   layout: false
 page 'feed.xml',      layout: false
 page "robots.txt",    layout: false
 page "humans.txt",    layout: false
-page "/404.html",     layout: :layout
+page "/404.html",     layout: false
 page "/sitemap.html", layout: false
 page "/blog.html",    layout: :blog
 proxy "/portfolio/index.html", "/portfolios.html", layout: :portfolios
