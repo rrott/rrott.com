@@ -19,7 +19,7 @@ projects_list:
         noindex: false
       - name: "nnc_2019"
         noindex: false
-    -
+      -
         name: "enova"
         noindex: false
       -
