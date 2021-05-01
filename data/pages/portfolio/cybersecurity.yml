@@ -1,0 +1,43 @@
+url: "/portfolio/cybersecurity"
+type: 'Cybersecurity'
+keywords: 'web developer portfolio, Open Source, full-stack, front-end, ruby language, back-end, javascript developer'
+description: "List of all Roman Rott's projects accomplished in 2015 - 2021"
+title: "Roman Rott's Ruby/Javascript web developer portfolio. Projects accomplished in 2015 - 2021"
+multipart: true
+canonical: 'https://rrott.com/portfolio/cybersecurity/'
+projects_list:
+  -
+    title: "Cybersecurity related projects"
+    id_name: "cybersecurity"
+    projects:
+      -
+        name: "bsg_darts"
+        noindex: false
+      -
+        name: "nnc_2018_ctf"
+        noindex: false
+      -
+        name: "brucon_2019"
+        noindex: false
+      -
+        name: "owasp_ukraine_2019"
+        noindex: false
+      -
+        name: "owasp_ukraine_timer"
+        noindex: false
+      -
+        name: "nnc_2019"
+        noindex: false
+      -
+        name: "shlyapa"
+        noindex: true
+      -
+        name: "my_best_dates"
+        noindex: true
+      -
+        name: 'findmegetme'
+        noindex: false
+      -
+        name: "mobile_findmegetme"
+        noindex: true
+

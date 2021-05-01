@@ -1,5 +1,9 @@
 portfolio_sections:
   -
+    url: "/portfolio/cybersecurity/"
+    name: "Cybersecurity"
+    show_in_menu: true
+  -
     url: "/portfolio/full-stack/"
     name: "Full-Stack"
     show_in_menu: true
@@ -15,18 +19,6 @@ portfolio_sections:
     url: "/portfolio/oss/"
     name: "Open Source"
     show_in_menu: true
-  -
-    url: "/portfolio/groupon/"
-    name: "Groupon"
-    show_in_menu: false
-  -
-    url: "/portfolio/cater2me/"
-    name: "Cater2.me"
-    show_in_menu: false
-  -
-    url: "/portfolio/irarott/"
-    name: "IraRott Inc"
-    show_in_menu: false
 blog_sections:
   -
     url: "/blog/ror/"
@@ -35,33 +27,43 @@ blog_sections:
     url: "/blog/"
     name: "All"
 portfolio_list:
-  -
-    url: "/portfolio/full-stack/"
-    name: "Full-Stack"
-    title: 'Full-Stack projects'
-    image: '/images/portfolio/ira-rott-com/irarott-com'
-  -
-    url: "/portfolio/front-end/"
-    name: "Front-end"
-    title: 'Front-end projects'
-    image: '/images/portfolio/ix-landing/landing-hacker-shield'
-  -
-    url: "/portfolio/back-end/"
-    name: "Back-end"
-    title: 'Back-end Projects'
-    image: '/images/portfolio/asana-god-contact/asana-god-contact-contact'
-  -
-    url: "/portfolio/oss/"
-    name: "Open Source"
-    title: 'Open Source Projects'
-    image: '/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-npm'
-  -
-    url: "/portfolio/online-projects/"
-    name: "Online"
-    title: 'Online at the moment projects'
-    image: '/images/portfolio/website/rrott-com-main'
-  -
-    url: "/portfolio/all/"
-    name: "All"
-    title: 'All the projects.'
-    image: '/images/portfolio/findmegetme/findmegetme-socket-image'
+  first_row:
+    - url: "/portfolio/cybersecurity/"
+      name: "Cybersecurity"
+      title: 'Cybersecurity related projects'
+      image: '/images/portfolio/nnc-2018-ctf/nnc-ctf-crew'
+    - url: "/portfolio/all/"
+      name: "All"
+      title: 'All the projects.'
+      image: '/images/portfolio/findmegetme/findmegetme-socket-image'
+  second_row:
+    -
+      url: "/portfolio/full-stack/"
+      row: 2
+      name: "Full-Stack"
+      title: 'Full-Stack projects'
+      image: '/images/portfolio/ira-rott-com/irarott-com'
+    -
+      url: "/portfolio/front-end/"
+      row: 2
+      name: "Front-end"
+      title: 'Front-end projects'
+      image: '/images/portfolio/ix-landing/landing-hacker-shield'
+    -
+      url: "/portfolio/back-end/"
+      row: 2
+      name: "Back-end"
+      title: 'Back-end Projects'
+      image: '/images/portfolio/asana-god-contact/asana-god-contact-contact'
+    -
+      url: "/portfolio/oss/"
+      row: 2
+      name: "Open Source"
+      title: 'Open Source Projects'
+      image: '/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-npm'
+    -
+      url: "/portfolio/online-projects/"
+      row: 2
+      name: "Online"
+      title: 'Online at the moment projects'
+      image: '/images/portfolio/website/rrott-com-main'

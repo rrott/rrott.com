@@ -9,8 +9,16 @@ projects_list:
     title: "Online projects"
     id_name: "full-stack"
     projects:
+      - name: "bsg_darts"
+        noindex: false
+      -
+        name: "owasp_ukraine_2019"
+        noindex: false
       -
         name: "groupon"
+        noindex: false
+      -
+        name: "c2me"
         noindex: false
       -
         name: "enova"
@@ -25,23 +33,8 @@ projects_list:
         name: "chairlift_expenses"
         noindex: false
       -
-        name: "irarott"
-        noindex: false
-      -
-        name: "ix_cloudui"
+        name: "irarott_v2"
         noindex: false
       -
         name: "rrott_com"
-        noindex: false
-      -
-        name: "ix_ow"
-        noindex: false
-      -
-        name: "ix_landing"
-        noindex: false
-      -
-        name: "grunt_coffee_chain"
-        noindex: false
-      -
-        name: "asana_god_contact"
         noindex: false

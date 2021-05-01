@@ -1,0 +1,42 @@
+title: "Website/Endpoint for one of The CTF task on the BruCON 0x0B (2019)"
+by:
+  name: "Roman Rott"
+  url: "/"
+tags:
+  - "JavaScript"
+year: 2019
+images:
+  -
+    url: "/images/portfolio/brucon-2019/brucon-index"
+    title: "Website/Endpoint for one of The CTF task on the BruCON 0x0B (2019)"
+  -
+    url: "/images/portfolio/brucon-2019/brucon-contact-form"
+    title: "Website/Endpoint for one of The CTF task on the BruCON 0x0B (2019)"
+  -
+    url: "/images/portfolio/brucon-2019/brucon-gitlab"
+    title: "Website/Endpoint for one of The CTF task on the BruCON 0x0B (2019)"
+  - url: "/images/portfolio/brucon-2019/brucon-twitter"
+    title: "BSG's twitter message on the BruCON 0x0B (2019)"
+about:
+  - "BruCON 0x0B (2019) - the cyber security conference."
+role: "UI Developer"
+responsibilities:
+  - "Assisted the CTF team with creating UI for a vulnerable website"
+languages: "JavaScript"
+other: "Heroku"
+status:
+  message: "Archived"
+  urls:
+    -
+      link:  "https://bierzeit-owasp.herokuapp.com/"
+      pre: "Archived version:"
+      short: "heroku"
+      description: "Website/Endpoint for one of The CTF task on the BruCON 0x0B (2019)"
+      nofollow: false
+    -
+      link:  "https://twitter.com/berezhasecurity/status/1182275892262907905"
+      pre: "Event:"
+      short: "twitter.com"
+      description: "cybersecurity conference"
+      nofollow: false
+

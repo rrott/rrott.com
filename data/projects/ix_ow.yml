@@ -7,8 +7,6 @@ tags:
   - "Sinatra"
   - "JQuery"
   - "Rails"
-  - "Backbone"
-  - "Marionette"
   - "CoffeeScript"
 year: 2015
 images:
@@ -31,7 +29,7 @@ libs: "Sinatra, Backbone.js, jQuery, Ruby on Rails 4.0"
 testing: "Rspec 3.2, Capybara, Jasmine, VCR, site_prism.vcr"
 other: "Capistrano, SASS, ROM"
 status:
-  message: "Online and available inside of control panels of 2 Cloud Hosting products: CloudByIX and IXwebhosting. Web application security testing."
+  message: "Acquired by BlueHost."
   urls:
     -
       link:  "https://my.cloudbyix.com/login"

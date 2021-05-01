@@ -1,0 +1,33 @@
+title: "Dynamic Application Red Team Simulation"
+by:
+  name: "BSG"
+  url: "https://bsg.tech/"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "JavaScript"
+  - "React"
+info: "* Internal project. Under the NDA"
+year: 2021
+images:
+  -
+    url: "/images/portfolio/bsg-darts/login-page"
+    title: "DARTS login page"
+
+about:
+  - "Berezha is an Application Security and Penetration Testing Company. DARTS is the platform that simplifies penetration tests, automates report generation, and integrates external data sources."
+role: "Full-stack developer"
+responsibilities:
+  - "Implemented the whole architecture, starting from the application design in the AWS cloud stack, configuring CI/CD, creating API services and UI applications, finishing implementing own web-design and writing the documentations."
+
+languages: "Ruby, JavaScript"
+libs: "React, Redux"
+other: "AWS Cognito, S3, IAM, Beanstalk"
+status:
+  message: "Internal project. Is online and works as a part of BSG's workflow."
+  urls:
+    -
+      link:  "https://bsg.tech/"
+      short: "https://bsg.tech/"
+      description: "Berezha Security Group"
+      nofollow: true

@@ -1,4 +1,4 @@
-title: "IraRott.com - online store of knit and crochet patterns"
+title: "IraRott.com - old version of this online store of knit and crochet patterns"
 by:
   name: "Roman Rott"
   url: "/"
@@ -8,7 +8,6 @@ tags:
   - "Sinatra"
   - "Jquery"
   - "CoffeeScript"
-  - "DigitalOcean"
 year: 2016
 images:
   -
@@ -35,14 +34,14 @@ about:
   - "Website is a kind of CMS that has almost everything customizable using admin page, beginning with adding new patterns, portfolios, creating standalone pages, categories etc and ending with changing all SEO-related parameters of this website."
 role: "Full-Stack developer. Remote developer"
 responsibilities:
-  - "Creating back-end and front-end, admin page"
+  - "Creating back-end and front-end, admin page, application design"
   - "design, SEO-optimisation"
   - "configuring and optimization of the web, SQL servers, site migration, support current features and monitoring website's state."
 languages: "Ruby 2.1, JavaScript, CoffeeScript"
 libs: "Padrino, Jquery"
 other: "SASS, Haml, ActiveRecord, Carrierwave, Poltergeist, Selenium, JSON, Newrelic, Sprockets, Nginx, PostgreSQL, Capistrano"
 status:
-  message: "Online"
+  message: "Archived"
   urls:
     -
       link: "https://irarott.com"

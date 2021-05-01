@@ -6,8 +6,19 @@
     %section
       %p.text-block I'm a Full-Stack Ruby developer with a strong interest in ethical hacking, penetration testing and vulnerability analysis. I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
 
-      .portfolio-images.row.wrap
-        - links.portfolio_list.each do |portfolio|
+      .portfolio-images-row1.row.wrap
+        - links.portfolio_list.first_row.each do |portfolio|
+          %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
+            .center
+              = portfolio.name
+            %picture.large-img.responsive
+              %source{ media: "(max-width: 24em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x" }
+              %source{ media: "(max-width: 48em)",  srcset: "#{portfolio.image}-768.jpg  1x, #{portfolio.image}-1024.jpg 2x" }
+              %source{ media: "(max-width: 64em)",  srcset: "#{portfolio.image}-336.jpg  1x, #{portfolio.image}-768.jpg 2x" }
+              %img.large-img.responsive.project-img{ alt: "Image that ilustrates #{portfolio.title}", src: "#{portfolio.image}-336.jpg", srcset: "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", sizes: "(max-width: 48em) 100vw, 33vw" }/
+
+      .portfolio-images-row2.row.wrap
+        - links.portfolio_list.second_row.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
             .center
               = portfolio.name

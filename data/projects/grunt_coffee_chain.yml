@@ -31,7 +31,7 @@ languages: "CoffeeScript, JavaScript"
 libs: "Node.js 0.10.15"
 other: "Grunt 0.4, Sprockets, Snockets"
 status:
-  message: "Online"
+  message: "Archived"
   urls:
     -
       link:  "https://rrott.github.io/grunt_coffee_chain/"

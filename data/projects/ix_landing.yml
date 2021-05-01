@@ -38,7 +38,7 @@ libs: "Ruby on Rails 4.0, jQuery"
 testing: "Rspec 3.2, Capybara, Jasmine"
 other: "SASS, Faye, JSON"
 status:
-  message: "Online, used in 2 hosting brands: IXwebhosting and HostExcellence."
+  message: "Acquired by BlueHost."
   urls:
     -
       link:  "https://my.ixwebhosting.com/landing/431611/hacker_shield"

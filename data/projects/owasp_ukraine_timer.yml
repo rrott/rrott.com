@@ -1,0 +1,41 @@
+title: "Timers of «OWASP Ukraine» 2018 and 2019 conferences"
+by:
+  name: "Roman Rott"
+  url: "/"
+tags:
+  - "Ruby"
+  - "JavaScript"
+year: 2019
+images:
+  -
+    url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-admin"
+    title: "OWASP Ukraine Conference timer admin"
+  -
+    url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-admin2"
+    title: "OWASP Ukraine Conference timer admin"
+  -
+    url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-paused"
+    title: "OWASP Ukraine Conference timer paused"
+  - url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-message"
+    title: "OWASP Ukraine Conference timer message"
+  - url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-message2"
+    title: "OWASP Ukraine Conference timer message"
+  - url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-gitlab"
+    title: "OWASP Ukraine Conference timer gitlab"
+about:
+  - "OWASP Ukraine - the biggest Ukrainian Application Security conference held under the aegis of OWASP Lviv, Kyiv, Dnipro and Kharkiv chapters."
+  - "The application was created to show simple countdowns on the speakers' monitors to notify them about their timframes or to show short messages"
+role: "Web developer."
+responsibilities:
+  - "Design, ui"
+languages: "Ruby 2.5, JavaScript"
+libs: "Padrino"
+other: "heroku"
+status:
+  message: "Online/Paused"
+  urls:
+    -
+      link:  "https://owasp-ukraine-timer.herokuapp.com/"
+      short: "owasp-ukraine-timer"
+      description: "owaspukraine.org - Ukrainian Application Security conference"
+      nofollow: false

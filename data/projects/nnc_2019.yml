@@ -1,0 +1,45 @@
+title: "website of «NoNameCon 2019» cybersecurity conference"
+by:
+  name: "Roman Rott"
+  url: "/"
+tags:
+  - "Ruby"
+  - "MiddleMan"
+  - "JavaScript"
+year: 2019
+images:
+  -
+    url: "/images/portfolio/nnc-2019/nnc-website"
+    title: "NoNameCon 2019 website"
+  -
+    url: "/images/portfolio/nnc-2019/nnc-photos"
+    title: "NoNameCon 2019 website"
+  -
+    url: "/images/portfolio/nnc-2019/nnc-gitlab"
+    title: "NoNameCon 2019 website - gitlab"
+about:
+  - "The 2nd annual NoNameCon - a 100% community-built practical cyber security conference."
+role: "Full-Stack developer."
+responsibilities:
+  - "I was working on the website: Design, content, images, structure"
+  - "Configuring middleman, capistrano and CI/CD on GitLab to deploy static site on demand"
+  - "SEO-optimization, performance optimization, configuring web server."
+languages: "Ruby 2.5, JavaScript"
+libs: "MiddleMan - static site generator."
+other: "HTML5, Haml"
+status:
+  message: "Archived"
+  urls:
+    -
+      link:  "https://2019.nonamecon.org"
+      pre: "Archived version:"
+      short: "2019.nonamecon.org"
+      description: "nonamecon.org - community-built practical cybersecurity conference"
+      nofollow: false
+    -
+      link:  "https://nonamecon.org"
+      pre: "Current website:"
+      short: "nonamecon.org"
+      description: "nonamecon.org - community-built practical cybersecurity conference"
+      nofollow: false
+

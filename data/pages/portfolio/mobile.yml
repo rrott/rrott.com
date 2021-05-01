@@ -1,6 +1,6 @@
 url: "/portfolio/mobile"
 type: "Mobile"
-keywords: 'web developer portfolio, node, node.js, mobile, react, front-end, javascripts, security researcher, hacking game, security, coffeescript'
+keywords: 'web developer portfolio, node, node.js, mobile, react, front-end, javascripts, security enthusiast, hacking game, security, coffeescript'
 description: "Web developer portfolio of Roman Rott. Projects for mobile"
 title: "Roman Rott's Full-Stack developer portfolio. Projects for mobile"
 canonical: 'https://rrott.com/portfolio/node/'
@@ -12,3 +12,6 @@ projects_list:
       -
         name: "mobile_findmegetme"
         noindex: true
+      -
+        name: "c2me"
+        noindex: false

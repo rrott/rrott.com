@@ -5,7 +5,7 @@ by:
 tags:
   - "Ruby"
   - "Rails"
-info: "* Internal project. Screenshots can't be shown."
+info: "* Internal project. Under the NDA"
 
 year: 2017
 images:
@@ -18,7 +18,7 @@ role: "Back-end developer"
 languages: "Ruby 2"
 libs: "Ruby on Rails, Resque, Redis, Groupon-specific services/APIs"
 status:
-  message: "Internal project. Is online and work as a part of Groupon's products."
+  message: "Internal Groupon's project. Under the NDA"
   urls:
     -
       link:  "https://www.groupon.com/"

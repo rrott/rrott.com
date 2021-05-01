@@ -1,6 +1,6 @@
 url: "/portfolio/react"
 type: "React"
-keywords: 'web developer portfolio, node, node.js, react, front-end, javascript, security researcher, hacking game, security'
+keywords: 'web developer portfolio, node, node.js, react, front-end, javascript, security enthusiast, hacking game, security'
 description: "Web developer portfolio of Roman Rott. Projects on React"
 title: "Roman Rott's Full-Stack developer portfolio. Projects on React"
 canonical: 'https://rrott.com/portfolio/node/'
@@ -10,6 +10,11 @@ projects_list:
     title: "React projects"
     id_name: "react"
     projects:
+      - name: "bsg_darts"
+        noindex: false
+      -
+        name: "c2me"
+        noindex: false
       -
         name: "chairlift"
         noindex: false

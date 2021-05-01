@@ -1,0 +1,52 @@
+title: "CTF Dashboard for «NoNameCon 2018»"
+by:
+  name: "NNC Team"
+  url: "https://nonamecon.org"
+tags:
+  - "Python"
+  - "JavaScript"
+year: 2018
+images:
+  -
+    url:   "/images/portfolio/nnc-2018-ctf/nnc-ctf-dashboard"
+    title: "NoNameCon CTF Dashboard"
+  -
+    url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-teams"
+    title: "NoNameCon CTF teams"
+  - url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-teams2"
+    title: "NoNameCon CTF Dashboard - teams"
+  -
+    url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-servers"
+    title: "NoNameCon CTF Dashboard - servers"
+  -
+    url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-score-log"
+    title: "NoNameCon CTF Dashboard - score logs"
+  -
+    url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-logs"
+    title: "NoNameCon CTF Dashboard - event logs"
+  -
+    url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-gitlab"
+    title: "NoNameCon CTF Dashboard - git"
+  - url: "/images/portfolio/nnc-2018-ctf/nnc-ctf-crew"
+    title: "NoNameCon CTF crew"
+about:
+  - "NoNameCon is a 100% community-built practical cybersecurity conference in Kyiv, Ukraine. There were several workshops and a CTF game held during the event."
+  - "As a part of the team I was working on the admin application for the CTF game."
+role: "Full-Stack developer"
+responsibilities:
+  - "Creating API endpoints"
+  - "writing UI on vanilla JS"
+  - "Maintaining servers during the game"
+  - "CI/CD via GitLab"
+languages: "Python 2, JavaScript"
+libs: "Flask, Flask-SQLAlchemy"
+other: "Redis, Gitlab CI"
+status:
+  message: "Archived once CTF is ended."
+  urls:
+    -
+      link: "https://nonamecon.org"
+      pre: ""
+      short: "https://nonamecon.org"
+      description: "nonamecon.org - community-built practical cybersecurity conference"
+      nofollow: false

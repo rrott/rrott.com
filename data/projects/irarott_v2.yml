@@ -1,0 +1,63 @@
+title: "IraRott.com - online store of knit and crochet patterns"
+by:
+  name: "Roman Rott"
+  url: "/"
+tags:
+  - "Ruby"
+  - "Padrino"
+  - "Sinatra"
+  - "JavaScript"
+year: 2019
+images:
+  - url: "/images/portfolio/ira-rott-com-v2/irarott-com-performance"
+    title: "IraRott.com - Performance"
+  -
+    url:   "/images/portfolio/ira-rott-com-v2/irarott-com"
+    title: "IraRott.com - online store of knit and crochet patterns"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-pattern"
+    title: "front-end of IraRott.com website - pattern page"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-categories"
+    title: "front end of IraRott.com website - List of patterns in category"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-admin"
+    title: "admin page of IraRott.com"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-admin-patterns"
+    title: "Patterns' admin page on IraRott.com"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-admin-category"
+    title: "Category admin page on IraRott.com"
+  -
+    url: "/images/portfolio/ira-rott-com-v2/irarott-com-admin-seo"
+    title: "Seo options on the admin page of IraRott.com"
+
+  - url: "/images/portfolio/ira-rott-com-v2/irarott-com-admin-seo2"
+    title: "Seo checkers on the admin page of IraRott.com"
+  - url: "/images/portfolio/ira-rott-com-v2/irarott-com-do"
+    title: "Digital Ocean panel of IraRott.com"
+  - url: "/images/portfolio/ira-rott-com-v2/irarott-com-stats"
+    title: "Digital Ocean panel of IraRott.com"
+about:
+  - "Ira Rott is a Knit & Crochet Designer living in Southern Ontario, Canada. This website is her online shopping cart for selling digital material (pdf files with patterns)."
+  - "This is the second version with a lot of design changes and updates in the admin panel, new built-in SEO tools. It was refactored and optimised in order to run in the dockerised environment"
+  - "There are hundreds paid and dozens free pdf patterns on the site, that can be downloaded and used by masters around the world. Additionally, it has Ira's portfolio and integration with Etsy system."
+  - "Website is a kind of CMS that has almost everything customizable using admin page, beginning with adding new patterns, portfolios, creating standalone pages, categories etc and ending with changing all SEO-related parameters of this website."
+role: "Full-Stack developer. Remote developer"
+responsibilities:
+  - "Creating back-end and front-end, admin page, application design"
+  - "web-design, SEO-optimisation"
+  - "site migration, support current features and monitoring website's state."
+languages: "Ruby 2.4, JavaScript"
+libs: "Padrino, Jquery"
+other: "Docker, SASS, Haml, ActiveRecord, Carrierwave, Poltergeist, Selenium, JSON, Sprockets, Nginx, PostgreSQL"
+status:
+  message: "Online"
+  urls:
+    -
+      link: "https://irarott.com"
+      pre: ""
+      short: "https://irarott.com"
+      description: "Website of irarott.com, knit and crochet patterns. Version 2"
+      nofollow: false

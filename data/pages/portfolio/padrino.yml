@@ -1,7 +1,7 @@
 url: "/portfolio/padrino"
 type: "Padrino"
 keywords: 'web developer portfolio, hacking games, remote work, full-stack, ruby language, hacking game, front-end, back-end, security'
-description: "Ruby/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+description: "Ruby/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security enthusiast."
 title: "Roman Rott's Ruby/Padrino developer portfolio."
 message: "<strong>Padrino</strong> is a Ruby web framework built upon the Sinatra. The most cool aspect of the Padrino stack (Rack, Sinatra) in comparison to other web frameworks is how easy and fast you can start developing a new small ruby application avoiding using useless and unnecessary gems that came with other popular frameworks like Ruby on Rails."
 projects_list:
@@ -9,6 +9,9 @@ projects_list:
     title: "Padrino projects"
     id_name: "padrino"
     projects:
+      -
+        name: "irarott_v2"
+        noindex: true
       -
         name: "irarott"
         noindex: true

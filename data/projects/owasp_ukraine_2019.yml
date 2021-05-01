@@ -1,0 +1,39 @@
+title: "website of «OWASP Ukraine 2019» cybersecurity conference"
+by:
+  name: "Roman Rott"
+  url: "/"
+tags:
+  - "Ruby"
+  - "MiddleMan"
+  - "JavaScript"
+year: 2019
+images:
+  -
+    url: "/images/portfolio/owasp-ukraine-2019/owasp-ukraine-website"
+    title: "OWASP Ukraine 2019 website"
+  -
+    url: "/images/portfolio/owasp-ukraine-2019/owasp-ukraine-photos"
+    title: "OWASP Ukraine 2019 website - photos"
+  -
+    url: "/images/portfolio/owasp-ukraine-2019/owasp-ukraine-about"
+    title: "OWASP Ukraine 2019 website - about"
+  - url: "/images/portfolio/owasp-ukraine-2019/owasp-ukraine-gitlab"
+    title: "OWASP Ukraine 2019 website - gitlab"
+about:
+  - "The 5th annual OWASP Ukraine 2019 - the biggest Ukrainian Application Security conference held under the aegis of OWASP Lviv, Kyiv, Dnipro and Kharkiv chapters."
+role: "Full-Stack developer."
+responsibilities:
+  - "I was working on the website: Design, content, images, structure"
+  - "Configuring middleman, capistrano and CI/CD on GitLab to deploy static site on demand"
+  - "SEO-optimization, performance optimization, configuring web server."
+languages: "Ruby 2.5, JavaScript"
+libs: "MiddleMan - static site generator."
+other: "HTML5, Haml"
+status:
+  message: "Online"
+  urls:
+    -
+      link:  "https://owaspukraine.org/"
+      short: "owaspukraine.org"
+      description: "owaspukraine.org - Ukrainian Application Security conference"
+      nofollow: false

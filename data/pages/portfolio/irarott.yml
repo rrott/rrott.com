@@ -6,9 +6,12 @@ title: "Roman Rott's Full-Stack developer portfolio. IraRott.com"
 canonical: 'https://rrott.com/portfolio/full-stack/'
 projects_list:
   -
-    title: "On-going projects: IraRott.com"
+    title: "IraRott.com"
     id_name: "irarott"
     projects:
+      -
+        name: "irarott_v2"
+        noindex: false
       -
         name: "irarott"
         noindex: false

@@ -1,13 +1,16 @@
 url: "/portfolio/sinatra"
 type: "Sinatra"
 keywords: 'web developer portfolio, hacking games, remote work, full-stack, ruby language, hacking game, front-end, back-end, security, sinatra'
-description: "Ruby/Sinatra/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security researcher."
+description: "Ruby/Sinatra/Padrino portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security enthusiast."
 title: "Roman Rott's Ruby/Sinatra/Padrino developer portfolio."
 projects_list:
   -
     title: "Sinatra projects"
     id_name: "sinatra"
     projects:
+      -
+        name: "irarott_v2"
+        noindex: true
       -
         name: "irarott"
         noindex: true

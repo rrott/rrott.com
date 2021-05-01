@@ -10,7 +10,7 @@ year: 2015
 images:
   -
     url: "/images/portfolio/mobile/iOS-app"
-    title: "Mobile React Native app from a security researcher"
+    title: "Mobile React Native app from a security enthusiast"
   -
     url: "/images/portfolio/mobile/iOS-app-list"
     title: "Screens of React Native app created to show how to hack web applications"
@@ -28,4 +28,4 @@ languages: "JavaScript"
 libs: "React Native 0.15"
 other: ""
 status:
-  message: "«FindMeGetMe» is not in the Market or App Store due to the nature of applications created for CTF hacking games. It as delivered to gamers using vulnerabilities in 3rd party applications."
+  message: "Archived after the CTF's end."

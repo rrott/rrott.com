@@ -1,0 +1,38 @@
+title: "Cater2.me Applications and infrastructure"
+by:
+  name: "Cater2.me"
+  url: "https://cater2.me/"
+tags:
+  - "Ruby"
+  - "Rails"
+  - "JavaScript"
+  - "CoffeeScript"
+  - "React"
+info: "* Internal projects. Under the NDA"
+year: 2021
+images:
+  -
+    url: "/images/portfolio/c2me/cater2-me"
+    title: "Cater2.me main page"
+  -
+    url: "/images/portfolio/c2me/cater2-me2"
+    title: "Cater2.me main page"
+about:
+  - "Cater2.me provides customizable catering solutions for offices. They allow companies to order food from local vendors, letting their employees customize and set the meal schedule. Team admins can segment the team into different groups and track order details."
+  - "Project includes Admin app and API, 2 versions of Client Apps, Group Ordering App, Vendor App, Operators Interface, Finance App and several internal gems and js/node libs."
+role: "Full-stack developer"
+responsibilities:
+  - "Maintained the website, several internal applications, applications for clients, vendors and operators, maintained admin console."
+  - "Prepared and held internal penetration test(both, black-box and white-box)."
+
+languages: "Ruby, CoffeeScript, JavaScript, TypeScript"
+libs: "React, Redux, Svelte, Rails"
+other: "Heroku, Node"
+status:
+  message: "Internal projects. Are online and work as a part of Cater2.me's infrastructure."
+  urls:
+    -
+      link:  "https://cater2.me/"
+      short: "https://cater2.me/"
+      description: "Cater2.me"
+      nofollow: true

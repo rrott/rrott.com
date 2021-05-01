@@ -8,6 +8,10 @@ projects_list:
     title: "Static Page applications on Middleman"
     id_name: "middleman"
     projects:
+      - name: "owasp_ukraine_2019"
+        noindex: false
+      - name: "nnc_2019"
+        noindex: false
       -
         name: "rrott_com"
         noindex: false

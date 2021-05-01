@@ -87,9 +87,9 @@ describe 'index', type: :feature do
     end
   end
 
-  context 'Security Researcher' do
-    it 'displays Security Researcher section' do
-      expect(page).to have_selector('h2', text: "Security Researcher")
+  context 'Security Enthusiast' do
+    it 'displays Security Enthusiast section' do
+      expect(page).to have_selector('h2', text: "Security Enthusiast")
     end
 
     context 'bugcrowd' do

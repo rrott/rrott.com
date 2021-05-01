@@ -6,7 +6,6 @@ tags:
   - "Ruby"
   - "Rails"
   - "CoffeeScript"
-  - "DigitalOcean"
 year: 2015
 images:
   -
@@ -23,7 +22,7 @@ images:
     title: "User page that has bugs needed for a white hat hacker"
   -
     url: "/images/portfolio/mybestdate/my-best-dates-chat"
-    title: "Chat with bugs needed for a security researcher"
+    title: "Chat with bugs needed for a security enthusiast"
   -
     url: "/images/portfolio/mybestdate/my-best-dates-addprofile"
     title: "Add profile page, ethical hacking"
@@ -37,4 +36,4 @@ languages: "Ruby 2.2, Javascript"
 libs: "Ruby on Rails 4.2, Jquery, Bootstrap"
 other: "SASS, Haml, PostgreSQL, Faker, CarrierWave, Devise, Administrate"
 status:
-  message: "«MyBestDate» is offline now due to the nature of applications created for CTF hacking games."
+  message: "Archived after the CTF's end."
