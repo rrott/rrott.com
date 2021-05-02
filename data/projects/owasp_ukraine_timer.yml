@@ -20,8 +20,8 @@ images:
     title: "OWASP Ukraine Conference timer message"
   - url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-message2"
     title: "OWASP Ukraine Conference timer message"
-  - url: "/images/portfolio/owasp-ukraine-timer/owasp-ukraine-timer-gitlab"
-    title: "OWASP Ukraine Conference timer gitlab"
+  - url: "/images/portfolio/owasp-ukraine-timer/timer-in-action"
+    title: "OWASP Ukraine Conference timer on the scene"
 about:
   - "OWASP Ukraine - the biggest Ukrainian Application Security conference held under the aegis of OWASP Lviv, Kyiv, Dnipro and Kharkiv chapters."
   - "The application was created to show simple countdowns on the speakers' monitors to notify them about their timframes or to show short messages"
