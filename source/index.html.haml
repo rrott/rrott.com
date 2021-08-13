@@ -5,26 +5,27 @@
 %main
   %section.links-block.column.justify-center.open-block
     = partial 'partials/links'
-    - if open_for_remote
-      %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
-
+    -# - if open_for_remote
+    -#   %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
+    %h6.center.open-for-remote Currently on the Application Security Engineer role.
   %section.content.about-me
     %h1.center
       Hello, my name is
       %span Roman Rott!
     .text-block
       %p
-        I'm a Full-Stack Ruby developer with a strong interest in ethical hacking, penetration testing and vulnerability analysis. I have 15 years of IT experience and 8 years experience dedicated to web-development.
+        I am an Application Security Engineer with a huge background of a Full-Stack Ruby/JavaScript developer and Technical support representative.
+        I have about 15 years of IT experience and 8 years experience dedicated to web-development.
+        My current interest is in penetration testing and vulnerability analysis and all over the last year I've spend for learning a lot of staff to switch from WebDev to the Cyber-Security.
       %p
-        %strong Ruby
-        is my favorite when it comes to following TDD and OOP best practices, while
-        %strong EcmaScript
+        %strong Ruby and Python
+        are my favorite when it comes to writing simple api or scripts, while
+        %strong EcmaScript/JavaScript
         and
         %strong TypeScript
         are the best one for front-end.
-      %p I do enjoy building everything from small OSS aps and libs, landing pages, business sites to rich interactive web apps, single page applications, etc.
       %p
-        I'm working remotely on web projects for clients all over the world and from time to time I take part in bug-bounty programs.
+        I'm working remotely for clients all over the world and from time to time I take part in bug-bounty programs.
 
   %section.dark.content.dev-skills
     %h2.center Web Developer
@@ -34,12 +35,9 @@
           .sticker{ class: sticker }
 
       .text-block.vw70
-        %p Over the 9 years I occupied different positions in different departments in a big Shared and Cloud Hosting company, IxWebhosting.com. 5 of them were in Tech Support department and 4 in IT as a Ruby/Rails developer. There I've gained experience dealing with someone else's code, debugging it,  as well as with catching security flaws and bugs.
-
-        %p For the last 5 years I've been working as a full-stack ruby developer, where I've got extended experience in React, Redux, TypeScript and Svelte.
-
+        %p Over the 9 years I occupied different positions in different departments in a big Shared and Cloud Hosting company, IxWebhosting.com. 5 of them were in Tech Support department and 4 in IT as a Ruby/Rails developer. There I've gained experience dealing with someone else's code, troubleshooting, debugging and fixing it as well as with catching security flaws and bugs.
+        %p For the last 5 years I've been working as a full-stack ruby developer, where I've got extended experience in React, Redux, TypeScript and JavaScript.
         %p I also design and develop vulnerable applications for CTF hacking games that give an opportunity for security enthusiasts to practice their skills. Below is a portfolio that contains a list of such apps and web services.
-
         %p
           All of these sites and services were developed using
           %strong
@@ -105,14 +103,12 @@
       .text-block.vw70
         %h3.oss-text Contributing to open source projects:
         I am working on my own open source pet-project on Electron(using React and TypeScript)
+        %a.link{ href: "https://github.com/rrott/cosnole.alert", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+          rrott/cosnole.alert
         %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
           react-toolbox
         %a.link{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }<
           gitlab-org/gitlab-ce
-        %a.link{ href: "https://github.com/floere/phony/pull/180", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-          floere/phony
-        %a.link{ href: "https://github.com/dnesteryuk/site_prism.vcr/pull/3", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-          dnesteryuk/site_prism.vcr
 
         %h3.oss-text.padding2 Volunteering:
         %ul
@@ -120,7 +116,7 @@
             Was working as a full-stack developer, creating, configuring CI/CD and maintaining website for the
             %a{ href: "https://2019.nonamecon.org/" }<
               «NoNameCon #2»
-            Practical Cybersecurity Conference (2019)
+            Practical CyberSecurity Conference (2019)
           %li.link
             Did the same for the annual
             %a{ href: "https://owaspukraine.org/" }<
