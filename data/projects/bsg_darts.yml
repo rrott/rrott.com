@@ -22,7 +22,7 @@ responsibilities:
 
 languages: "Ruby, JavaScript"
 libs: "React, Redux"
-other: "AWS Cognito, S3, IAM, Beanstalk"
+other: "AWS, S3, IAM"
 status:
   message: "Internal project. Is online and works as a part of BSG's workflow."
   urls:
