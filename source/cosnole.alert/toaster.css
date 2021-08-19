@@ -1,0 +1,215 @@
+.cosnole-alert-toasts {
+  all: revert;
+  position: fixed;
+  top: 24px;
+  right: 8px;
+  min-width: 400px;
+  max-width: 400px;
+  z-index: 15;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  font-family:  monospace;
+  overflow-y: auto;
+  max-height: calc(100vh - 64px);
+  pointer-events: all;
+  padding-top: 32px;
+  -webkit-mask-image: -webkit-gradient(linear, right 7%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.cosnole-alert-toast_active {
+  opacity: 0.2 !important;
+}
+.cosnole-alert-toast {
+  opacity: 0.95;
+  all: revert;
+  padding:  8px;
+  margin:  8px;
+  margin-bottom: 12px;
+  line-height: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 28px);
+  box-sizing: border-box;
+  transition-timing-function: ease;
+  animation-duration: 1.25s;
+  animation-name: FadeIn;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  pointer-events: all;
+}
+
+.cosnole-alert-toasts_fade-out {
+  animation-name: FadeOut;
+  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  animation-fill-mode: forwards;
+}
+
+.cosnole-alert-toast__copy {
+  margin: 0!important;
+  position: absolute;
+  top: 4px;
+  right: 36px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.cosnole-alert-toast__close {
+  margin: 0!important;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  color: orange;
+  cursor: pointer;
+}
+
+.cosnole-alert-toast__message {
+  all: revert;
+  margin: 0!important;
+  margin-top: -4px !important;
+  width: calc(100% - 10px);
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  font-size: 12px !important;
+  border: none !important;
+  padding: 0 !important;
+  line-height: 14px !important;
+  background-color: transparent !important;
+}
+
+.cosnole-alert-toast__message__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cosnole-alert-toast__message__title {
+  all: revert;
+  font-weight: bolder;
+  padding: 0 !important;
+  cursor: pointer;
+  display: inline;
+}
+
+.cosnole-alert-toast__message__object-title {
+  all: revert;
+  cursor: pointer;
+  padding: 0 !important;
+}
+
+.cosnole-alert-toast__message__object-title:hover {
+  all: revert;
+  cursor: pointer;
+  background-color: lightgrey;
+  padding: 0 !important;
+}
+
+.cosnole-alert-toast__message__object-title::before {
+  content: "▶";
+}
+
+.cosnole-alert-toast__message__object-title_expanded {
+  all: revert;
+  cursor: pointer;
+  padding: 0 !important;
+  width: -webkit-fill-available;
+}
+
+.cosnole-alert-toast__message__object-title_expanded::before {
+  content: "▼";
+}
+
+.cosnole-alert-toast__message__object {
+  all: revert;
+  display:  none;
+  padding: 0 !important;
+}
+
+.cosnole-alert-toast__message__object_expanded {
+  all: revert;
+  display: flex;
+  padding: 4px;
+  margin-left:  10px;
+  border: 1px solid lightgrey;
+  /*background-color: lightgrey !important;*/
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.cosnole-alert-toasts_log {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) !important;
+  border: black;
+  background-color: whitesmoke !important;
+  color: gray !important;
+}
+
+.cosnole-alert-toasts_log .cosnole-alert-toast__message__title {
+  color: black !important;
+}
+
+.cosnole-alert-toasts_warn {
+  box-shadow: 4px 4px 0 rgba(255, 165, 0, 0.2) !important;
+  background-color: whitesmoke !important;
+  border: orange;
+  color: gray !important;
+
+}
+
+.cosnole-alert-toasts_warn .cosnole-alert-toast__message__title {
+  color: orange !important;
+}
+
+.cosnole-alert-toasts_error {
+  box-shadow: 4px 4px 0 rgba(255, 0, 0, 0.2) !important;
+  background-color: whitesmoke !important;
+  border: red;
+  color: gray !important;
+}
+
+.cosnole-alert-toasts_error .cosnole-alert-toast__message__title {
+  color: red !important;
+}
+
+.cosnole-alert-toasts_info {
+  box-shadow: 4px 4px 0 rgba(0, 128, 0, 0.2) !important;
+  background-color: whitesmoke !important;
+  border: green;
+  color: gray !important;
+}
+
+.cosnole-alert-toasts_info .cosnole-alert-toast__message__title {
+  color: green !important;
+}
+
+.cosnole-alert-toast {
+  box-shadow: 4px 4px 0 rgba(0, 128, 0, 0.2);
+  background-color: whitesmoke !important;
+  border: green;
+  color: gray;
+}
+
+.cosnole-alert-toast .cosnole-alert-toast__message__title {
+  color: green;
+}
+
+@keyframes FadeIn {
+  from {
+    transform: translate3d(800px, 0, 0);;
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(800px, 0, 0);
+    opacity: 0;
+  }
+}

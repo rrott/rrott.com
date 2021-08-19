@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <title>cosnole.log</title>
+    <meta name="theme-color" content="#EB9292">
+    <link rel="icon" type="image/png" sizes="32x32" href="/cosnole.alert/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/cosnole.alert/favicon16.png">
+    <link rel="stylesheet" href="/cosnole.alert/index.css">
+    <link rel="stylesheet" href="/cosnole.alert/toaster.css">
+  </head>
+  <body>
+
+  <div class="cosnole-alert__navbar" id="navbar">
+    <div class="cosnole-alert__navbar__links">
+      <a target="_blank" href="https://github.com/rrott/cosnole.alert" class="cosnole-alert__navbar__links__image">
+        <img src="/cosnole.alert/images/github.png" alt="cosnole.alert github page"/>
+      </a>
+      <a class="cosnole-alert__navbar__links__pulls" target="_blank" href="https://github.com/rrott/cosnole.alert/pulls">Pull requests</a>
+      <span class="cosnole-alert__navbar__links__issues" >
+        <span>&nbsp;|&nbsp;</span>
+        <a target="_blank" href="https://github.com/rrott/cosnole.alert/issues">Issues</a>
+
+      </span>
+    </div>
+    <div class="cosnole-alert__navbar__promo">
+      <div class="cosnole-alert__navbar__promo__copy">
+        [Some space left here for the most common navbars]
+      </div>
+      <div class="cosnole-alert__navbar__promo__arrows">
+        <span>&nbsp;▶</span>
+        <span>...</span>
+        <span>◀&nbsp;</span></div>
+    </div>
+  </div>
+
+  <div class="cosnole-alert__alert-modal" >
+    <div>cosnole.alert says</div>
+    <div>1</div>
+    <div class="cosnole-alert__alert-modal__ok-button">OK</div>
+  </div>
+
+  <section class="cosnole-alert">
+    <section class="cosnole-alert__page">
+      <div class="cosnole-alert__left">
+        <div class="cosnole-alert__header">
+          <h1>cosnole.alert</h1>
+          <div class="cosnole-alert__arrows" >
+            <div>
+            <div class="cosnole-alert__arrows__top__arrow"></div>
+            <div class="cosnole-alert__arrows__top"></div>
+            </div>
+            <div class="cosnole-alert__arrows__middle__arrow"></div>
+            <div class="cosnole-alert__arrows__middle"></div>
+            <div class="cosnole-alert__arrows__bottom"></div>
+            <div class="cosnole-alert__arrows__bottom__arrow"></div>
+          </div>
+        </div>
+        <div class="cosnole-alert__info">
+          Browser Extension to shows logs, errors, and warnings as toast messages to help you catch bugs faster<br/>
+          It also extends browser's console object with the alert() function
+          <div class="cosnole-alert__info__ok-button">Ok</div>
+        </div>
+        <div class="cosnole-alert__short-info">
+          With <b>"cosnole.alert"</b> you can:
+          <ul>
+            <li>reflect console.log() calls in the <b>toast messages</b></li>
+            <li>trigger window.<b>alert()</b> on all console.<b>log()</b> calls</li>
+            <li>use <b>console</b>.alert() instead of <b>window</b>.alert()</li>
+            <li>define <b>custom global methods</b> to call alert()</li>
+            <li>use <b>regexp</b> or a <b>"stop-word"</b> to call alert()</li>
+            <li>use <b>allow/block-lists</b> or enable it for <b>localhost</b> only</li>
+            <li>use it to see console.log() events called in an <b>iframe</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cosnole-alert__right">
+      </div>
+    </section>
+
+    <section class="cosnole-alert__page page-top">
+      <div class="cosnole-alert__left-short">
+        <div class="cosnole-alert__options">
+          <div class="cosnole-alert__options__image">
+            <img  src="/cosnole.alert/images/options-p1.png" />
+          </div>
+          <div class="cosnole-alert__options__image">
+            <img  src="/cosnole.alert/images/options-p2.png" />
+          </div>
+          <div class="cosnole-alert__options__image">
+            <img  src="/cosnole.alert/images/options-p3.png" />
+          </div>
+          <div class="cosnole-alert__options__image">
+            <img  src="/cosnole.alert/images/options-p4.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosnole-alert__page page-top">
+      <div class="cosnole-alert__modes">
+        <h5 class="cosnole-alert__modes__title">The extension provides 3 modes to use</h5>
+        <h5 class="cosnole-alert__modes__title">you can switch the mode depending on your needs and the web-site's configurations</h5>
+      </div>
+    </section>
+    <section class="cosnole-alert__page page-top cosnole-alert__modes-page">
+      <div class="cosnole-alert__modes__left">
+        <div class="cosnole-alert__modes__info">
+          Default mode
+        </div>
+        <div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>provides all the features</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>injects &lt;script&gt; tag onto the page to extend console and window objects</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>can show both alert and toast: simultaneously or separately, depending on the called method</span>
+          </div>
+          <hr/>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>requires page reload to apply any options' update</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>will not work on sites with a good CSP(Content Security Policy) configuration</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>may "loose" some events on fast, small or cached website due to the asynchronous nature of JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="cosnole-alert__modes__middle">
+        <div class="cosnole-alert__modes__info ">
+          Toasts Only
+        </div>
+        <div>
+          <b>TBD. Not yet implemented...</b>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>does not inject &lt;script&gt; tag, but instead uses browser's API only</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>works on any website and is not affected by CSP(Content Security Policy)</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>cannot "loose" events but will show them with a short delay</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>You do not need to reload the page to pause this extension or to apply any options' update</span>
+          </div>
+          <hr />
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>can not extend console or window object to add custom or to modify existent methods</span>
+          </div>
+        </div>
+      </div>
+      <div class="cosnole-alert__modes__right">
+        <div class="cosnole-alert__modes__info ">
+          Simple mode
+        </div>
+        <div>
+          <b>simple as a pay:</b>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>injects &lt;script&gt; tag onto the page to add alert() method to the console object</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[+]</span>
+            <span>most likely will not "loose" events on a fast, small or cached website as it's just a one line of JavaScript code</span>
+          </div>
+          <hr />
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>implements only one single feature — maps alert() to console.alert() method</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>requires page reload to pause it, but in most cases you do not need to pause it at all</span>
+          </div>
+          <div class="cosnole-alert__modes__list">
+            <span class="cosnole-alert__modes__list-title">[-]</span>
+            <span>will not work on sites with a good CSP(Content Security Policy) configuration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosnole-alert__page page-top">
+      <div class="cosnole-alert__about">
+        <div class="cosnole-alert__about__instructions">
+          <h4>Supported browsers</h4>
+          <h4>(should work in all chromium-based browsers)</h4>
+          <div class="cosnole-alert__about__browsers">
+            <span><img src="/cosnole.alert/images/browsers/chrome_256x256.png" /></span>
+            <span><img src="/cosnole.alert/images/browsers/chromium_256x256.png" /></span>
+            <span><img src="/cosnole.alert/images/browsers/brave_256x256.png" /></span>
+            <span><img src="/cosnole.alert/images/browsers/edge_256x256.png" /></span>
+            <span><img src="/cosnole.alert/images/browsers/vivaldi_256x256.png" /></span>
+            <span><img src="/cosnole.alert/images/browsers/opera_256x256.png" /></span>
+            <span class="cosnole-alert__about__browsers_tbd">
+              <div>TBD</div>
+              <img src="/cosnole.alert/images/browsers/firefox_256x256.png" />
+            </span>
+            <span class="cosnole-alert__about__browsers_tbd">
+              <div>TBD</div>
+              <img src="/cosnole.alert/images/browsers/safari_256x256.png" />
+            </span>
+          </div>
+          <br/><br/>
+          <h4>Installation</h4>
+          <div class="cosnole-alert__about__browsers">
+            <div class="cosnole-alert__about__instructions__source-code">
+              Chrome Web Store: <a href='#'>TBD</a>
+            </div>
+            <div class="cosnole-alert__about__instructions__source-code">
+              Microsoft Edge Add-ons: <a href='#'>TBD</a>
+            </div>
+            <div class="cosnole-alert__about__instructions__source-code">
+              Firefox Browser Add-ons: <a href='#'>TBD</a>
+            </div>
+            <div class="cosnole-alert__about__instructions__source-code">
+              Mac App Store: <a href='#'>TBD</a>
+            </div>
+            <div class="cosnole-alert__about__instructions__source-code">
+              From the source code: <a href='https://github.com/rrott/cosnole.alert'>https://github.com/rrott/cosnole.alert</a>
+            </div>
+          </div>
+          <div class="cosnole-alert__info__ok-button">Ok</div>
+        </div>
+        <div class="cosnole-alert__about__footer">
+          <strong>author:</strong> <a href='https://rrott.com'>Roman Rott</a> <br />
+          <strong>source code:</strong> <a href='https://github.com/rrott/cosnole.alert'>github.com/rrott/cosnole.alert</a> <br />
+          <strong>documentation:</strong> <a href='https://rrott.com/blog/security/cosnole.alert'>rrott.com/blog/security/cosnole.alert</a> <br />
+        </div>
+      </div>
+    </section>
+
+  <div class="cosnole-alert__right__logo">
+    <svg width="126px" height="109px" viewBox="0 0 126 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Logo" stroke="none" stroke-width="1" fill="#EB9292" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <path stroke="#000000" stroke-width="2" d="M63,1.99836164 L124.267002,108 L1.73299801,108 L63,1.99836164 Z"></path>
+      </g>
+    </svg>
+  </div>
+
+  </section>
+
+
+
+
+  <script src="/cosnole.alert/index.js" type="module"></script>
+
+  </body>
+
+</html>
