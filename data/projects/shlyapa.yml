@@ -25,7 +25,7 @@ images:
     url: "/images/portfolio/shlyapa-pay-info/shlyapa-pay-money"
     title: "List of falke users of the payment system created for security researches"
 about:
-  - "«Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag hacking game) held by <a href='https://berezhasecurity.com/' target='_blank' rel='noopener noreferrer' title='Berezha Security'> «Berezha Security». </a>"
+  - "«Shlyapa-Pay» is a fake payment system created for a CTF(Capture The Flag hacking game) held by <a href='https://bsg.tech/' target='_blank' rel='noopener noreferrer' title='Berezha Security'> «Berezha Security». </a>"
   - "This payment system has its own website, blog, integration with ActiveMerchant as a fake payment processing. It behaves almost the same way as a common payment systems like PayPal or WebMoney allowing users to send and receive costs to/from each other. The project has its own shopping cart and kind of social network created with several pre-defined vulnerabilities in mind."
   - "«Shlyapa-Pay» was used in game held during International forum «Cybersecurity: Ukraine and the world» and then, after fixing all the vulnerabilities and adding new ones, was a part of a game at the Cybersecurity Olympiad <a href='http://www.hackit-ukraine.com/#content' target='_blank' rel='noopener noreferrer' title='Cybersecurity Olympiad'> «HackIT-2015» </a>"
 role: "Full-Stack developer, Game-Master's assistant during 2 CTF games."
