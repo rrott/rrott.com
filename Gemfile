@@ -28,7 +28,7 @@ group :build do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '>= 3.35.3'
   gem 'rspec'
 end
 
