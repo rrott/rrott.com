@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.7.2"
 
 gem 'builder'
-gem "middleman", '4.3.11'
+gem "middleman", "4.4.0"
 gem "middleman-blog"
 gem 'middleman-blog-similar'
 # gem 'middleman-deploy', '~> 1.0'
