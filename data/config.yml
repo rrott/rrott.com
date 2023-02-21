@@ -1,4 +1,4 @@
-open_for_remote: true
+open_for_remote: false
 
 language: 'en-us'
 name: 'rrott'

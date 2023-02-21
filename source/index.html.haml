@@ -5,78 +5,66 @@
 %main
   %section.links-block.column.justify-center.open-block
     = partial 'partials/links'
-    -# - if open_for_remote
-    -#   %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
-    -#%h6.center.open-for-remote Currently on the Application Security Engineer role.
+    - if open_for_remote
+      %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
+    - if open_for_remote == false
+      %h6.center.open-for-remote [ I am not currently accepting new job opportunities ]
   %section.content.about-me
     %h1.center
       Hello, my name is
       %span Roman Rott!
     .text-block
       %p
-        I am an Application Security Engineer with a huge background of a Full-Stack Ruby/JavaScript developer and Technical support representative.
-        I have about 15 years of IT experience and 8 years experience dedicated to web-development.
-        My current interest is in penetration testing and vulnerability analysis and all over the last year I've spend for learning a lot of staff to switch from WebDev to the Cyber-Security.
+        As an
+        %strong Application Security Engineer,
+        I bring a wealth of experience as a Full-Stack Ruby/JavaScript developer and Technical Support Representative.
+        I have accumulated 17 years of IT expertise throughout my career, with a dedicated focus on web development for more than 10 years.
       %p
-        %strong Ruby and Python
-        are my favorite when it comes to writing simple api or scripts, while
-        %strong EcmaScript/JavaScript
+        I am deeply interested in penetration testing, red-teaming, and digital forensics, so I have spent the past 3 years expanding my knowledge to transition from Web Development to Cyber Security.
+      %p
+        As a
+        %strong Security Analyst
         and
-        %strong TypeScript
-        are the best one for front-end.
-      %p
-        I'm working remotely for clients all over the world and from time to time I take part in bug-bounty programs.
+        %strong Penetration Tester
+        for
+        %a.print{ href: "https://bsg.tech/", target: '_blank', rel: 'noopener noreferrer' }<
+          %strong Berezha Security Group,
+        my primary responsibilities involve conducting vulnerability assessments and penetration testing. In addition, I occasionally take part in bug-bounty programs.
+  .logo-place
+    .logo.responsive
+      = partial('images/rrott-ruby-logo.svg').to_s
 
-  %section.dark.content.dev-skills
-    %h2.center Web Developer
-    .stickers
-      .logo.responsive.wrap.justify-center
-        - ['react', 'redux', 'ruby', 'rails', 'svelte', 'html5', 'css', 'js'].each do |sticker|
-          .sticker{ class: sticker }
-
-      .text-block.vw70
-        %p Over the 9 years I occupied different positions in different departments in a big Shared and Cloud Hosting company, IxWebhosting.com. 5 of them were in Tech Support department and 4 in IT as a Ruby/Rails developer. There I've gained experience dealing with someone else's code, troubleshooting, debugging and fixing it as well as with catching security flaws and bugs.
-        %p For the last 5 years I've been working as a full-stack ruby developer, where I've got extended experience in React, Redux, TypeScript and JavaScript.
-        %p I also design and develop vulnerable applications for CTF hacking games that give an opportunity for security enthusiasts to practice their skills. Below is a portfolio that contains a list of such apps and web services.
-        %p
-          All of these sites and services were developed using
-          %strong
-            Ruby, JS/ES6, TypeScript, CoffeeScript, React, Redux, Svelte, Sinatra, Padrino and RoR
-          frameworks. Some of them handles large amounts of traffic on daily basis.
-
-        %p My Full-Stack web developer portfolio is a brief summary of the projects samples that I've accomplished during the last years.
-
-        %h3.portfolio-link
-          %a{ href: "/portfolio/" }
-            Take a look at my portfolio
-  %section.content.infosec
+  %section.content.infosec.dark
     %h2.center Cybersecurity Enthusiast
-    .row
-      .text-block.infosec-text
+    .flex
+      .center.vw30
+      .text-block.infosec-text.vw70
         %p
-          I enjoy testing websites for security vulnerabilities (both white-box and black-box) independently or on the platforms like
-          %a.print{ href: "https://bugcrowd.com/rrott", target: '_blank', rel: 'noopener noreferrer' }<
-            BugCrowd
-          I held several internal Web Application Security Assessments for the products I've been working on as a developer, preparing reports and/or fixing found bugs and issues.
-          My interest in the
-          %strong Ethical Hacking
-          has resulted in dozens of found and reported security issues in such services as rubygems.org, ZeroMail, tagged.com, cater2.me, etc.
+          I enjoy testing websites for security vulnerabilities (both white-box and black-box) independently, as a part of a team, or on the platforms like BugCrowd.
+          During the last 3-4 years, I participated in dozens of
+          %strong Web and Mobile Application Security Assessments,
+          held
+          %strong macOS and Windows Digital Forensics,
+          provided
+          %strong AWS, EKS,
+          and
+          %strong Kubernetes Security Audits.
         %p
-          I am a member of
+          I was a member of the latest
           %a.print{ href: "https://nonamecon.org/", target: '_blank', rel: 'noopener noreferrer' }<
-            NoNameCon 2021
+            %strong NoNameCon's
           core team - the Ukrainian community-built practical cybersecurity conference.
         %p
           I also used to design, deploy and support vulnerable web and mobile applications for CTF hacking games organized or supported by the
           %a.print{ href: "https://bsg.tech/", target: '_blank', rel: 'noopener noreferrer' }<
-            «Berezha Security Group»
+            %strong Berezha Security Group
           for:
         %ul
           %li.link
             %a{ href: "https://twitter.com/berezhasecurity/status/1182275892262907905/photo/1", target: '_blank', rel: 'noopener noreferrer' }<
               %strong BruCON 0x0B
             (2019)
-            &mdash; (only assisted with creating UI for a vulnerable website)
+            &mdash; (assisted with creating UI for a vulnerable websites)
           %li.link
             %a{ href: "https://nonamecon.org", target: '_blank', rel: 'noopener noreferrer' }<
               %strong NoNameCon
@@ -84,8 +72,7 @@
           %li.link
             %a{ href: "https://uisgcon.org/en/about-uisgcon", target: '_blank', rel: 'noopener noreferrer' }<
               %strong UISGCon
-            \#10, #11, #12 (2014-2016) &mdash; Ukrainian InfoSec conference held by Non Government Organization
-            %strong «Ukrainian Information Security Group»
+            \#10, #11, #12 (2014-2016) &mdash; Ukrainian InfoSec conference held by Non Government Organization «Ukrainian Information Security Group»
           %li.link
             The Cybersecurity Olympiad
             %strong «HackIT-2015»
@@ -93,40 +80,40 @@
             International forum
             %strong «Cybersecurity: Ukraine and the world»
 
-  .logo-place
-    .logo.responsive
-      = partial('images/rrott-ruby-logo.svg').to_s
-  %section.content.oss.dark
+  %section.content.oss
     %h2.center Community Development
-    .flex
-      .center.vw30
-      .text-block.vw70
-        %h3.oss-text Contributing to open source projects:
-        I am working on my own open source pet-project on Electron(using React and TypeScript)
-        %a.link{ href: "https://github.com/rrott/cosnole.alert", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-          rrott/cosnole.alert
-        %a.link{ href: "https://github.com/react-toolbox/react-toolbox/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Arrott", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-          react-toolbox
-        %a.link{ href: "https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/2690#note_3543658", target: '_blank', rel: 'nofollow noopener noreferrer' }<
-          gitlab-org/gitlab-ce
+    .row
+      .text-block
+        %h3.oss-text.padding2 Contributing to open source projects:
+        %ul
+          %li.link
+            I am a maintainer of
+            %a.link{ href: "https://github.com/rrott/cosnole.alert", target: '_blank', rel: 'nofollow noopener noreferrer' }<
+              rrott/cosnole.alert
+            \- a simple JavaScript library for displaying alerts in the browser console.
+          %li.link
+            do contributions to OSS in terms of security, like:
+            %a{ href: "https://bsg.tech/blog/cve-2022-25854-stored-xss-in-yaireo-tagify-npm-module/", target: '_blank' }<
+              CVE-2022-25854
+            \- stored XSS in the
+            %a{ href: "https://github.com/yairEO/tagify/pull/989", target: '_blank' }<
+              @yaireo/tagify
+            npm module.
 
         %h3.oss-text.padding2 Volunteering:
         %ul
           %li.link
-            Was working as a full-stack developer, creating, configuring CI/CD and maintaining website for the
+            Worked as a full-stack developer, creating and maintaining the website for the
             %a{ href: "https://2019.nonamecon.org/" }<
-              «NoNameCon #2»
-            Practical CyberSecurity Conference (2019)
+              %strong NoNameCon 2019.
           %li.link
             Did the same for the annual
             %a{ href: "https://owaspukraine.org/" }<
-              %strong «OWASP Ukraine»
+              %strong OWASP Ukraine 2019
             Cybersecurity Conference held by
             %a.print{ href: "https://www.owasp.org/index.php/Lviv", target: '_blank', rel: 'noopener noreferrer' }<
               %strong OWASP Lviv
-            Chapter (2019)
-          %li.link
-            Almost all apps/sites created by me for the CTFs, were prepared for students, non-profit organizations or just for fun.
+            Chapter
 
         %h3.oss-text.padding2 Developing local community:
         %ul
@@ -170,5 +157,29 @@
             %li.link
               %a{ href: "/blog/", title: "link to my blog" }
                 Read more...
+
+  %section.dark.content.dev-skills
+    %h2.center Former Web Developer
+    .stickers
+      .logo.responsive.wrap.justify-center
+        - ['react', 'redux', 'ruby', 'rails', 'svelte', 'html5', 'css', 'js'].each do |sticker|
+          .sticker{ class: sticker }
+
+      .text-block.vw70
+        Throughout my 9-year tenure at IxWebhosting.com, a large Shared and Cloud Hosting company, I worked in various departments in different positions. During this time, I spent 5 years working in the 
+        %strong Tech Support department
+        and 4 years as a Ruby/Rails Developer in the IT department.
+        %p
+        There I gained a wealth of experience dealing with code written by other developers, focusing on
+        %strong troubleshooting, debugging, and fixing code.
+        Additionally, I gained extensive experience in detecting and resolving security flaws and bugs.
+        %p
+        Afterward, I spent another 5 years working as a Full-Stack Ruby Developer for various US and Europ companies. Meanwhile, I've designed and developed intentionally vulnerable applications for CTF hacking games, which provide a platform for security enthusiasts to practice and enhance their skills.
+        %p
+        My
+        %a{ href: "/portfolio/" }<
+          portfolio as a Full-Stack Web Developer
+        provides a brief summary of project samples that I completed before transitioning into the Cybersecurity field.
+
 = partial 'partials/contacts'
 = partial 'partials/footer', locals: { title: nil }

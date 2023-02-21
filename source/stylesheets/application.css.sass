@@ -215,16 +215,22 @@ section.dark
 
 .logo
   svg
+    #ruby-bkg
+      fill: $color-light-blue
+      transition: all 0.5s
+    #logo-bkg
+      fill: $color-light-yellow
+      transition: all 0.5s
     height: auto
     max-width: 100%
     width: 25rem
     transition: all 0.8s
     &:hover, &.highlight
       #ruby-bkg
-        fill: $color-blue
+        fill: $color-black
         transition: all 0.5s
       #logo-bkg
-        fill: $color-yellow
+        fill: $color-red
         transition: all 0.5s
 
 .social-icon, .sitemap
@@ -331,7 +337,7 @@ p
     pre
       color: #272822
       margin-right: 1.3rem
-  .oss
+  .infosec
     .flex
       .vw30
         display: none
