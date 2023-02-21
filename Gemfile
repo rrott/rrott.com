@@ -24,6 +24,7 @@ group :build do
   # gem 'middleman-minify-html'
   # gem 'middleman-webp'
   gem "sitemap_generator"
+  gem 'nokogiri'
   # gem 'middleman-imageoptim'
   # gem 'middleman-smusher'
 end
