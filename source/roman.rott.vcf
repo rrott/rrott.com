@@ -6,9 +6,9 @@ N:Rott;Roman;;;
 FN:Roman Rott
 NICKNAME:rrott
 TZ:+02:00
-TITLE:Ruby/JS Full-Stack developer, Cybersecurity Enthusiast
+TITLE:Security Analyst, Penetration Tester, Application Security Engineer
 ORG:rrott.com
-CATEGORIES:INTERNET,INFORMATION TECHNOLOGY,WEB DEVELOPMENT,SECURITY
+CATEGORIES:SECURITY,INTERNET,INFORMATION TECHNOLOGY
 LOGO;VALUE=uri:https://rrott.com/images/rrott-ruby-logo.svg
 EMAIL;TYPE=work;PREF=1:roman@rrott.com
 EMAIL;TYPE=work;PREF=2:roman.rott@owasp.org

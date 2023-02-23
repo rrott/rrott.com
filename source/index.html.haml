@@ -7,8 +7,8 @@
     = partial 'partials/links'
     - if open_for_remote
       %h6.center.open-for-remote Open for remote job opportunities. Contact me if you're interested.
-    - if open_for_remote == false
-      %h6.center.open-for-remote [ I am not currently accepting new job opportunities ]
+    -# - if open_for_remote == false
+    -#  %h6.center.open-for-remote [ I am not currently accepting new job opportunities ]
   %section.content.about-me
     %h1.center
       Hello, my name is
@@ -94,7 +94,7 @@
           %li.link
             do contributions to OSS in terms of security, like:
             %a{ href: "https://bsg.tech/blog/cve-2022-25854-stored-xss-in-yaireo-tagify-npm-module/", target: '_blank' }<
-              CVE-2022-25854
+              %strong CVE-2022-25854
             \- stored XSS in the
             %a{ href: "https://github.com/yairEO/tagify/pull/989", target: '_blank' }<
               @yaireo/tagify
@@ -126,7 +126,7 @@
             on the
             %a.print{ href: "https://www.owasp.org/index.php/Kyiv", target: '_blank', rel: 'noopener noreferrer' }<
               %strong OWASP Kyiv
-            Chapter Kick-off Meeting.
+            Chapter Kick-off.
           %li.link
             Held
             %a{ href: "/https://www.youtube.com/watch?v=FV6s8tUJQSs" }<

@@ -275,15 +275,21 @@ article
 
 .logo-small
   svg
+    #ruby-bkg
+      fill: $color-light-blue
+      transition: all 0.5s
+    #logo-bkg
+      fill: $color-light-yellow
+      transition: all 0.5s
     width: 50%
     height: 50%
     transition: all 0.8s
     &:hover, &.highlight
       #ruby-bkg
-        fill: $color-blue
+        fill: $color-black
         transition: all 0.1s
       #logo-bkg
-        fill: $color-yellow
+        fill: $color-red
         transition: all 0.1s
 
 .highlight
