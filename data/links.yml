@@ -15,7 +15,7 @@ portfolio_list:
   first_row:
     - url: "/portfolio/cybersecurity/"
       name: "Cybersecurity"
-      title: 'Cybersecurity related projects'
+      title: 'Projects related to cybersecurity.'
       image: '/images/portfolio/nnc-2019/nnc-website'
     - url: "/portfolio/all/"
       name: "Web developer"

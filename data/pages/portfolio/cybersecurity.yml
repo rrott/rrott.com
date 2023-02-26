@@ -6,7 +6,7 @@ title: "Roman Rott's portfolio. Projects accomplished in 2015 - 2021"
 multipart: true
 projects_list:
   -
-    title: "Cybersecurity related projects"
+    title: "Projects related to cybersecurity"
     id_name: "cybersecurity"
     projects:
       -
@@ -34,7 +34,7 @@ projects_list:
         name: "my_best_dates"
         noindex: true
       -
-        name: 'findmegetme'
+        name: "findmegetme"
         noindex: false
       -
         name: "mobile_findmegetme"

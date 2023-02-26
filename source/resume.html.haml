@@ -18,37 +18,18 @@
       %section.resume
         .contact.flex.row.justify-around.wrap
           .flex.column
-            %h3.link-title pdf:
-            .link
-              %a{ href: "/cv/Roman.Rott.Resume.2021.pdf", target: '_blank', rel: 'nofollow', title: "Roman's resume in pdf formt" }
-                resume
-              \/
-              %a{ href: "/cv/Roman.Rott.CV.2021.pdf", target: '_blank', rel: 'nofollow', title: "Roman's CV in pdf formt" }
-                CV
-          .flex.column
-            %h3.link-title odt:
-            .link
-              %a{ href: "/cv/Roman.Rott.Resume.2021.odt", target: '_blank', rel: 'nofollow', title: "Roman's resume in odt formt" }
-                resume
-              \/
-              %a{ href: "/cv/Roman.Rott.CV.2021.odt", target: '_blank', rel: 'nofollow', title: "Roman's CV in odt formt" }
-                CV
-          .flex.column
-            %h3.link-title docx:
-            .link
-              %a{ href: "/cv/Roman.Rott.Resume.2021.docx", target: '_blank', rel: 'nofollow', title: "Roman's resume in docx formt" }
-                resume
-              \/
-              %a{ href: "/cv/Roman.Rott.CV.2021.docx", target: '_blank', rel: 'nofollow', title: "Roman's CV in docx formt" }
-                CV
-          .flex.column
-            %h3.link-title google docs:
-            .link
+            .link-title
+              %a{ href: "/cv/Roman.Rott.Resume.2023.pdf", rel: 'noopener', title: "Roman's resume in pdf formt" }<
+                %h3 pdf
+
+              %a{ href: "/cv/Roman.Rott.Resume.2023.odt", rel: 'noopener', title: "Roman's resume in odt formt" }<
+                %h3 odt
+
+              %a{ href: "/cv/Roman.Rott.Resume.2023.docx", rel: 'noopener', title: "Roman's resume in docx formt" }<
+                %h3 docx
+
               %a{ href: "https://docs.google.com/document/d/1nVnBvj_vwfYadlgxftUj_JAe3u_c3_HQL3ivyjTPRb0", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's resume in google docs" }
-                resume
-              \/
-              %a{ href: "https://docs.google.com/document/d/1DBFKyVl8DgQqEAiFeWyX-P7ij6QjA7d8zdbwIT1fn7E", target: '_blank', rel: 'nofollow noopener noreferrer', title: "Roman's CV in google docs" }
-                CV
+                %h3 google docs
       %hr
       %section.resume
         %a{ href: "/portfolio/", title: "web developer portfolio" }
@@ -67,8 +48,6 @@
       %h2.contacts-message.center
         %br
         Contact information
-      .contacts-description.center.mr2.text-block
-        If you are a business looking for a web presence or an employer who is eager to add a remote expertise feel free to get in touch with me right away!
       .contacts-box.wrap
         .contact.column
           %h4 contact me:
