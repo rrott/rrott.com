@@ -21,7 +21,7 @@ images:
 about:
   - "It is a gem for sending notifications to Asana using god.rb tool. God.rb is an easy to configure, easy to extend monitoring framework written in Ruby.<a href='http://godrb.com/'> http://godrb.com/</a>"
   - "Asana is a web and mobile application designed to help teams track their work."
-  - "This OSS ruby gem allows to send notifications to asana in case God.rb raises an issue with your ruby app."
+  - "This Open Source ruby gem allows to send notifications to asana in case God.rb raises an issue with your ruby apps."
 role: "Ruby developer"
 responsibilities:
   - "Full stack developer "

@@ -4,25 +4,10 @@ portfolio_sections:
     name: "Cybersecurity"
     show_in_menu: true
   -
-    url: "/portfolio/full-stack/"
-    name: "Full-Stack"
-    show_in_menu: true
-  -
-    url: "/portfolio/front-end/"
-    name: "Front-end"
-    show_in_menu: true
-  -
-    url: "/portfolio/back-end/"
-    name: "Back-end"
-    show_in_menu: true
-  -
-    url: "/portfolio/oss/"
-    name: "Open Source"
+    url: "/portfolio/all/"
+    name: "Web developer"
     show_in_menu: true
 blog_sections:
-  -
-    url: "/blog/ror/"
-    name: "Ruby on Rails"
   -
     url: "/blog/"
     name: "All"
@@ -31,39 +16,8 @@ portfolio_list:
     - url: "/portfolio/cybersecurity/"
       name: "Cybersecurity"
       title: 'Cybersecurity related projects'
-      image: '/images/portfolio/nnc-2018-ctf/nnc-ctf-crew'
+      image: '/images/portfolio/nnc-2019/nnc-website'
     - url: "/portfolio/all/"
-      name: "All"
+      name: "Web developer"
       title: 'All the projects.'
-      image: '/images/portfolio/findmegetme/findmegetme-socket-image'
-  second_row:
-    -
-      url: "/portfolio/full-stack/"
-      row: 2
-      name: "Full-Stack"
-      title: 'Full-Stack projects'
-      image: '/images/portfolio/ira-rott-com/irarott-com'
-    -
-      url: "/portfolio/front-end/"
-      row: 2
-      name: "Front-end"
-      title: 'Front-end projects'
-      image: '/images/portfolio/ix-landing/landing-hacker-shield'
-    -
-      url: "/portfolio/back-end/"
-      row: 2
-      name: "Back-end"
-      title: 'Back-end Projects'
-      image: '/images/portfolio/asana-god-contact/asana-god-contact-contact'
-    -
-      url: "/portfolio/oss/"
-      row: 2
-      name: "Open Source"
-      title: 'Open Source Projects'
-      image: '/images/portfolio/grunt-coffee-chain/grunt-coffee-chain-npm'
-    -
-      url: "/portfolio/online-projects/"
-      row: 2
-      name: "Online"
-      title: 'Online at the moment projects'
-      image: '/images/portfolio/website/rrott-com-main'
+      image: '/images/portfolio/ira-rott-com-v2/irarott-com-performance'

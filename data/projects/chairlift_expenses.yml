@@ -7,7 +7,7 @@ tags:
   - "Rails"
   - "React"
   - "JavaScript"
-info: "* Work is in progress... Under the NDA."
+info: "* Internal project. Under the NDA."
 year: 2016
 images:
   -
@@ -15,7 +15,7 @@ images:
     title: "Chairlift Expenses"
 
 about:
-  - "Chairlift Expenses is an internal Sphere’s project for handling company's expenses. I was working on it starting from the initial proposing, planning and designing architecture and finishing implementing both front and back-ends of the project. Switched to another roject befor this one ended."
+  - "Chairlift Expenses is an internal Sphere’s project for handling company's expenses. I was working on it starting from the initial proposal, planning and designing architecture and finishing implementing both front and back-ends of the project. Switched to another roject befor this one ended."
 role: "Team Lead"
 responsibilities:
   - "Code reviews, estimating and allocating resources, writing stories. Decision-making and negotiating, communicating with the project owner."
@@ -24,7 +24,7 @@ languages: "Ruby 2, ES2016"
 libs: "Ruby on Rails 5, React, Redux"
 testing: "Rspec"
 status:
-  message: "Work in progress..."
+  message: ""
   urls:
     -
       link:  "https://sphereinc.com/"

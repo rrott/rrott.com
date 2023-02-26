@@ -5,8 +5,6 @@ by:
 tags:
   - "Ruby"
   - "Rails"
-  - "Jquery"
-  - "CoffeeScript"
 
 year: 2017
 images:
@@ -21,7 +19,7 @@ images:
     title: "Dabble.co class page"
 about:
   - "Dabble is an online community marketplace for people to discover, teach and host unique and affordable one-time classes. Was working mostly on UI parts of the app using JS and CoffeeScript."
-  - "I was working on migrating from old SSO to a new one, refactored and removed legacy code, optimizing and  performance enhancement. Was implementing new features and products."
+  - "I was working on migrating from old SSO to a new one, refactored and removed legacy code, optimizing and performance enhancement. Implemented new features and products."
 role: "Front-end, Back-end developer"
 languages: "Ruby, CoffeeScript"
 libs: "Ruby on Rails, Trailblazer, Cells, Roar, ActiveAdmin, jQuery"

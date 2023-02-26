@@ -4,17 +4,15 @@ by:
   url: "http://ecommerce.com"
 tags:
   - "Ruby"
-  - "Sinatra"
-  - "JQuery"
-  - "Rails"
-  - "CoffeeScript"
+  - "JavaScript"
+
 year: 2015
 images:
   -
-    url: "/images/portfolio/ix-ow/ordering-wizard-step1"
+    url: "/images/portfolio/ix-ow/ordering-wizard-step2"
     title: "First step of Ordering Wizard - a single page web application"
   -
-    url: "/images/portfolio/ix-ow/ordering-wizard-step2"
+    url: "/images/portfolio/ix-ow/ordering-wizard-step1"
     title: "Second step of Ordering Wizard - a single page web application "
   -
     url: "/images/portfolio/ix-ow/ordering-wizard-last-step"

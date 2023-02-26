@@ -1,4 +1,4 @@
-title: "Cater2.me Applications and infrastructure"
+title: "Cater2.me applications and infrastructure"
 by:
   name: "Cater2.me"
   url: "https://cater2.me/"
@@ -6,7 +6,6 @@ tags:
   - "Ruby"
   - "Rails"
   - "JavaScript"
-  - "CoffeeScript"
   - "React"
 info: "* Internal projects. Under the NDA"
 year: 2021

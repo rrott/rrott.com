@@ -1,62 +1,24 @@
 url: "/portfolio/all"
 type: 'All'
-keywords: 'web developer portfolio, Open Source, full-stack, front-end, ruby language, back-end, javascript developer'
+keywords: 'web developer portfolio, Open Source, Security Analyst, Penetration Tester'
 description: "List of all Roman Rott's projects accomplished in 2015 - 2021"
-title: "Roman Rott's Ruby/Javascript web developer portfolio. Projects accomplished in 2015 - 2021"
+title: "Roman Rott's portfolio. Projects accomplished in 2015 - 2021"
 multipart: true
 canonical: 'https://rrott.com/portfolio/full-stack/'
 projects_list:
   -
-    title: "Current On-going projects"
+    title: "Projects related to cybersecurity."
     id_name: "full-stack"
     projects:
       -
         name: "bsg_darts"
         noindex: false
       -
-        name: "irarott_v2"
-        noindex: false
-  -
-    title: "Full-Stack projects"
-    id_name: "full-stack"
-    projects:
-      -
         name: "nnc_2018_ctf"
         noindex: false
       -
-        name: "groupon"
+        name: "nnc_2019"
         noindex: false
-      -
-        name: "c2me"
-        noindex: false
-      -
-        name: "enova"
-        noindex: false
-      -
-        name: "dabble"
-        noindex: false
-      -
-        name: "chairlift"
-        noindex: false
-      -
-        name: "chairlift_expenses"
-        noindex: false
-      -
-        name: "ix_cloudui"
-        noindex: false
-      -
-        name: "rrott_com"
-        noindex: false
-      -
-        name: "shlyapa"
-        noindex: true
-      -
-        name: "my_best_dates"
-        noindex: true
-  -
-    title: "Front-End projects"
-    id_name: "front-end"
-    projects:
       -
         name: "brucon_2019"
         noindex: false
@@ -67,28 +29,51 @@ projects_list:
         name: "owasp_ukraine_timer"
         noindex: false
       -
-        name: "nnc_2019"
+        name: "shlyapa"
+        noindex: true
+      -
+        name: "my_best_dates"
+        noindex: true
+      -
+        name: "findmegetme"
+        noindex: false
+      -
+        name: "mobile_findmegetme"
+        noindex: true
+  -
+    title: "Other projects"
+    id_name: "front-end"
+    projects:
+      -
+        name: "groupon"
+        noindex: false
+      -
+        name: "ix_cloudui"
         noindex: false
       -
         name: "ix_ow"
         noindex: false
       -
-        name: "ix_landing"
+        name: "enova"
         noindex: false
-  -
-    title: "Back-End projects"
-    id_name: "back-end"
-    projects:
       -
-        name: 'findmegetme'
+        name: "chairlift"
         noindex: false
-  -
-    title: "Mobile Applications"
-    id_name: "mobile"
-    projects:
       -
-        name: "mobile_findmegetme"
-        noindex: true
+        name: "chairlift_expenses"
+        noindex: false
+      -
+        name: "dabble"
+        noindex: false
+      -
+        name: "c2me"
+        noindex: false
+      -
+        name: "irarott_v2"
+        noindex: false
+      -
+        name: "rrott_com"
+        noindex: false
   -
     title: "Open Source Plugins and Libs"
     id_name: "oss"

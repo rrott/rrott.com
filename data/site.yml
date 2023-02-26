@@ -1,24 +1,24 @@
 main:
-  title: "Roman Rott - Full-stack ruby developer, security enthusiast"
-  description: "Roman Rott is a Ukrainian Full-stack developer with 10+ years of IT experience and 5 years experience dedicated to web development and security auditing"
-  keywords: 'roman rott, web developer, full stack, front-end, back-end, ruby developer, security enthusiast, rails security, web application security'
+  title: "Roman Rott - Security Analyst and Penetration Tester. Former Full-stack ruby developer"
+  description: "Roman Rott is a Ukrainian Security Analyst and Penetration Tester with 17+ years of IT experience"
+  keywords: 'roman rott, security analyst, penetration tester, red-team, web application security'
 
 blog:
-  title: "Roman Rott's blog - Full-stack developer, security enthusiast"
-  description: "Roman Rott's blog - posts about Ruby, JavaScript, EcmaScript, front-end/back-end development, security researches and analytics"
-  keywords: 'security essentials, research, how to hack, web developer, full stack developer, front-end, back-end, ruby developer, security enthusiast'
+  title: "Roman Rott's blog - Full-stack developer"
+  description: "Roman Rott's blog - posts about Ruby, pentests, security things"
+  keywords: 'security essentials, how to hack, security analyst, penetration tester'
 
 portfolio:
-  title: "Roman Rott's portfolio - Full-stack, front-end, back-end developer"
-  keywords: 'web developer portfolio, hacking games, full stack developer, front-end, back-end, ruby developer, security enthusiast, rails security'
-  description: "Web developer portfolio of Roman Rott - a Ukrainian front-end/back-end developer, security enthusiast."
+  title: "Roman Rott's portfolio - Security Analyst and Penetration Tester"
+  keywords: 'web developer portfolio, ctf hacking games, full stack developer, front-end, back-end, ruby developer, rails security'
+  description: "Web developer portfolio of Roman Rott - a Ukrainian Security Analyst and Penetration Tester"
 
 not_found:
   title: "Roman Rott - The page you are looking for was not found!"
-  keywords: 'web developer, full stack, front-end, back-end, ruby, security, rails security'
+  keywords: 'roman rott, security analyst, penetration tester, red-team, web application security, ruby, security, rails security'
   description: "Roman Rott- Page not found! 404 error..."
 
 sitemap:
   title: "Roman Rott - Sitemap Page."
-  keywords: 'rrott, roman rott, web developer, full stack, front-end, back-end, ruby, security, rails security'
+  keywords: 'rrott, roman rott, oman rott, security analyst, penetration tester, red-team, web application security, ruby, security, rails security'
   description: "Roman Rott - Sitemap Page with all the internal links"

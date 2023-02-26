@@ -4,8 +4,8 @@
     = partial 'partials/breadcrumbs', locals: { breadcrumbs: [{title: 'Portfolio'}] }
 
     %section
-      %p.text-block I'm a Full-Stack Ruby developer with a strong interest in ethical hacking, penetration testing and vulnerability analysis. I am equally comfortable developing Ruby backends as working with JavaScript in the front-end. My technical expertise also includes React, Redux, Sinatra, ES6, HTML5 a bit of Node.js and some other frameworks/libs.
-
+      %p.text-block Hello, my name is Roman Rott, and I am a Security Analyst and Penetration Tester with a vast background as a Full-Stack Web Developer. Throughout my 17 years of experience in the IT industry, I have dedicated ten years to web development and security auditing of web applications. Over the past three years, I have been expanding my knowledge to transition from Web Development to Cybersecurity.
+      %p.text-block My portfolio as a Full-Stack Web Developer provides a brief summary of project samples that I completed before transitioning into the Cybersecurity field.
       .portfolio-images-row1.row.wrap
         - links.portfolio_list.first_row.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
@@ -18,7 +18,7 @@
               %img.large-img.responsive.project-img{ alt: "Image that ilustrates #{portfolio.title}", src: "#{portfolio.image}-336.jpg", srcset: "#{portfolio.image}-336.jpg 336w, #{portfolio.image}-768.jpg 768w, #{portfolio.image}-1024.jpg 1024w", sizes: "(max-width: 48em) 100vw, 33vw" }/
 
       .portfolio-images-row2.row.wrap
-        - links.portfolio_list.second_row.each do |portfolio|
+        - links.portfolio_list.second_row&.each do |portfolio|
           %a{ href: "#{portfolio.url}", title: "More info about #{portfolio.title}" }
             .center
               = portfolio.name

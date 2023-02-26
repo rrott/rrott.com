@@ -11,7 +11,7 @@ module MetaInfoHelpers
       "image":       site_config.image,
       "brand":       site_config.name,
       "url":         site_config.url,
-      "jobTitle":    "Full-Stack ruby developer",
+      "jobTitle":    "Security Analyst and Penetration Tester",
       "name":        "Roman Rott",
       "familyName":  "Rott",
       "givenName":   "Roman",
